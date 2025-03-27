@@ -955,6 +955,9 @@ select {
 .block {
   display: block;
 }
+.inline-block {
+  display: inline-block;
+}
 .inline {
   display: inline;
 }
@@ -1197,6 +1200,9 @@ select {
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+.flex-row {
+  flex-direction: row;
+}
 .flex-col {
   flex-direction: column;
 }
@@ -1235,6 +1241,9 @@ select {
 }
 .gap-8 {
   gap: 2rem;
+}
+.gap-1 {
+  gap: 0.25rem;
 }
 .gap-x-10 {
   -moz-column-gap: 2.5rem;
@@ -1601,6 +1610,9 @@ select {
 }
 .font-semibold {
   font-weight: 600;
+}
+.font-bold {
+  font-weight: 700;
 }
 .tabular-nums {
   --tw-numeric-spacing: tabular-nums;

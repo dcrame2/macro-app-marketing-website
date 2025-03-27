@@ -13,6 +13,8 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import { NavLinks } from '@/components/NavLinks'
+import { AppStoreLink } from './AppStoreLink'
+import { PlayStoreLink } from './PlayStoreLink'
 
 function MenuIcon(props) {
   return (
@@ -115,10 +117,8 @@ export function Header() {
                             <MobileNavLink href="/#faqs">FAQs</MobileNavLink>
                           </div>
                           <div className="mt-8 flex flex-col gap-4">
-                            <Button href="/login" variant="outline">
-                              Log in
-                            </Button>
-                            <Button href="#">Download the app</Button>
+                            <PlayStoreLink color="black" />
+                            <AppStoreLink />
                           </div>
                         </PopoverPanel>
                       </>
@@ -127,12 +127,8 @@ export function Header() {
                 </>
               )}
             </Popover>
-            <Button href="/login" variant="outline" className="hidden lg:block">
-              Log in
-            </Button>
-            <Button href="#" className="hidden lg:block">
-              Download
-            </Button>
+            <PlayStoreLink color="black" />
+            <AppStoreLink />
           </div>
         </Container>
       </nav>

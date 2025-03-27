@@ -7,14 +7,6 @@ import { AppStoreLink } from '@/components/AppStoreLink'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { PhoneFrame } from '@/components/PhoneFrame'
-import logoBbc from '@/images/logos/bbc.svg'
-import logoCbs from '@/images/logos/cbs.svg'
-import logoCnn from '@/images/logos/cnn.svg'
-import logoFastCompany from '@/images/logos/fast-company.svg'
-import logoForbes from '@/images/logos/forbes.svg'
-import logoHuffpost from '@/images/logos/huffpost.svg'
-import logoTechcrunch from '@/images/logos/techcrunch.svg'
-import logoWired from '@/images/logos/wired.svg'
 
 import homeScreen from '@/images/home_screen.png'
 
@@ -107,7 +99,7 @@ export function Hero() {
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
             <h1 className="text-4xl font-medium tracking-tight text-gray-900">
-              Meet Cal-Pal AI — Your Smartest Calorie Tracking Pal
+              Meet Cal-Pal AI
             </h1>
             <p className="mt-6 text-lg text-gray-600">
               {/* Scan meals, barcodes, or nutrition labels — or search any food.
@@ -116,9 +108,9 @@ export function Hero() {
               {/* From meal scans to barcode and nutrition label detection, Cal-Pal
               AI makes tracking macros fast, easy, and insanely accurate. No
               guesswork. Just results. */}
-              Scan meals, barcodes, or labels in seconds. Cal-Pal AI uses
-              intelligent recognition to make tracking your nutrition seamless,
-              accurate, and lightning fast.
+              Your Smartest Calorie Tracking Pal. Scan meals, barcodes, or
+              labels in seconds. Cal-Pal AI uses intelligent recognition to make
+              tracking your nutrition seamless, accurate, and lightning fast.
             </p>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
               <Button

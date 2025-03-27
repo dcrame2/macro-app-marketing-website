@@ -4,39 +4,40 @@ import { Container } from '@/components/Container'
 
 const features = [
   {
-    name: 'Invest any amount',
+    name: 'Auto Macro Breakdown',
     description:
-      'Whether it’s $1 or $1,000,000, we can put your money to work for you.',
+      'Cal-Pal AI breaks down every food item into protein, carbs, and fats — instantly and accurately, without the guesswork.',
     icon: DeviceArrowIcon,
   },
   {
-    name: 'Build a balanced portfolio',
+    name: 'AI-Powered Food Recognition',
     description:
-      'Invest in different industries to find the most opportunities to win huge.',
+      'Our AI detects and identifies foods from photos, scans, or searches — giving you precise macro info in seconds.',
     icon: DeviceCardsIcon,
   },
   {
-    name: 'Trade in real-time',
+    name: 'Real-Time Logging',
     description:
-      'Get insider tips on big stock moves and act on them within seconds.',
+      'Instantly log new foods or edits — no lag, no waiting. Just quick, seamless tracking.',
     icon: DeviceClockIcon,
   },
   {
-    name: 'Profit from your network',
+    name: 'Your Food, Remembered',
     description:
-      'Invite new insiders to get tips faster and beat even other Pocket users.',
+      'Cal-Pal AI keeps your Saved Meals organized, so logging repeat meals is as simple as a single tap.',
     icon: DeviceListIcon,
   },
   {
-    name: 'Encrypted and anonymized',
+    name: 'Private & Secure',
     description:
-      'Cutting-edge security technology that even the NSA doesn’t know about keeps you hidden.',
+      'Your data stays yours. Everything you log is encrypted and anonymized for total peace of mind.',
     icon: DeviceLockIcon,
   },
   {
-    name: 'Portfolio tracking',
+    name: 'Visual Progress Tracking',
     description:
-      'Watch your investments grow exponentially, leaving other investors in the dust.',
+      'See your daily, weekly, and monthly macro trends with easy-to-read graphs and insights.',
+
     icon: DeviceChartIcon,
   },
 ]
@@ -196,11 +197,12 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-            Now is the time to build your portfolio.
+            Smarter Tracking, Built-In
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            With typical market returns, you have to start young to secure your
-            future. With Pocket, it’s never too late to build your nest egg.
+            Cal-Pal AI handles the details so you can focus on your goals. From
+            personalized tracking to private logging, every feature is designed
+            to work with your lifestyle.
           </p>
         </div>
         <ul

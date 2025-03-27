@@ -24,28 +24,52 @@ import {
 const MotionAppScreenHeader = motion(AppScreen.Header)
 const MotionAppScreenBody = motion(AppScreen.Body)
 
+import homeScreen from '@/images/home_screen.png'
+import Image from 'next/image'
+
 const features = [
   {
-    name: 'Invite friends for better returns',
+    name: 'Meal Scan',
     description:
-      'For every friend you invite to Pocket, you get insider notifications 5 seconds sooner. And it’s 10 seconds if you invite an insider.',
+      'Snap a photo of your plate and let Cal-Pal AI break down the macros instantly — perfect for eating out or home-cooked meals.',
     icon: DeviceUserIcon,
-    screen: InviteScreen,
+    screen: MealScan,
   },
   {
-    name: 'Notifications on stock dips',
+    name: 'Barcode Scanner',
     description:
-      'Get a push notification every time we find out something that’s going to lower the share price on your holdings so you can sell before the information hits the public markets.',
-    icon: DeviceNotificationIcon,
-    screen: StocksScreen,
+      'Scan packaged foods in seconds with lightning-fast barcode detection. No typing, no searching — just scan and log.',
+    icon: DeviceUserIcon,
+    screen: MealScan,
   },
   {
-    name: 'Invest what you want',
+    name: 'Nutrition Label Scan',
     description:
-      'We hide your stock purchases behind thousands of anonymous trading accounts, so suspicious activity can never be traced back to you.',
-    icon: DeviceTouchIcon,
-    screen: InvestScreen,
+      'Use your camera to extract data from nutrition labels. Our AI reads and logs it for you — just point and shoot.',
+    icon: DeviceUserIcon,
+    screen: MealScan,
   },
+  {
+    name: 'Manual Food Search',
+    description:
+      'Search our smart food database with natural terms and portion sizes. Great for restaurant items or anything unscannable.',
+    icon: DeviceUserIcon,
+    screen: MealScan,
+  },
+  // {
+  //   name: 'Saved Meals',
+  //   description:
+  //     'Quickly log your go-to meals in a tap. Perfect for meal prep, regular favorites, or anything you eat often.',
+  //   icon: DeviceUserIcon,
+  //   screen: InvestScreen,
+  // },
+  // {
+  //   name: 'Build Your Own Meal',
+  //   description:
+  //     'Combine ingredients and custom portions into one meal. Ideal for complex recipes, home cooking, or bulk meal prep.',
+  //   icon: DeviceUserIcon,
+  //   screen: InvestScreen,
+  // },
 ]
 
 function DeviceUserIcon(props) {
@@ -365,6 +389,30 @@ function InvestScreen(props) {
   )
 }
 
+function MealScan(props) {
+  return (
+    <Image src={homeScreen} alt="App screenshot" width={350} height={448} />
+  )
+}
+
+function ByoScreen(props) {
+  return (
+    <Image src={homeScreen} alt="App screenshot" width={350} height={448} />
+  )
+}
+
+function CopyScreen(props) {
+  return (
+    <Image src={homeScreen} alt="App screenshot" width={350} height={448} />
+  )
+}
+
+function SaveScreen(props) {
+  return (
+    <Image src={homeScreen} alt="App screenshot" width={350} height={448} />
+  )
+}
+
 function usePrevious(value) {
   let ref = useRef()
 
@@ -427,7 +475,7 @@ function FeaturesDesktop() {
       </TabList>
       <div className="relative col-span-6">
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-          <CircleBackground color="#13B5C8" className="animate-spin-slower" />
+          <CircleBackground color="#0077cc" className="animate-spin-slower" />
         </div>
         <PhoneFrame className="z-10 mx-auto w-full max-w-[366px]">
           <TabPanels as={Fragment}>
@@ -559,13 +607,12 @@ export function PrimaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
           <h2 className="text-3xl font-medium tracking-tight text-white">
-            Every feature you need to win. Try it for yourself.
+            Everything You Need to Track Smarter
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-            Pocket was built for investors like you who play by their own rules
-            and aren’t going to let SEC regulations get in the way of their
-            dreams. If other investing tools are afraid to build it, Pocket has
-            it.
+            Cal-Pal AI makes nutrition tracking fast, flexible, and stress-free.
+            Scan, search, and save your way to better health with features built
+            for real life.
           </p>
         </div>
       </Container>

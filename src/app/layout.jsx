@@ -12,10 +12,10 @@ const inter = Inter({
 export const metadata = {
   title: {
     template: '%s - Pocket',
-    default: 'Pocket - Invest at the perfect time.',
+    default: 'Cal-Pal AI - Your Smartest Calorie Tracking Pal.',
   },
   description:
-    'By leveraging insights from our network of industry insiders, you’ll know exactly when to buy to maximize profit, and exactly when to sell to avoid painful losses.',
+    'Scan meals, barcodes, or labels in seconds. Cal-Pal AI uses intelligent recognition to make tracking your nutrition seamless, accurate, and lightning fast.',
 }
 
 export default function RootLayout({ children }) {

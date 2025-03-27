@@ -16,8 +16,12 @@ export function Logomark(props) {
 export function Logo(props) {
   return (
     <div className="flex flex-row items-center gap-1">
-      <Image src={CalPalLogo} width={50} height={50} alt="Logo" />
-      <h3 className="font-bold">Cal-Pal AI</h3>
+      <Image
+        src={CalPalLogo}
+        width={props.width || 50}
+        height={props.height || 50}
+        alt="Logo"
+      />
     </div>
   )
 }

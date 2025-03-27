@@ -58,8 +58,13 @@ export function Header() {
       <nav>
         <Container className="relative z-50 flex justify-between py-8">
           <div className="relative z-10 flex items-center gap-16">
-            <Link href="/" aria-label="Home">
+            <Link
+              href="/"
+              aria-label="Home"
+              className="flex flex-row items-center gap-1"
+            >
               <Logo className="h-10 w-auto" />
+              <h3 className="font-bold">Cal-Pal AI</h3>
             </Link>
             <div className="hidden lg:flex lg:gap-10">
               <NavLinks />
@@ -116,9 +121,9 @@ export function Header() {
                             </MobileNavLink>
                             <MobileNavLink href="/#faqs">FAQs</MobileNavLink>
                           </div>
-                          <div className="mt-8 flex flex-col gap-4">
+                          <div className="mt-8 flex w-fit flex-col gap-4">
+                            <AppStoreLink color="black" />
                             <PlayStoreLink color="black" />
-                            <AppStoreLink />
                           </div>
                         </PopoverPanel>
                       </>
@@ -127,8 +132,10 @@ export function Header() {
                 </>
               )}
             </Popover>
-            <PlayStoreLink color="black" />
-            <AppStoreLink />
+            <div className="hidden flex-row gap-4 md:flex">
+              <AppStoreLink color="black" />
+              <PlayStoreLink color="black" />
+            </div>
           </div>
         </Container>
       </nav>

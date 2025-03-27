@@ -3,53 +3,54 @@ import { Container } from '@/components/Container'
 const faqs = [
   [
     {
-      question: 'How do I know the tips are good?',
+      question: 'How accurate is the Meal Scan feature?',
       answer:
-        'Our whole business depends on our tips being good, so it’s in our best interest that they are. The results of our customers speak for themselves, just trust us.',
+        'Meal Scan uses advanced AI to estimate macros based on visual input. While it’s highly accurate for most meals, we recommend reviewing the results for complex or mixed dishes.',
     },
     {
-      question: 'Isn’t this insider trading?',
+      question: 'Can I create and save custom meals?',
       answer:
-        'Yes exactly. But at scale! Historically you could only make insider trades with knowledge from your direct network. Pocket brings you insider trading tips from people you don’t even know.',
+        'Yes. You can build your own meals by combining ingredients and save them for quick access later. This is great for recurring meals or meal prepping.',
     },
     {
-      question: 'But isn’t insider trading illegal?',
+      question: 'What if the barcode doesn’t scan?',
       answer:
-        'Here’s the thing: you’re the one doing the insider trading, not us. We’re just giving you the tips and some tools to make trades. We’re not doing anything wrong here.',
-    },
-  ],
-  [
-    {
-      question: 'Do the people giving you tips realize what they are doing?',
-      answer:
-        'Again I would argue this isn’t really our responsibility. People make their own choices. If they don’t research the consequences that’s on them, not on us.',
-    },
-    {
-      question: 'Where is Pocket based?',
-      answer:
-        'Let’s just say it’s not somewhere where the SEC is going to find us.',
-    },
-    {
-      question: 'Is there any age limit to trading on Pocket?',
-      answer:
-        'For our free plan, the age limit is based on the minimum age to trade in your country of residence. Our VIP plan uses advanced transaction anonymization though, so you can use that plan even if you’re 9 years old. Or a dog.',
+        'If the barcode doesn’t scan, try adjusting the lighting or camera angle. You can also search for the item manually or enter it using the nutrition label scan.',
     },
   ],
   [
     {
-      question: 'How did you get this on the App Store?',
+      question: 'Is my data private and secure?',
       answer:
-        'Honestly we were surprised too, but eventually we found out that the app reviewer found the app so compelling they approved it just so they could use it themselves.',
+        'Absolutely. All your data is encrypted and stored securely. We do not share or sell your personal food or nutrition data.',
     },
     {
-      question: 'How do I explain the money I withdraw from Pocket to the IRS?',
+      question:
+        'Does Cal-Pal AI support specific diets like keto, vegan, or gluten-free?',
       answer:
-        'This feels like one-hundred percent a you problem. Pocket is not responsible in any way for your tax returns.',
+        'Yes. Cal-Pal AI is flexible and supports a variety of dietary preferences and goals. You can track macros according to your personal nutrition plan.',
     },
     {
-      question: 'How do I become an insider?',
+      question: 'Can I track portion sizes without a food scale?',
       answer:
-        'Contact us with some details about your industry and the type of access you have to apply for an insider account. Once approved, we’ll send you a guide on collecting insider information without being detected at work.',
+        'Yes. Cal-Pal AI estimates portion sizes based on visual recognition and common measurements, making it easier to log without a scale.',
+    },
+  ],
+  [
+    {
+      question: 'Do I need to log everything I eat?',
+      answer:
+        'For best results, we recommend logging all meals and snacks. Cal-Pal makes it easy with recent items, saved meals, and multiple input options like scanning and searching.',
+    },
+    {
+      question: 'How is Cal-Pal AI different from other tracking apps?',
+      answer:
+        'Cal-Pal AI uses advanced image and text recognition to make tracking faster and more intuitive. You can scan meals, barcodes, or nutrition labels — no manual entry required.',
+    },
+    {
+      question: 'Is Cal-Pal AI suitable for beginners?',
+      answer:
+        'Yes. Whether you’re new to macro tracking or experienced, Cal-Pal AI is designed to be simple, efficient, and easy to use from day one.',
     },
   ],
 ]

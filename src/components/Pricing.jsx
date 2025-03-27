@@ -6,63 +6,44 @@ import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import { Logomark } from '@/components/Logo'
+import { Logo, Logomark } from '@/components/Logo'
+import { AppStoreLink } from './AppStoreLink'
+import { PlayStoreLink } from './PlayStoreLink'
 
 const plans = [
   {
-    name: 'Starter',
+    name: 'Monthly Plan',
     featured: false,
-    price: { Monthly: '$0', Annually: '$0' },
+    price: { Monthly: '$11.99/month', Annually: '$11.99' },
     description:
-      'You’re new to investing but want to do it right. Get started for free.',
+      'Flexible monthly access to everything Cal-Pal AI has to offer.',
     button: {
-      label: 'Get started for free',
+      label: 'Choose Monthly',
       href: '/register',
     },
     features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'One tip every day',
-      'Invest up to $1,500 each month',
+      'Unlimited meal, barcode, and label scans',
+      'AI-powered macro tracking',
+      'Saved meals',
+      'Macro charts and trends',
     ],
-    logomarkClassName: 'fill-gray-300',
+    logomarkClassName: 'fill-gray-400',
   },
   {
-    name: 'Investor',
+    name: 'Annual Plan',
     featured: false,
-    price: { Monthly: '$7', Annually: '$70' },
+    price: { Monthly: '$60/year', Annually: '$60' },
     description:
-      'You’ve been investing for a while. Invest more and grow your wealth faster.',
+      'Pay once a year and save 58%. Same great features, better value.',
     button: {
-      label: 'Subscribe',
+      label: 'Choose Annual',
       href: '/register',
     },
     features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'One tip every hour',
-      'Invest up to $15,000 each month',
-      'Basic transaction anonymization',
-    ],
-    logomarkClassName: 'fill-gray-500',
-  },
-  {
-    name: 'VIP',
-    featured: true,
-    price: { Monthly: '$199', Annually: '$1,990' },
-    description:
-      'You’ve got a huge amount of assets but it’s not enough. To the moon.',
-    button: {
-      label: 'Subscribe',
-      href: '/register',
-    },
-    features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'Real-time tip notifications',
-      'No investment limits',
-      'Advanced transaction anonymization',
-      'Automated tax-loss harvesting',
+      'Everything in Monthly Plan',
+      'Priority feature updates',
+      'Early access to new tools',
+      'Best value — save $83/year',
     ],
     logomarkClassName: 'fill-cyan-500',
   },
@@ -112,8 +93,8 @@ function Plan({
           featured ? 'text-white' : 'text-gray-900',
         )}
       >
-        <Logomark className={clsx('h-6 w-6 flex-none', logomarkClassName)} />
-        <span className="ml-4">{name}</span>
+        <Logo width={40} height={40} />
+        <span className="ml-2">{name}</span>
       </h3>
       <p
         className={clsx(
@@ -171,7 +152,7 @@ function Plan({
               <CheckIcon
                 className={clsx(
                   'h-6 w-6 flex-none',
-                  featured ? 'text-white' : 'text-cyan-500',
+                  featured ? 'text-white' : 'text-[#0077cc]',
                 )}
               />
               <span className="ml-4">{feature}</span>
@@ -179,14 +160,10 @@ function Plan({
           ))}
         </ul>
       </div>
-      <Button
-        href={button.href}
-        color={featured ? 'cyan' : 'gray'}
-        className="mt-6"
-        aria-label={`Get started with the ${name} plan for ${price}`}
-      >
-        {button.label}
-      </Button>
+      <div className="mt-8 flex gap-3">
+        <AppStoreLink color="black" />
+        <PlayStoreLink color="white" />
+      </div>
     </section>
   )
 }
@@ -206,36 +183,16 @@ export function Pricing() {
             id="pricing-title"
             className="text-3xl font-medium tracking-tight text-gray-900"
           >
-            Flat pricing, no management fees.
+            Invest in your health — without overpaying
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            Whether you’re one person trying to get ahead or a big firm trying
-            to take over the world, we’ve got a plan for you.
+            From casual tracking to serious fitness goals, Cal-Pal AI offers
+            flexible pricing to support your journey.
           </p>
         </div>
 
         <div className="mt-8 flex justify-center">
           <div className="relative">
-            <RadioGroup
-              value={activePeriod}
-              onChange={setActivePeriod}
-              className="grid grid-cols-2"
-            >
-              {['Monthly', 'Annually'].map((period) => (
-                <Radio
-                  key={period}
-                  value={period}
-                  className={clsx(
-                    'cursor-pointer border border-gray-300 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing.2)-1px)] text-sm text-gray-700 transition-colors hover:border-gray-400 focus:outline-2 focus:outline-offset-2',
-                    period === 'Monthly'
-                      ? 'rounded-l-lg'
-                      : '-ml-px rounded-r-lg',
-                  )}
-                >
-                  {period}
-                </Radio>
-              ))}
-            </RadioGroup>
             <div
               aria-hidden="true"
               className={clsx(
@@ -260,7 +217,7 @@ export function Pricing() {
           </div>
         </div>
 
-        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-10 sm:mt-20 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-10 sm:mt-20 lg:max-w-none lg:grid-cols-2">
           {plans.map((plan) => (
             <Plan key={plan.name} {...plan} activePeriod={activePeriod} />
           ))}

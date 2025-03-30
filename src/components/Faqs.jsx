@@ -26,31 +26,31 @@ const faqs = [
     },
     {
       question:
-        'Does Cal-Pal AI support specific diets like keto, vegan, or gluten-free?',
+        'Does InstaCal support specific diets like keto, vegan, or gluten-free?',
       answer:
-        'Yes. Cal-Pal AI is flexible and supports a variety of dietary preferences and goals. You can track macros according to your personal nutrition plan.',
+        'Yes. InstaCal is flexible and supports a variety of dietary preferences and goals. You can track macros according to your personal nutrition plan.',
     },
     {
       question: 'Can I track portion sizes without a food scale?',
       answer:
-        'Yes. Cal-Pal AI estimates portion sizes based on visual recognition and common measurements, making it easier to log without a scale.',
+        'Yes. InstaCal estimates portion sizes based on visual recognition and common measurements, making it easier to log without a scale.',
     },
   ],
   [
     {
       question: 'Do I need to log everything I eat?',
       answer:
-        'For best results, we recommend logging all meals and snacks. Cal-Pal makes it easy with recent items, saved meals, and multiple input options like scanning and searching.',
+        'For best results, we recommend logging all meals and snacks. InstaCal makes it easy with recent items, saved meals, and multiple input options like scanning and searching.',
     },
     {
-      question: 'How is Cal-Pal AI different from other tracking apps?',
+      question: 'How is InstaCal different from other tracking apps?',
       answer:
-        'Cal-Pal AI uses advanced image and text recognition to make tracking faster and more intuitive. You can scan meals, barcodes, or nutrition labels — no manual entry required.',
+        'InstaCal uses advanced image and text recognition to make tracking faster and more intuitive. You can scan meals, barcodes, or nutrition labels — no manual entry required.',
     },
     {
-      question: 'Is Cal-Pal AI suitable for beginners?',
+      question: 'Is InstaCal suitable for beginners?',
       answer:
-        'Yes. Whether you’re new to macro tracking or experienced, Cal-Pal AI is designed to be simple, efficient, and easy to use from day one.',
+        'Yes. Whether you’re new to macro tracking or experienced, InstaCal is designed to be simple, efficient, and easy to use from day one.',
     },
   ],
 ]

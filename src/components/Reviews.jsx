@@ -9,19 +9,19 @@ import { Container } from '@/components/Container'
 const reviews = [
   {
     title: 'It really works.',
-    body: 'I scanned my lunch and Cal-Pal told me exactly what I was eating. I’ve never tracked so consistently in my life.',
+    body: 'I scanned my lunch and InstaCal told me exactly what I was eating. I’ve never tracked so consistently in my life.',
     author: 'MacroMachine',
     rating: 5,
   },
   {
     title: 'You need this app.',
-    body: 'I used to dread tracking food. Now I just scan it. Cal-Pal is like having a dietitian in your pocket.',
+    body: 'I used to dread tracking food. Now I just scan it. InstaCal is like having a dietitian in your pocket.',
     author: 'FitnessNewbie123',
     rating: 5,
   },
   {
     title: 'This shouldn’t be legal.',
-    body: 'Cal-Pal AI recognizes my meals faster than I can chew. How is this not banned for being too good?',
+    body: 'InstaCal recognizes my meals faster than I can chew. How is this not banned for being too good?',
     author: 'SnackDetective',
     rating: 5,
   },
@@ -33,7 +33,7 @@ const reviews = [
   },
   {
     title: 'I love it!',
-    body: 'I’ve been tracking macros for 5 years. Cal-Pal just made it fun again. I actually look forward to logging.',
+    body: 'I’ve been tracking macros for 5 years. InstaCal just made it fun again. I actually look forward to logging.',
     author: 'CoachErica',
     rating: 5,
   },
@@ -45,13 +45,13 @@ const reviews = [
   },
   {
     title: 'Wish I could give 6 stars',
-    body: 'I’ve tried MyFitnessPal, Cronometer, you name it. Nothing comes close to the simplicity of Cal-Pal AI.',
+    body: 'I’ve tried MyFitnessPal, Cronometer, you name it. Nothing comes close to the simplicity of InstaCal.',
     author: 'TechieLifter',
     rating: 5,
   },
   {
     title: 'Got shredded by accident.',
-    body: 'Didn’t change my workouts. Just used Cal-Pal daily. Now I have abs. Guess it really is about the food.',
+    body: 'Didn’t change my workouts. Just used InstaCal daily. Now I have abs. Guess it really is about the food.',
     author: 'MacrosOverCardio',
     rating: 5,
   },
@@ -63,25 +63,25 @@ const reviews = [
   },
   {
     title: 'I’m 14 and hitting my protein goal.',
-    body: 'Started tracking with Cal-Pal because my older brother uses it. Now I know what 150g of protein looks like.',
+    body: 'Started tracking with InstaCal because my older brother uses it. Now I know what 150g of protein looks like.',
     author: 'GainsKid',
     rating: 5,
   },
   {
     title: 'Started meal prepping like a pro.',
-    body: 'Cal-Pal made me realize I was eating way more carbs than I thought. Now my prep is dialed in and I feel amazing.',
+    body: 'InstaCal made me realize I was eating way more carbs than I thought. Now my prep is dialed in and I feel amazing.',
     author: 'MealPrepQueen',
     rating: 5,
   },
   {
     title: 'It’s like having a coach.',
-    body: 'Every time I scan food, I get this weird sense of accountability. It’s like Cal-Pal is watching me (in a good way).',
+    body: 'Every time I scan food, I get this weird sense of accountability. It’s like InstaCal is watching me (in a good way).',
     author: 'WatchedByAI',
     rating: 5,
   },
   {
     title: 'Quit calorie counting apps.',
-    body: 'I deleted three other tracking apps after using Cal-Pal for one week. It’s just that much better.',
+    body: 'I deleted three other tracking apps after using InstaCal for one week. It’s just that much better.',
     author: 'OneAppToRuleThemAll',
     rating: 5,
   },
@@ -258,11 +258,11 @@ export function Reviews() {
           id="reviews-title"
           className="text-3xl font-medium tracking-tight text-gray-900 sm:text-center"
         >
-          What Cal-Pal AI Users Are Saying
+          What InstaCal Users Are Saying
         </h2>
         <p className="mt-2 text-lg text-gray-600 sm:text-center">
           From fitness beginners to macro pros, people love how easy and
-          effective Cal-Pal AI makes nutrition tracking.
+          effective InstaCal makes nutrition tracking.
         </p>
         <ReviewGrid />
       </Container>

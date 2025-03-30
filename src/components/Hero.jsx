@@ -9,6 +9,7 @@ import { Container } from '@/components/Container'
 import { PhoneFrame } from '@/components/PhoneFrame'
 
 import homeScreen from '@/images/home_screen.png'
+import { PlayStoreLink } from './PlayStoreLink'
 
 function BackgroundIllustration(props) {
   let id = useId()
@@ -99,20 +100,24 @@ export function Hero() {
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
             <h1 className="text-4xl font-medium tracking-tight text-gray-900">
-              Meet Cal-Pal AI
+              Meet InstaCal
             </h1>
             <p className="mt-6 text-lg text-gray-600">
               {/* Scan meals, barcodes, or nutrition labels — or search any food.
-              Cal-Pal AI makes calorie tracking effortless, fast, and accurate
+              InstaCal makes calorie tracking effortless, fast, and accurate
               so you can stay on top of your goals without the hassle. */}
-              {/* From meal scans to barcode and nutrition label detection, Cal-Pal
+              {/* From meal scans to barcode and nutrition label detection, InstaCal
               AI makes tracking macros fast, easy, and insanely accurate. No
               guesswork. Just results. */}
-              Your Smartest Calorie Tracking Pal. Scan meals, barcodes, or
-              labels in seconds. Cal-Pal AI uses intelligent recognition to make
+              Your Smartest Calorie Tracking App. Scan meals, barcodes, or
+              labels in seconds. InstaCal uses intelligent recognition to make
               tracking your nutrition seamless, accurate, and lightning fast.
             </p>
-            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
+            <div className="mt-8 flex w-fit flex-row gap-4">
+              <AppStoreLink color="black" />
+              <PlayStoreLink color="black" />
+            </div>
+            {/* <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
               <Button
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                 variant="outline"
@@ -120,7 +125,7 @@ export function Hero() {
                 <PlayIcon className="h-6 w-6 flex-none" />
                 <span className="ml-2.5">Watch the video</span>
               </Button>
-            </div>
+            </div> */}
           </div>
           <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
             <BackgroundIllustration className="absolute left-1/2 top-4 h-[1026px] w-[1026px] -translate-x-1/3 stroke-gray-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0" />

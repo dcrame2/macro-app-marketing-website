@@ -31,7 +31,7 @@ const features = [
   {
     name: 'Meal Scan',
     description:
-      'Snap a photo of your plate and let Cal-Pal AI break down the macros instantly — perfect for eating out or home-cooked meals.',
+      'Snap a photo of your plate and let InstaCal break down the macros instantly — perfect for eating out or home-cooked meals.',
     icon: DeviceUserIcon,
     screen: MealScan,
   },
@@ -610,7 +610,7 @@ export function PrimaryFeatures() {
             Everything You Need to Track Smarter
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-            Cal-Pal AI makes nutrition tracking fast, flexible, and stress-free.
+            InstaCal makes nutrition tracking fast, flexible, and stress-free.
             Scan, search, and save your way to better health with features built
             for real life.
           </p>

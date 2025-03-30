@@ -31,9 +31,9 @@ export function Footer() {
             <div className="flex items-center text-gray-900">
               <Logo />
               <div className="ml-4">
-                <p className="text-base font-semibold">Cal-Pal AI</p>
+                <p className="text-base font-semibold">InstaCal</p>
                 <p className="mt-1 text-sm">
-                  Your Smartest Calorie Tracking Pal
+                  Your Smartest Calorie Tracking App
                 </p>
               </div>
             </div>

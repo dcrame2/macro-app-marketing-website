@@ -61,10 +61,10 @@ export function Header() {
             <Link
               href="/"
               aria-label="Home"
-              className="flex flex-row items-center gap-1"
+              className="flex flex-row items-center gap-2"
             >
-              <Logo className="h-10 w-auto" />
-              <h3 className="font-bold">Cal-Pal AI</h3>
+              <Logo width={42} height={42} className="w-auto" />
+              <h3 className="font-bold">InstaCal</h3>
             </Link>
             <div className="hidden lg:flex lg:gap-10">
               <NavLinks />

@@ -18,8 +18,8 @@ export function CallToAction() {
             Start Tracking Smarter Today
           </h2>
           <p className="mt-4 text-lg text-gray-300">
-            Join thousands using Cal-Pal AI to take control of their health —
-            one scan, one meal, one day at a time.
+            Join thousands using InstaCal to take control of their health — one
+            scan, one meal, one day at a time.
           </p>
           <div className="mt-8 flex justify-center gap-3">
             <AppStoreLink color="white" />

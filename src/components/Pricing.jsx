@@ -15,8 +15,7 @@ const plans = [
     name: 'Monthly Plan',
     featured: false,
     price: { Monthly: '$11.99/month', Annually: '$11.99' },
-    description:
-      'Flexible monthly access to everything Cal-Pal AI has to offer.',
+    description: 'Flexible monthly access to everything InstaCal has to offer.',
     button: {
       label: 'Choose Monthly',
       href: '/register',
@@ -186,7 +185,7 @@ export function Pricing() {
             Invest in your health — without overpaying
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            From casual tracking to serious fitness goals, Cal-Pal AI offers
+            From casual tracking to serious fitness goals, InstaCal offers
             flexible pricing to support your journey.
           </p>
         </div>

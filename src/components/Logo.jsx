@@ -1,4 +1,4 @@
-import CalPalLogo from '@/images/logos/macro_ai_logo.png'
+import InstaCalLogo from '@/images/logos/InstaCal_logo.svg'
 import Image from 'next/image'
 
 export function Logomark(props) {
@@ -17,7 +17,7 @@ export function Logo(props) {
   return (
     <div className="flex flex-row items-center gap-1">
       <Image
-        src={CalPalLogo}
+        src={InstaCalLogo}
         width={props.width || 50}
         height={props.height || 50}
         alt="Logo"

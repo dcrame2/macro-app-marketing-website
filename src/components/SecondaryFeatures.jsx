@@ -6,7 +6,7 @@ const features = [
   {
     name: 'Auto Macro Breakdown',
     description:
-      'Cal-Pal AI breaks down every food item into protein, carbs, and fats — instantly and accurately, without the guesswork.',
+      'InstaCal breaks down every food item into protein, carbs, and fats — instantly and accurately, without the guesswork.',
     icon: DeviceArrowIcon,
   },
   {
@@ -24,7 +24,7 @@ const features = [
   {
     name: 'Your Food, Remembered',
     description:
-      'Cal-Pal AI keeps your Saved Meals organized, so logging repeat meals is as simple as a single tap.',
+      'InstaCal keeps your Saved Meals organized, so logging repeat meals is as simple as a single tap.',
     icon: DeviceListIcon,
   },
   {
@@ -200,7 +200,7 @@ export function SecondaryFeatures() {
             Smarter Tracking, Built-In
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            Cal-Pal AI handles the details so you can focus on your goals. From
+            InstaCal handles the details so you can focus on your goals. From
             personalized tracking to private logging, every feature is designed
             to work with your lifestyle.
           </p>

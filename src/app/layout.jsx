@@ -12,10 +12,10 @@ const inter = Inter({
 export const metadata = {
   title: {
     template: '%s - Pocket',
-    default: 'Cal-Pal AI - Your Smartest Calorie Tracking Pal.',
+    default: 'InstaCal - Your Smartest Calorie Tracking App.',
   },
   description:
-    'Scan meals, barcodes, or labels in seconds. Cal-Pal AI uses intelligent recognition to make tracking your nutrition seamless, accurate, and lightning fast.',
+    'Scan meals, barcodes, or labels in seconds. InstaCal uses intelligent recognition to make tracking your nutrition seamless, accurate, and lightning fast.',
 }
 
 export default function RootLayout({ children }) {

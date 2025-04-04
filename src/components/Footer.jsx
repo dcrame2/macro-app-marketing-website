@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -9,6 +10,8 @@ import { NavLinks } from '@/components/NavLinks'
 import qrCode from '@/images/qr-code.svg'
 import { AppStoreLink } from './AppStoreLink'
 import { PlayStoreLink } from './PlayStoreLink'
+import { AnimatePresence, motion } from 'framer-motion'
+import { useRef, useState } from 'react'
 
 function QrCodeBorder(props) {
   return (
@@ -23,6 +26,8 @@ function QrCodeBorder(props) {
 }
 
 export function Footer() {
+  const [hovered, setHovered] = useState(false)
+  let timeoutRef = useRef(null)
   return (
     <footer className="border-t border-gray-200">
       <Container>
@@ -37,8 +42,34 @@ export function Footer() {
                 </p>
               </div>
             </div>
-            <nav className="mt-11 flex gap-8">
-              <NavLinks />
+            <nav className="mt-11 flex flex-col gap-2 sm:flex-row sm:gap-8">
+              <div className="flex gap-4">
+                <NavLinks />
+              </div>
+              <Link
+                href="/privacy"
+                className="relative -mx-5 -my-2 block w-fit rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors delay-150 hover:text-gray-900 hover:delay-0 sm:inline-flex"
+                onMouseEnter={() => {
+                  if (timeoutRef.current) clearTimeout(timeoutRef.current)
+                  setHovered(true)
+                }}
+                onMouseLeave={() => {
+                  timeoutRef.current = setTimeout(() => setHovered(false), 200)
+                }}
+              >
+                <AnimatePresence>
+                  {hovered && (
+                    <motion.span
+                      className="absolute inset-0 rounded-lg bg-gray-100"
+                      layoutId="hoverBackground"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1, transition: { duration: 0.15 } }}
+                      exit={{ opacity: 0, transition: { duration: 0.15 } }}
+                    />
+                  )}
+                </AnimatePresence>
+                <span className="relative z-10">Privacy Policy</span>
+              </Link>
             </nav>
           </div>
           <div className="group relative -mx-4 flex items-center self-stretch p-4 transition-colors hover:bg-gray-100 sm:self-auto sm:rounded-2xl lg:mx-0 lg:self-auto lg:p-6">

@@ -32,28 +32,28 @@ const features = [
     name: 'Meal Scan',
     description:
       'Snap a photo of your plate and let InstaCal break down the macros instantly — perfect for eating out or home-cooked meals.',
-    icon: DeviceUserIcon,
+    icon: AppleInPhoneIcon,
     screen: MealScan,
   },
   {
     name: 'Barcode Scanner',
     description:
       'Scan packaged foods in seconds with lightning-fast barcode detection. No typing, no searching — just scan and log.',
-    icon: DeviceUserIcon,
+    icon: BarcodeScannerIcon,
     screen: MealScan,
   },
   {
     name: 'Nutrition Label Scan',
     description:
       'Use your camera to extract data from nutrition labels. Our AI reads and logs it for you — just point and shoot.',
-    icon: DeviceUserIcon,
+    icon: NutritionLabelIcon,
     screen: MealScan,
   },
   {
     name: 'Manual Food Search',
     description:
       'Search our smart food database with natural terms and portion sizes. Great for restaurant items or anything unscannable.',
-    icon: DeviceUserIcon,
+    icon: SearchIconInPhone,
     screen: MealScan,
   },
   // {
@@ -106,6 +106,120 @@ function DeviceNotificationIcon(props) {
         d="M9 8a2 2 0 012-2h10a2 2 0 012 2v2a2 2 0 01-2 2H11a2 2 0 01-2-2V8z"
         fill="#737373"
       />
+    </svg>
+  )
+}
+
+function AppleInPhoneIcon(props) {
+  return (
+    <svg viewBox="0 0 32 32" aria-hidden="true" {...props}>
+      {/* Background Circle */}
+      <circle cx="16" cy="16" r="16" fill="#A3A3A3" fillOpacity={0.2} />
+
+      {/* Phone Frame */}
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M9 0a4 4 0 00-4 4v24a4 4 0 004 4h14a4 4 0 004-4V4a4 4 0 00-4-4H9zm0 2a2 2 0 00-2 2v24a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9z"
+        fill="#A3A3A3"
+      />
+
+      {/* Apple Icon (Centered) */}
+      <g transform="translate(11.5, 10)">
+        <path
+          d="M5.5 2.5c0-1.38 1.12-2.5 2.5-2.5.12 0 .24.01.36.03-.19.79-.68 1.37-1.44 1.66-.27.1-.51.26-.7.48-.33.39-.52.91-.52 1.47 0 .5.14.98.4 1.4-.37-.1-.71-.27-1-.49-.61-.47-1-1.21-1-2.05z"
+          fill="#737373"
+        />
+        <path
+          d="M2.5 5C1.12 5 0 6.12 0 7.5c0 1.14.5 2.17 1.3 2.9.38.34.82.62 1.3.82.17.07.34.13.52.18.34.09.7.14 1.06.14.36 0 .72-.05 1.06-.14.18-.05.35-.11.52-.18.48-.2.92-.48 1.3-.82.8-.73 1.3-1.76 1.3-2.9C8 6.12 6.88 5 5.5 5c-.5 0-.97.15-1.36.4C3.47 5.15 3 5 2.5 5z"
+          fill="#737373"
+        />
+      </g>
+    </svg>
+  )
+}
+
+function SearchIconInPhone(props) {
+  return (
+    <svg viewBox="0 0 32 32" aria-hidden="true" {...props}>
+      <circle cx={16} cy={16} r={16} fill="#A3A3A3" fillOpacity={0.2} />
+
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M9 0a4 4 0 00-4 4v24a4 4 0 004 4h14a4 4 0 004-4V4a4 4 0 00-4-4H9zm0 2a2 2 0 00-2 2v24a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9z"
+        fill="#A3A3A3"
+      />
+
+      <g transform="translate(11 11)">
+        <circle
+          cx="5"
+          cy="5"
+          r="3"
+          stroke="#737373"
+          strokeWidth="1.5"
+          fill="none"
+        />
+        <line
+          x1="7.5"
+          y1="7.5"
+          x2="10"
+          y2="10"
+          stroke="#737373"
+          strokeWidth="1.5"
+        />
+      </g>
+    </svg>
+  )
+}
+
+function BarcodeScannerIcon(props) {
+  return (
+    <svg viewBox="0 0 32 32" aria-hidden="true" {...props}>
+      <circle cx={16} cy={16} r={16} fill="#A3A3A3" fillOpacity={0.2} />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M9 0a4 4 0 00-4 4v24a4 4 0 004 4h14a4 4 0 004-4V4a4 4 0 00-4-4H9zm0 2a2 2 0 00-2 2v24a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9z"
+        fill="#A3A3A3"
+      />
+
+      <rect x="10" y="8" width="12" height="16" rx="1" fill="#E5E5E5" />
+
+      <rect x="11" y="10" width="1" height="12" fill="#737373" />
+      <rect x="12.5" y="10" width="0.5" height="12" fill="#737373" />
+      <rect x="13.5" y="10" width="1.5" height="12" fill="#737373" />
+      <rect x="15.5" y="10" width="1" height="12" fill="#737373" />
+      <rect x="17" y="10" width="0.75" height="12" fill="#737373" />
+      <rect x="18.5" y="10" width="1" height="12" fill="#737373" />
+
+      <rect x="11" y="16" width="10" height="1" fill="red" opacity="0.8" />
+    </svg>
+  )
+}
+
+function NutritionLabelIcon(props) {
+  return (
+    <svg viewBox="0 0 32 32" aria-hidden="true" {...props}>
+      <circle cx={16} cy={16} r={16} fill="#A3A3A3" fillOpacity={0.2} />
+
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M9 0a4 4 0 00-4 4v24a4 4 0 004 4h14a4 4 0 004-4V4a4 4 0 00-4-4H9zm0 2a2 2 0 00-2 2v24a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9z"
+        fill="#A3A3A3"
+      />
+
+      <rect x="10" y="8" width="12" height="16" rx="1" fill="#F5F5F5" />
+
+      <rect x="11" y="9" width="10" height="2" fill="#444" rx="0.5" />
+
+      <rect x="11" y="12" width="9" height="1" fill="#999" />
+      <rect x="11" y="14" width="6" height="1" fill="#999" />
+      <rect x="11" y="16" width="8" height="1" fill="#999" />
+      <rect x="11" y="18" width="7" height="1" fill="#999" />
+      <rect x="11" y="20" width="5" height="1" fill="#999" />
+      <rect x="11" y="22" width="9" height="1" fill="#999" />
     </svg>
   )
 }

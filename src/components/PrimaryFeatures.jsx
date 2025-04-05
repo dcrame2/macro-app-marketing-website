@@ -24,7 +24,10 @@ import {
 const MotionAppScreenHeader = motion(AppScreen.Header)
 const MotionAppScreenBody = motion(AppScreen.Body)
 
-import homeScreen from '@/images/home_screen.png'
+import barcodeScreen from '@/images/app-images/barcode.jpg'
+import nutritionLabelScreen from '@/images/app-images/nutrition_label.jpg'
+import foodSearchScreen from '@/images/app-images/food_search.jpg'
+import buildMealScreen from '@/images/app-images/build_meal.jpg'
 import Image from 'next/image'
 
 const features = [
@@ -40,21 +43,21 @@ const features = [
     description:
       'Scan packaged foods in seconds with lightning-fast barcode detection. No typing, no searching — just scan and log.',
     icon: BarcodeScannerIcon,
-    screen: MealScan,
+    screen: BarcodeScreen,
   },
   {
     name: 'Nutrition Label Scan',
     description:
       'Use your camera to extract data from nutrition labels. Our AI reads and logs it for you — just point and shoot.',
     icon: NutritionLabelIcon,
-    screen: MealScan,
+    screen: NutritionLabelScreen,
   },
   {
     name: 'Manual Food Search',
     description:
       'Search our smart food database with natural terms and portion sizes. Great for restaurant items or anything unscannable.',
     icon: SearchIconInPhone,
-    screen: MealScan,
+    screen: FoodSearchScreen,
   },
   // {
   //   name: 'Saved Meals',
@@ -63,13 +66,13 @@ const features = [
   //   icon: DeviceUserIcon,
   //   screen: InvestScreen,
   // },
-  // {
-  //   name: 'Build Your Own Meal',
-  //   description:
-  //     'Combine ingredients and custom portions into one meal. Ideal for complex recipes, home cooking, or bulk meal prep.',
-  //   icon: DeviceUserIcon,
-  //   screen: InvestScreen,
-  // },
+  {
+    name: 'Build Your Own Meal',
+    description:
+      'Combine ingredients and custom portions into one meal. Ideal for complex recipes, home cooking, or bulk meal prep.',
+    icon: DeviceUserIcon,
+    screen: BuildMealScreen,
+  },
 ]
 
 function DeviceUserIcon(props) {
@@ -505,25 +508,46 @@ function InvestScreen(props) {
 
 function MealScan(props) {
   return (
-    <Image src={homeScreen} alt="App screenshot" width={350} height={448} />
+    <Image src={barcodeScreen} alt="App screenshot" width={350} height={448} />
   )
 }
 
-function ByoScreen(props) {
+function BarcodeScreen(props) {
   return (
-    <Image src={homeScreen} alt="App screenshot" width={350} height={448} />
+    <Image src={barcodeScreen} alt="App screenshot" width={350} height={448} />
   )
 }
 
-function CopyScreen(props) {
+function NutritionLabelScreen(props) {
   return (
-    <Image src={homeScreen} alt="App screenshot" width={350} height={448} />
+    <Image
+      src={nutritionLabelScreen}
+      alt="App screenshot"
+      width={350}
+      height={448}
+    />
   )
 }
 
-function SaveScreen(props) {
+function FoodSearchScreen(props) {
   return (
-    <Image src={homeScreen} alt="App screenshot" width={350} height={448} />
+    <Image
+      src={foodSearchScreen}
+      alt="App screenshot"
+      width={350}
+      height={448}
+    />
+  )
+}
+
+function BuildMealScreen(props) {
+  return (
+    <Image
+      src={buildMealScreen}
+      alt="App screenshot"
+      width={350}
+      height={448}
+    />
   )
 }
 

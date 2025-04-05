@@ -8,7 +8,7 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { PhoneFrame } from '@/components/PhoneFrame'
 
-import homeScreen from '@/images/home_screen.png'
+import homeScreen from '@/images/app-images/home_view.jpg'
 import { PlayStoreLink } from './PlayStoreLink'
 
 function BackgroundIllustration(props) {

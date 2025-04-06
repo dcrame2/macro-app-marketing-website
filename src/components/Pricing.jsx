@@ -31,7 +31,7 @@ const plans = [
   {
     name: 'Annual Plan',
     featured: false,
-    price: { Monthly: '$60/year', Annually: '$60.year' },
+    price: { Monthly: '$50/year', Annually: '$50/year' },
     description:
       'Pay once a year and save 58%. Same great features, better value.',
     button: {

@@ -24,6 +24,7 @@ import {
 const MotionAppScreenHeader = motion(AppScreen.Header)
 const MotionAppScreenBody = motion(AppScreen.Body)
 
+import mealScreen from '@/images/app-images/meal_scan.png'
 import barcodeScreen from '@/images/app-images/barcode.jpg'
 import nutritionLabelScreen from '@/images/app-images/nutrition_label.jpg'
 import foodSearchScreen from '@/images/app-images/food_search.jpg'
@@ -508,13 +509,23 @@ function InvestScreen(props) {
 
 function MealScan(props) {
   return (
-    <Image src={barcodeScreen} alt="App screenshot" width={350} height={448} />
+    <Image
+      src={mealScreen}
+      alt="Meal Scan App Screen"
+      width={350}
+      height={448}
+    />
   )
 }
 
 function BarcodeScreen(props) {
   return (
-    <Image src={barcodeScreen} alt="App screenshot" width={350} height={448} />
+    <Image
+      src={barcodeScreen}
+      alt="Barcode App Screen"
+      width={350}
+      height={448}
+    />
   )
 }
 
@@ -522,7 +533,7 @@ function NutritionLabelScreen(props) {
   return (
     <Image
       src={nutritionLabelScreen}
-      alt="App screenshot"
+      alt="Nutrition Label App Screen"
       width={350}
       height={448}
     />
@@ -533,7 +544,7 @@ function FoodSearchScreen(props) {
   return (
     <Image
       src={foodSearchScreen}
-      alt="App screenshot"
+      alt="Food Search App Screen"
       width={350}
       height={448}
     />
@@ -544,7 +555,7 @@ function BuildMealScreen(props) {
   return (
     <Image
       src={buildMealScreen}
-      alt="App screenshot"
+      alt="Build Meal App Screen"
       width={350}
       height={448}
     />

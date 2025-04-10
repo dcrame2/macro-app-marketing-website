@@ -16,11 +16,46 @@ export const metadata = {
   },
   description:
     'Scan meals, barcodes, or labels in seconds. InstaCal uses intelligent recognition to make tracking your nutrition seamless, accurate, and lightning fast.',
+  openGraph: {
+    title: 'InstaCal - Your Smartest Calorie Tracking App.',
+    description:
+      'Scan meals, barcodes, or labels in seconds. InstaCal uses intelligent recognition to make tracking your nutrition seamless, accurate, and lightning fast.',
+    url: 'https://www.theinstacal.app/',
+    images: [
+      {
+        url: '/src/images/logos/InstaCal_logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'InstaCal - Your Smartest Calorie Tracking App.',
+      },
+    ],
+  },
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={clsx('bg-gray-50 antialiased', inter.variable)}>
+      <head>
+        <meta
+          property="og:title"
+          content="InstaCal - Your Smartest Calorie Tracking App."
+        />
+        <meta
+          property="og:description"
+          content="Scan meals, barcodes, or labels in seconds. InstaCal uses intelligent recognition to make tracking your nutrition seamless, accurate, and lightning fast."
+        />
+        <meta property="og:url" content="https://www.theinstacal.app" />
+        <meta
+          property="og:image"
+          content="/src/images/logos/InstaCal_logo.png"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+          name="twitter:image"
+          content="/src/images/logos/InstaCal_logo.png"
+        />
+      </head>
       <body>{children}</body>
     </html>
   )

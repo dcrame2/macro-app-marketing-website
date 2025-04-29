@@ -4,7 +4,7 @@ import clsx from 'clsx'
 export function AppStoreLink({ color = 'black' }) {
   return (
     <Link
-      href="#"
+      href="https://apps.apple.com/us/app/instacal/id6743951306"
       aria-label="Download on the App Store"
       className={clsx(
         'rounded-lg transition-colors',

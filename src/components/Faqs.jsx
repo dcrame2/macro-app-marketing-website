@@ -73,7 +73,7 @@ export function Faqs() {
           <p className="mt-2 text-lg text-gray-600">
             If you have anything else you want to ask,{' '}
             <a
-              href="mailto:support@theinstalcal.app"
+              href="mailto:support@theinstacal.app"
               className="text-gray-900 underline"
             >
               reach out to us

@@ -123,7 +123,7 @@ export function Header() {
                           </div>
                           <div className="mt-8 flex w-fit flex-col gap-4">
                             <AppStoreLink color="black" />
-                            <PlayStoreLink color="black" />
+                            {/* <PlayStoreLink color="black" /> */}
                           </div>
                         </PopoverPanel>
                       </>
@@ -134,7 +134,7 @@ export function Header() {
             </Popover>
             <div className="hidden flex-row gap-4 md:flex">
               <AppStoreLink color="black" />
-              <PlayStoreLink color="black" />
+              {/* <PlayStoreLink color="black" /> */}
             </div>
           </div>
         </Container>

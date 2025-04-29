@@ -115,7 +115,7 @@ export function Hero() {
             </p>
             <div className="mt-8 flex w-fit flex-row gap-4">
               <AppStoreLink color="black" />
-              <PlayStoreLink color="black" />
+              {/* <PlayStoreLink color="black" /> */}
             </div>
             {/* <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
               <Button

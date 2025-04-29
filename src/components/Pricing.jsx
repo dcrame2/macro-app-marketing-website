@@ -161,7 +161,7 @@ function Plan({
       </div>
       <div className="mt-8 flex gap-3">
         <AppStoreLink color="black" />
-        <PlayStoreLink color="white" />
+        {/* <PlayStoreLink color="white" /> */}
       </div>
     </section>
   )

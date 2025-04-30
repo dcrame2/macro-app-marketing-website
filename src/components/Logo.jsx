@@ -1,4 +1,4 @@
-import InstaCalLogo from '@/images/logos/InstaCal_logo.svg'
+import InstaCalLogo from '@/images/logos/InstaCal_logo.png'
 import Image from 'next/image'
 
 export function Logomark(props) {

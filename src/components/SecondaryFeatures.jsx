@@ -197,7 +197,7 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-            Smarter Tracking, Built-In
+            Smarter Tracking
           </h2>
           <p className="mt-2 text-lg text-gray-600">
             InstaCal handles the details so you can focus on your goals. From

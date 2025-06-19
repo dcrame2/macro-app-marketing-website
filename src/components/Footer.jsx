@@ -75,7 +75,7 @@ export function Footer() {
           <div className="group relative -mx-4 flex items-center self-stretch p-4 transition-colors hover:bg-gray-100 sm:self-auto sm:rounded-2xl lg:mx-0 lg:self-auto lg:p-6">
             <div className="flex justify-center gap-3">
               <AppStoreLink color="black" />
-              {/* <PlayStoreLink color="white" /> */}
+              <PlayStoreLink color="white" />
             </div>
           </div>
         </div>

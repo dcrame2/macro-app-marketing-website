@@ -23,7 +23,7 @@ export function CallToAction() {
           </p>
           <div className="mt-8 flex justify-center gap-3">
             <AppStoreLink color="white" />
-            {/* <PlayStoreLink color="white" /> */}
+            <PlayStoreLink color="white" />
           </div>
         </div>
       </Container>

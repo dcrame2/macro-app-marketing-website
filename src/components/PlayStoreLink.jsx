@@ -6,8 +6,9 @@ import GoogleBadge from '@/images/GetItOnGooglePlay_Badge.png'
 export function PlayStoreLink({ color = 'black' }) {
   return (
     <Link
-      href="#"
+      href="https://play.google.com/store/apps/details?id=com.digitaldelight.InstaCal"
       aria-label="Get it on Google Play"
+      target="_blank"
       className={clsx(
         'inline-block rounded-lg transition-colors',
         color === 'black'

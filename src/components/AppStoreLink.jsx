@@ -6,6 +6,7 @@ export function AppStoreLink({ color = 'black' }) {
     <Link
       href="https://apps.apple.com/us/app/instacal/id6743951306"
       aria-label="Download on the App Store"
+      target="_blank"
       className={clsx(
         'rounded-lg transition-colors',
         color === 'black'

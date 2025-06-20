@@ -11,7 +11,7 @@ const inter = Inter({
 
 export const metadata = {
   title: {
-    template: '%s - Pocket',
+    template: 'InstaCal',
     default: 'InstaCal - Your Smartest Calorie Tracking App.',
   },
   description:

@@ -8,89 +8,89 @@ import { Container } from '@/components/Container'
 
 const reviews = [
   {
-    title: 'It really works.',
-    body: 'I scanned my lunch and InstaCal told me exactly what I was eating. I’ve never tracked so consistently in my life.',
-    author: 'MacroMachine',
+    title: 'Game Changer',
+    body: 'This app has allowed me to hit my fitness goals by coming up with a plan for calorie intake and making it as easy as possible by snapping a picture to ensure I am on the right path. I couldn’t recommend it more!',
+    author: 'DoubleDs13',
     rating: 5,
   },
   {
-    title: 'You need this app.',
-    body: 'I used to dread tracking food. Now I just scan it. InstaCal is like having a dietitian in your pocket.',
-    author: 'FitnessNewbie123',
+    title: 'Smoothest app to use!',
+    body: 'This has been the smoothest app to use. It has helped me with my weight loss journey!',
+    author: 'Xavi!15',
     rating: 5,
   },
   {
-    title: 'This shouldn’t be legal.',
-    body: 'InstaCal recognizes my meals faster than I can chew. How is this not banned for being too good?',
-    author: 'SnackDetective',
+    title: 'Phenomenal App',
+    body: 'For those out there who have had trouble tracking your Macros/calories, this is the best app out there. I’ve tried them all and InstaCal is the only app that I would highly recommend to those who want to improve their eating habits or have just started making a healthy lifestyle change. It is extremely user friendly and definitely worth the money. I have finally gotten back on track and can honestly say that I get excited when it comes to planning/tracking my meals. Do yourself a favor and download this app!',
+    author: 'Uriiiii9',
     rating: 5,
   },
   {
-    title: 'Screw food scales.',
-    body: 'I used to weigh every gram. Now I just take a photo. This app gave me my life back.',
-    author: 'ExScaleUser',
+    title: 'Sensational',
+    body: 'This literally changed the game in terms of trying to reach my fitness goals. I realized quickly I wasn’t eating enough protein. The breakdown made it easy to hit all my macros.',
+    author: 'Mikeyyyy mikee',
     rating: 5,
   },
   {
-    title: 'I love it!',
-    body: 'I’ve been tracking macros for 5 years. InstaCal just made it fun again. I actually look forward to logging.',
-    author: 'CoachErica',
+    title: 'Wow!',
+    body: 'Such a a cool app! Love the nutrition facts from just a picture',
+    author: 'jcvbbjh',
     rating: 5,
   },
   {
-    title: 'Too good to be true.',
-    body: 'I thought it was a gimmick. But I scanned my dinner and it nailed every ingredient. What kind of sorcery is this?',
-    author: 'SkepticalToBeliever',
+    title: 'Tracker you have always wanted',
+    body: 'This app is solid. Tracking calories, all my meal data, scan barcodes of products, meal plan, search massive library of pre-stored foods, and goal setting. This app paired with my other trackers for exercise and overall health is the complete package.',
+    author: 'Mr HubSpot',
     rating: 5,
   },
   {
-    title: 'Wish I could give 6 stars',
-    body: 'I’ve tried MyFitnessPal, Cronometer, you name it. Nothing comes close to the simplicity of InstaCal.',
-    author: 'TechieLifter',
+    title: 'Easiest app out there',
+    body: 'If you have a busy schedule and feel like not enough time to track your calories this is the perfect app. Where ever I’m at no matter the situation or time I can always count on the is app the keep me on track.',
+    author: 'Pochicken2',
     rating: 5,
   },
   {
-    title: 'Got shredded by accident.',
-    body: 'Didn’t change my workouts. Just used InstaCal daily. Now I have abs. Guess it really is about the food.',
-    author: 'MacrosOverCardio',
+    title: 'Practical and helpful',
+    body: 'Wonderful app that makes calorie tracking easy. Taking a photo of my food makes it much less intrusive to track calories and macros compared to traditional methods. I could never keep myself going with the previous apps, but this one is a breeze.',
+    author: 'ShadowZaik',
     rating: 5,
   },
   {
-    title: 'No more guesswork!',
-    body: 'I used to eyeball portions and pray. Now I scan and know exactly what’s going in my body. Game changer.',
-    author: 'MealPrepMom',
+    title: 'Game changer',
+    body: 'Just what I needed to easily track everything i eat',
+    author: 'Joins27393825',
     rating: 5,
   },
   {
-    title: 'I’m 14 and hitting my protein goal.',
-    body: 'Started tracking with InstaCal because my older brother uses it. Now I know what 150g of protein looks like.',
-    author: 'GainsKid',
+    title: 'Best calorie tracker!',
+    body: 'Great and easy calorie tracker. Every time I use it, I’m more impressed by how well it picks up every snack or meal. Perfect for everyday and real world use at restaurants where you might not have access to the back of the packaging',
+    author: 'Nathan022',
     rating: 5,
   },
   {
-    title: 'Started meal prepping like a pro.',
-    body: 'InstaCal made me realize I was eating way more carbs than I thought. Now my prep is dialed in and I feel amazing.',
-    author: 'MealPrepQueen',
+    title: 'Great app!!!',
+    body: 'Really love the layout of this app, set it up and its quick and easy. Gonna make big progress with this for sure.',
+    author: 'Enrico Aquino',
     rating: 5,
   },
-  {
-    title: 'It’s like having a coach.',
-    body: 'Every time I scan food, I get this weird sense of accountability. It’s like InstaCal is watching me (in a good way).',
-    author: 'WatchedByAI',
-    rating: 5,
-  },
-  {
-    title: 'Quit calorie counting apps.',
-    body: 'I deleted three other tracking apps after using InstaCal for one week. It’s just that much better.',
-    author: 'OneAppToRuleThemAll',
-    rating: 5,
-  },
-  {
-    title: 'Don’t download this app',
-    body: 'Unless you want to finally stick to your macros and feel in control of your diet for once.',
-    author: 'MacroBoss89',
-    rating: 5,
-  },
+  // {
+  //   title: 'It’s like having a coach.',
+  //   body: 'Every time I scan food, I get this weird sense of accountability. It’s like InstaCal is watching me (in a good way).',
+  //   author: 'WatchedByAI',
+  //   rating: 5,
+  // },
+  // {
+  //   title: 'Quit calorie counting apps.',
+  //   body: 'I deleted three other tracking apps after using InstaCal for one week. It’s just that much better.',
+  //   author: 'OneAppToRuleThemAll',
+  //   rating: 5,
+  // },
+  // {
+  //   title: 'Don’t download this app',
+  //   body: 'Unless you want to finally stick to your macros and feel in control of your diet for once.',
+  //   author: 'MacroBoss89',
+  //   rating: 5,
+  // },
 ]
 
 function StarIcon(props) {
@@ -260,10 +260,10 @@ export function Reviews() {
         >
           What InstaCal Users Are Saying
         </h2>
-        <p className="mt-2 text-lg text-gray-600 sm:text-center">
+        {/* <p className="mt-2 text-lg text-gray-600 sm:text-center">
           From fitness beginners to macro pros, people love how easy and
           effective InstaCal makes nutrition tracking.
-        </p>
+        </p> */}
         <ReviewGrid />
       </Container>
     </section>

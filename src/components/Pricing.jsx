@@ -182,11 +182,10 @@ export function Pricing() {
             id="pricing-title"
             className="text-3xl font-medium tracking-tight text-gray-900"
           >
-            Invest in your health — without overpaying
+            Invest in your health
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            From casual tracking to serious fitness goals, InstaCal offers
-            flexible pricing to support your journey.
+            InstaCal offers flexible pricing to support your journey.
           </p>
         </div>
 

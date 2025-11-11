@@ -14,12 +14,13 @@ export function CallToAction() {
       </div>
       <Container className="relative">
         <div className="mx-auto max-w-md sm:text-center">
+          <p className="text-2xl">⭐️⭐️⭐️⭐️⭐️</p>
           <h2 className="text-3xl font-medium tracking-tight text-white sm:text-4xl">
-            Start Tracking Smarter Today
+            5-Star Rating
           </h2>
+
           <p className="mt-4 text-lg text-gray-300">
-            Join thousands using InstaCal to take control of their health — one
-            scan, one meal, one day at a time.
+            Join thousands using InstaCal to take control of their health
           </p>
           <div className="mt-8 flex justify-center gap-3">
             <AppStoreLink color="white" />

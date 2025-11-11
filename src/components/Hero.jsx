@@ -11,6 +11,8 @@ import { PhoneFrame } from '@/components/PhoneFrame'
 import homeScreen from '@/images/app-images/home_view.jpg'
 import { PlayStoreLink } from './PlayStoreLink'
 
+// import { StarIcon } from '@heroicons/react/20/solid'
+
 function BackgroundIllustration(props) {
   let id = useId()
 
@@ -93,12 +95,45 @@ function PlayIcon(props) {
   )
 }
 
+const StarSVG = ({ filled, size = 18, color = 'gold' }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 20 20"
+    fill={filled ? color : 'none'}
+    stroke={color}
+    strokeWidth="1.5"
+  >
+    <polygon points="10,2 12.59,7.95 19,8.66 14,13.14 15.18,19.02 10,16 4.82,19.02 6,13.14 1,8.66 7.41,7.95" />
+  </svg>
+)
+
+const MyStarRating = () => {
+  const totalStars = 5
+
+  return (
+    <>
+      {[...Array(totalStars)].map((_, index) => (
+        <StarSVG key={index} filled={true} />
+      ))}
+    </>
+  )
+}
+
+export default MyStarRating
+
 export function Hero() {
   return (
     <div className="overflow-hidden py-20 sm:py-32 lg:pb-32 xl:pb-36">
       <Container>
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
+            <div className="my-4 flex flex-row items-end gap-2">
+              <div className="flex flex-row">
+                <p className="">⭐️⭐️⭐️⭐️⭐️</p>
+              </div>
+              <p className="text-xs text-gray-600">5.0</p>
+            </div>
             <h1 className="text-4xl font-medium tracking-tight text-gray-900">
               InstaCal
             </h1>
@@ -118,6 +153,7 @@ export function Hero() {
               <AppStoreLink color="black" />
               <PlayStoreLink color="black" />
             </div>
+
             {/* <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
               <Button
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"

@@ -14,7 +14,7 @@ const plans = [
   {
     name: 'Monthly Plan',
     featured: false,
-    price: { Monthly: '$11.99/month', Annually: '$11.99/month' },
+    price: { Monthly: '$7.99/month', Annually: '$7.99/month' },
     description: 'Flexible monthly access to everything InstaCal has to offer.',
     button: {
       label: 'Choose Monthly',
@@ -31,9 +31,9 @@ const plans = [
   {
     name: 'Annual Plan',
     featured: false,
-    price: { Monthly: '$49.99/year', Annually: '$49.99/year' },
+    price: { Monthly: '$29.99/year', Annually: '$29.99/year' },
     description:
-      'Pay once a year and save 65%. Same great features, better value.',
+      'Pay once a year and save 68%. Same great features, better value.',
     button: {
       label: 'Choose Annual',
       href: '/register',
@@ -42,7 +42,7 @@ const plans = [
       'Everything in Monthly Plan',
       'Priority feature updates',
       'Early access to new tools',
-      'Best value — save $83/year',
+      'Best value (save $66/year)',
     ],
     logomarkClassName: 'fill-cyan-500',
   },

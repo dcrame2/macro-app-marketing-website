@@ -7,6 +7,10 @@ export async function GET() {
           appID: 'SRHQX85SN8.com.digitaldelight.InstaCal',
           paths: ['/meal/*', '/workout/*', '/user/*'],
         },
+        {
+          appID: 'SRHQX85SN8.com.digitaldelight.InstaCal.staging',
+          paths: ['/meal/*', '/workout/*', '/user/*'],
+        },
       ],
     },
   }

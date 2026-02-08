@@ -56,6 +56,8 @@ export function Header() {
   return (
     <header>
       <nav>
+        <div></div>
+        <div className="fixed inset-x-0 top-0 z-50 h-px bg-gray-900/10 backdrop-blur" />
         <Container className="relative z-50 flex justify-between py-8">
           <div className="relative z-10 flex items-center gap-16">
             <Link

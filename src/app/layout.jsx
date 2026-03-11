@@ -10,51 +10,80 @@ const inter = Inter({
 })
 
 export const metadata = {
+  metadataBase: new URL('https://www.theinstacal.app'),
   title: {
-    template: 'InstaCal',
-    default: 'InstaCal - Your Smartest Calorie Tracking App.',
+    template: '%s - InstaCal',
+    default:
+      'InstaCal - AI Calorie Tracker & Social Nutrition App | Track Macros with Photos',
   },
   description:
-    'Scan meals, barcodes, or labels in seconds. InstaCal uses intelligent recognition to make tracking your nutrition seamless, accurate, and lightning fast.',
+    'The AI-powered calorie tracker with a social twist. Snap a photo to instantly track macros, share meals with friends, discover food on a map, and chat with an AI dietitian. Free on iOS & Android.',
+  keywords: [
+    'calorie tracker',
+    'macro tracker',
+    'nutrition app',
+    'AI food scanner',
+    'photo calorie counter',
+    'social fitness app',
+    'meal tracking app',
+    'food diary',
+    'macro counting',
+    'barcode scanner food',
+    'AI nutrition',
+    'fitness tracker',
+    'diet app',
+    'food tracking social media',
+    'instacal',
+  ],
+  authors: [{ name: 'InstaCal' }],
+  creator: 'InstaCal',
+  publisher: 'InstaCal',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
-    title: 'InstaCal - Your Smartest Calorie Tracking App.',
+    type: 'website',
+    locale: 'en_US',
+    siteName: 'InstaCal',
+    title: 'InstaCal - AI Calorie Tracker & Social Nutrition App',
     description:
-      'Scan meals, barcodes, or labels in seconds. InstaCal uses intelligent recognition to make tracking your nutrition seamless, accurate, and lightning fast.',
+      'Snap a photo to instantly track macros, share meals with friends, discover food on a map, and chat with an AI dietitian. Free on iOS & Android.',
     url: 'https://www.theinstacal.app/',
     images: [
       {
-        url: '/src/images/logos/InstaCal_logo.png',
+        url: '/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'InstaCal - Your Smartest Calorie Tracking App.',
+        alt: 'InstaCal - Health Tracking Meets Social',
       },
     ],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'InstaCal - AI Calorie Tracker & Social Nutrition App',
+    description:
+      'Snap a photo to instantly track macros, share meals with friends, discover food on a map. Free on iOS & Android.',
+    images: ['/opengraph-image'],
+  },
+  alternates: {
+    canonical: 'https://www.theinstacal.app/',
+  },
+  category: 'Health & Fitness',
 }
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={clsx('bg-gray-50 antialiased', inter.variable)}>
+    <html lang="en" className={clsx('bg-gray-950 antialiased', inter.variable)}>
       <head>
-        <meta
-          property="og:title"
-          content="InstaCal - Your Smartest Calorie Tracking App."
-        />
-        <meta
-          property="og:description"
-          content="Scan meals, barcodes, or labels in seconds. InstaCal uses intelligent recognition to make tracking your nutrition seamless, accurate, and lightning fast."
-        />
-        <meta property="og:url" content="https://www.theinstacal.app" />
-        <meta
-          property="og:image"
-          content="/src/images/logos/InstaCal_logo.png"
-        />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta
-          name="twitter:image"
-          content="/src/images/logos/InstaCal_logo.png"
-        />
+        <link rel="canonical" href="https://www.theinstacal.app/" />
       </head>
       <body>{children}</body>
     </html>

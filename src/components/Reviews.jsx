@@ -9,7 +9,7 @@ import { Container } from '@/components/Container'
 const reviews = [
   {
     title: 'Game Changer',
-    body: 'This app has allowed me to hit my fitness goals by coming up with a plan for calorie intake and making it as easy as possible by snapping a picture to ensure I am on the right path. I couldn’t recommend it more!',
+    body: 'This app has allowed me to hit my fitness goals by coming up with a plan for calorie intake and making it as easy as possible by snapping a picture to ensure I am on the right path. I couldn\'t recommend it more!',
     author: 'DoubleDs13',
     rating: 5,
   },
@@ -21,13 +21,13 @@ const reviews = [
   },
   {
     title: 'Phenomenal App',
-    body: 'For those out there who have had trouble tracking your Macros/calories, this is the best app out there. I’ve tried them all and InstaCal is the only app that I would highly recommend to those who want to improve their eating habits or have just started making a healthy lifestyle change. It is extremely user friendly and definitely worth the money. I have finally gotten back on track and can honestly say that I get excited when it comes to planning/tracking my meals. Do yourself a favor and download this app!',
+    body: 'For those out there who have had trouble tracking your Macros/calories, this is the best app out there. I\'ve tried them all and InstaCal is the only app that I would highly recommend to those who want to improve their eating habits or have just started making a healthy lifestyle change. It is extremely user friendly and definitely worth the money.',
     author: 'Uriiiii9',
     rating: 5,
   },
   {
     title: 'Sensational',
-    body: 'This literally changed the game in terms of trying to reach my fitness goals. I realized quickly I wasn’t eating enough protein. The breakdown made it easy to hit all my macros.',
+    body: 'This literally changed the game in terms of trying to reach my fitness goals. I realized quickly I wasn\'t eating enough protein. The breakdown made it easy to hit all my macros.',
     author: 'Mikeyyyy mikee',
     rating: 5,
   },
@@ -45,7 +45,7 @@ const reviews = [
   },
   {
     title: 'Easiest app out there',
-    body: 'If you have a busy schedule and feel like not enough time to track your calories this is the perfect app. Where ever I’m at no matter the situation or time I can always count on the is app the keep me on track.',
+    body: 'If you have a busy schedule and feel like not enough time to track your calories this is the perfect app. Where ever I\'m at no matter the situation or time I can always count on the is app the keep me on track.',
     author: 'Pochicken2',
     rating: 5,
   },
@@ -63,7 +63,7 @@ const reviews = [
   },
   {
     title: 'Best calorie tracker!',
-    body: 'Great and easy calorie tracker. Every time I use it, I’m more impressed by how well it picks up every snack or meal. Perfect for everyday and real world use at restaurants where you might not have access to the back of the packaging',
+    body: 'Great and easy calorie tracker. Every time I use it, I\'m more impressed by how well it picks up every snack or meal. Perfect for everyday and real world use at restaurants where you might not have access to the back of the packaging',
     author: 'Nathan022',
     rating: 5,
   },
@@ -73,24 +73,6 @@ const reviews = [
     author: 'Enrico Aquino',
     rating: 5,
   },
-  // {
-  //   title: 'It’s like having a coach.',
-  //   body: 'Every time I scan food, I get this weird sense of accountability. It’s like InstaCal is watching me (in a good way).',
-  //   author: 'WatchedByAI',
-  //   rating: 5,
-  // },
-  // {
-  //   title: 'Quit calorie counting apps.',
-  //   body: 'I deleted three other tracking apps after using InstaCal for one week. It’s just that much better.',
-  //   author: 'OneAppToRuleThemAll',
-  //   rating: 5,
-  // },
-  // {
-  //   title: 'Don’t download this app',
-  //   body: 'Unless you want to finally stick to your macros and feel in control of your diet for once.',
-  //   author: 'MacroBoss89',
-  //   rating: 5,
-  // },
 ]
 
 function StarIcon(props) {
@@ -109,7 +91,7 @@ function StarRating({ rating }) {
           key={index}
           className={clsx(
             'h-5 w-5',
-            rating > index ? 'fill-[#0077cc]' : 'fill-gray-300',
+            rating > index ? 'fill-yellow-400' : 'fill-gray-300',
           )}
         />
       ))}
@@ -128,7 +110,7 @@ function Review({ title, body, author, rating, className, ...props }) {
   return (
     <figure
       className={clsx(
-        'animate-fade-in rounded-3xl bg-white p-6 opacity-0 shadow-md shadow-gray-900/5',
+        'animate-fade-in rounded-3xl border border-gray-100 bg-white p-6 opacity-0 shadow-sm transition-shadow hover:shadow-md',
         className,
       )}
       style={{ animationDelay }}
@@ -136,13 +118,16 @@ function Review({ title, body, author, rating, className, ...props }) {
     >
       <blockquote className="text-gray-900">
         <StarRating rating={rating} />
-        <p className="mt-4 text-lg font-semibold leading-6 before:content-['“'] after:content-['”']">
-          {title}
+        <p className="mt-4 text-lg font-bold leading-6">
+          &ldquo;{title}&rdquo;
         </p>
-        <p className="mt-3 text-base leading-7">{body}</p>
+        <p className="mt-3 text-sm leading-relaxed text-gray-600">{body}</p>
       </blockquote>
-      <figcaption className="mt-3 text-sm text-gray-600 before:content-['–_']">
-        {author}
+      <figcaption className="mt-4 flex items-center gap-3">
+        <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-[#0077cc] to-cyan-400 text-xs font-bold text-white">
+          {author[0].toUpperCase()}
+        </div>
+        <span className="text-sm font-medium text-gray-700">{author}</span>
       </figcaption>
     </figure>
   )
@@ -166,19 +151,14 @@ function ReviewColumn({ reviews, className, reviewClassName, msPerPixel = 0 }) {
   let duration = `${columnHeight * msPerPixel}ms`
 
   useEffect(() => {
-    if (!columnRef.current) {
-      return
-    }
+    if (!columnRef.current) return
 
     let resizeObserver = new window.ResizeObserver(() => {
       setColumnHeight(columnRef.current?.offsetHeight ?? 0)
     })
 
     resizeObserver.observe(columnRef.current)
-
-    return () => {
-      resizeObserver.disconnect()
-    }
+    return () => resizeObserver.disconnect()
   }, [])
 
   return (
@@ -218,8 +198,7 @@ function ReviewGrid() {
             reviews={[...column1, ...column3.flat(), ...column2]}
             reviewClassName={(reviewIndex) =>
               clsx(
-                reviewIndex >= column1.length + column3[0].length &&
-                  'md:hidden',
+                reviewIndex >= column1.length + column3[0].length && 'md:hidden',
                 reviewIndex >= column1.length && 'lg:hidden',
               )
             }
@@ -240,8 +219,8 @@ function ReviewGrid() {
           />
         </>
       )}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-50" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-gray-50" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-white" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white" />
     </div>
   )
 }
@@ -251,19 +230,29 @@ export function Reviews() {
     <section
       id="reviews"
       aria-labelledby="reviews-title"
-      className="pb-16 pt-20 sm:pb-24 sm:pt-32"
+      className="bg-white pb-16 pt-20 sm:pb-24 sm:pt-32"
     >
       <Container>
-        <h2
-          id="reviews-title"
-          className="text-3xl font-medium tracking-tight text-gray-900 sm:text-center"
-        >
-          What InstaCal Users Are Saying
-        </h2>
-        {/* <p className="mt-2 text-lg text-gray-600 sm:text-center">
-          From fitness beginners to macro pros, people love how easy and
-          effective InstaCal makes nutrition tracking.
-        </p> */}
+        <div className="mx-auto max-w-2xl text-center">
+          <div className="mx-auto mb-4 flex w-fit items-center gap-2 rounded-full bg-yellow-50 px-4 py-2">
+            <div className="flex gap-0.5">
+              {[...Array(5)].map((_, i) => (
+                <StarIcon key={i} className="h-3.5 w-3.5 fill-yellow-400" />
+              ))}
+            </div>
+            <span className="text-sm font-semibold text-yellow-700">5.0 Average</span>
+          </div>
+          <h2
+            id="reviews-title"
+            className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-5xl"
+          >
+            Loved by Real Users
+          </h2>
+          <p className="mt-4 text-lg text-gray-600">
+            From fitness beginners to macro pros, people love how easy and
+            effective InstaCal makes nutrition tracking.
+          </p>
+        </div>
         <ReviewGrid />
       </Container>
     </section>

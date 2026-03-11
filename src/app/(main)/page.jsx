@@ -2,22 +2,24 @@ import { CallToAction } from '@/components/CallToAction'
 import { Faqs } from '@/components/Faqs'
 import { Hero } from '@/components/Hero'
 import { Pricing } from '@/components/Pricing'
-import { PrimaryFeatures } from '@/components/PrimaryFeatures'
+import { LogMethods } from '@/components/LogMethods'
+import { AIFeatures } from '@/components/AIFeatures'
+import { SocialFeatures } from '@/components/SocialFeatures'
+import { StatsSection } from '@/components/StatsSection'
 import { Reviews } from '@/components/Reviews'
-import { SecondaryFeatures } from '@/components/SecondaryFeatures'
-import { Contact } from '@/components/Contact'
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <PrimaryFeatures />
-      <SecondaryFeatures />
-      <CallToAction />
-      <Reviews />
+      <LogMethods />
+      <SocialFeatures />
+      <AIFeatures />
+      <StatsSection />
       <Pricing />
+      <Reviews />
       <Faqs />
-      {/* <Contact /> */}
+      <CallToAction />
     </>
   )
 }

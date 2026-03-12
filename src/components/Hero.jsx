@@ -184,55 +184,55 @@ export function Hero() {
             </PhoneMockup>
 
             {/* Floating: Macro ring */}
-            <FloatingCard className="-left-16 top-12 hidden animate-float sm:block">
-              <div className="flex items-center gap-3">
-                <div className="relative h-10 w-10">
-                  <svg className="h-10 w-10 -rotate-90" viewBox="0 0 36 36">
+            <FloatingCard className="-left-4 top-8 animate-float px-2.5 py-2 sm:-left-16 sm:top-12 sm:px-4 sm:py-3">
+              <div className="flex items-center gap-2 sm:gap-3">
+                <div className="relative h-8 w-8 sm:h-10 sm:w-10">
+                  <svg className="h-8 w-8 -rotate-90 sm:h-10 sm:w-10" viewBox="0 0 36 36">
                     <circle cx="18" cy="18" r="15" fill="none" stroke="rgb(55 65 81)" strokeWidth="3" />
                     <circle cx="18" cy="18" r="15" fill="none" stroke="#0077cc" strokeWidth="3" strokeDasharray="70 100" strokeLinecap="round" />
                   </svg>
-                  <span className="absolute inset-0 flex items-center justify-center text-[10px] font-bold text-white">
+                  <span className="absolute inset-0 flex items-center justify-center text-[8px] font-bold text-white sm:text-[10px]">
                     70%
                   </span>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-white">1,680 cal</p>
-                  <p className="text-[10px] text-gray-400">of 2,400 goal</p>
+                  <p className="text-[10px] font-semibold text-white sm:text-xs">1,680 cal</p>
+                  <p className="text-[8px] text-gray-400 sm:text-[10px]">of 2,400 goal</p>
                 </div>
               </div>
             </FloatingCard>
 
             {/* Floating: AI scan result */}
-            <FloatingCard className="-right-20 top-1/3 hidden animate-float-delayed sm:block">
-              <div className="flex items-center gap-2">
-                <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#0077cc]/20">
-                  <span className="text-sm">✨</span>
+            <FloatingCard className="-right-2 top-1/4 animate-float-delayed px-2.5 py-2 sm:-right-20 sm:top-1/3 sm:px-4 sm:py-3">
+              <div className="flex items-center gap-1.5 sm:gap-2">
+                <div className="flex h-5 w-5 items-center justify-center rounded-md bg-[#0077cc]/20 sm:h-7 sm:w-7 sm:rounded-lg">
+                  <span className="text-xs sm:text-sm">✨</span>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-white">AI Scanned</p>
-                  <p className="text-[10px] text-gray-400">420 cal · 32g protein</p>
+                  <p className="text-[10px] font-semibold text-white sm:text-xs">AI Scanned</p>
+                  <p className="text-[8px] text-gray-400 sm:text-[10px]">420 cal · 32g protein</p>
                 </div>
               </div>
             </FloatingCard>
 
             {/* Floating: Social comment */}
-            <FloatingCard className="-left-20 bottom-1/4 hidden animate-float sm:block" style={{ animationDelay: '1s' }}>
-              <div className="flex items-center gap-2">
-                <div className="h-6 w-6 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500" />
+            <FloatingCard className="-left-6 bottom-1/3 animate-float px-2.5 py-2 sm:-left-20 sm:bottom-1/4 sm:px-4 sm:py-3" style={{ animationDelay: '1s' }}>
+              <div className="flex items-center gap-1.5 sm:gap-2">
+                <div className="h-5 w-5 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 sm:h-6 sm:w-6" />
                 <div>
-                  <p className="text-xs font-semibold text-white">Nice meal! 🔥</p>
-                  <p className="text-[10px] text-gray-400">2 min ago</p>
+                  <p className="text-[10px] font-semibold text-white sm:text-xs">Nice meal! 🔥</p>
+                  <p className="text-[8px] text-gray-400 sm:text-[10px]">2 min ago</p>
                 </div>
               </div>
             </FloatingCard>
 
             {/* Floating: Streak badge */}
-            <FloatingCard className="-right-14 bottom-16 hidden animate-float sm:block" style={{ animationDelay: '3s' }}>
-              <div className="flex items-center gap-2">
-                <span className="text-lg">🔥</span>
+            <FloatingCard className="-right-1 bottom-20 animate-float px-2.5 py-2 sm:-right-14 sm:bottom-16 sm:px-4 sm:py-3" style={{ animationDelay: '3s' }}>
+              <div className="flex items-center gap-1.5 sm:gap-2">
+                <span className="text-sm sm:text-lg">🔥</span>
                 <div>
-                  <p className="text-xs font-semibold text-white">12 Day Streak</p>
-                  <p className="text-[10px] text-gray-400">Keep it up!</p>
+                  <p className="text-[10px] font-semibold text-white sm:text-xs">12 Day Streak</p>
+                  <p className="text-[8px] text-gray-400 sm:text-[10px]">Keep it up!</p>
                 </div>
               </div>
             </FloatingCard>

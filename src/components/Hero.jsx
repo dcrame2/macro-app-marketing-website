@@ -149,7 +149,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
-              className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start"
+              className="mt-10 flex flex-row items-center justify-center gap-3 sm:gap-4 lg:justify-start"
             >
               <AppStoreLink color="white" />
               <PlayStoreLink color="white" />

@@ -1,11 +1,17 @@
 import { ImageResponse } from 'next/og'
+import { readFile } from 'fs/promises'
+import { join } from 'path'
 
-export const runtime = 'edge'
-export const alt = 'InstaCal - Health Tracking Meets Social'
+export const alt = 'InstaCal: Social Fitness & Calorie Tracker with AI'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
 export default async function Image() {
+  const logoData = await readFile(
+    join(process.cwd(), 'public', 'instacal-icon.png'),
+  )
+  const logoSrc = `data:image/png;base64,${logoData.toString('base64')}`
+
   return new ImageResponse(
     (
       <div
@@ -21,17 +27,6 @@ export default async function Image() {
           overflow: 'hidden',
         }}
       >
-        {/* Grid pattern overlay */}
-        <div
-          style={{
-            position: 'absolute',
-            inset: 0,
-            backgroundImage:
-              'linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)',
-            backgroundSize: '64px 64px',
-          }}
-        />
-
         {/* Top-left glow */}
         <div
           style={{
@@ -60,7 +55,7 @@ export default async function Image() {
           }}
         />
 
-        {/* Center glow behind text */}
+        {/* Center glow */}
         <div
           style={{
             position: 'absolute',
@@ -87,7 +82,7 @@ export default async function Image() {
         >
           {/* Logo icon */}
           <img
-            src="https://www.theinstacal.app/instacal-icon.png"
+            src={logoSrc}
             width={80}
             height={80}
             style={{
@@ -96,7 +91,7 @@ export default async function Image() {
             }}
           />
 
-          {/* App name - extra bold */}
+          {/* App name */}
           <div
             style={{
               fontSize: 120,
@@ -109,7 +104,7 @@ export default async function Image() {
             InstaCal
           </div>
 
-          {/* Subtitle - gradient */}
+          {/* Subtitle */}
           <div
             style={{
               fontSize: 32,
@@ -154,14 +149,13 @@ export default async function Image() {
           </div>
         </div>
 
-        {/* Bottom: URL */}
+        {/* Bottom URL */}
         <div
           style={{
             position: 'absolute',
             bottom: 36,
             display: 'flex',
             alignItems: 'center',
-            gap: 6,
             fontSize: 16,
             fontWeight: 500,
             color: 'rgba(107,114,128,1)',

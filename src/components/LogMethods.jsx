@@ -205,7 +205,72 @@ export function LogMethods() {
           </p>
         </motion.div>
 
-        <div className="mt-16 grid gap-8 lg:grid-cols-2 lg:gap-16">
+        {/* Mobile: Tab bar + phone */}
+        <div className="mt-12 lg:hidden">
+          {/* Scrollable tabs */}
+          <div className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-4 scrollbar-hide">
+            {methods.map((method, i) => (
+              <button
+                key={method.name}
+                onClick={() => setActiveMethod(i)}
+                className={`flex flex-shrink-0 items-center gap-2 rounded-full px-4 py-2.5 text-sm font-semibold transition-all ${
+                  activeMethod === i
+                    ? 'bg-[#0077cc] text-white shadow-lg shadow-[#0077cc]/20'
+                    : 'bg-white text-gray-700 ring-1 ring-gray-200'
+                }`}
+              >
+                <div
+                  className={`flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-br ${method.color}`}
+                >
+                  <method.icon className="h-3.5 w-3.5 text-white" />
+                </div>
+                {method.name}
+                {!method.free && (
+                  <span className={`rounded-full px-1.5 py-0.5 text-[9px] font-bold ${
+                    activeMethod === i
+                      ? 'bg-white/20 text-white'
+                      : 'bg-[#0077cc]/10 text-[#0077cc]'
+                  }`}>
+                    PRO
+                  </span>
+                )}
+              </button>
+            ))}
+          </div>
+
+          {/* Phone + description */}
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeMethod}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.25 }}
+              className="mt-8 flex flex-col items-center"
+            >
+              <PhoneMockup>
+                <Image
+                  src={methods[activeMethod].image}
+                  alt={`InstaCal ${methods[activeMethod].name} feature`}
+                  fill
+                  className="object-cover object-top"
+                  sizes="300px"
+                />
+              </PhoneMockup>
+              <div className="mt-6 text-center">
+                <h3 className="text-xl font-bold text-gray-900">
+                  {methods[activeMethod].name}
+                </h3>
+                <p className="mx-auto mt-2 max-w-sm text-sm leading-relaxed text-gray-600">
+                  {methods[activeMethod].description}
+                </p>
+              </div>
+            </motion.div>
+          </AnimatePresence>
+        </div>
+
+        {/* Desktop: Cards + phone side by side */}
+        <div className="mt-16 hidden gap-16 lg:grid lg:grid-cols-2">
           {/* Method cards */}
           <div className="space-y-3">
             {methods.map((method, i) => (

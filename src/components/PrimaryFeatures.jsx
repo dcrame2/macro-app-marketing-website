@@ -35,21 +35,21 @@ const features = [
   {
     name: 'Meal Scan',
     description:
-      'Snap a photo of your plate and let InstaCal break down the macros instantly — perfect for eating out or home-cooked meals.',
+      'Snap a photo of your plate and let InstaCal break down the macros instantly. Perfect for eating out or home-cooked meals.',
     icon: AppleInPhoneIcon,
     screen: MealScan,
   },
   {
     name: 'Barcode Scanner',
     description:
-      'Scan packaged foods in seconds with lightning-fast barcode detection. No typing, no searching — just scan and log.',
+      'Scan packaged foods in seconds with lightning-fast barcode detection. No typing, no searching. Just scan and log.',
     icon: BarcodeScannerIcon,
     screen: BarcodeScreen,
   },
   {
     name: 'Nutrition Label Scan',
     description:
-      'Use your camera to extract data from nutrition labels. Our AI reads and logs it for you — just point and shoot.',
+      'Use your camera to extract data from nutrition labels. Our AI reads and logs it for you. Just point and shoot.',
     icon: NutritionLabelIcon,
     screen: NutritionLabelScreen,
   },

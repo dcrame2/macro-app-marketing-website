@@ -92,8 +92,8 @@ export function SocialFeatures() {
               </h3>
               <p className="mt-4 text-lg leading-relaxed text-gray-600">
                 See what your friends are eating in a beautiful meal feed. Every
-                post shows the full nutrition breakdown — calories, protein,
-                carbs, fat — with the actual food photo. Like, comment,
+                post shows the full nutrition breakdown including calories, protein,
+                carbs, and fat with the actual food photo. Like, comment,
                 bookmark, and share meals that inspire you.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
@@ -212,7 +212,7 @@ export function SocialFeatures() {
               </h3>
               <p className="mt-4 text-lg leading-relaxed text-gray-600">
                 Your profile is your visual food journal. Every meal you log
-                builds your grid — just like Instagram but for nutrition. Track
+                builds your grid, just like Instagram but for nutrition. Track
                 your streak, share your profile, follow friends, and build a
                 community that keeps each other accountable. Go private or
                 public anytime.

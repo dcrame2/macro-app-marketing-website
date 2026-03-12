@@ -88,7 +88,7 @@ function AIDietitianMockup() {
         Am I eating too many carbs this week?
       </div>
       <div className="mr-auto max-w-[85%] rounded-xl rounded-bl-sm bg-white/10 px-3 py-2 text-[11px] leading-relaxed text-gray-200">
-        Your carbs are at 48% — above your 40% target. Try a protein-focused dinner tonight.
+        Your carbs are at 48%, above your 40% target. Try a protein-focused dinner tonight.
       </div>
       <div className="ml-auto max-w-[85%] rounded-xl rounded-br-sm bg-[#0077cc] px-3 py-2 text-[11px] text-white">
         Greek yogurt with berries?
@@ -160,7 +160,7 @@ export function AIFeatures() {
               </span>
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-gray-400">
-              InstaCal does not just track — it thinks. Fix mistakes instantly,
+              InstaCal does not just track, it thinks. Fix mistakes instantly,
               get personalized advice, and understand your nutrition at a deeper
               level.
             </p>

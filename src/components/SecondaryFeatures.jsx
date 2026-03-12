@@ -6,19 +6,19 @@ const features = [
   {
     name: 'Auto Macro Breakdown',
     description:
-      'InstaCal breaks down every food item into protein, carbs, and fats — instantly and accurately, without the guesswork.',
+      'InstaCal breaks down every food item into protein, carbs, and fats. Instantly and accurately, without the guesswork.',
     icon: DeviceArrowIcon,
   },
   {
     name: 'AI-Powered Food Recognition',
     description:
-      'Our AI detects and identifies foods from photos, scans, or searches — giving you precise macro info in seconds.',
+      'Our AI detects and identifies foods from photos, scans, or searches and gives you precise macro info in seconds.',
     icon: DeviceCardsIcon,
   },
   {
     name: 'Real-Time Logging',
     description:
-      'Instantly log new foods or edits — no lag, no waiting. Just quick, seamless tracking.',
+      'Instantly log new foods or edits with no lag and no waiting. Just quick, seamless tracking.',
     icon: DeviceClockIcon,
   },
   {

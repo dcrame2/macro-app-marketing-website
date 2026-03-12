@@ -26,7 +26,7 @@ const methods = [
     name: 'Barcode Scan',
     tagline: 'Scan. Log. Go.',
     description:
-      'Point your camera at any product barcode and instantly pull up exact nutrition facts. No typing, no searching — scan and log in under 2 seconds.',
+      'Point your camera at any product barcode and instantly pull up exact nutrition facts. No typing, no searching. Scan and log in under 2 seconds.',
     icon: BarcodeIcon,
     color: 'from-purple-500 to-pink-400',
     free: false,
@@ -200,7 +200,7 @@ export function LogMethods() {
             Log Any Meal, Any Way
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            Whether you are eating out, cooking at home, or meal prepping —
+            Whether you are eating out, cooking at home, or meal prepping,
             InstaCal has the perfect way to log it.
           </p>
         </motion.div>

@@ -8,7 +8,7 @@ const faqs = [
   {
     question: 'How accurate is the photo meal scanning?',
     answer:
-      'Our AI is trained on millions of food images and delivers highly accurate macro estimates. For complex or mixed dishes, you can use Fix with AI to refine any details — totally free.',
+      'Our AI is trained on millions of food images and delivers highly accurate macro estimates. For complex or mixed dishes, you can use Fix with AI to refine any details, totally free.',
   },
   {
     question: 'What makes InstaCal different from MyFitnessPal?',
@@ -28,7 +28,7 @@ const faqs = [
   {
     question: 'How does the social feed work?',
     answer:
-      'Follow friends to see their meals in your feed. Discover new content through Slides, explore meals on a nearby map, and engage with likes and comments. You control your privacy — go public or private anytime.',
+      'Follow friends to see their meals in your feed. Discover new content through Slides, explore meals on a nearby map, and engage with likes and comments. You control your privacy and can go public or private anytime.',
   },
   {
     question: 'Can I save and reuse meals?',
@@ -38,12 +38,12 @@ const faqs = [
   {
     question: 'What is the AI Dietitian?',
     answer:
-      'A Pro feature that lets you chat with an AI nutritionist that knows your eating history, goals, and preferences. Ask it anything — "Am I eating enough protein?" or "What should I eat for dinner?"',
+      'A Pro feature that lets you chat with an AI nutritionist that knows your eating history, goals, and preferences. Ask it anything like "Am I eating enough protein?" or "What should I eat for dinner?"',
   },
   {
     question: 'Is my data private?',
     answer:
-      'Completely. Your data is encrypted and never sold. You control your profile visibility — set it to private to require follow approval, hide from discover, or opt out of the map.',
+      'Completely. Your data is encrypted and never sold. You control your profile visibility and can set it to private to require follow approval, hide from discover, or opt out of the map.',
   },
   {
     question: 'What platforms is InstaCal on?',

@@ -25,7 +25,7 @@ export function Contact() {
           Get in Touch
         </h2>
         <p className="mt-2 text-lg/8 text-gray-600">
-          Have questions about InstaCal? We're here to help — reach out and
+          Have questions about InstaCal? We're here to help. Reach out and
           we'll get back to you as soon as possible.
         </p>
       </div>

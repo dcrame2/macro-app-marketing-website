@@ -153,19 +153,18 @@ export function StatsSection() {
 
         {/* Workout integration callout */}
         <AnimateIn>
-          <div className="mx-auto mt-20 max-w-4xl rounded-3xl border border-gray-200 bg-white p-8 shadow-sm sm:p-10">
+          <div className="mx-auto mt-8 max-w-4xl rounded-3xl border border-gray-200 bg-white p-8 shadow-sm sm:mt-20 sm:p-10">
             <div className="flex flex-col items-center gap-8 sm:flex-row">
               <div className="flex-1">
                 <h3 className="text-xl font-bold text-gray-900 sm:text-2xl">
                   Workout Tracking Built In
                 </h3>
                 <p className="mt-3 text-gray-600">
-                  Log workouts manually or auto-import from Strava, Apple Health,
-                  or Garmin. Burned calories factor into your net calorie
-                  tracking automatically.
+                  Auto-import workouts from Strava or Apple Health. Burned
+                  calories factor into your net calorie tracking automatically.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2">
-                  {['Strava', 'Apple Health', 'Manual Entry'].map((source) => (
+                  {['Strava', 'Apple Health'].map((source) => (
                     <span
                       key={source}
                       className="rounded-full border border-gray-200 bg-gray-50 px-3 py-1.5 text-xs font-semibold text-gray-700"

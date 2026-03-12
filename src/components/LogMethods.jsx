@@ -248,6 +248,14 @@ export function LogMethods() {
               transition={{ duration: 0.25 }}
               className="mt-8 flex flex-col items-center"
             >
+              <div className="mb-6 text-center">
+                <h3 className="text-xl font-bold text-gray-900">
+                  {methods[activeMethod].name}
+                </h3>
+                <p className="mx-auto mt-2 max-w-sm text-sm leading-relaxed text-gray-600">
+                  {methods[activeMethod].description}
+                </p>
+              </div>
               <PhoneMockup>
                 <Image
                   src={methods[activeMethod].image}
@@ -257,14 +265,6 @@ export function LogMethods() {
                   sizes="300px"
                 />
               </PhoneMockup>
-              <div className="mt-6 text-center">
-                <h3 className="text-xl font-bold text-gray-900">
-                  {methods[activeMethod].name}
-                </h3>
-                <p className="mx-auto mt-2 max-w-sm text-sm leading-relaxed text-gray-600">
-                  {methods[activeMethod].description}
-                </p>
-              </div>
             </motion.div>
           </AnimatePresence>
         </div>
@@ -295,6 +295,14 @@ export function LogMethods() {
                   exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ duration: 0.3 }}
                 >
+                  <div className="mb-6 text-center">
+                    <h3 className="text-xl font-bold text-gray-900">
+                      {methods[activeMethod].name}
+                    </h3>
+                    <p className="mx-auto mt-2 max-w-sm text-sm leading-relaxed text-gray-600">
+                      {methods[activeMethod].description}
+                    </p>
+                  </div>
                   <PhoneMockup>
                     <Image
                       src={methods[activeMethod].image}
@@ -304,14 +312,6 @@ export function LogMethods() {
                       sizes="300px"
                     />
                   </PhoneMockup>
-                  <div className="mt-6 text-center">
-                    <h3 className="text-xl font-bold text-gray-900">
-                      {methods[activeMethod].name}
-                    </h3>
-                    <p className="mx-auto mt-2 max-w-sm text-sm leading-relaxed text-gray-600">
-                      {methods[activeMethod].description}
-                    </p>
-                  </div>
                 </motion.div>
               </AnimatePresence>
             </div>

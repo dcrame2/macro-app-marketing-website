@@ -13,8 +13,7 @@ export const metadata = {
   metadataBase: new URL('https://www.theinstacal.app'),
   title: {
     template: '%s - InstaCal',
-    default:
-      'InstaCal - AI Calorie Tracker & Social Nutrition App | Track Macros with Photos',
+    default: 'InstaCal: Social Fitness & Calorie Tracker with AI',
   },
   description:
     'The AI-powered calorie tracker with a social twist. Snap a photo to instantly track macros, share meals with friends, discover food on a map, and chat with an AI dietitian. Free on iOS & Android.',
@@ -53,7 +52,7 @@ export const metadata = {
     type: 'website',
     locale: 'en_US',
     siteName: 'InstaCal',
-    title: 'InstaCal - AI Calorie Tracker & Social Nutrition App',
+    title: 'InstaCal: Social Fitness & Calorie Tracker with AI',
     description:
       'Snap a photo to instantly track macros, share meals with friends, discover food on a map, and chat with an AI dietitian. Free on iOS & Android.',
     url: 'https://www.theinstacal.app/',
@@ -68,7 +67,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'InstaCal - AI Calorie Tracker & Social Nutrition App',
+    title: 'InstaCal: Social Fitness & Calorie Tracker with AI',
     description:
       'Snap a photo to instantly track macros, share meals with friends, discover food on a map. Free on iOS & Android.',
     images: ['/opengraph-image'],

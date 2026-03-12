@@ -7,9 +7,16 @@ export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
 export default async function Image() {
-  const logoData = await readFile(
-    join(process.cwd(), 'public', 'instacal-icon.png'),
-  )
+  const [logoData, interBlack, interSemiBold] = await Promise.all([
+    readFile(join(process.cwd(), 'public', 'instacal-icon.png')),
+    fetch(
+      'https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuBWYAZJhiI2B.woff2',
+    ).then((res) => res.arrayBuffer()),
+    fetch(
+      'https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYAZJhiI2B.woff2',
+    ).then((res) => res.arrayBuffer()),
+  ])
+
   const logoSrc = `data:image/png;base64,${logoData.toString('base64')}`
 
   return new ImageResponse(
@@ -23,6 +30,7 @@ export default async function Image() {
           alignItems: 'center',
           justifyContent: 'center',
           background: '#030712',
+          fontFamily: 'Inter',
           position: 'relative',
           overflow: 'hidden',
         }}
@@ -96,6 +104,7 @@ export default async function Image() {
             style={{
               fontSize: 120,
               fontWeight: 900,
+              fontFamily: 'Inter',
               color: 'white',
               letterSpacing: '-4px',
               lineHeight: 1,
@@ -109,6 +118,7 @@ export default async function Image() {
             style={{
               fontSize: 32,
               fontWeight: 600,
+              fontFamily: 'Inter',
               background: 'linear-gradient(90deg, #0077cc, #22d3ee)',
               backgroundClip: 'text',
               color: 'transparent',
@@ -135,6 +145,7 @@ export default async function Image() {
                   style={{
                     fontSize: 16,
                     fontWeight: 600,
+                    fontFamily: 'Inter',
                     color: 'rgba(209,213,219,1)',
                     padding: '8px 20px',
                     borderRadius: 999,
@@ -157,7 +168,8 @@ export default async function Image() {
             display: 'flex',
             alignItems: 'center',
             fontSize: 16,
-            fontWeight: 500,
+            fontWeight: 600,
+            fontFamily: 'Inter',
             color: 'rgba(107,114,128,1)',
           }}
         >
@@ -165,6 +177,22 @@ export default async function Image() {
         </div>
       </div>
     ),
-    { ...size },
+    {
+      ...size,
+      fonts: [
+        {
+          name: 'Inter',
+          data: interBlack,
+          weight: 900,
+          style: 'normal',
+        },
+        {
+          name: 'Inter',
+          data: interSemiBold,
+          weight: 600,
+          style: 'normal',
+        },
+      ],
+    },
   )
 }

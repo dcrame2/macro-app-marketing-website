@@ -10,10 +10,10 @@ export default async function Image() {
   const [logoData, interBlack, interSemiBold] = await Promise.all([
     readFile(join(process.cwd(), 'public', 'instacal-icon.png')),
     fetch(
-      'https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuBWYAZJhiI2B.woff2',
+      'https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff',
     ).then((res) => res.arrayBuffer()),
     fetch(
-      'https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYAZJhiI2B.woff2',
+      'https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff',
     ).then((res) => res.arrayBuffer()),
   ])
 

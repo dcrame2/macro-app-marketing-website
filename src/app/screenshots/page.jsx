@@ -922,6 +922,160 @@ const slideConfigs = [
       </>
     ),
   },
+
+  // 10: BRAND SPLASH — logo snow vibe, no phone
+  {
+    name: 'Brand Splash',
+    bg: 'linear-gradient(165deg, #060612 0%, #001433 50%, #002255 100%)',
+    render: () => {
+      const logos = Array.from({ length: 60 }, (_, i) => {
+        const size = 14 + ((i * 7) % 50)
+        const x = (i * 23.7 + 5) % 100
+        const y = (i * 17.3 + 3) % 100
+        const rot = -30 + ((i * 41) % 60)
+        const op = 0.03 + ((i * 3) % 8) * 0.015
+        return { size, x, y, rot, op, i }
+      })
+      return (
+        <>
+          {/* Background glows */}
+          <div
+            style={{
+              position: 'absolute',
+              width: '80%',
+              height: '35%',
+              top: '15%',
+              left: '10%',
+              background: 'radial-gradient(ellipse, rgba(0,119,204,0.15) 0%, transparent 60%)',
+              filter: 'blur(120px)',
+            }}
+          />
+          <div
+            style={{
+              position: 'absolute',
+              width: '60%',
+              height: '25%',
+              bottom: '10%',
+              right: '-5%',
+              background: 'radial-gradient(ellipse, rgba(0,80,180,0.12) 0%, transparent 60%)',
+              filter: 'blur(100px)',
+            }}
+          />
+          <div
+            style={{
+              position: 'absolute',
+              width: '50%',
+              height: '20%',
+              bottom: '30%',
+              left: '-10%',
+              background: 'radial-gradient(ellipse, rgba(0,60,160,0.1) 0%, transparent 60%)',
+              filter: 'blur(80px)',
+            }}
+          />
+          {/* Falling logos */}
+          {logos.map(({ size, x, y, rot, op, i: idx }) => (
+            <img
+              key={`logo${idx}`}
+              src={IMG.icon}
+              alt=""
+              style={{
+                position: 'absolute',
+                width: size,
+                height: size,
+                left: `${x}%`,
+                top: `${y}%`,
+                transform: `rotate(${rot}deg)`,
+                opacity: op,
+                filter: size > 40 ? 'drop-shadow(0 0 8px rgba(0,119,204,0.15))' : 'none',
+                zIndex: 1,
+              }}
+            />
+          ))}
+          {/* Center content */}
+          <div
+            style={{
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              zIndex: 10,
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              textAlign: 'center',
+            }}
+          >
+            {/* Logo with glow */}
+            <div
+              style={{
+                position: 'relative',
+                width: W * 0.22,
+                height: W * 0.22,
+                marginBottom: W * 0.045,
+              }}
+            >
+              <div
+                style={{
+                  position: 'absolute',
+                  inset: '-50%',
+                  borderRadius: '50%',
+                  background: 'radial-gradient(circle, rgba(0,119,204,0.5) 0%, rgba(0,119,204,0) 60%)',
+                  pointerEvents: 'none',
+                }}
+              />
+              <img
+                src={IMG.icon}
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  position: 'relative',
+                  zIndex: 1,
+                  filter: 'drop-shadow(0 0 40px rgba(0,119,204,0.5))',
+                }}
+                alt=""
+              />
+            </div>
+            {/* App name */}
+            <div
+              style={{
+                fontSize: W * 0.13,
+                fontWeight: 900,
+                color: '#fff',
+                letterSpacing: '-0.03em',
+                lineHeight: 1,
+                textShadow: '0 0 60px rgba(0,119,204,0.35)',
+                marginBottom: W * 0.025,
+              }}
+            >
+              InstaCal
+            </div>
+            {/* Tagline */}
+            <div
+              style={{
+                fontSize: W * 0.03,
+                fontWeight: 500,
+                color: 'rgba(255,255,255,0.4)',
+                letterSpacing: '0.18em',
+                textTransform: 'uppercase',
+              }}
+            >
+              Snap · Track · Share
+            </div>
+          </div>
+          {/* Vignette */}
+          <div
+            style={{
+              position: 'absolute',
+              inset: 0,
+              background: 'radial-gradient(ellipse 60% 55% at 50% 50%, transparent 30%, rgba(4,4,12,0.6) 100%)',
+              zIndex: 2,
+              pointerEvents: 'none',
+            }}
+          />
+        </>
+      )
+    },
+  },
 ]
 
 // ====== WALLPAPER DEFINITIONS ======

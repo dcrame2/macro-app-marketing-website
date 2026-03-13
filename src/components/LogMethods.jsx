@@ -124,10 +124,12 @@ function SavedIcon({ className }) {
   )
 }
 
-function PhoneMockup({ children }) {
+function PhoneMockup({ children, hideNotch = false }) {
   return (
     <div className="relative mx-auto w-[260px] overflow-hidden rounded-[2.5rem] border-[6px] border-gray-800 bg-gray-900 shadow-2xl shadow-[#0077cc]/10 ring-1 ring-white/10 sm:w-[300px]">
-      <div className="absolute left-1/2 top-0 z-10 h-6 w-24 -translate-x-1/2 rounded-b-2xl bg-gray-800" />
+      {!hideNotch && (
+        <div className="absolute left-1/2 top-0 z-10 h-6 w-24 -translate-x-1/2 rounded-b-2xl bg-gray-800" />
+      )}
       <div className="relative aspect-[9/19.5] overflow-hidden bg-white">
         {children}
       </div>
@@ -256,7 +258,7 @@ export function LogMethods() {
                   {methods[activeMethod].description}
                 </p>
               </div>
-              <PhoneMockup>
+              <PhoneMockup hideNotch={activeMethod < 3}>
                 <Image
                   src={methods[activeMethod].image}
                   alt={`InstaCal ${methods[activeMethod].name} feature`}
@@ -303,7 +305,7 @@ export function LogMethods() {
                       {methods[activeMethod].description}
                     </p>
                   </div>
-                  <PhoneMockup>
+                  <PhoneMockup hideNotch={activeMethod < 3}>
                     <Image
                       src={methods[activeMethod].image}
                       alt={`InstaCal ${methods[activeMethod].name} feature`}

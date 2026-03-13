@@ -23,6 +23,7 @@ const IMG = {
   progress: '/screenshots/progress.png',
   calories: '/screenshots/calories.png',
   profile: '/screenshots/profile.png',
+  photo_scan: '/screenshots/photo-scan.png',
   icon: '/instacal-icon.png',
 }
 
@@ -363,7 +364,7 @@ const slideConfigs = [
           headline="Snap a Photo.<br/>Know Your Macros."
         />
         <Phone
-          src={IMG.barcode}
+          src={IMG.photo_scan}
           style={{
             bottom: 0,
             left: '50%',
@@ -898,7 +899,7 @@ const slideConfigs = [
             boxShadow: '0 8px 24px rgba(0,119,204,0.2)',
             transform: 'rotate(-3deg)',
             zIndex: 12,
-          }}``
+          }}
         >
           1,077 posts
         </div>

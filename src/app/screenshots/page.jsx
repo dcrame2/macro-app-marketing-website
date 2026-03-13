@@ -1817,6 +1817,237 @@ const wallpaperConfigs = [
       )
     },
   },
+
+  // 5: 6 WAYS TO LOG — showcasing all 6 logging methods with phones fanned out
+  {
+    name: '6 Ways to Log',
+    render: () => {
+      const methods = [
+        { img: IMG.photo_scan, label: 'Photo', color: '#0077cc' },
+        { img: IMG.barcode, label: 'Barcode', color: '#7c3aed' },
+        { img: '/screenshots/label-scanner.png', label: 'Label', color: '#10b981' },
+        { img: '/screenshots/food-search.png', label: 'Search', color: '#f59e0b' },
+        { img: '/screenshots/build-meal.png', label: 'Build', color: '#ef4444' },
+        { img: '/screenshots/saved-meals.png', label: 'Saved', color: '#6366f1' },
+      ]
+      return (
+        <div style={{ width: WW, height: WH, position: 'relative', overflow: 'hidden', background: 'linear-gradient(165deg, #060612 0%, #001030 50%, #001845 100%)' }}>
+          <Glow color="#0077cc" w={80} h={30} top={10} left={10} blur={160} opacity={0.2} />
+          <Glow color="#7c3aed" w={50} h={20} top={65} left={45} blur={120} opacity={0.12} />
+          {/* Title */}
+          <div style={{ position: 'absolute', top: WH * 0.05, left: 0, right: 0, zIndex: 20, textAlign: 'center' }}>
+            <div style={{ fontSize: WW * 0.03, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.14em', color: '#4da6ff', marginBottom: WW * 0.015 }}>
+              6 Ways to Log
+            </div>
+            <div style={{ fontSize: WW * 0.09, fontWeight: 800, lineHeight: 0.95, letterSpacing: '-0.03em', color: '#fff' }}>
+              Your Meal,<br />Your Way.
+            </div>
+          </div>
+          {/* Fan of 6 phones — 3 on each side, overlapping */}
+          {methods.map((m, i) => {
+            const phoneW = WW * 0.38
+            const angles = [-18, -10, -3, 3, 10, 18]
+            const xOffsets = [-WW * 0.28, -WW * 0.17, -WW * 0.06, WW * 0.06, WW * 0.17, WW * 0.28]
+            const yOffsets = [WH * 0.06, WH * 0.02, 0, 0, WH * 0.02, WH * 0.06]
+            return (
+              <div key={`fan${i}`} style={{ position: 'absolute', bottom: -WH * 0.08, left: '50%', transform: `translateX(${xOffsets[i]}px) rotate(${angles[i]}deg)`, width: phoneW, zIndex: 10 + (3 - Math.abs(i - 2.5)), marginBottom: yOffsets[i] }}>
+                <div style={{ width: '100%', aspectRatio: '366/729', position: 'relative', borderRadius: '14.5%/7.1%', overflow: 'hidden', background: '#1a1a1a', boxShadow: `0 20px 60px rgba(0,0,0,0.6), 0 0 30px ${m.color}22` }}>
+                  <img src={m.img} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }} />
+                </div>
+                <div style={{ textAlign: 'center', marginTop: WW * 0.015, fontSize: WW * 0.022, fontWeight: 700, color: m.color, textShadow: `0 0 20px ${m.color}44` }}>
+                  {m.label}
+                </div>
+              </div>
+            )
+          })}
+        </div>
+      )
+    },
+  },
+
+  // 6: SOCIAL COLLAGE — tilted grid of real meal photos from the social feed
+  {
+    name: 'Social Collage',
+    render: () => {
+      const screens = [
+        IMG.social_feed, IMG.slides, IMG.profile,
+        IMG.meal_detail, IMG.home, IMG.map,
+        IMG.calories, IMG.progress, IMG.social_feed,
+        IMG.slides, IMG.profile, IMG.meal_detail,
+      ]
+      return (
+        <div style={{ width: WW, height: WH, position: 'relative', overflow: 'hidden', background: '#050508' }}>
+          {/* Tilted grid of screenshots */}
+          <div style={{
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%) rotate(-12deg)',
+            display: 'grid',
+            gridTemplateColumns: 'repeat(3, 1fr)',
+            gap: WW * 0.025,
+            width: WW * 1.4,
+            zIndex: 2,
+          }}>
+            {screens.map((src, i) => (
+              <div key={`col${i}`} style={{
+                aspectRatio: '9/16',
+                borderRadius: WW * 0.025,
+                overflow: 'hidden',
+                opacity: [0, 2, 3, 5, 8, 11].includes(i) ? 0.8 : 0.35,
+                transform: i % 2 === 0 ? 'translateY(-8%)' : 'translateY(8%)',
+                boxShadow: '0 10px 40px rgba(0,0,0,0.5)',
+              }}>
+                <img src={src} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }} />
+              </div>
+            ))}
+          </div>
+          {/* Dark overlay for readability */}
+          <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 70% 60% at 50% 50%, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.85) 100%)', zIndex: 5 }} />
+          {/* Content on top */}
+          <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 10, textAlign: 'center' }}>
+            <div style={{ position: 'relative', width: WW * 0.18, height: WW * 0.18, margin: '0 auto', marginBottom: WW * 0.04 }}>
+              <div style={{ position: 'absolute', inset: '-40%', borderRadius: '50%', background: 'radial-gradient(circle, rgba(0,119,204,0.5) 0%, rgba(0,119,204,0) 60%)', pointerEvents: 'none' }} />
+              <img src={IMG.icon} style={{ width: '100%', height: '100%', position: 'relative', zIndex: 1, filter: 'drop-shadow(0 0 40px rgba(0,119,204,0.5))' }} alt="" />
+            </div>
+            <div style={{ fontSize: WW * 0.1, fontWeight: 900, color: '#fff', letterSpacing: '-0.03em', lineHeight: 0.95, textShadow: '0 4px 30px rgba(0,0,0,0.5)' }}>
+              Health Tracking<br />Meets Social.
+            </div>
+            <div style={{ marginTop: WW * 0.03, fontSize: WW * 0.028, fontWeight: 500, color: 'rgba(255,255,255,0.5)', letterSpacing: '0.1em' }}>
+              Snap · Track · Share · Discover
+            </div>
+          </div>
+        </div>
+      )
+    },
+  },
+
+  // 7: MAP DISCOVERY — the map feature front and center, showing food near you
+  {
+    name: 'Map Discovery',
+    render: () => (
+      <div style={{ width: WW, height: WH, position: 'relative', overflow: 'hidden', background: 'linear-gradient(180deg, #001030 0%, #001845 30%, #002255 100%)' }}>
+        {/* Big map screenshot as background */}
+        <div style={{ position: 'absolute', inset: 0, zIndex: 1 }}>
+          <img src={IMG.map} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', opacity: 0.25, filter: 'blur(2px) saturate(0.6)' }} />
+        </div>
+        {/* Dark overlay */}
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,16,48,0.7) 0%, rgba(0,16,48,0.4) 40%, rgba(0,16,48,0.85) 100%)', zIndex: 2 }} />
+        {/* Floating map pins */}
+        {[
+          { top: '22%', left: '18%', size: 50, op: 0.6 },
+          { top: '30%', right: '15%', size: 40, op: 0.4 },
+          { top: '58%', left: '12%', size: 35, op: 0.3 },
+          { top: '65%', right: '22%', size: 45, op: 0.5 },
+          { top: '42%', left: '72%', size: 30, op: 0.25 },
+        ].map((pin, i) => (
+          <div key={`pin${i}`} style={{ position: 'absolute', ...pin, width: pin.size, height: pin.size, borderRadius: '50%', background: '#0077cc', opacity: pin.op, boxShadow: `0 0 ${pin.size}px rgba(0,119,204,0.5), 0 0 ${pin.size * 2}px rgba(0,119,204,0.15)`, zIndex: 4 }} />
+        ))}
+        {/* Center phone showing map */}
+        <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 10 }}>
+          <div style={{ width: WW * 0.55, aspectRatio: '366/729', position: 'relative', borderRadius: '14.5%/7.1%', overflow: 'hidden', background: '#1a1a1a', boxShadow: '0 30px 80px rgba(0,0,0,0.7), 0 0 60px rgba(0,119,204,0.2)' }}>
+            <img src={IMG.map} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }} />
+          </div>
+        </div>
+        {/* Top text */}
+        <div style={{ position: 'absolute', top: WH * 0.06, left: 0, right: 0, zIndex: 15, textAlign: 'center' }}>
+          <div style={{ fontSize: WW * 0.03, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.14em', color: '#4da6ff', marginBottom: WW * 0.012 }}>Discover</div>
+          <div style={{ fontSize: WW * 0.085, fontWeight: 800, lineHeight: 0.95, letterSpacing: '-0.03em', color: '#fff' }}>
+            What&apos;s Cooking<br />Near You.
+          </div>
+        </div>
+        {/* Bottom stats */}
+        <div style={{ position: 'absolute', bottom: WH * 0.06, left: 0, right: 0, zIndex: 15, display: 'flex', justifyContent: 'center', gap: WW * 0.08 }}>
+          {[
+            { num: '24', label: 'Places' },
+            { num: '156', label: 'Meals' },
+            { num: '12', label: 'Friends' },
+          ].map((stat, i) => (
+            <div key={`st${i}`} style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: WW * 0.06, fontWeight: 800, color: '#fff' }}>{stat.num}</div>
+              <div style={{ fontSize: WW * 0.02, fontWeight: 500, color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>{stat.label}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    ),
+  },
+
+  // 8: STATS DASHBOARD — data viz style showing macros and progress
+  {
+    name: 'Stats Dashboard',
+    render: () => {
+      const bars = [65, 82, 45, 90, 73, 58, 88]
+      const days = ['M', 'T', 'W', 'T', 'F', 'S', 'S']
+      return (
+        <div style={{ width: WW, height: WH, position: 'relative', overflow: 'hidden', background: 'linear-gradient(165deg, #060612 0%, #0a1a2e 45%, #0d2844 100%)' }}>
+          <Glow color="#0077cc" w={60} h={25} top={20} left={20} blur={150} opacity={0.15} />
+          <Glow color="#10b981" w={40} h={18} top={55} left={55} blur={120} opacity={0.1} />
+          {/* Title */}
+          <div style={{ position: 'absolute', top: WH * 0.05, left: 0, right: 0, zIndex: 10, textAlign: 'center' }}>
+            <div style={{ fontSize: WW * 0.03, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.14em', color: '#4ade80', marginBottom: WW * 0.012 }}>Progress</div>
+            <div style={{ fontSize: WW * 0.085, fontWeight: 800, lineHeight: 0.95, letterSpacing: '-0.03em', color: '#fff' }}>
+              Your Week<br />At a Glance.
+            </div>
+          </div>
+          {/* Big macro ring — center */}
+          <div style={{ position: 'absolute', top: '38%', left: '50%', transform: 'translateX(-50%)', zIndex: 10 }}>
+            <div style={{ width: WW * 0.5, height: WW * 0.5, borderRadius: '50%', border: '8px solid rgba(255,255,255,0.05)', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              {/* Progress arc — using border trick */}
+              <div style={{ position: 'absolute', inset: -8, borderRadius: '50%', border: '8px solid transparent', borderTopColor: '#0077cc', borderRightColor: '#0077cc', borderBottomColor: '#0077cc', transform: 'rotate(-45deg)' }} />
+              <div style={{ textAlign: 'center' }}>
+                <div style={{ fontSize: WW * 0.1, fontWeight: 800, color: '#fff', lineHeight: 1 }}>2,050</div>
+                <div style={{ fontSize: WW * 0.025, fontWeight: 500, color: 'rgba(255,255,255,0.4)', marginTop: 4 }}>calories today</div>
+              </div>
+            </div>
+          </div>
+          {/* Macro pills row */}
+          <div style={{ position: 'absolute', top: '62%', left: '50%', transform: 'translateX(-50%)', zIndex: 10, display: 'flex', gap: WW * 0.03 }}>
+            {[
+              { label: 'Carbs', value: '241g', color: '#0077cc' },
+              { label: 'Fat', value: '62g', color: '#ef4444' },
+              { label: 'Protein', value: '143g', color: '#10b981' },
+            ].map((macro, i) => (
+              <div key={`mac${i}`} style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 16, padding: `${WW * 0.02}px ${WW * 0.03}px`, textAlign: 'center' }}>
+                <div style={{ fontSize: WW * 0.035, fontWeight: 800, color: macro.color }}>{macro.value}</div>
+                <div style={{ fontSize: WW * 0.018, fontWeight: 500, color: 'rgba(255,255,255,0.35)', marginTop: 2 }}>{macro.label}</div>
+              </div>
+            ))}
+          </div>
+          {/* Bar chart */}
+          <div style={{ position: 'absolute', bottom: WH * 0.08, left: '50%', transform: 'translateX(-50%)', zIndex: 10, display: 'flex', alignItems: 'flex-end', gap: WW * 0.035 }}>
+            {bars.map((h, i) => (
+              <div key={`bar${i}`} style={{ textAlign: 'center' }}>
+                <div style={{
+                  width: WW * 0.07,
+                  height: WW * h * 0.004,
+                  borderRadius: WW * 0.015,
+                  background: i === 6 ? 'linear-gradient(180deg, #0077cc, #00aaff)' : 'rgba(255,255,255,0.08)',
+                  boxShadow: i === 6 ? '0 0 20px rgba(0,119,204,0.4)' : 'none',
+                  marginBottom: WW * 0.012,
+                }} />
+                <div style={{ fontSize: WW * 0.02, fontWeight: 600, color: i === 6 ? '#4da6ff' : 'rgba(255,255,255,0.25)' }}>{days[i]}</div>
+              </div>
+            ))}
+          </div>
+          {/* Streak badge */}
+          <div style={{
+            position: 'absolute',
+            top: '32%',
+            right: WW * 0.08,
+            zIndex: 15,
+            padding: `${WW * 0.02}px ${WW * 0.035}px`,
+            borderRadius: 16,
+            background: 'rgba(74,222,128,0.1)',
+            border: '1px solid rgba(74,222,128,0.2)',
+          }}>
+            <div style={{ fontSize: WW * 0.05, fontWeight: 800, color: '#4ade80', lineHeight: 1 }}>30</div>
+            <div style={{ fontSize: WW * 0.016, fontWeight: 500, color: 'rgba(74,222,128,0.5)', marginTop: 2 }}>day streak</div>
+          </div>
+        </div>
+      )
+    },
+  },
 ]
 
 // ====== SLIDE COMPONENT ======

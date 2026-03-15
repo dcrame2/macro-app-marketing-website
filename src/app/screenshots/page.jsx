@@ -1,9 +1,9 @@
 'use client'
 
-import { useRef, useEffect, useCallback, useState } from 'react'
+import { useRef, useEffect, useCallback, useState, createContext, useContext } from 'react'
 
-const W = 1320
-const H = 2868
+const W = 1284
+const H = 2778
 
 // iPhone wallpaper dimensions (iPhone 15 Pro Max)
 const WW = 1290
@@ -27,8 +27,96 @@ const IMG = {
   icon: '/instacal-icon.png',
 }
 
+// ====== PHONE VARIANT CONTEXT ======
+const PhoneVariantContext = createContext('iphone')
+
 // ====== PHONE COMPONENT ======
 function Phone({ src, style, className = '' }) {
+  const variant = useContext(PhoneVariantContext)
+
+  if (variant === 'android') {
+    // Android phone — thinner bezels, punch-hole camera, flatter corners, dark frame
+    const sL = ((14 / 366) * 100).toFixed(2)
+    const sT = ((14 / 729) * 100).toFixed(2)
+    const sW = ((338 / 366) * 100).toFixed(2)
+    const sH = ((701 / 729) * 100).toFixed(2)
+    const br = ((28 / 338) * 100).toFixed(1)
+    const brY = ((28 / 701) * 100).toFixed(1)
+
+    return (
+      <div
+        className={className}
+        style={{ position: 'absolute', aspectRatio: '366/729', ...style }}
+      >
+        <div
+          style={{
+            width: '100%',
+            height: '100%',
+            position: 'relative',
+            borderRadius: '10%/5%',
+            background: 'linear-gradient(180deg,#2a2a2a 0%,#1a1a1a 100%)',
+            boxShadow:
+              '0 20px 60px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.15), inset 0 -1px 0 rgba(0,0,0,0.3)',
+          }}
+        >
+          <div
+            style={{
+              position: 'absolute',
+              left: `${sL}%`,
+              top: `${sT}%`,
+              width: `${sW}%`,
+              height: `${sH}%`,
+              borderRadius: `${br}%/${brY}%`,
+              overflow: 'hidden',
+              background: '#000',
+            }}
+          >
+            <img
+              src={src}
+              style={{
+                display: 'block',
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                objectPosition: 'top',
+              }}
+              draggable={false}
+              alt=""
+            />
+          </div>
+          {/* Punch-hole camera */}
+          <div
+            style={{
+              position: 'absolute',
+              top: '2.2%',
+              left: '50%',
+              transform: 'translateX(-50%)',
+              width: '3.2%',
+              height: '1.6%',
+              background: '#000',
+              borderRadius: '50%',
+              zIndex: 5,
+              boxShadow: 'inset 0 0 3px rgba(0,0,0,0.8)',
+            }}
+          />
+          {/* Subtle edge highlight */}
+          <div
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: '15%',
+              right: '15%',
+              height: 1,
+              background:
+                'linear-gradient(90deg,transparent,rgba(255,255,255,0.2),transparent)',
+            }}
+          />
+        </div>
+      </div>
+    )
+  }
+
+  // iPhone (default)
   const sL = ((24 / 366) * 100).toFixed(2)
   const sT = ((24 / 729) * 100).toFixed(2)
   const sW = ((316 / 366) * 100).toFixed(2)
@@ -2051,24 +2139,26 @@ const wallpaperConfigs = [
 ]
 
 // ====== SLIDE COMPONENT ======
-function Slide({ config, index, slideRef }) {
+function Slide({ config, index, slideRef, phoneVariant = 'iphone' }) {
   return (
-    <div
-      ref={slideRef}
-      style={{
-        width: W,
-        height: H,
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        transformOrigin: 'top left',
-        overflow: 'hidden',
-        fontFamily: "'Inter', -apple-system, sans-serif",
-        background: config.bg,
-      }}
-    >
-      {config.render()}
-    </div>
+    <PhoneVariantContext.Provider value={phoneVariant}>
+      <div
+        ref={slideRef}
+        style={{
+          width: W,
+          height: H,
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          transformOrigin: 'top left',
+          overflow: 'hidden',
+          fontFamily: "'Inter', -apple-system, sans-serif",
+          background: config.bg,
+        }}
+      >
+        {config.render()}
+      </div>
+    </PhoneVariantContext.Provider>
   )
 }
 
@@ -2076,6 +2166,8 @@ function Slide({ config, index, slideRef }) {
 export default function ScreenshotsPage() {
   const slideRefs = useRef([])
   const containerRefs = useRef([])
+  const androidSlideRefs = useRef([])
+  const androidContainerRefs = useRef([])
   const wallpaperRefs = useRef([])
   const wallpaperContainerRefs = useRef([])
   const [exporting, setExporting] = useState(null) // index or 'all'
@@ -2084,6 +2176,12 @@ export default function ScreenshotsPage() {
   const rescale = useCallback(() => {
     containerRefs.current.forEach((container, i) => {
       const root = slideRefs.current[i]
+      if (container && root) {
+        root.style.transform = `scale(${container.clientWidth / W})`
+      }
+    })
+    androidContainerRefs.current.forEach((container, i) => {
+      const root = androidSlideRefs.current[i]
       if (container && root) {
         root.style.transform = `scale(${container.clientWidth / W})`
       }
@@ -2237,6 +2335,70 @@ export default function ScreenshotsPage() {
     setExporting(null)
   }, [exportSlide])
 
+  // Android-specific export functions
+  const exportAndroidSlide = useCallback(
+    async (index) => {
+      const el = androidSlideRefs.current[index]
+      if (!el) return
+
+      const htmlToImage = await loadHtmlToImage()
+
+      const origTransform = el.style.transform
+      el.style.transform = 'none'
+      el.style.position = 'fixed'
+      el.style.left = '0px'
+      el.style.top = '0px'
+      el.style.zIndex = '-1'
+
+      const opts = { width: W, height: H, pixelRatio: 1, cacheBust: true }
+
+      await htmlToImage.toPng(el, opts)
+      const dataUrl = await htmlToImage.toPng(el, opts)
+
+      el.style.transform = origTransform
+      el.style.position = 'absolute'
+      el.style.left = '0px'
+      el.style.top = '0px'
+      el.style.zIndex = ''
+
+      const a = document.createElement('a')
+      a.href = dataUrl
+      const name = slideConfigs[index].name.toLowerCase().replace(/\s+/g, '-')
+      a.download = `android-${String(index + 1).padStart(2, '0')}-${name}-${W}x${H}.png`
+      document.body.appendChild(a)
+      a.click()
+      document.body.removeChild(a)
+    },
+    [loadHtmlToImage],
+  )
+
+  const downloadOneAndroid = useCallback(
+    async (index) => {
+      setExporting(`a${index}`)
+      try {
+        await exportAndroidSlide(index)
+      } catch (e) {
+        console.error('Export failed:', e)
+        alert('Export failed. Try using Cmd+Shift+4 to screenshot instead.')
+      }
+      setExporting(null)
+    },
+    [exportAndroidSlide],
+  )
+
+  const downloadAllAndroid = useCallback(async () => {
+    setExporting('all-android')
+    for (let i = 0; i < slideConfigs.length; i++) {
+      try {
+        await exportAndroidSlide(i)
+        await new Promise((r) => setTimeout(r, 500))
+      } catch (e) {
+        console.error(`Android slide ${i + 1} export failed:`, e)
+      }
+    }
+    setExporting(null)
+  }, [exportAndroidSlide])
+
   return (
     <div
       style={{
@@ -2354,6 +2516,123 @@ export default function ScreenshotsPage() {
               }}
             >
               {exporting === i ? 'Exporting...' : 'Download PNG'}
+            </button>
+          </div>
+        ))}
+      </div>
+
+      {/* ====== ANDROID SCREENSHOTS SECTION ====== */}
+      <div style={{ maxWidth: 1400, margin: '0 auto' }}>
+        <div style={{ borderTop: '1px solid #222', margin: '60px 0 40px' }} />
+        <h2
+          style={{
+            textAlign: 'center',
+            fontSize: 22,
+            fontWeight: 700,
+            color: '#fff',
+            marginBottom: 6,
+          }}
+        >
+          Android Screenshots
+        </h2>
+        <p
+          style={{
+            textAlign: 'center',
+            color: '#666',
+            fontSize: 13,
+            marginBottom: 24,
+            lineHeight: 1.6,
+          }}
+        >
+          1320 × 2868px — Same layouts with Android phone frame
+        </p>
+        <div style={{ textAlign: 'center', marginBottom: 36 }}>
+          <button
+            onClick={downloadAllAndroid}
+            disabled={exporting !== null}
+            style={{
+              padding: '10px 28px',
+              background: exporting ? '#333' : '#34a853',
+              color: exporting ? '#666' : '#fff',
+              border: 'none',
+              borderRadius: 10,
+              fontSize: 14,
+              fontWeight: 700,
+              fontFamily: 'inherit',
+              cursor: exporting ? 'wait' : 'pointer',
+            }}
+          >
+            {exporting === 'all-android' ? 'Exporting...' : 'Download All Android Screenshots'}
+          </button>
+        </div>
+      </div>
+
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(4, 1fr)',
+          gap: 20,
+          maxWidth: 1400,
+          margin: '0 auto',
+        }}
+      >
+        {slideConfigs.map((config, i) => (
+          <div
+            key={`a${i}`}
+            style={{
+              background: '#151515',
+              borderRadius: 14,
+              overflow: 'hidden',
+              border: '1px solid #2a2a2a',
+              transition: 'transform 0.2s',
+            }}
+          >
+            <div
+              ref={(el) => (androidContainerRefs.current[i] = el)}
+              style={{
+                width: '100%',
+                aspectRatio: `${W}/${H}`,
+                position: 'relative',
+                overflow: 'hidden',
+              }}
+            >
+              <Slide
+                config={config}
+                index={i}
+                slideRef={(el) => (androidSlideRefs.current[i] = el)}
+                phoneVariant="android"
+              />
+            </div>
+            <div
+              style={{
+                textAlign: 'center',
+                padding: 10,
+                fontSize: 12,
+                fontWeight: 600,
+                color: '#777',
+              }}
+            >
+              {String(i + 1).padStart(2, '0')} — {config.name}
+            </div>
+            <button
+              onClick={() => downloadOneAndroid(i)}
+              disabled={exporting !== null}
+              style={{
+                display: 'block',
+                width: 'calc(100% - 20px)',
+                margin: '0 10px 10px',
+                padding: 8,
+                background: exporting === `a${i}` ? '#333' : '#34a853',
+                color: exporting === `a${i}` ? '#666' : '#fff',
+                border: 'none',
+                borderRadius: 8,
+                fontSize: 12,
+                fontWeight: 600,
+                fontFamily: 'inherit',
+                cursor: exporting !== null ? 'wait' : 'pointer',
+              }}
+            >
+              {exporting === `a${i}` ? 'Exporting...' : 'Download PNG'}
             </button>
           </div>
         ))}

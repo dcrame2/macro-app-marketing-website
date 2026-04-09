@@ -9,7 +9,6 @@ const APP_STORE_URL =
 const ANDROID_PACKAGE = 'com.digitaldelight.InstaCal'
 
 export function ReferralLanding({ code }) {
-  const [showContent, setShowContent] = useState(false)
   const [platform, setPlatform] = useState('other')
 
   const deepLink = `instacal://r/${code}`
@@ -26,35 +25,10 @@ export function ReferralLanding({ code }) {
     } else if (/Android/.test(ua)) {
       setPlatform('android')
     }
-
-    // Try to open the app directly (works if installed)
-    window.location.href = deepLink
-
-    // If app didn't open, show the landing page after a short delay
-    const timer = setTimeout(() => setShowContent(true), 1500)
-    return () => clearTimeout(timer)
-  }, [deepLink])
+  }, [])
 
   function handleOpenApp() {
     window.location.href = deepLink
-  }
-
-  if (!showContent) {
-    return (
-      <div className="flex min-h-screen items-center justify-center bg-gray-50">
-        <div className="text-center">
-          <Image
-            src={logo}
-            alt="InstaCal"
-            width={64}
-            height={64}
-            className="mx-auto rounded-xl"
-            priority
-          />
-          <p className="mt-4 text-sm text-gray-500">Opening InstaCal...</p>
-        </div>
-      </div>
-    )
   }
 
   return (

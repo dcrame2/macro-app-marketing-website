@@ -1,3 +1,5 @@
+export const dynamic = 'force-static'
+
 export async function GET() {
   const data = [
     {
@@ -15,6 +17,7 @@ export async function GET() {
   return new Response(JSON.stringify(data), {
     headers: {
       'Content-Type': 'application/json',
+      'Cache-Control': 'public, max-age=3600, must-revalidate',
     },
   })
 }

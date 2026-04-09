@@ -2,7 +2,7 @@
 
 ## Overview
 
-Pre-launch and launch marketing system — channels, automation, and metrics...
+Pre-launch and launch marketing system — channels, automation, and metrics.
 
 ---
 

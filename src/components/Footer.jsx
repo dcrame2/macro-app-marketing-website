@@ -30,6 +30,7 @@ export function Footer() {
                 ['Pricing', '/#pricing'],
                 ['FAQs', '/#faqs'],
                 ['Privacy', '/privacy'],
+                ['Partners', '/partners'],
               ].map(([label, href]) => (
                 <Link
                   key={label}

@@ -7,6 +7,9 @@ import logo from '@/images/logos/InstaCal_logo.png'
 const APP_STORE_URL =
   'https://apps.apple.com/us/app/instacal/id6743951306'
 const ANDROID_PACKAGE = 'com.digitaldelight.InstaCal'
+const DEFERRED_LINK_URL = process.env.NEXT_PUBLIC_SUPABASE_URL
+  ? process.env.NEXT_PUBLIC_SUPABASE_URL + '/functions/v1/deferred-link'
+  : null
 
 export function ReferralLanding({ code }) {
   const [platform, setPlatform] = useState('other')
@@ -25,7 +28,29 @@ export function ReferralLanding({ code }) {
     } else if (/Android/.test(ua)) {
       setPlatform('android')
     }
-  }, [])
+
+    // Store a device fingerprint so the app can recover the referral code
+    // after a fresh install (deferred deep linking). Fire-and-forget.
+    if (DEFERRED_LINK_URL) {
+      fetch(DEFERRED_LINK_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          action: 'store',
+          code,
+          fingerprint: {
+            ua: navigator.userAgent,
+            sw: screen.width,
+            sh: screen.height,
+            dpr: window.devicePixelRatio,
+            lang: navigator.language,
+            tz: Intl.DateTimeFormat().resolvedOptions().timeZone,
+            platform: navigator.platform,
+          },
+        }),
+      }).catch(() => {})
+    }
+  }, [code])
 
   function handleOpenApp() {
     window.location.href = deepLink

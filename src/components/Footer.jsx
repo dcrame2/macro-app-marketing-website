@@ -18,7 +18,7 @@ export function Footer() {
               <div className="ml-4">
                 <p className="text-base font-bold text-white">InstaCal</p>
                 <p className="mt-1 text-sm text-gray-500">
-                  AI-Powered Nutrition Tracking
+                  Where food meets your feed.
                 </p>
               </div>
             </div>

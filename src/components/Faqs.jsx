@@ -6,34 +6,39 @@ import { Container } from '@/components/Container'
 
 const faqs = [
   {
+    question: 'What makes InstaCal different from other food apps?',
+    answer:
+      'InstaCal is the only food app built like a social network. You post meals, follow friends, and discover food on a map. And yeah, it tracks your macros too. No tedious database searching, no spreadsheet vibes.',
+  },
+  {
+    question: 'Do I have to track calories?',
+    answer:
+      'No. You can use InstaCal just to post meals, follow friends, and discover food near you. Tracking happens automatically in the background if you care about it, but it is not the point of the app.',
+  },
+  {
+    question: 'How does the social feed work?',
+    answer:
+      'Follow friends to see their meals in your feed. Discover new posts through Slides, explore meals on a nearby map, and engage with likes, comments, and bookmarks. You control your privacy and can go public or private anytime.',
+  },
+  {
     question: 'How accurate is the photo meal scanning?',
     answer:
       'Our AI is trained on millions of food images and delivers highly accurate macro estimates. For complex or mixed dishes, you can use Fix with AI to refine any details, totally free.',
   },
   {
-    question: 'What makes InstaCal different from MyFitnessPal?',
-    answer:
-      'InstaCal is built around AI and social. Snap a photo instead of searching databases. See what your friends eat, discover meals on a map, and get personalized AI nutrition advice. No tedious manual logging.',
-  },
-  {
     question: 'Is InstaCal really free?',
     answer:
-      'Yes. Photo scanning, food search, label scanning, meal building, social feed, slides, following, AI Fix, calorie tracking, and workout logging are all completely free. Pro unlocks barcode scanning, saved meals, AI Dietitian, AI Insights, and advanced stats.',
+      'Yes. The full social experience (feed, slides, following, discover) plus photo scanning, food search, label scanning, meal building, AI Fix, calorie tracking, and workout logging are all free. Pro unlocks barcode scanning, saved meals, AI Dietitian, AI Insights, nearby map, and advanced stats.',
   },
   {
     question: 'Can I track workouts too?',
     answer:
-      'Yes. Log workouts manually or connect Strava or Apple Health to auto-import. Your burned calories are factored into your net calorie tracking.',
-  },
-  {
-    question: 'How does the social feed work?',
-    answer:
-      'Follow friends to see their meals in your feed. Discover new content through Slides, explore meals on a nearby map, and engage with likes and comments. You control your privacy and can go public or private anytime.',
+      'Yes. Log workouts manually or connect Strava or Apple Health to auto-import. Your burned calories factor into your net calorie tracking automatically.',
   },
   {
     question: 'Can I save and reuse meals?',
     answer:
-      'With Pro, you can bookmark any meal and re-log it with a single tap. Perfect for meal prep, daily go-tos, or favorite restaurant orders.',
+      'With Pro, you can bookmark any meal and post it again with a single tap. Perfect for meal prep, daily go-tos, or favorite restaurant orders.',
   },
   {
     question: 'What is the AI Dietitian?',

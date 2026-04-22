@@ -6,8 +6,8 @@ import { motion, useInView } from 'framer-motion'
 import { AppStoreLink } from '@/components/AppStoreLink'
 import { Container } from '@/components/Container'
 import { PlayStoreLink } from '@/components/PlayStoreLink'
-import homeScreen from '@/images/screenshots/home.jpg'
-import mealDetail from '@/images/screenshots/meal-detail.jpg'
+import socialFeed from '@/images/screenshots/social-feed.PNG'
+import slidesImg from '@/images/screenshots/slides.jpg'
 
 function PhoneMockup({ children, className = '' }) {
   return (
@@ -61,16 +61,16 @@ export function CallToAction() {
                 ))}
               </div>
               <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
-                Start Tracking
+                Your Food
                 <br />
                 <span className="bg-gradient-to-r from-[#0077cc] to-cyan-400 bg-clip-text text-transparent">
-                  Smarter Today
+                  Deserves A Feed
                 </span>
               </h2>
               <p className="mt-6 text-lg leading-relaxed text-gray-400">
-                Join thousands of people using InstaCal to take control of their
-                nutrition. The only calorie tracker with AI scanning, social
-                features, and a meal map. Free to download, free to use.
+                Join the social network built for food and fitness. Post meals,
+                follow friends, discover places, and hit your goals together.
+                Free to download, free to use.
               </p>
               <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row lg:items-start">
                 <AppStoreLink color="white" />
@@ -85,8 +85,8 @@ export function CallToAction() {
             <div className="flex gap-4 sm:gap-6">
               <PhoneMockup className="-rotate-6">
                 <Image
-                  src={homeScreen}
-                  alt="InstaCal home screen"
+                  src={socialFeed}
+                  alt="InstaCal social feed with friends meal posts, likes, and comments"
                   fill
                   className="object-cover object-top"
                   sizes="220px"
@@ -94,8 +94,8 @@ export function CallToAction() {
               </PhoneMockup>
               <PhoneMockup className="hidden rotate-6 translate-y-8 sm:block">
                 <Image
-                  src={mealDetail}
-                  alt="InstaCal meal detail with full nutrition breakdown"
+                  src={slidesImg}
+                  alt="InstaCal slides view showing full-screen meal photos and location tags"
                   fill
                   className="object-cover object-top"
                   sizes="220px"

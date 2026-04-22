@@ -52,15 +52,15 @@ export function SocialFeatures() {
               <span className="text-sm font-semibold text-[#0077cc]">Social</span>
             </div>
             <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
-              Nutrition Meets{' '}
+              A Social Network{' '}
               <span className="bg-gradient-to-r from-[#0077cc] to-cyan-500 bg-clip-text text-transparent">
-                Social Media
+                Built For Food
               </span>
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-gray-600">
-              InstaCal is the only calorie tracker with a full social
-              experience. Share meals, discover food near you, follow friends,
-              and stay accountable together.
+              Follow friends, discover meals near you, and share every bite.
+              InstaCal is the only food app built like a social network, not a
+              spreadsheet.
             </p>
           </div>
         </AnimateIn>
@@ -69,7 +69,7 @@ export function SocialFeatures() {
         <div className="mt-24 grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           <AnimateIn className="order-2 lg:order-1">
             <div className="flex justify-center">
-              <PhoneMockup>
+              <PhoneMockup className="-rotate-3 transition-transform duration-500 hover:rotate-0">
                 <Image
                   src={socialFeedImg}
                   alt="InstaCal social feed showing friends meals with full nutrition breakdown, likes and comments"
@@ -137,7 +137,7 @@ export function SocialFeatures() {
           </AnimateIn>
           <AnimateIn delay={0.2}>
             <div className="flex justify-center">
-              <PhoneMockup>
+              <PhoneMockup className="rotate-3 transition-transform duration-500 hover:rotate-0">
                 <Image
                   src={slidesImg}
                   alt="InstaCal slides view with full-screen meal photos, location tags, and nutrition overlay"
@@ -154,7 +154,7 @@ export function SocialFeatures() {
         <div className="mt-32 grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           <AnimateIn className="order-2 lg:order-1">
             <div className="flex justify-center">
-              <PhoneMockup>
+              <PhoneMockup className="-rotate-2 transition-transform duration-500 hover:rotate-0">
                 <Image
                   src={mapImg}
                   alt="InstaCal map view showing meal pins at restaurants across Chicago with search and explore features"
@@ -228,7 +228,7 @@ export function SocialFeatures() {
           </AnimateIn>
           <AnimateIn delay={0.2}>
             <div className="flex justify-center">
-              <PhoneMockup>
+              <PhoneMockup className="rotate-2 transition-transform duration-500 hover:rotate-0">
                 <Image
                   src={profileImg}
                   alt="InstaCal profile page showing meal photo grid, streak counter, followers and post count"

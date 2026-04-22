@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og'
 import { readFile } from 'fs/promises'
 import { join } from 'path'
 
-export const alt = 'InstaCal: Social Fitness & Calorie Tracker with AI'
+export const alt = 'InstaCal: The Social App for Food & Fitness'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -122,7 +122,7 @@ export default async function Image() {
               lineHeight: 1.3,
             }}
           >
-            Health Tracking Meets Social.
+            Where Food Meets Your Feed.
           </div>
 
           {/* Feature pills */}
@@ -134,7 +134,7 @@ export default async function Image() {
               marginTop: 32,
             }}
           >
-            {['AI Nutrition', 'Social Feed', 'Workout Tracking'].map(
+            {['Social Feed', 'Meal Map', 'AI Scanner'].map(
               (label) => (
                 <div
                   key={label}

@@ -24,9 +24,9 @@ const methods = [
   },
   {
     name: 'Barcode Scan',
-    tagline: 'Scan. Log. Go.',
+    tagline: 'Scan. Post. Go.',
     description:
-      'Point your camera at any product barcode and instantly pull up exact nutrition facts. No typing, no searching. Scan and log in under 2 seconds.',
+      'Point your camera at any product barcode and instantly pull up exact nutrition facts. No typing, no searching. Scan and post in under 2 seconds.',
     icon: BarcodeIcon,
     color: 'from-purple-500 to-pink-400',
     free: false,
@@ -66,7 +66,7 @@ const methods = [
     name: 'Saved Meals',
     tagline: 'One-tap repeats.',
     description:
-      'Bookmark your favorite meals and log them again with a single tap. Great for meal prep, regular breakfasts, or go-to orders.',
+      'Bookmark your favorite meals and post them again with a single tap. Great for meal prep, regular breakfasts, or go-to orders.',
     icon: SavedIcon,
     color: 'from-indigo-500 to-violet-400',
     free: false,
@@ -196,14 +196,14 @@ export function LogMethods() {
             <svg className="h-4 w-4 text-[#0077cc]" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z" />
             </svg>
-            <span className="text-sm font-semibold text-[#0077cc]">6 Ways to Log</span>
+            <span className="text-sm font-semibold text-[#0077cc]">6 Ways to Post</span>
           </div>
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
-            Log Any Meal, Any Way
+            Post Any Meal, Any Way
           </h2>
           <p className="mt-4 text-lg text-gray-600">
             Whether you are eating out, cooking at home, or meal prepping,
-            InstaCal has the perfect way to log it.
+            there is a way to snap it, post it, and share it in seconds.
           </p>
         </motion.div>
 

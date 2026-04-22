@@ -93,14 +93,14 @@ export function StatsSection() {
               <span className="text-sm font-semibold text-[#0077cc]">Analytics</span>
             </div>
             <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
-              See Your{' '}
+              Every Post{' '}
               <span className="bg-gradient-to-r from-[#0077cc] to-cyan-500 bg-clip-text text-transparent">
-                Progress
+                Tracks Itself
               </span>
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-gray-600">
-              Beautiful charts, streaks, and insights that keep you motivated
-              and on track. Know exactly where you stand every day.
+              Every meal you post counts toward your macros, streaks, and goals
+              automatically. No double entry, no separate app, no spreadsheet.
             </p>
           </div>
         </AnimateIn>

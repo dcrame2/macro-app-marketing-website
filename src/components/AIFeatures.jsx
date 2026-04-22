@@ -154,15 +154,15 @@ export function AIFeatures() {
               <span className="text-sm font-semibold text-[#0077cc]">AI-Powered</span>
             </div>
             <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-5xl">
-              Your AI Nutrition{' '}
+              AI That Handles The{' '}
               <span className="bg-gradient-to-r from-[#0077cc] to-cyan-400 bg-clip-text text-transparent">
-                Assistant
+                Boring Part
               </span>
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-gray-400">
-              InstaCal does not just track, it thinks. Fix mistakes instantly,
-              get personalized advice, and understand your nutrition at a deeper
-              level.
+              You post the photo. InstaCal figures out what is in it, what it is
+              worth nutritionally, and what to tell you about it. No typing, no
+              databases, no nonsense.
             </p>
           </div>
         </AnimateIn>

@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <LogMethods />
       <SocialFeatures />
+      <LogMethods />
       <AIFeatures />
       <StatsSection />
       <Pricing />

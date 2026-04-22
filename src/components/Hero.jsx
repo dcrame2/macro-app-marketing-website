@@ -6,14 +6,14 @@ import Image from 'next/image'
 import { Container } from '@/components/Container'
 import { AppStoreLink } from '@/components/AppStoreLink'
 import { PlayStoreLink } from '@/components/PlayStoreLink'
-import homeScreen from '@/images/screenshots/home.jpg'
+import profileHero from '@/images/screenshots/profile-hero.jpg'
 
 const subtitles = [
-  'Health Tracking Meets Social.',
-  'Snap a Photo. Get Instant Macros.',
-  'AI-Powered Nutrition Coaching.',
-  'Track Workouts & Meals Together.',
-  'See What Friends Are Eating.',
+  'Where Food Meets Your Feed.',
+  'Social. Food. Fitness.',
+  'Post. Follow. Discover.',
+  'See What People Are Eating.',
+  'Your Food. Your Feed.',
 ]
 
 function AnimatedSubtitle() {
@@ -128,7 +128,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="mt-2 text-2xl font-semibold sm:text-3xl"
+              className="mt-2 min-h-[1.5em] text-xl font-semibold sm:text-3xl"
             >
               <AnimatedSubtitle />
             </motion.p>
@@ -139,9 +139,9 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.45 }}
               className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-gray-400 sm:text-xl lg:mx-0"
             >
-              The AI-powered calorie tracker that feels like social media. Snap a
-              photo of any meal, get instant macros, share with friends, and
-              discover what people eat near you.
+              The social network for food and fitness. Post every meal, follow
+              friends, explore food near you, and yeah, it tracks your macros
+              too.
             </motion.p>
 
             {/* CTAs */}
@@ -174,8 +174,8 @@ export function Hero() {
           >
             <PhoneMockup>
               <Image
-                src={homeScreen}
-                alt="InstaCal home dashboard showing daily calorie tracking with macro breakdown rings"
+                src={profileHero}
+                alt="InstaCal profile page showing a food posts grid with followers, streaks, and map pin filter"
                 fill
                 className="object-cover object-top"
                 sizes="280px"
@@ -202,15 +202,13 @@ export function Hero() {
               </div>
             </FloatingCard>
 
-            {/* Floating: AI scan result */}
+            {/* Floating: New follower */}
             <FloatingCard className="-right-2 top-1/4 animate-float-delayed px-2.5 py-2 sm:-right-20 sm:top-1/3 sm:px-4 sm:py-3">
               <div className="flex items-center gap-1.5 sm:gap-2">
-                <div className="flex h-5 w-5 items-center justify-center rounded-md bg-[#0077cc]/20 sm:h-7 sm:w-7 sm:rounded-lg">
-                  <span className="text-xs sm:text-sm">✨</span>
-                </div>
+                <div className="h-5 w-5 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 sm:h-7 sm:w-7" />
                 <div>
-                  <p className="text-[10px] font-semibold text-white sm:text-xs">AI Scanned</p>
-                  <p className="text-[8px] text-gray-400 sm:text-[10px]">420 cal · 32g protein</p>
+                  <p className="text-[10px] font-semibold text-white sm:text-xs">@sarah followed you</p>
+                  <p className="text-[8px] text-gray-400 sm:text-[10px]">Say hi back</p>
                 </div>
               </div>
             </FloatingCard>
@@ -243,7 +241,7 @@ export function Hero() {
         <div className="mx-auto mt-16 grid max-w-3xl grid-cols-3 gap-8 border-t border-white/10 pt-10">
           {[
             { value: '5.0', label: 'App Store Rating' },
-            { value: '6', label: 'Ways to Log' },
+            { value: '6', label: 'Ways to Post' },
             { value: '$0', label: 'To Get Started' },
           ].map((stat) => (
             <div key={stat.label} className="text-center">

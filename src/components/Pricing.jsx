@@ -24,14 +24,14 @@ function AnimateIn({ children, className = '', delay = 0 }) {
 }
 
 const freeFeatures = [
+  'Social feed, slides, & discover',
+  'Follow friends & community',
+  'Likes, comments, & sharing',
   'Photo meal scanning with AI',
   'Nutrition label scanning',
   'Manual food search',
   'Build your own meals',
   'Fix with AI corrections',
-  'Social feed, slides, & discover',
-  'Follow friends & community',
-  'Likes, comments, & sharing',
   'Daily calorie tracking & charts',
   'Workout logging',
   'Streak tracking',
@@ -129,7 +129,7 @@ export function Pricing() {
                 <div>
                   <h3 className="text-xl font-bold text-gray-900">Free</h3>
                   <p className="mt-1 text-sm text-gray-500">
-                    Everything you need to start tracking
+                    Everything you need to post, share, and track
                   </p>
                 </div>
                 <div className="text-right">

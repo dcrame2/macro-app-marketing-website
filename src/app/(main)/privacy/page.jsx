@@ -9,7 +9,7 @@ function PrivacyPolicy() {
           Privacy Policy for InstaCal
         </h1>
         <p className="mb-4 text-lg font-semibold">
-          <strong>Last Updated: March 12, 2026</strong>
+          <strong>Last Updated: April 24, 2026</strong>
         </p>
 
         {/* 1. Introduction */}
@@ -150,7 +150,25 @@ function PrivacyPolicy() {
           </li>
           <li>
             <strong>Control:</strong> You can delete your posts and content at
-            any time through the App.
+            any time through the App. You can also set your account to private
+            or hide individual meals to limit who can see your content.
+          </li>
+          <li>
+            <strong>Promotional use of public content:</strong> Content you
+            share publicly (including meal photos posted from a public account
+            and not hidden) may be featured by InstaCal in marketing materials,
+            including social media posts, advertisements, our website, and
+            other promotional channels. When we feature user content, we hide
+            usernames and avoid showing identifying details. You can opt out
+            at any time by setting your account to private, hiding individual
+            meals, or contacting us at{' '}
+            <a
+              href="mailto:support@theinstacal.app"
+              className="text-blue-500 underline"
+            >
+              support@theinstacal.app
+            </a>
+            .
           </li>
         </ul>
 

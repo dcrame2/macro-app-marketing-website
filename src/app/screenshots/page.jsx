@@ -18,12 +18,13 @@ const IMG = {
   saved_meals: '/screenshots/saved-meals.png',
   meal_detail: '/screenshots/meal-detail.png',
   social_feed: '/screenshots/social-feed.png',
-  slides: '/screenshots/slides.png',
-  map: '/screenshots/map.png',
+  slides: '/screenshots/slides.jpg',
+  map: '/screenshots/map.jpg',
   progress: '/screenshots/progress.png',
   calories: '/screenshots/calories.png',
   profile: '/screenshots/profile.png',
   photo_scan: '/screenshots/photo-scan.png',
+  tracking: '/screenshots/tracking.png',
   icon: '/instacal-icon.png',
 }
 
@@ -371,7 +372,7 @@ const slideConfigs = [
           </div>
         </div>
         <Phone
-          src={IMG.home}
+          src={IMG.tracking}
           style={{
             bottom: 0,
             left: '50%',

@@ -4,8 +4,7 @@ import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import logo from '@/images/logos/InstaCal_logo.png'
 
-const APP_STORE_URL =
-  'https://apps.apple.com/us/app/instacal/id6743951306'
+const APP_STORE_URL = 'https://apps.apple.com/us/app/instacal/id6743951306'
 const ANDROID_PACKAGE = 'com.digitaldelight.InstaCal'
 const DEFERRED_LINK_URL = process.env.NEXT_PUBLIC_SUPABASE_URL
   ? process.env.NEXT_PUBLIC_SUPABASE_URL + '/functions/v1/deferred-link'
@@ -73,8 +72,8 @@ export function ReferralLanding({ code }) {
         </h1>
         <p className="mt-2 text-sm text-gray-500">
           Download the app and enter code{' '}
-          <span className="font-bold text-blue-600">{code}</span>{' '}
-          during signup to get free Premium days.
+          <span className="font-bold text-blue-600">{code}</span> during signup
+          to get free Pro days. No credit card needed.
         </p>
 
         <button

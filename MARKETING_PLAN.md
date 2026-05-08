@@ -85,7 +85,7 @@ graph TB
 
 - Target micro-influencers (5k–50k) in fitness/nutrition
 - Automated DM/email outreach sequences
-- Provide free premium access + affiliate code
+- Provide free pro access + affiliate code
 - Track installs per influencer
 
 ### 2. Paid Meal Loggers (UGC)

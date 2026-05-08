@@ -8,10 +8,10 @@ export async function generateMetadata({ params }) {
 
   return {
     title: "You've been invited to InstaCal",
-    description: `Use code ${upperCode} to get free days of InstaCal Premium.`,
+    description: `Use code ${upperCode} to get free days of InstaCal Pro.`,
     openGraph: {
       title: "You've been invited to InstaCal",
-      description: `Use code ${upperCode} to get free days of InstaCal Premium.`,
+      description: `Use code ${upperCode} to get free days of InstaCal Pro.`,
       url: `https://theinstacal.app/r/${upperCode}`,
       images: [
         {

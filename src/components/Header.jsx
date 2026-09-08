@@ -11,7 +11,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 
 import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
-import { NavLinks } from '@/components/NavLinks'
+import { NavLinks, navigation } from '@/components/NavLinks'
 import { AppStoreLink } from './AppStoreLink'
 import { PlayStoreLink } from './PlayStoreLink'
 
@@ -125,17 +125,11 @@ export function Header() {
                     className="absolute inset-x-0 top-0 z-40 origin-top rounded-b-2xl bg-white px-6 pb-6 pt-32 shadow-2xl shadow-gray-900/20"
                   >
                     <div className="space-y-4">
-                      <MobileNavLink href="/#features">
-                        Features
-                      </MobileNavLink>
-                      <MobileNavLink href="/#ai">AI</MobileNavLink>
-                      <MobileNavLink href="/#social">
-                        Social
-                      </MobileNavLink>
-                      <MobileNavLink href="/#pricing">
-                        Pricing
-                      </MobileNavLink>
-                      <MobileNavLink href="/#faqs">FAQs</MobileNavLink>
+                      {navigation.map(([label, href]) => (
+                        <MobileNavLink key={label} href={href}>
+                          {label}
+                        </MobileNavLink>
+                      ))}
                     </div>
                     <div className="mt-8 flex w-fit flex-col gap-4">
                       <AppStoreLink color="black" />

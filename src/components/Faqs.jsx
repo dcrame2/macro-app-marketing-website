@@ -18,7 +18,7 @@ const faqs = [
   {
     question: 'How does the social feed work?',
     answer:
-      'Follow friends to see their meals in your feed. Discover new posts through Slides, explore meals on a nearby map, and engage with likes, comments, and bookmarks. You control your privacy and can go public or private anytime.',
+      'Follow friends to see their meals and workouts in your feed. Explore deals you plates that fit what you have left today, the map shows where people actually eat, and you engage with likes, comments, and bookmarks. You control your privacy and can go public or private anytime.',
   },
   {
     question: 'How accurate is the photo meal scanning?',
@@ -28,22 +28,27 @@ const faqs = [
   {
     question: 'Is InstaCal really free?',
     answer:
-      'Yes. The full social experience (feed, slides, following, discover) plus photo scanning, food search, label scanning, meal building, AI Fix, calorie tracking, and workout logging are all free. Pro unlocks barcode scanning, saved meals, AI Dietitian, AI Insights, nearby map, and advanced stats.',
+      'Yes. The feed, Explore, the map, photo scanning, label scanning, search, build a meal, Fix with AI, Coach notes, tracking, streaks, achievements, challenges, Wrapped, and widgets are all free. Pro unlocks barcode scanning, one tap saved meals, unlimited Coach chat, weekly and monthly recaps, insight pages, AI Insights, full macro stats, Nearby Slides, and the My Meals map.',
   },
   {
     question: 'Can I track workouts too?',
     answer:
-      'Yes. Log workouts manually or connect Strava or Apple Health to auto-import. Your burned calories factor into your net calorie tracking automatically.',
+      'Yes. Log workouts by hand or connect Strava and Apple Health to import them automatically. Runs and rides show the route, splits, pace, and heart rate zones, and burned calories count against your day automatically.',
   },
   {
     question: 'Can I save and reuse meals?',
     answer:
-      'With Pro, you can bookmark any meal and post it again with a single tap. Perfect for meal prep, daily go-tos, or favorite restaurant orders.',
+      'Saving and bookmarking meals is free. With Pro, you can post a saved meal again with a single tap, in the app or straight from the Log again widget. Perfect for meal prep, daily go-tos, or favorite restaurant orders.',
   },
   {
-    question: 'What is the AI Dietitian?',
+    question: 'What is InstaCal Coach?',
     answer:
-      'A Pro feature that lets you chat with an AI nutritionist that knows your eating history, goals, and preferences. Ask it anything like "Am I eating enough protein?" or "What should I eat for dinner?"',
+      'A coach that lives in your DMs. It reads every meal and workout you log, recaps your day, and answers questions like "Am I eating enough protein?" Notes and daily recaps are free. Unlimited chat and weekly and monthly recaps are Pro.',
+  },
+  {
+    question: 'Does InstaCal have widgets?',
+    answer:
+      'Yes, on iPhone. Six Home Screen widgets (Today, Log a meal, Log again, Streak, Friends, and Move) plus the Today ring and your Streak on the Lock Screen. Every tap opens the right screen in the app.',
   },
   {
     question: 'Is my data private?',

@@ -27,6 +27,7 @@ export function Footer() {
                 ['Features', '/#features'],
                 ['AI', '/#ai'],
                 ['Social', '/#social'],
+                ['Tracking', '/#tracking'],
                 ['Pricing', '/#pricing'],
                 ['FAQs', '/#faqs'],
                 ['Privacy', '/privacy'],

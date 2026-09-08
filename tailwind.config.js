@@ -34,6 +34,11 @@ module.exports = {
         float: 'float 6s ease-in-out infinite',
         'float-delayed': 'float 6s ease-in-out 2s infinite',
         'gradient-x': 'gradient-x 6s ease infinite',
+        'marquee-x': 'marquee-x var(--marquee-duration, 40s) linear infinite',
+        'marquee-x-reverse':
+          'marquee-x-reverse var(--marquee-duration, 40s) linear infinite',
+        'pop-in': 'pop-in 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards',
+        scan: 'scan 2.8s ease-in-out infinite',
       },
       borderRadius: {
         '4xl': '2rem',
@@ -83,6 +88,24 @@ module.exports = {
         'gradient-x': {
           '0%, 100%': { 'background-position': '0% 50%' },
           '50%': { 'background-position': '100% 50%' },
+        },
+        'marquee-x': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+        'marquee-x-reverse': {
+          '0%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        'pop-in': {
+          '0%': { opacity: '0', transform: 'scale(0.5)' },
+          '100%': { opacity: '1', transform: 'scale(1)' },
+        },
+        scan: {
+          '0%': { top: '-12%', opacity: '0' },
+          '12%': { opacity: '1' },
+          '88%': { opacity: '1' },
+          '100%': { top: '104%', opacity: '0' },
         },
       },
       maxWidth: {

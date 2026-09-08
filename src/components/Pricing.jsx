@@ -24,30 +24,30 @@ function AnimateIn({ children, className = '', delay = 0 }) {
 }
 
 const freeFeatures = [
-  'Social feed, slides, & discover',
-  'Follow friends & community',
-  'Likes, comments, & sharing',
-  'Photo meal scanning with AI',
-  'Nutrition label scanning',
-  'Manual food search',
-  'Build your own meals',
+  'Feed, Explore, Plate Deck, and the map',
+  'Follow friends, likes, comments, and shares',
+  'Photo, label, search, and build a meal',
   'Fix with AI corrections',
-  'Daily calorie tracking & charts',
-  'Workout logging',
-  'Streak tracking',
+  'Coach notes on every meal and workout',
+  'Food and Fitness tracking, six boxes each',
+  'Streaks, achievements, and challenges',
+  'Monthly Wrapped and the share studio',
+  'Home Screen and Lock Screen widgets',
+  'Strava and Apple Health sync',
+  'Save and bookmark meals',
 ]
 
 const proFeatures = [
   'Everything in Free, plus:',
   'Barcode scanning',
-  'Save & bookmark meals',
-  'AI Dietitian chat',
-  'AI Insights & health scores',
-  'Full macro charts (protein, carbs, fat, sugar)',
-  'Extended stats (60/90 day views)',
-  'Nearby meals map',
-  'My Meals map view',
-  'Nearby Slides',
+  'Log a saved meal again in one tap',
+  'Unlimited Coach chat',
+  'Weekly and monthly Coach recaps',
+  "Insight pages with charts and the Coach's read",
+  'AI Insights and health scores',
+  'Full macro stats and 60/90 day views',
+  'Nearby Slides and the My Meals map',
+  'Streak restore included',
   'Priority feature updates',
 ]
 

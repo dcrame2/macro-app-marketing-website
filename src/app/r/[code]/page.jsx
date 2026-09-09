@@ -13,14 +13,12 @@ export async function generateMetadata({ params }) {
       title: "You've been invited to InstaCal",
       description: `Use code ${upperCode} to get free days of InstaCal Pro.`,
       url: `https://theinstacal.app/r/${upperCode}`,
-      images: [
-        {
-          url: '/src/images/logos/InstaCal_logo.png',
-          width: 1200,
-          height: 630,
-          alt: 'InstaCal',
-        },
-      ],
+      // The root opengraph-image.jsx renders the real 1200x630 card, but a
+      // child that defines `openGraph` replaces the parent's images rather
+      // than inheriting them, so it has to be named explicitly. This used to
+      // point at "/src/images/..." - a source path Next never serves - so
+      // every shared referral link unfurled with a broken image.
+      images: ['/opengraph-image'],
     },
     other: {
       'apple-itunes-app': `app-id=${ITUNES_ID}, app-argument=instacal://r/${upperCode}`,

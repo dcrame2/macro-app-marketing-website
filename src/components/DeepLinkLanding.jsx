@@ -25,6 +25,16 @@ const TYPE_CONFIG = {
     heading: 'View this profile on InstaCal',
     ogTitle: 'Check out this profile on InstaCal',
   },
+  // Plural, unlike the others, because the key doubles as the deep-link path
+  // and the app's route is app/(protected)/challenges/[id].tsx.
+  challenges: {
+    label: 'challenge',
+    heading: 'Join this challenge on InstaCal',
+    ogTitle: 'Join this challenge on InstaCal',
+    // Only public challenges are ever shared. A private one is invite-only in
+    // the app, so a link could not let anyone in.
+    subheading: 'Open the app to see the target and join in.',
+  },
 }
 
 export function DeepLinkLanding({ type, id }) {
@@ -86,7 +96,7 @@ export function DeepLinkLanding({ type, id }) {
           {config.heading}
         </h1>
         <p className="mt-2 text-sm text-gray-500">
-          Track your nutrition with InstaCal
+          {config.subheading ?? 'Track your nutrition with InstaCal'}
         </p>
 
         <button

@@ -5,13 +5,17 @@ export async function GET() {
     applinks: {
       apps: [],
       details: [
+        // Keep this list in step with the Android `intentFilters` block in the
+        // app's app.config.js. Android names each path there; iOS claims the
+        // whole domain and lets this file decide, so a path missing here just
+        // opens the website instead of the app, silently.
         {
           appID: 'SRHQX85SN8.com.digitaldelight.InstaCal',
-          paths: ['/meal/*', '/workout/*', '/user/*', '/r/*'],
+          paths: ['/meal/*', '/workout/*', '/user/*', '/r/*', '/challenges/*'],
         },
         {
           appID: 'SRHQX85SN8.com.digitaldelight.InstaCal.staging',
-          paths: ['/meal/*', '/workout/*', '/user/*', '/r/*'],
+          paths: ['/meal/*', '/workout/*', '/user/*', '/r/*', '/challenges/*'],
         },
       ],
     },

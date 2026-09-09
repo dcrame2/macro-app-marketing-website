@@ -9,14 +9,11 @@ export async function generateMetadata({ params }) {
       title: 'Check out this meal on InstaCal',
       description: 'Track your nutrition with InstaCal',
       url: `https://theinstacal.app/meal/${id}`,
-      images: [
-        {
-          url: '/src/images/logos/InstaCal_logo.png',
-          width: 1200,
-          height: 630,
-          alt: 'InstaCal',
-        },
-      ],
+      // The root opengraph-image.jsx renders the real 1200x630 card, but a
+      // child that defines `openGraph` replaces the parent's images rather
+      // than inheriting them - so it has to be named explicitly. Relative,
+      // resolved against `metadataBase` in the root layout.
+      images: ['/opengraph-image'],
     },
   }
 }

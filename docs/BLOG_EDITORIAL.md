@@ -21,6 +21,8 @@ InstaCal is the social app for food and fitness: share meals, discover ideas, tr
 
 ## Visuals
 
+Keep the blog in the InstaCal blue palette: brand blue (#0077cc), deep navy, light blue accents and pale blue surfaces. Use the shared blog styles for every article.
+
 Use actual public member photos with verified eligibility and a clear caption. The user questioned AI cover generation, and we switched to real photos. No AI-generated food, bodies or workout scenes. Do not retouch a photograph into a misleading account of the meal. Charts are built from actual query values, start at zero where appropriate and explain units and denominators.
 
 ## SEO that earns the click

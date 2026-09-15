@@ -1,0 +1,205 @@
+{
+  "slug": "high-protein-meal-prep",
+  "week_start": "2026-09-14",
+  "title": "High-protein meal prep that fits your actual life",
+  "description": "What 913 public InstaCal meal logs can teach us about protein—and a practical way to build satisfying lunches without turning Sunday into a second job.",
+  "category": "Nutrition",
+  "primary_keyword": "high protein meal prep",
+  "secondary_keywords": [
+    "high protein lunch ideas",
+    "meal prep for muscle gain",
+    "easy protein meals",
+    "macro tracking"
+  ],
+  "cover_meal_id": 18699,
+  "cover_image": "https://rrcwrqstlvauzdsjfriq.supabase.co/storage/v1/object/public/images/916544e1-634c-43a0-ae4f-43f49a5441c7/916544e1-634c-43a0-ae4f-43f49a5441c7-a4479ecb-5413-4bf7-8f19-3780fee50c01",
+  "cover_alt": "A real InstaCal community meal: seared tuna, roasted sweet potatoes and asparagus on a blue patterned plate.",
+  "cover_caption": "From the InstaCal community: a publicly shared meal logged September 13, 2026. Original member photo; the meal ideas below are separate editorial suggestions.",
+  "content": {
+    "lead": "A good meal-prep lunch has two jobs: work for the way you want to eat, and still look appealing when you open it on Wednesday. Protein matters. So do flavor, convenience and a plan you can repeat. We looked at 913 public InstaCal meal logs to put the protein conversation in context—then built a simpler way to think about your next lunch.",
+    "takeaways": [
+      "The recent sample averaged 29.3 g of logged protein per meal. That is a description of these logs, not a target everyone should copy.",
+      "Choose the protein anchor first, then add a satisfying base, vegetables and a sauce you actually like.",
+      "Prep a few components, vary the finish, and check the quantities you log. Useful beats perfect."
+    ],
+    "sections": [
+      {
+        "id": "what-the-data-shows",
+        "heading": "A look inside 913 meal logs",
+        "paragraphs": [
+          "Across August 18–September 14, 2026, 48 eligible contributors shared 913 public, feed-visible meal logs. Their mean logged protein was 29.3 g per meal; the median was 26 g. The median is the middle observation when the logs are ordered from lowest to highest protein. It helps show why one average cannot describe every plate.",
+          "In the preceding 28-day window, the mean was 23.1 g across 955 logs with eligible protein values, from a larger set of 956 meal logs and 33 contributors. The later sample had a higher average. We cannot conclude that the same people ate more protein: the contributors and meals changed, logging is incomplete, and nutrition values can be estimated.",
+          "The useful takeaway is a question you can ask of your own lunch: where is the protein coming from, and does the rest of the meal work for me? The community average can start that conversation. It cannot set your needs."
+        ],
+        "chart": {
+          "title": "Average logged protein per meal",
+          "unit": "g",
+          "data": [
+            {
+              "label": "Jul 21–Aug 17",
+              "value": 23.1,
+              "period": "previous",
+              "metric": "mean_protein_g"
+            },
+            {
+              "label": "Aug 18–Sep 14",
+              "value": 29.3,
+              "period": "current",
+              "metric": "mean_protein_g"
+            }
+          ],
+          "note": "Earlier window: 955 eligible protein observations from 956 meals / 33 contributors. Later window: 913 observations / 48 contributors. Different, overlapping groups may contribute. These are meal-weighted logging estimates, not measured dietary intake."
+        },
+        "source_ids": ["community"]
+      },
+      {
+        "id": "protein-in-context",
+        "heading": "Put protein in the context of your day",
+        "paragraphs": [
+          "Protein helps support muscle repair and adaptation to training. The NIH Office of Dietary Supplements summarizes an athlete intake range of 1.2–2.0 g per kilogram of body weight per day. That guidance describes athletes; it is not a blanket prescription for every reader, and it does not make the highest number the best choice.",
+          "For meal prep, the practical step is to consider how lunch fits into the whole day. A meal with a clear protein source can be easier to plan around than one where you are guessing. Your training, appetite, preferences and health context matter too. If you need an individual target, a registered dietitian can help you choose one."
+        ],
+        "source_ids": ["nih"]
+      },
+      {
+        "id": "build-your-lunch",
+        "heading": "Build a lunch in four decisions",
+        "paragraphs": [
+          "Start with ingredients you already enjoy and can buy reliably. The following is an editorial planning framework, not a prescribed diet or a tested recipe. It gives you room to make lunch your own."
+        ],
+        "steps": [
+          "Pick a protein anchor. That might be tofu, chicken, eggs, beans, lentils, fish or another food you enjoy. Write down the actual ingredient and portion rather than relying on a generic label such as “protein bowl.”",
+          "Choose a base. Rice, potatoes, bread, noodles or another familiar staple gives the meal a direction. Decide whether you want a warm bowl, a sandwich or something you can eat cold.",
+          "Add produce with a job. Roasted vegetables bring softness and depth; cucumber, cabbage or carrots can add crunch. Think about which textures will hold up in the fridge.",
+          "Choose the finish. A sauce, citrus, herbs, spices or something crunchy can make the same building blocks feel different. Pack wet and crisp components separately when that helps the texture."
+        ],
+        "source_ids": []
+      },
+      {
+        "id": "three-meal-ideas",
+        "heading": "Three directions for your next grocery list",
+        "paragraphs": [
+          "These are meal ideas to adapt, not reconstructions of someone’s community post. We have not assigned macro totals because a brand, portion or cooking method can change them. Build and log the version you actually make."
+        ],
+        "table": {
+          "headers": [
+            "Your lunch",
+            "The building blocks",
+            "Keep it interesting"
+          ],
+          "rows": [
+            [
+              "The warm bowl",
+              "Chicken or tofu, rice, roasted broccoli and carrots",
+              "Pack a lemon-herb dressing separately. Try a different sauce for the next serving."
+            ],
+            [
+              "The pantry lunch",
+              "Beans or lentils, a grain you like, crunchy vegetables",
+              "Bring a small container of salsa or vinaigrette; add a fresh topping just before eating."
+            ],
+            [
+              "The no-reheat option",
+              "Cooked eggs or tofu, bread or a wrap, salad vegetables",
+              "Keep the filling and bread separate until lunch if sogginess is a deal-breaker."
+            ]
+          ]
+        },
+        "source_ids": []
+      },
+      {
+        "id": "make-prep-manageable",
+        "heading": "Prep components, then give yourself options",
+        "paragraphs": [
+          "You do not have to commit to five identical containers. Pick a protein, a base and a vegetable you would happily eat more than once. Prepare those components, then decide how to combine them at lunchtime. This is a planning suggestion: the payoff is flexibility, not a claim that one prep method produces better health results.",
+          "Make the difficult part small. If cooking everything on Sunday sounds exhausting, use a ready-to-eat component where it helps. If you dislike reheated vegetables, prepare a cold salad component instead. If yesterday’s meal was something you want again, save that combination rather than designing a brand-new lunch.",
+          "The routine should solve a problem you actually have. A lunch that takes too much effort to assemble will not help on your busiest day. Before shopping, ask: what would make tomorrow’s lunch easier to choose?"
+        ],
+        "source_ids": []
+      },
+      {
+        "id": "store-it-safely",
+        "heading": "Give your leftovers a real plan",
+        "paragraphs": [
+          "USDA guidance says cooked leftovers generally keep for 3–4 days in the refrigerator. Refrigerate perishable food within two hours, or one hour when the temperature is above 90°F. Use shallow containers for cooling, keep the fridge at 40°F or below, and reheat leftovers to 165°F. Freeze portions you will not eat within the refrigerated storage window.",
+          "A label with the preparation date is a small practical addition to your containers. It makes the decision at lunchtime easier, especially when several meals look similar."
+        ],
+        "source_ids": ["usda"]
+      },
+      {
+        "id": "put-it-in-instacal",
+        "heading": "Make your next meal easier to repeat",
+        "paragraphs": [
+          "Use InstaCal to log the meal you actually ate, then check the food entries and portions. A photo can be a useful starting point, but a nutrition estimate is still an estimate. Look for ingredients that are easy to miss, such as cooking oil, dressings or toppings, and correct the entry when needed.",
+          "Save combinations that work for you. The next time lunch rolls around, you have a starting point: keep the parts you liked, swap the parts you did not, and make another useful observation. Community posts can supply ideas without becoming a scorecard for how you should eat.",
+          "Your next step: choose one lunch from your own week that you would happily eat again. Identify its protein source, write down the ingredients you need, and make it easier to repeat. Start there."
+        ],
+        "source_ids": []
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Do I need 29.3 g of protein at every meal?",
+        "answer": "No. That number is the average of one InstaCal logging sample. It is not a dietary recommendation. The sample includes different contributors, portions and types of meals, and it does not capture everything someone ate in a day.",
+        "source_ids": ["community"]
+      },
+      {
+        "question": "Can I use these meal ideas for weight loss or muscle gain?",
+        "answer": "Use them as flexible meal ideas. An individual goal depends on your broader eating pattern, training and health needs, not whether a lunch carries a high-protein label. We have not tested these meal combinations as a weight-loss or muscle-gain program. Adapt your portions and ingredients with qualified guidance when you need a personal plan.",
+        "source_ids": []
+      },
+      {
+        "question": "Is a Sunday batch still good on Friday?",
+        "answer": "Do not assume it is. USDA generally recommends only 3–4 days of refrigerated storage for cooked leftovers. Freeze later portions or prepare another batch during the week, and follow safe cooling, refrigeration and reheating guidance.",
+        "source_ids": ["usda"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "community",
+        "label": "InstaCal public meal-log snapshot and methodology",
+        "url": "https://www.theinstacal.app/blog/high-protein-meal-prep/data",
+        "accessed_at": "2026-09-15"
+      },
+      {
+        "id": "nih",
+        "label": "NIH: Dietary Supplements for Exercise and Athletic Performance",
+        "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/",
+        "accessed_at": "2026-09-15"
+      },
+      {
+        "id": "usda",
+        "label": "USDA: Leftovers and Food Safety",
+        "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/leftovers-and-food-safety",
+        "accessed_at": "2026-09-15"
+      }
+    ],
+    "methodology": "Queried September 15, 2026. Current window: August 18 00:00 UTC to September 15 00:00 UTC, exclusive. Comparison: July 21 00:00 UTC to August 18 00:00 UTC, exclusive. Included public, discoverable profiles and non-hidden, feed-visible meals; excluded team and coach accounts. Dates use record creation time, not necessarily eating time. Protein observations were restricted to 0–250 g per meal. Current: 913 meals, 48 contributors, 913 valid protein observations. Previous: 956 meals, 33 contributors, 955 valid protein observations. Averages weight each meal equally, so frequent loggers have more influence. Contributors may overlap across periods. Values may be user-entered or AI-estimated. The sample is self-selected and incomplete; it cannot establish dietary change, causal effects, population trends or health outcomes. Groups with fewer than 20 contributors or 100 records are suppressed. The cover is a separate eligible public member photograph; no macro claim is inferred from the image.",
+    "data_snapshot": {
+      "window_start": "2026-08-18T00:00:00Z",
+      "window_end_exclusive": "2026-09-15T00:00:00Z",
+      "previous_window_start": "2026-07-21T00:00:00Z",
+      "minimum_contributors": 20,
+      "minimum_records": 100,
+      "periods": [
+        {
+          "period": "current",
+          "meals": 913,
+          "contributors": 48,
+          "valid_protein_meals": 913,
+          "mean_protein_g": 29.3,
+          "median_protein_g": 26
+        },
+        {
+          "period": "previous",
+          "meals": 956,
+          "contributors": 33,
+          "valid_protein_meals": 955,
+          "mean_protein_g": 23.1,
+          "median_protein_g": 18
+        }
+      ],
+      "methodology": "Public, discoverable, feed-visible, non-hidden meal records; team and coach accounts excluded. UTC creation windows. Protein estimates restricted to 0–250 g per log. Meal-weighted, not person-weighted. Missing logs and automated estimates limit interpretation. Small cohorts are omitted. These are observational logging patterns, not measured diets or outcomes."
+    }
+  }
+}

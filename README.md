@@ -33,3 +33,16 @@ To learn more about the technologies used in this site template, see the followi
 - [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
 - [Next.js](https://nextjs.org/docs) - the official Next.js documentation
 - [Headless UI](https://headlessui.dev) - the official Headless UI documentation
+
+## Weekly InstaCal Journal
+
+The journal lives at `/blog` and reads published articles from Supabase with a five-minute cache. See [the publishing runbook](docs/BLOG_AUTOMATION.md) and [editorial brief](docs/BLOG_EDITORIAL.md).
+
+Validate an article before publishing:
+
+```bash
+node --test scripts/blog/validate.test.mjs
+node scripts/blog/prepare.mjs content/blog/high-protein-meal-prep.json /tmp/instacal-blog.sql
+```
+
+The second command writes reviewable SQL; it does not execute it. The Codex weekly automation uses the connected Supabase plugin to research and publish. The site only uses a public read key and never needs a service-role credential.

@@ -82,9 +82,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={clsx('bg-gray-950 antialiased', inter.variable)}>
-      <head>
-        <link rel="canonical" href="https://www.theinstacal.app/" />
-      </head>
       <body>{children}</body>
     </html>
   )

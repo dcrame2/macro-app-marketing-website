@@ -74,7 +74,7 @@ export function Header() {
                     InstaCal
                   </h3>
                 </Link>
-                <div className="hidden lg:flex lg:gap-10">
+                <div className="hidden lg:flex lg:gap-6">
                   <NavLinks />
                 </div>
               </div>

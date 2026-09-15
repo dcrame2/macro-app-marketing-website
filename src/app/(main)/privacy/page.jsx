@@ -9,7 +9,7 @@ function PrivacyPolicy() {
           Privacy Policy for InstaCal
         </h1>
         <p className="mb-4 text-lg font-semibold">
-          <strong>Last Updated: April 24, 2026</strong>
+          <strong>Last Updated: September 15, 2026</strong>
         </p>
 
         {/* 1. Introduction */}
@@ -124,7 +124,45 @@ function PrivacyPolicy() {
           </li>
           <li>Send notifications related to social interactions (likes, comments, follows)</li>
           <li>Communicate with you regarding your account and services</li>
+          <li>
+            Send you emails about your account and activity and, where you allow
+            it, educational and promotional emails (see &quot;Emails We Send&quot; below)
+          </li>
         </ul>
+
+        <h3 className="mb-2 mt-6 text-lg font-semibold">Emails We Send</h3>
+        <p className="mb-4">
+          We use the email address on your account to send two kinds of email:
+        </p>
+        <ul className="ml-4 list-inside list-disc space-y-2">
+          <li>
+            <strong>About your account:</strong> a welcome email, a few
+            getting-started tips in your first two weeks, a weekly recap of the
+            meals and workouts you log, and a monthly summary (Wrapped). These
+            are built from your own activity in InstaCal.
+          </li>
+          <li>
+            <strong>Reads, check-ins and news:</strong> short educational reads
+            about food, fitness and nutrition (which may include public meals and
+            recipes other members have shared), a note if you haven&apos;t used the
+            app in a while, and occasional news about InstaCal features.
+          </li>
+        </ul>
+        <p className="mb-4 mt-4">
+          If you are in the European Union, European Economic Area, United
+          Kingdom, Switzerland or Canada, we only send reads, check-ins and news
+          if you choose to receive them, for example by ticking the box when you
+          sign up. Elsewhere they are on by default.
+        </p>
+        <p className="mb-4">
+          Every email includes a link to unsubscribe or change what we send, and
+          you can also manage email in the app under Settings &rarr; Email. Turning
+          emails off does not affect messages we must send about your account or
+          security, such as sign-in and password emails. We use our email
+          provider&apos;s delivery information (whether an email was delivered,
+          bounced or reported as spam) to stop sending to addresses that cannot
+          receive email and to honor complaints.
+        </p>
 
         {/* 4. Social Features & Visibility */}
         <h2 className="mb-4 mt-6 text-2xl font-semibold">4. Social Features &amp; Content Visibility</h2>
@@ -226,6 +264,11 @@ function PrivacyPolicy() {
           </li>
           <li>
             <strong>Strava:</strong> Workout and activity data sync
+          </li>
+          <li>
+            <strong>Resend:</strong> Email delivery. Your email address, name and
+            the content of the emails we send you (such as your weekly recap) are
+            processed by Resend to deliver them.
           </li>
         </ul>
         <p className="mt-4">

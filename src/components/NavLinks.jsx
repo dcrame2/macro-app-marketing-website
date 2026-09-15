@@ -11,7 +11,7 @@ export const navigation = [
   ['Tracking', '/#tracking'],
   ['Pricing', '/#pricing'],
   ['FAQs', '/#faqs'],
-  ['Journal', '/blog'],
+  ['Blogs', '/blog'],
 ]
 
 export function NavLinks() {

@@ -1,4 +1,4 @@
-# InstaCal weekly journal
+# InstaCal weekly blog
 
 ## Running system
 
@@ -12,7 +12,7 @@
 
 ## Weekly runbook
 
-1. Read this file and `docs/BLOG_EDITORIAL.md`. Confirm the live journal responds successfully before publishing. If it does not, preserve the completed draft and report the deployment failure.
+1. Read this file and `docs/BLOG_EDITORIAL.md`. Confirm the live blog responds successfully before publishing. If it does not, preserve the completed draft and report the deployment failure.
 2. Calculate the current Monday date in America/Detroit as `week_start`. Read existing post slugs, topics, keywords and publication slots. If that week is already published, verify its URL and finish without a duplicate. Never delete or overwrite an existing post to make room.
 3. Review every published cover's source against `editorial.blog_runs.cover_meal_id` and the eligibility query below. If a source is deleted, private, hidden or no longer eligible, replace its image with a newly inspected eligible real photo and update provenance, or archive the affected article until a suitable photo is available. This runs weekly; removal requests should be handled immediately.
 4. Get the current 28-day snapshot and preceding comparison using `editorial.blog_snapshot`. Do not query private profiles, health conditions, weight records, locations, messages or personal notes. Copy only the aggregate fields accepted by the validator. Empty or suppressed results mean there is no publishable community statistic: write a research-led article and clearly omit community claims. Never lower thresholds.

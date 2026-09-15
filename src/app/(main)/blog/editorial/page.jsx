@@ -3,7 +3,7 @@ import { SITE_URL } from '@/lib/blog/config'
 import '@/styles/journal.css'
 
 export const metadata = {
-  title: 'Our Editorial Standards | InstaCal Journal',
+  title: 'Our Editorial Standards | InstaCal Blog',
   description:
     'How InstaCal uses research, public community data, real photos and clear sourcing to create useful food and fitness stories.',
   alternates: { canonical: `${SITE_URL}/blog/editorial` },
@@ -14,14 +14,14 @@ export default function Editorial() {
     <div className="journal">
       <div className="journal-width">
         <article className="journal-policy">
-          <Link href="/blog">← The journal</Link>
+          <Link href="/blog">← The blog</Link>
           <h1>
             Good questions.
             <br />
             Honest answers.
           </h1>
           <p>
-            The InstaCal Journal helps adults make sense of food, training and
+            The InstaCal Blog helps adults make sense of food, training and
             the everyday habits around them. Our goal is simple: leave you with
             something useful to try and a clearer understanding of why.
           </p>
@@ -79,7 +79,7 @@ export default function Editorial() {
           </p>
           <h2>What connects it all</h2>
           <p>
-            InstaCal brings food, fitness and friends together. Our journal
+            InstaCal brings food, fitness and friends together. Our blog
             makes that experience more useful: understand a meal, discover an
             idea, track a workout, and build a routine you want to return to.
           </p>

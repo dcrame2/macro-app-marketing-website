@@ -8,7 +8,7 @@ import '@/styles/journal.css'
 export async function generateMetadata({ searchParams }) {
   const filtered = Boolean(searchParams.topic || searchParams.page)
   return {
-    title: 'The InstaCal Journal | Food, Fitness & Real Life',
+    title: 'The InstaCal Blog | Food, Fitness & Real Life',
     description:
       'Practical nutrition, strength training, meal ideas and honest community insights. Learn something useful. Put it into practice with InstaCal.',
     alternates: {
@@ -17,7 +17,7 @@ export async function generateMetadata({ searchParams }) {
     },
     ...(filtered ? { robots: { index: false, follow: true } } : {}),
     openGraph: {
-      title: 'The InstaCal Journal',
+      title: 'The InstaCal Blog',
       description: 'Eat well. Move more. Find your people.',
       url: `${SITE_URL}/blog`,
       images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
@@ -44,7 +44,7 @@ export default async function Blog({ searchParams }) {
         <div className="journal-width">
           <div className="journal-topline">
             <span>
-              <span className="journal-dot" /> THE INSTACAL JOURNAL
+              <span className="journal-dot" /> THE INSTACAL BLOG
             </span>
             <Link href="/blog/editorial">
               Good questions. Honest answers. ↗
@@ -98,7 +98,7 @@ export default async function Blog({ searchParams }) {
                   {featured.category} <span> / </span>{' '}
                   {page === 1 && !category
                     ? 'The latest story'
-                    : 'From the journal'}
+                    : 'From the blog'}
                 </p>
                 <h2>
                   <Link href={`/blog/${featured.slug}`}>{featured.title}</Link>
@@ -151,7 +151,7 @@ export default async function Blog({ searchParams }) {
                 ? `${category} stories are on the way.`
                 : 'Our next chapter starts here.'}
             </h2>
-            <p>Explore the latest food and fitness stories in the journal.</p>
+            <p>Explore the latest food and fitness stories in the blog.</p>
             <Link href="/blog">Browse all stories →</Link>
           </div>
         )}

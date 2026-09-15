@@ -30,7 +30,7 @@ export function Footer() {
                 ['Tracking', '/#tracking'],
                 ['Pricing', '/#pricing'],
                 ['FAQs', '/#faqs'],
-                ['Journal', '/blog'],
+                ['Blogs', '/blog'],
                 ['Privacy', '/privacy'],
                 ['Partners', '/partners'],
               ].map(([label, href]) => (

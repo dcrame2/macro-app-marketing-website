@@ -34,9 +34,9 @@ To learn more about the technologies used in this site template, see the followi
 - [Next.js](https://nextjs.org/docs) - the official Next.js documentation
 - [Headless UI](https://headlessui.dev) - the official Headless UI documentation
 
-## Weekly InstaCal Journal
+## Weekly InstaCal Blog
 
-The journal lives at `/blog` and reads published articles from Supabase with a five-minute cache. See [the publishing runbook](docs/BLOG_AUTOMATION.md) and [editorial brief](docs/BLOG_EDITORIAL.md).
+The blog lives at `/blog` and reads published articles from Supabase with a five-minute cache. See [the publishing runbook](docs/BLOG_AUTOMATION.md) and [editorial brief](docs/BLOG_EDITORIAL.md).
 
 Validate an article before publishing:
 

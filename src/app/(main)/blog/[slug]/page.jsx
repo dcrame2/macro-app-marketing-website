@@ -69,7 +69,7 @@ export default async function Article({ params }) {
           {
             '@type': 'ListItem',
             position: 2,
-            name: 'Journal',
+            name: 'Blogs',
             item: `${SITE_URL}/blog`,
           },
           {
@@ -94,13 +94,13 @@ export default async function Article({ params }) {
         <nav className="journal-breadcrumb" aria-label="Breadcrumb">
           <Link href="/">InstaCal</Link>
           <span>/</span>
-          <Link href="/blog">Journal</Link>
+          <Link href="/blog">Blogs</Link>
           <span>/</span>
           <span>{post.category}</span>
         </nav>
         <header className="journal-article-header">
           <p className="journal-kicker">
-            {post.category} <span> / </span> The InstaCal Journal
+            {post.category} <span> / </span> The InstaCal Blog
           </p>
           <h1>{post.title}</h1>
           <p className="journal-deck">{post.description}</p>

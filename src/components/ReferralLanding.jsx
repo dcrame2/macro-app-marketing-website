@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import logo from '@/images/logos/InstaCal_logo.png'
+import { proLength } from '@/lib/proLength'
 
 const APP_STORE_URL = 'https://apps.apple.com/us/app/instacal/id6743951306'
 const ANDROID_PACKAGE = 'com.digitaldelight.InstaCal'
@@ -10,7 +11,10 @@ const DEFERRED_LINK_URL = process.env.NEXT_PUBLIC_SUPABASE_URL
   ? process.env.NEXT_PUBLIC_SUPABASE_URL + '/functions/v1/deferred-link'
   : null
 
-export function ReferralLanding({ code }) {
+export function ReferralLanding({ code, inviter = null }) {
+  const length = proLength(inviter?.trial_days)
+  const [avatarFailed, setAvatarFailed] = useState(false)
+  const showAvatar = inviter?.avatar_url && !avatarFailed
   const [platform, setPlatform] = useState('other')
 
   const deepLink = `instacal://r/${code}`
@@ -58,23 +62,71 @@ export function ReferralLanding({ code }) {
   return (
     <div className="flex min-h-screen items-center justify-center bg-gray-50 px-4">
       <div className="w-full max-w-sm text-center">
-        <Image
-          src={logo}
-          alt="InstaCal"
-          width={80}
-          height={80}
-          className="mx-auto rounded-2xl"
-          priority
-        />
+        {inviter ? (
+          <div className="relative mx-auto h-24 w-24">
+            {showAvatar ? (
+              // A plain img: avatars come from Supabase Storage, which
+              // next/image would need a remotePatterns entry for.
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={inviter.avatar_url}
+                alt=""
+                width={96}
+                height={96}
+                onError={() => setAvatarFailed(true)}
+                className="h-24 w-24 rounded-full object-cover ring-4 ring-white shadow-md"
+              />
+            ) : (
+              <div className="flex h-24 w-24 items-center justify-center rounded-full bg-blue-600 text-4xl font-bold text-white ring-4 ring-white shadow-md">
+                {inviter.name.charAt(0).toUpperCase()}
+              </div>
+            )}
+            <Image
+              src={logo}
+              alt="InstaCal"
+              width={36}
+              height={36}
+              className="absolute -bottom-1 -right-1 rounded-xl ring-4 ring-gray-50"
+              priority
+            />
+          </div>
+        ) : (
+          <Image
+            src={logo}
+            alt="InstaCal"
+            width={80}
+            height={80}
+            className="mx-auto rounded-2xl"
+            priority
+          />
+        )}
 
-        <h1 className="mt-6 text-2xl font-bold tracking-tight text-gray-900">
-          You&apos;ve been invited to InstaCal
-        </h1>
-        <p className="mt-2 text-sm text-gray-500">
-          Download the app and enter code{' '}
-          <span className="font-bold text-blue-600">{code}</span> during signup
-          to get free Pro days. No credit card needed.
-        </p>
+        {inviter ? (
+          <>
+            <h1 className="mt-6 text-2xl font-bold tracking-tight text-gray-900">
+              {inviter.name} invited you to InstaCal
+            </h1>
+            <p className="mt-2 text-sm text-gray-500">
+              Sign up with code{' '}
+              <span className="font-bold text-blue-600">{code}</span> and get{' '}
+              <span className="font-semibold text-gray-900">
+                {length ?? 'free days'} of Pro, free
+              </span>
+              . No credit card needed.
+            </p>
+          </>
+        ) : (
+          <>
+            <h1 className="mt-6 text-2xl font-bold tracking-tight text-gray-900">
+              You&apos;ve been invited to InstaCal
+            </h1>
+            <p className="mt-2 text-sm text-gray-500">
+              Download the app and enter code{' '}
+              <span className="font-bold text-blue-600">{code}</span> during signup
+              to get free Pro days. No credit card needed.
+            </p>
+          </>
+        )}
 
         <button
           onClick={handleOpenApp}

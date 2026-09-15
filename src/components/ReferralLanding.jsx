@@ -81,14 +81,18 @@ export function ReferralLanding({ code, inviter = null }) {
                 {inviter.name.charAt(0).toUpperCase()}
               </div>
             )}
-            <Image
-              src={logo}
-              alt="InstaCal"
-              width={36}
-              height={36}
-              className="absolute -bottom-1 -right-1 rounded-xl ring-4 ring-gray-50"
-              priority
-            />
+            {/* The logo is a circle on a transparent square: seat it on a
+                white disc so the avatar never shows through its corners. */}
+            <span className="absolute -bottom-1 -right-1 flex h-10 w-10 items-center justify-center rounded-full bg-white ring-4 ring-gray-50">
+              <Image
+                src={logo}
+                alt="InstaCal"
+                width={34}
+                height={34}
+                className="rounded-full"
+                priority
+              />
+            </span>
           </div>
         ) : (
           <Image

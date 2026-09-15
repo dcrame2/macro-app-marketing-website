@@ -1,0 +1,150 @@
+{
+  "slug": "building-muscle-basics",
+  "week_start": "2026-09-14",
+  "publication_kind": "launch",
+  "title": "Building muscle: get the basics working together",
+  "description": "What to focus on for muscle gain: repeatable strength training, enough protein, everyday meals and recovery—with a simple weekly review.",
+  "category": "Muscle",
+  "primary_keyword": "building muscle for beginners",
+  "secondary_keywords": [
+    "protein and strength training",
+    "muscle gain basics",
+    "beginner muscle building"
+  ],
+  "cover_meal_id": 17812,
+  "cover_image": "https://rrcwrqstlvauzdsjfriq.supabase.co/storage/v1/object/public/images/db985d4a-8bbb-4707-b184-5c9b1fdfa458/db985d4a-8bbb-4707-b184-5c9b1fdfa458-fd33b6cf-bd29-4f11-97e9-3e00f1547f25",
+  "cover_alt": "A real community photograph of a takeout meal with white rice, sliced chicken and shrimp.",
+  "cover_caption": "An everyday meal from the InstaCal community. It is not a muscle-gain prescription, and no macro totals or training results are inferred from the photo.",
+  "content": {
+    "lead": "The muscle-building conversation gets complicated fast: workout splits, supplement stacks, perfect timing. Before adding another rule, check whether your training, meals and recovery fit together in a week you can actually repeat. A useful starting plan should tell you what to do next, leave room to learn, and make progress easier to observe.",
+    "takeaways": [
+      "Start with consistent resistance training that suits your experience, equipment and schedule.",
+      "Protein matters, but a supplement cannot replace an adequate diet or the training itself.",
+      "Keep a simple record of what you do and change one part of the routine at a time."
+    ],
+    "sections": [
+      {
+        "id": "what-the-evidence-says",
+        "heading": "The 2026 evidence update makes room for simplicity",
+        "paragraphs": [
+          "In March 2026, the American College of Sports Medicine published updated resistance-training guidance based on 137 systematic reviews covering more than 30,000 participants. Its practical message for healthy adults is to prioritize regular participation and individualize the program. Bands, bodyweight exercises and conventional gym equipment can all have a place.",
+          "The update also reports that training to failure and complex program variation did not consistently improve outcomes for the average healthy adult. That does not mean training details never matter. It means a beginner can start learning without first mastering every advanced technique.",
+          "Use this as permission to make the first decision smaller: where will you train, and what repeatable session can you learn there? A plan needs to fit your starting point before it needs to look impressive."
+        ],
+        "source_ids": ["acsm"]
+      },
+      {
+        "id": "choose-a-plan-you-can-learn",
+        "heading": "Choose a plan you can learn, then repeat",
+        "paragraphs": [
+          "Pick a small set of exercises with help from a qualified trainer when you need technique guidance. Write down the exercise names and the equipment settings. If the gym is busy, know which substitution you will use. These details make the next visit feel familiar and give you something concrete to practice.",
+          "A useful training record includes the exercise, the load or variation, the sets and repetitions, and a brief note about how it felt. You are recording the work, not awarding yourself a score. If an exercise feels awkward or painful, that note is a reason to seek help and adjust it.",
+          "Avoid changing the entire session because you saw a new routine online. Give yourself a chance to learn the movements and observe your own experience. When you do change something, record what changed so the next session is easier to compare."
+        ],
+        "source_ids": []
+      },
+      {
+        "id": "put-protein-on-the-menu",
+        "heading": "Put protein into meals you already eat",
+        "paragraphs": [
+          "The NIH Office of Dietary Supplements explains that protein supports muscle building, maintenance and repair. It also notes that athletes can often meet their protein needs with food; supplements can be useful when needed, but are not automatically necessary. Your individual requirements depend on your situation.",
+          "Start with a practical inventory: which meals already contain a protein source, and which are harder to plan? Think in foods before products. Beans, lentils, tofu, eggs, dairy, fish and meat can all be ingredients in a meal you enjoy. Include variety across the day rather than expecting one large dinner to solve every planning problem.",
+          "Here are original meal ideas to adapt. They are not a prescribed menu and have no calculated macro totals."
+        ],
+        "table": {
+          "headers": [
+            "The situation",
+            "A meal direction",
+            "Make the next time easier"
+          ],
+          "rows": [
+            [
+              "Breakfast feels rushed",
+              "Yogurt or a suitable alternative, oats and fruit",
+              "Put the ingredients together on your grocery list."
+            ],
+            [
+              "Lunch needs to travel",
+              "Tofu or chicken with rice and vegetables",
+              "Choose a container and a sauce you like."
+            ],
+            [
+              "Dinner is a pantry decision",
+              "Beans or lentils with a familiar grain and vegetables",
+              "Keep a shelf-stable starting point available."
+            ]
+          ]
+        },
+        "source_ids": ["nih"]
+      },
+      {
+        "id": "give-recovery-a-place",
+        "heading": "Give recovery a place on the calendar",
+        "paragraphs": [
+          "A training plan lives inside the rest of your life. If every session pushes bedtime later, or leaves you scrambling for dinner, adjust the schedule. That is a planning problem worth solving before you decide you need a more complicated program.",
+          "The CDC recommends at least seven hours of sleep for adults ages 18–60, with different ranges for older adults. It also emphasizes sleep quality. That is general health guidance, not a formula that predicts muscle growth or guarantees recovery from a particular workout.",
+          "Choose one practical evening change: prepare tomorrow's bag earlier, move a late session, or have a straightforward dinner option ready. The right change is the one that addresses your actual obstacle. Persistent sleep difficulties deserve a conversation with a healthcare professional."
+        ],
+        "source_ids": ["sleep"]
+      },
+      {
+        "id": "review-without-chasing-numbers",
+        "heading": "Review what you can actually observe",
+        "paragraphs": [
+          "At the end of the week, look at the plan and the record together. Did the sessions fit? Do you understand the exercises better? Were your meals available when you needed them? Did a particular part of the routine repeatedly fall apart? These questions give your next week a direction.",
+          "Here is an example of a useful review: “The evening session worked, but dinner was difficult, so I will keep an easy meal ready.” Compare that with changing the workout, meal plan and supplements all at once. A smaller adjustment is easier to evaluate because you know what you tried.",
+          "Do not label every scale change as new muscle or treat a single difficult session as evidence that the plan has failed. This article cannot estimate your body-composition changes. Use appropriate professional guidance when you need an individual assessment or a more specific training plan."
+        ],
+        "source_ids": []
+      },
+      {
+        "id": "make-the-basics-visible",
+        "heading": "Make the basics visible in your everyday routine",
+        "paragraphs": [
+          "InstaCal can hold the meals and workouts you choose to log, so the routine becomes something you can look back at. Use the record to remember a meal you enjoyed, a session you completed or an idea you want to try. Other people's posts can offer inspiration without setting your portions, loads or pace.",
+          "For the next week, choose one training commitment, one meal you can repeat and one scheduling problem to solve. Write those down in plain language. You should be able to tell whether you did them without needing a new device or a complicated spreadsheet.",
+          "The goal of a beginner plan is to establish useful work you can build on. Once that routine is established, you can discuss more specific programming and nutrition adjustments with qualified professionals. Start with the pieces that make the next session and the next meal easier."
+        ],
+        "source_ids": []
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Do I need a protein shake to build muscle?",
+        "answer": "A shake is one way to consume protein, not a requirement. The NIH notes that athletes can often meet their needs through foods, with supplements helping when needed. Consider your overall diet and individual needs before adding a product.",
+        "source_ids": ["nih"]
+      },
+      {
+        "question": "Do I need to take every set to failure?",
+        "answer": "The 2026 ACSM summary reports that reaching failure did not consistently change outcomes for the average healthy adult in the reviewed evidence. Your effort and program should suit your experience and goals; learning safe technique is a useful first priority.",
+        "source_ids": ["acsm"]
+      },
+      {
+        "question": "How quickly will I see muscle growth?",
+        "answer": "There is no responsible timeline we can promise from a blog. Your starting point, training, nutrition and other factors differ from another reader's. Track your routine and seek an individual assessment if you need a more specific expectation.",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "acsm",
+        "label": "ACSM: 2026 resistance-training guideline update",
+        "url": "https://acsm.org/resistance-training-guidelines-update-2026/",
+        "accessed_at": "2026-09-15"
+      },
+      {
+        "id": "nih",
+        "label": "NIH: Exercise and Athletic Performance—consumer fact sheet",
+        "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-Consumer/",
+        "accessed_at": "2026-09-15"
+      },
+      {
+        "id": "sleep",
+        "label": "CDC: About Sleep",
+        "url": "https://www.cdc.gov/sleep/about/index.html",
+        "accessed_at": "2026-09-15"
+      }
+    ],
+    "methodology": "Research-led introduction for adults using the ACSM's March 2026 guideline summary, NIH supplement guidance and CDC sleep guidance, accessed September 15, 2026. Training-record prompts and meal combinations are original editorial suggestions. No muscle gain, body-composition outcomes or intervention effects were measured in InstaCal users. The eligible community photograph is visual context only; it does not establish the member's training goal or nutrition needs."
+  }
+}

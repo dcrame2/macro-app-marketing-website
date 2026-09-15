@@ -1,0 +1,161 @@
+{
+  "slug": "greek-yogurt-breakfast-bowl",
+  "week_start": "2026-09-14",
+  "publication_kind": "launch",
+  "title": "A Greek yogurt breakfast bowl worth waking up for",
+  "description": "Make a simple Greek yogurt breakfast bowl with berries, granola and nut butter, plus easy variations and tips for logging your own ingredients.",
+  "category": "Recipes",
+  "primary_keyword": "Greek yogurt breakfast bowl",
+  "secondary_keywords": [
+    "easy yogurt bowl recipe",
+    "breakfast with Greek yogurt",
+    "quick breakfast ideas"
+  ],
+  "cover_meal_id": 17684,
+  "cover_image": "https://rrcwrqstlvauzdsjfriq.supabase.co/storage/v1/object/public/images/db985d4a-8bbb-4707-b184-5c9b1fdfa458/db985d4a-8bbb-4707-b184-5c9b1fdfa458-c742b184-2a09-4f3b-9846-b48e03730faf",
+  "cover_alt": "A member's yogurt bowl with blueberries and a rice cake beside yogurt, honey and a bottled shake.",
+  "cover_caption": "Real breakfast inspiration from the InstaCal community. The recipe below is our own variation; the photographed bowl, rice cake and shake are not its ingredient list.",
+  "content": {
+    "lead": "A breakfast bowl should taste like something you chose, not something you are trying to get through. This one starts with tangy Greek yogurt, adds berries, then finishes with crunch and a swirl of nut butter. It is a simple assembly recipe you can make your own without buying a different ingredient for every morning.",
+    "takeaways": [
+      "Use the five-ingredient bowl below as a starting point, then adjust the fruit, crunch and portion to suit you.",
+      "The community photo is inspiration; this is a separate original recipe.",
+      "For useful nutrition estimates, log your actual yogurt, toppings and amounts instead of borrowing numbers from another bowl."
+    ],
+    "sections": [
+      {
+        "id": "ingredients",
+        "heading": "The recipe: berries, crunch and a creamy finish",
+        "paragraphs": [
+          "Makes one bowl. Estimated assembly time: about five minutes, depending on preparation. This is an original editorial recipe and has not been kitchen-tested. The quantities give you a practical starting point; adjust the texture and portion to your preferences.",
+          "Choose plain Greek yogurt you enjoy on its own. A different fat level or brand will change the taste and nutrition. Granola gives the bowl its crunch, while the nut butter adds a contrasting flavor. Use fresh berries for the version below, and follow any storage directions on your ingredients."
+        ],
+        "bullets": [
+          "200 g plain Greek yogurt.",
+          "100 g fresh blueberries, sliced strawberries or a mixture.",
+          "30 g granola of your choice.",
+          "1 tablespoon peanut, almond or another suitable nut or seed butter.",
+          "A small pinch of ground cinnamon, optional."
+        ],
+        "source_ids": []
+      },
+      {
+        "id": "make-the-bowl",
+        "heading": "Put it together",
+        "paragraphs": [
+          "Start with clean hands, utensils and a bowl. The FDA advises rinsing fresh produce under running water and drying it with a clean towel; do not use soap or detergent on fruit. Remove damaged areas and discard rotten berries before preparing the bowl."
+        ],
+        "steps": [
+          "Rinse and dry the berries. Remove strawberry stems and slice large strawberries into bite-size pieces.",
+          "Spoon the yogurt into the bowl. If it is thicker than you like, stir in a little water or milk, a teaspoon at a time.",
+          "Add the berries, leaving some of the yogurt visible so the toppings are easy to distribute.",
+          "Scatter the granola over the top. Add the nut or seed butter in small spoonfuls rather than one large lump.",
+          "Finish with a pinch of cinnamon if you like. Taste a spoonful with all the components, then adjust the balance to your preference.",
+          "Eat promptly, or refrigerate the yogurt and fruit while keeping the granola separate until serving."
+        ],
+        "source_ids": ["produce"]
+      },
+      {
+        "id": "three-ways-to-change-it",
+        "heading": "Three ways to make tomorrow's bowl feel different",
+        "paragraphs": [
+          "Keep the basic structure and change one part. These are flavor variations, not equivalent nutrition substitutions. A different yogurt, topping or portion changes the finished bowl, so use the version you actually make when logging.",
+          "If you want to experiment, try the new ingredient on a few spoonfuls first. That gives you a chance to decide whether you like the combination before changing the entire bowl. Keep a note of the version you would make again."
+        ],
+        "table": {
+          "headers": [
+            "The direction",
+            "What to change",
+            "What to keep in mind"
+          ],
+          "rows": [
+            [
+              "Banana and cinnamon",
+              "Use sliced banana in place of the berries",
+              "Slice just before eating for the best appearance."
+            ],
+            [
+              "Apple and peanut butter",
+              "Use small apple pieces and peanut butter",
+              "Cut the apple small enough to get a little in each spoonful."
+            ],
+            [
+              "Berry and seed butter",
+              "Keep the berries and use a suitable seed butter",
+              "Check every label if managing a food allergy; a substitution alone does not guarantee safety."
+            ]
+          ]
+        },
+        "source_ids": []
+      },
+      {
+        "id": "log-your-version",
+        "heading": "Get a useful nutrition estimate for your bowl",
+        "paragraphs": [
+          "We have not printed a single calorie or protein total for this recipe because the ingredients are not fixed to specific products. Greek yogurt and granola labels vary, and a spoonful of nut butter can be larger or smaller than the label's serving. A precise-looking number would hide those differences.",
+          "The FDA explains that Nutrition Facts values are tied to the stated serving amount. Compare that amount with what you used, then adjust the entry proportionally. Do that for each ingredient and add the contributions for your bowl. If your goal requires precise tracking, use measured quantities and the matching product information.",
+          "In InstaCal, start with the ingredients you used and check the portions. Include additions such as milk, honey or extra toppings if you used them. A breakfast photo is a useful reminder, but it cannot tell us the exact product or the amount underneath a topping."
+        ],
+        "source_ids": ["serving"]
+      },
+      {
+        "id": "make-mornings-easier",
+        "heading": "Prepare the parts that actually save you time",
+        "paragraphs": [
+          "Set out the shelf-stable ingredients and a clean bowl the evening before, or keep a small breakfast section in the cupboard. If you take breakfast to work, use a separate small container for the granola so it stays crunchy. These are organization suggestions; you do not need to assemble a whole week's bowls.",
+          "Keep yogurt and prepared fruit refrigerated at 40°F (4°C) or below. Follow the storage directions on their labels. FDA guidance limits unrefrigerated time for perishable food to two hours, or one hour above 90°F. A bowl left on a desk all morning needs the same attention as any other refrigerated food.",
+          "If transporting the bowl, use an insulated bag with a cold source and refrigerate it when you arrive. Prepare a fresh portion as needed rather than assuming an assembled bowl will stay suitable for several days. The quality and age of the starting ingredients matter."
+        ],
+        "source_ids": ["storage"]
+      },
+      {
+        "id": "make-it-your-breakfast",
+        "heading": "Make the bowl work for your morning",
+        "paragraphs": [
+          "Think about how breakfast fits into your day. You might want a small bowl before heading out, a larger one when you have more time, or something alongside it. The portion in this recipe is a starting point, not a universal breakfast prescription.",
+          "The useful test is whether you enjoy making and eating it. If the yogurt is too tangy, try another brand or fruit combination. If you want more crunch, keep some granola aside and add it as you go. If mixing everything together looks better to you, do that. A recipe can be a repeatable starting point without becoming a rule.",
+          "When you find a combination you like, save it in InstaCal with the ingredients and amounts you actually used. That makes the next breakfast easier to recreate and gives you a more meaningful record than a generic entry called “healthy bowl.”"
+        ],
+        "source_ids": []
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I make this breakfast bowl without dairy?",
+        "answer": "You can use a dairy-free yogurt alternative you enjoy. Check the label because its protein, energy and other nutrients may differ from Greek yogurt. The change makes a different version of the recipe; it does not preserve an assumed macro total.",
+        "source_ids": []
+      },
+      {
+        "question": "Does the shake in the cover photo belong in the recipe?",
+        "answer": "No. The cover is a real member's breakfast photo. Our recipe is a separate yogurt-bowl variation and does not include the bottled shake, honey or rice cake shown in that image.",
+        "source_ids": []
+      },
+      {
+        "question": "What allergens should I check?",
+        "answer": "The standard version contains milk, and the nut butter may contain peanuts or tree nuts. Granola and other ingredients may contain additional allergens or have cross-contact warnings. Read every ingredient label and use products appropriate for your needs.",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "produce",
+        "label": "FDA: Selecting and serving produce safely",
+        "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-produce-safely",
+        "accessed_at": "2026-09-15"
+      },
+      {
+        "id": "serving",
+        "label": "FDA: Serving size on the Nutrition Facts label",
+        "url": "https://www.fda.gov/food/nutrition-facts-label/serving-size-nutrition-facts-label",
+        "accessed_at": "2026-09-15"
+      },
+      {
+        "id": "storage",
+        "label": "FDA: Are you storing food safely?",
+        "url": "https://www.fda.gov/consumers/consumer-updates/are-you-storing-food-safely",
+        "accessed_at": "2026-09-15"
+      }
+    ],
+    "methodology": "Original editorial assembly recipe, not kitchen-tested. Preparation time is an estimate and no laboratory or product-specific nutrition analysis was performed. FDA sources support the food-handling and label-reading guidance, not an endorsement of this recipe. The eligible public community photo is visual inspiration and differs from the recipe; its member's ingredients, portions and nutrition values have not been reconstructed. Sources accessed September 15, 2026."
+  }
+}

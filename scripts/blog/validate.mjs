@@ -27,6 +27,10 @@ export function validatePost(post) {
     'week_start must be a Monday',
   )
   text(post.title, 10, 100, 'Title')
+  assert(
+    ['weekly', 'launch'].includes(post.publication_kind ?? 'weekly'),
+    'Unknown publication kind',
+  )
   text(post.description, 50, 180, 'Description')
   assert(categories.includes(post.category), 'Unknown category')
   text(post.primary_keyword, 3, 100, 'Primary keyword')

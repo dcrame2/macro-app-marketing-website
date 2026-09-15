@@ -1,0 +1,160 @@
+{
+  "slug": "beginner-strength-training-two-days",
+  "week_start": "2026-09-14",
+  "publication_kind": "launch",
+  "title": "Your first two days of strength training, planned",
+  "description": "A simple beginner strength-training routine with two weekly sessions, exercise options, a gradual progression plan and a useful workout log.",
+  "category": "Workouts",
+  "primary_keyword": "beginner strength training routine",
+  "secondary_keywords": [
+    "two day strength training routine",
+    "first gym workout",
+    "beginner full body workout"
+  ],
+  "cover_meal_id": 18775,
+  "cover_image": "https://rrcwrqstlvauzdsjfriq.supabase.co/storage/v1/object/public/images/916544e1-634c-43a0-ae4f-43f49a5441c7/916544e1-634c-43a0-ae4f-43f49a5441c7-3349a344-1136-40b1-b4ce-06bd61cb7a31",
+  "cover_alt": "A real InstaCal meal photo showing a blue patterned plate with a savory meal and avocado.",
+  "cover_caption": "Food is part of an everyday fitness routine. This original community meal photo provides context; it is not evidence of the member's workout or recovery.",
+  "content": {
+    "lead": "Walking into a gym is easier when you already know what you came to do. For your first week, keep the assignment small: learn a handful of movements, write down what you used, and return for a second session. Here is a two-day starting structure you can take to a gym instructor and adapt to your experience.",
+    "takeaways": [
+      "Choose two nonconsecutive days and practice the same basic movements to make the second visit familiar.",
+      "Start comfortably, learn the equipment and build gradually; good technique comes before heavier loads.",
+      "Strength training is one part of an active week, alongside aerobic activity such as walking."
+    ],
+    "sections": [
+      {
+        "id": "pick-two-days",
+        "heading": "Pick two days you can realistically attend",
+        "paragraphs": [
+          "For example, put Tuesday and Friday on your calendar. The CDC recommends muscle-strengthening activity on at least two days a week, covering the major muscle groups. It also recommends at least 150 minutes of moderate-intensity aerobic activity weekly, or an equivalent alternative. Those are general adult health guidelines, not a requirement to do everything immediately.",
+          "Mayo Clinic advises giving a muscle group a day of rest between strength sessions. Two nonconsecutive days make that straightforward. If you are returning after illness or injury, have a relevant health condition, or are unsure what is suitable, get individualized guidance before using this example.",
+          "Choose a time with room for learning. A first visit squeezed between two appointments can feel harder than it needs to. Find the changing area, ask how the machines adjust, and let the session be an introduction."
+        ],
+        "source_ids": ["cdc", "mayo"]
+      },
+      {
+        "id": "learn-the-movements",
+        "heading": "Use a short, full-body menu",
+        "paragraphs": [
+          "The table is an editorial starting template for generally healthy adults, not a program tested on InstaCal members. Ask a gym instructor to demonstrate the movements and adjust the machines for you. Equipment differs, and a written list cannot check your technique or decide which exercise is appropriate for an injury.",
+          "Begin with one comfortable practice set of each movement. As you learn, build toward two sets of 8–12 controlled repetitions, an approach consistent with the NHS's general strengthening guidance. Start with less if needed. For the core exercise, a few controlled repetitions on each side are enough to practice the movement; stop before you lose position."
+        ],
+        "table": {
+          "headers": ["Movement", "Gym option", "What to learn first"],
+          "rows": [
+            [
+              "Knee bend",
+              "Leg press or sit-to-stand from a stable chair",
+              "Use a comfortable range and controlled movement."
+            ],
+            [
+              "Back of the legs",
+              "Seated leg curl",
+              "Have the machine pads and seat adjusted to fit."
+            ],
+            [
+              "Upper-body push",
+              "Chest-press machine or wall push-up",
+              "Keep the movement smooth rather than forcing the last repetition."
+            ],
+            [
+              "Upper-body pull",
+              "Seated-row machine",
+              "Learn the seat and handle position; avoid swinging."
+            ],
+            [
+              "Shoulder push",
+              "Light shoulder-press machine, if comfortable",
+              "Ask for an alternative if overhead movement is uncomfortable."
+            ],
+            [
+              "Trunk control",
+              "Dead bug on a mat",
+              "Learn the setup with an instructor and move one side at a time."
+            ]
+          ]
+        },
+        "source_ids": ["nhs"]
+      },
+      {
+        "id": "first-session",
+        "heading": "Day one: learn, record, leave something for next time",
+        "paragraphs": [
+          "Warm up with 5–10 minutes of walking or another suitable aerobic activity, as Mayo Clinic recommends. Then use a very light practice attempt to get familiar with each exercise. Choose a resistance you can control and stop if you feel pain. Breathe throughout the movement rather than holding your breath.",
+          "Rest between sets long enough to feel ready to move with control again; about a minute is a starting point, and you can take longer. This is practice, not a race through the equipment. If you cannot keep the movement controlled, reduce the load or repetitions.",
+          "Before leaving each station, write the machine name, seat setting, resistance and repetitions. Add a plain note such as “comfortable,” “ask about setup,” or “use a lighter load.” That record is the preparation for your second visit."
+        ],
+        "source_ids": ["mayo"]
+      },
+      {
+        "id": "second-session",
+        "heading": "Day two: repeat before adding complexity",
+        "paragraphs": [
+          "Bring the same list. Set up the equipment from your notes and use what you learned on day one. You do not need an entirely different routine to make the second session worthwhile. Repetition lets you spend less attention figuring out where to go and more attention on how the movements feel.",
+          "If the first session was manageable, repeat it with the same load and aim for controlled repetitions. If it was too much, shorten the session or reduce the work. A routine that needs adjustment is giving you information; it is not a test you failed.",
+          "Use one small progression at a time. Once you can complete your chosen repetitions comfortably with good technique across sessions, consider a small load increase with guidance from your instructor. If your form changes, return to the easier version. There is no deadline for increasing a weight."
+        ],
+        "source_ids": []
+      },
+      {
+        "id": "keep-a-useful-log",
+        "heading": "Keep a log you will actually read",
+        "paragraphs": [
+          "Your workout record only needs to answer two questions: what did I do, and what should I remember next time? Exact exercise names matter more than a dramatic description of the session. A useful entry might read: “Seated row, seat setting 3, two sets of 10; ask instructor about handle position.” This is a hypothetical example, not a recommended load or machine setting.",
+          "Log the session in InstaCal if that fits your routine. Keep any extra setup notes where you can easily find them. The purpose is to make the next visit easier and preserve what you learned.",
+          "At the end of the week, check whether the two appointments worked. If the second one repeatedly clashes with work, move it. If the gym felt confusing, book an orientation. Solve the concrete obstacle before replacing the whole plan."
+        ],
+        "source_ids": []
+      },
+      {
+        "id": "build-the-rest-of-the-week",
+        "heading": "Let the rest of the week stay active",
+        "paragraphs": [
+          "Strength sessions do not need to become the only movement you do. Walking, cycling or another activity you enjoy can fit around them. The CDC notes that some activity is better than none and that aerobic activity can be broken into smaller amounts across the week.",
+          "Do not use this beginner plan as a reason to rush toward a weekly total your body is not ready for. Start at an appropriate level, learn the movements and increase gradually. The NHS emphasizes building up over time.",
+          "For your next step, choose the two days, save the exercise list, and arrange help with the setup if you need it. You are creating a familiar route through the gym: arrive, warm up, practice, record, and return."
+        ],
+        "source_ids": ["cdc", "nhs"]
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I start if I have never lifted weights?",
+        "answer": "Yes, with an appropriate starting level and help learning technique. Ask a qualified instructor to demonstrate the movements and adjust the equipment. Seek individualized medical or rehabilitation guidance when a health condition, injury or symptoms affect what you can do.",
+        "source_ids": ["mayo"]
+      },
+      {
+        "question": "Do I have to finish every repetition on the list?",
+        "answer": "No. The list is a starting example, not a command to push through pain or poor technique. Use fewer repetitions or an easier variation when needed. Stop a painful movement and get advice about a suitable alternative.",
+        "source_ids": []
+      },
+      {
+        "question": "Is two days a week enough to start?",
+        "answer": "Two days fits the CDC's general weekly frequency recommendation for muscle-strengthening activity. Work across the major muscle groups, start appropriately and build gradually. Your eventual program may differ with your goals and circumstances.",
+        "source_ids": ["cdc"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "cdc",
+        "label": "CDC: Adult physical activity guidelines",
+        "url": "https://www.cdc.gov/physical-activity-basics/guidelines/adults.html",
+        "accessed_at": "2026-09-15"
+      },
+      {
+        "id": "mayo",
+        "label": "Mayo Clinic: Weight-training technique",
+        "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/weight-training/art-20045842",
+        "accessed_at": "2026-09-15"
+      },
+      {
+        "id": "nhs",
+        "label": "NHS: Improving strength and flexibility",
+        "url": "https://www.nhs.uk/live-well/exercise/how-to-improve-strength-flexibility/",
+        "accessed_at": "2026-09-15"
+      }
+    ],
+    "methodology": "General adult exercise education based on CDC, NHS and Mayo Clinic guidance accessed September 15, 2026. The two-day schedule and exercise menu are original editorial examples to review with a qualified instructor; they have not been tested as an InstaCal training intervention. No workout performance or injury records were analyzed. The cover is a separate eligible public meal photograph, not a representation of the featured exercises."
+  }
+}

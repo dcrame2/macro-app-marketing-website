@@ -1,0 +1,201 @@
+{
+  "slug": "what-your-food-log-can-tell-you",
+  "week_start": "2026-09-14",
+  "publication_kind": "launch",
+  "title": "What your food log can actually tell you",
+  "description": "A look at 913 public InstaCal meal logs explains how to read food-tracking data, check estimates and turn a record into a useful next step.",
+  "category": "Community",
+  "primary_keyword": "how to use a food log",
+  "secondary_keywords": [
+    "food tracking accuracy",
+    "meal logging tips",
+    "understanding nutrition data",
+    "InstaCal community"
+  ],
+  "cover_meal_id": 17908,
+  "cover_image": "https://rrcwrqstlvauzdsjfriq.supabase.co/storage/v1/object/public/images/4549ce19-5736-4133-b98d-74fe26a9f545/4549ce19-5736-4133-b98d-74fe26a9f545-cb40d7d7-c8e3-4b19-b346-ca62aa14cb7f",
+  "cover_alt": "A community photograph of a carton of soy beverage beside a bag of strawberry cereal.",
+  "cover_caption": "A real InstaCal community photo. Package fronts and meal pictures offer context; check the actual serving and ingredient information when logging your own meal.",
+  "content": {
+    "lead": "A food log can help you remember a meal, notice a recurring problem and find something worth making again. It becomes much less useful when an estimate starts looking like a verdict. We looked at 913 public InstaCal meal logs to show how to read the numbers with context, then turn that habit into a more useful review of your own eating routine.",
+    "takeaways": [
+      "Our recent sample contains 913 public meal logs from 48 contributors; it does not describe everyone's full diet.",
+      "Averages depend on who logs, what they log and how entries are estimated.",
+      "Use your own record to answer a specific question and choose one practical next step."
+    ],
+    "sections": [
+      {
+        "id": "inside-the-sample",
+        "heading": "Start with what was actually counted",
+        "paragraphs": [
+          "From August 18 through September 14, 2026, the eligible sample contained 913 public, feed-visible meal records from 48 contributors. We included discoverable public profiles and non-hidden meals, and excluded team and coach accounts. These are creation-date windows in UTC, so they do not necessarily describe when the meals were eaten.",
+          "The previous 28-day window, July 21 through August 17, contained 956 meal records from 33 contributors. More contributors appeared in the later sample even though it contained fewer records. That difference is a useful reminder that the group behind a number can change.",
+          "This is not a count of all InstaCal members, a measure of total app growth or a record of everything these contributors ate. It is a defined slice of public logging activity. The chart shows only the eligible contributors in those two windows."
+        ],
+        "chart": {
+          "title": "Contributors behind the two logging samples",
+          "unit": "people",
+          "data": [
+            {
+              "label": "Jul 21–Aug 17",
+              "value": 33,
+              "period": "previous",
+              "metric": "contributors"
+            },
+            {
+              "label": "Aug 18–Sep 14",
+              "value": 48,
+              "period": "current",
+              "metric": "contributors"
+            }
+          ],
+          "note": "Eligible public contributors only. The earlier window contains 956 meal logs; the later window contains 913. Groups may overlap and are not a fixed panel. These counts do not measure total app growth or dietary change."
+        },
+        "source_ids": ["community"]
+      },
+      {
+        "id": "an-average-needs-context",
+        "heading": "Ask who and what sits behind the average",
+        "paragraphs": [
+          "The recent sample's average logged protein was 29.3 g per meal; its median was 26 g. The average combines the values across all eligible meal records. The median is the middle value after those records are ordered. They summarize the same sample in different ways, and neither is a protein target for you.",
+          "Each meal carries equal weight in the average. A person who logs more meals therefore contributes more observations than a person who logs fewer. That is different from calculating one average per person and then averaging those results.",
+          "There is another limitation: a logged meal is not necessarily a complete meal or a complete day. An omitted snack cannot appear in the total. A record that groups several foods together will look different from separate entries. You need to understand what a number counts before deciding what it means."
+        ],
+        "source_ids": ["community"]
+      },
+      {
+        "id": "estimates-are-useful-with-context",
+        "heading": "Keep estimates useful by keeping their limits visible",
+        "paragraphs": [
+          "The National Cancer Institute's Dietary Assessment Primer describes measurement error as the gap between what a method records and the underlying value. Self-reported dietary data can contain error, and ignoring it can make conclusions misleading. This is a general research principle; it does not provide a measured error rate for InstaCal.",
+          "In a personal food log, uncertainty may come from the amount, the selected food entry or an ingredient you could not see. A restaurant sauce is a different kind of uncertainty from a packaged yogurt with a readable label. Treating both as equally precise can hide what you actually know.",
+          "The FDA explains that a label's serving size provides a reference for its nutrition values. Check whether your portion matches that reference before copying the numbers. A package-front claim or a photograph is not a complete serving calculation.",
+          "Our practical suggestion is to correct the obvious mismatch and keep the remaining uncertainty in mind. A useful estimate does not need to pretend it was measured in a lab."
+        ],
+        "source_ids": ["nci", "serving"]
+      },
+      {
+        "id": "ask-a-specific-question",
+        "heading": "Give your food log one question to answer",
+        "paragraphs": [
+          "Open your recent entries with a concrete question. Which lunches would you happily eat again? Which meals were easy to assemble? What ingredients kept appearing on your shopping list? You can answer those questions from your own experience without ranking every plate.",
+          "Try one of the prompts below. These are original editorial review ideas, not findings about the people in the dataset."
+        ],
+        "table": {
+          "headers": [
+            "Your question",
+            "What to look for",
+            "One possible next step"
+          ],
+          "rows": [
+            [
+              "What made lunch easy?",
+              "Meals you enjoyed and could prepare reliably",
+              "Repeat one and put its ingredients on the grocery list."
+            ],
+            [
+              "Where was my log unclear?",
+              "An ambiguous food or serving entry",
+              "Check the label or choose a better matching entry."
+            ],
+            [
+              "What would I like to try again?",
+              "A meal idea you genuinely wanted",
+              "Save the idea and adapt it to your own portions."
+            ],
+            [
+              "What got in the way?",
+              "A practical obstacle you remember",
+              "Prepare a backup for that specific situation."
+            ]
+          ]
+        },
+        "source_ids": []
+      },
+      {
+        "id": "use-community-as-inspiration",
+        "heading": "Use the community to widen your options",
+        "paragraphs": [
+          "Someone else's meal can introduce a combination you had not considered. It can show a different way to serve a familiar ingredient or make a simple lunch look appealing. That is a useful role for a social food feed without turning another person's plate into your target.",
+          "Before copying a meal, translate the idea into your own situation. Do you like the ingredients? Can you get them? Does the preparation fit your kitchen? What would you change for your preferences or needs? A saved idea should make your next decision easier.",
+          "A photo does not tell you the person's full day, goals or health history. The cover image for this article is a separate public community photograph; we do not use it to infer the member's dietary needs or outcomes."
+        ],
+        "source_ids": []
+      },
+      {
+        "id": "make-one-next-step",
+        "heading": "Finish the review with one decision",
+        "paragraphs": [
+          "Close the log with something concrete to do next. Buy the ingredients for a lunch you liked. Correct an entry you now understand better. Choose a backup meal for a busy day. The record becomes useful when it supports a decision you can actually make.",
+          "Keep the scope small enough that you can tell whether the change helped. If you alter breakfast, lunch, dinner and training at once, it is harder to know which change solved the problem. One clear experiment gives you a simpler question to revisit.",
+          "The same discipline applies to our blog. We publish the sample dates, counts and limitations so you can understand the evidence behind a community claim. We do not turn public meal logs into claims that members lost weight, gained muscle or improved their health."
+        ],
+        "source_ids": ["community"]
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Does the average protein figure tell me how much I should eat?",
+        "answer": "No. The 29.3 g figure summarizes logged protein in this particular meal sample. It does not measure a person's daily requirements, complete intake or health. A personal target needs information this dataset does not provide.",
+        "source_ids": ["community"]
+      },
+      {
+        "question": "Can a food log be useful if its numbers are imperfect?",
+        "answer": "Yes, depending on the question. A record can help you remember meals, compare your own entries and plan groceries. Recognize that dietary self-reporting can contain measurement error, and avoid drawing conclusions that require more precise information than you have.",
+        "source_ids": ["nci"]
+      },
+      {
+        "question": "What information was excluded from this article?",
+        "answer": "The analysis uses aggregate counts and logged protein estimates from eligible public meal records. It excludes private profiles, hidden or non-feed meals, and team and coach accounts. No private health records, weight logs, direct messages or location data were used.",
+        "source_ids": ["community"]
+      }
+    ],
+    "sources": [
+      {
+        "id": "community",
+        "label": "InstaCal: Archived meal-log snapshot and methodology",
+        "url": "https://www.theinstacal.app/blog/what-your-food-log-can-tell-you/data",
+        "accessed_at": "2026-09-15"
+      },
+      {
+        "id": "nci",
+        "label": "National Cancer Institute: Measurement error in dietary assessment",
+        "url": "https://epi.grants.cancer.gov/dietary-assessment-primer/concepts/error/",
+        "accessed_at": "2026-09-15"
+      },
+      {
+        "id": "serving",
+        "label": "FDA: Serving size on the Nutrition Facts label",
+        "url": "https://www.fda.gov/food/nutrition-facts-label/serving-size-nutrition-facts-label",
+        "accessed_at": "2026-09-15"
+      }
+    ],
+    "methodology": "Snapshot verified September 15, 2026. Current window: August 18 00:00 UTC to September 15 00:00 UTC, exclusive; previous window: July 21 00:00 UTC to August 18 00:00 UTC, exclusive. Public, discoverable profiles and non-hidden, feed-visible meal records only; team and coach accounts excluded. Counts: current 913 meals / 48 contributors / 913 valid protein observations; previous 956 meals / 33 contributors / 955 valid protein observations. Protein values are restricted to 0–250 g per log. Statistics are meal-weighted, not person-weighted. Groups may overlap and differ between windows. Estimates, missing logs and self-selection prevent conclusions about complete diets, population trends or health outcomes. Cohorts below 20 contributors or 100 records are suppressed. The image is a separate eligible public member photograph. Review prompts are original editorial suggestions.",
+    "data_snapshot": {
+      "window_start": "2026-08-18T00:00:00Z",
+      "window_end_exclusive": "2026-09-15T00:00:00Z",
+      "previous_window_start": "2026-07-21T00:00:00Z",
+      "minimum_contributors": 20,
+      "minimum_records": 100,
+      "periods": [
+        {
+          "period": "current",
+          "meals": 913,
+          "contributors": 48,
+          "valid_protein_meals": 913,
+          "mean_protein_g": 29.3,
+          "median_protein_g": 26
+        },
+        {
+          "period": "previous",
+          "meals": 956,
+          "contributors": 33,
+          "valid_protein_meals": 955,
+          "mean_protein_g": 23.1,
+          "median_protein_g": 18
+        }
+      ],
+      "methodology": "Public, discoverable, feed-visible, non-hidden meal records; team and coach accounts excluded. UTC creation windows. Protein estimates restricted to 0–250 g per log. Meal-weighted, not person-weighted. Missing logs and automated estimates limit interpretation. Small cohorts are omitted. These are observational logging patterns, not measured diets or outcomes."
+    }
+  }
+}

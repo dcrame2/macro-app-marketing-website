@@ -1,4 +1,5 @@
 import { DeepLinkLanding } from '@/components/DeepLinkLanding'
+import { getSharePreview, previewText } from '@/lib/sharePreview'
 
 /**
  * The landing page for a shared challenge link.
@@ -20,12 +21,17 @@ import { DeepLinkLanding } from '@/components/DeepLinkLanding'
 
 export async function generateMetadata({ params }) {
   const { id } = await params
-  return {
+  // A public challenge is named in its preview; anything else keeps the line.
+  const { title, description } = previewText(await getSharePreview('challenges', id)) ?? {
     title: 'Join this challenge on InstaCal',
     description: 'Take on a challenge with friends on InstaCal',
+  }
+  return {
+    title,
+    description,
     openGraph: {
-      title: 'Join this challenge on InstaCal',
-      description: 'Take on a challenge with friends on InstaCal',
+      title,
+      description,
       url: `https://www.theinstacal.app/challenges/${id}`,
       // The root opengraph-image.jsx renders the real 1200x630 card, but a
       // child that defines `openGraph` replaces the parent's images rather

@@ -1,60 +1,46 @@
-'use client'
-
 import Link from 'next/link'
-
-import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
-import { AppStoreLink } from './AppStoreLink'
-import { PlayStoreLink } from './PlayStoreLink'
+import { Icon } from '@/components/landing/LandingUI'
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/5 bg-gray-950">
-      <Container>
-        <div className="flex flex-col items-start justify-between gap-y-12 pb-6 pt-16 lg:flex-row lg:items-center lg:py-16">
+    <footer className="ic-footer">
+      <div className="ic-wrap">
+        <div className="ic-footer-top">
           <div>
-            <div className="flex items-center">
+            <Link href="/" className="ic-brand">
               <Logo width={36} height={36} />
-              <div className="ml-4">
-                <p className="text-base font-bold text-white">InstaCal</p>
-                <p className="mt-1 text-sm text-gray-500">
-                  Where food meets your feed.
-                </p>
-              </div>
-            </div>
-            <nav className="mt-8 flex flex-wrap gap-6">
-              {[
-                ['Features', '/#features'],
-                ['AI', '/#ai'],
-                ['Social', '/#social'],
-                ['Tracking', '/#tracking'],
-                ['Pricing', '/#pricing'],
-                ['FAQs', '/#faqs'],
-                ['Blogs', '/blog'],
-                ['Privacy', '/privacy'],
-                ['Partners', '/partners'],
-              ].map(([label, href]) => (
-                <Link
-                  key={label}
-                  href={href}
-                  className="text-sm text-gray-400 transition-colors hover:text-white"
-                >
-                  {label}
-                </Link>
-              ))}
-            </nav>
+              <span>
+                InstaCal<span className="ic-brand-dot">.</span>
+              </span>
+            </Link>
+            <p>The social app for food & fitness.</p>
           </div>
-          <div className="flex gap-3">
-            <AppStoreLink color="white" />
-            <PlayStoreLink color="white" />
-          </div>
+          <nav aria-label="Explore InstaCal">
+            <span>EXPLORE</span>
+            <Link href="/#social">The social side</Link>
+            <Link href="/#features">Food & fitness</Link>
+            <Link href="/#pricing">Free & Pro</Link>
+            <Link href="/#faqs">FAQs</Link>
+          </nav>
+          <nav aria-label="More from InstaCal">
+            <span>INSTACAL</span>
+            <Link href="/blog">Journal</Link>
+            <Link href="/partners">
+              Become a partner <Icon name="diagonal" />
+            </Link>
+            <Link href="/community-guidelines">Community guidelines</Link>
+            <Link href="/privacy">Privacy policy</Link>
+          </nav>
         </div>
-        <div className="border-t border-white/5 py-6">
-          <p className="text-sm text-gray-500">
-            &copy; {new Date().getFullYear()} InstaCal. All rights reserved.
-          </p>
+        <div className="ic-footer-bottom">
+          <span>
+            © {new Date().getFullYear()} InstaCal. All rights reserved.
+          </span>
+          <span>FOOD. FITNESS. FRIENDS.</span>
+          <a href="#main-content">Back to top ↑</a>
         </div>
-      </Container>
+      </div>
     </footer>
   )
 }

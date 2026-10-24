@@ -9,7 +9,7 @@ function PrivacyPolicy() {
           Privacy Policy for InstaCal
         </h1>
         <p className="mb-4 text-lg font-semibold">
-          <strong>Last Updated: September 15, 2026</strong>
+          <strong>Last Updated: October 24, 2026</strong>
         </p>
 
         {/* 1. Introduction */}
@@ -50,8 +50,9 @@ function PrivacyPolicy() {
           <li>Calorie and macronutrient intake data</li>
           <li>Nutrition goals and progress</li>
           <li>
-            Fitness data synced from connected services (Apple Health, Strava),
-            including calories burned and workout activity
+            Fitness data synced from connected services (Apple Health, Health
+            Connect on Android, Strava), including workouts, calories burned,
+            distance, heart rate, steps and elevation
           </li>
         </ul>
 
@@ -119,8 +120,8 @@ function PrivacyPolicy() {
             location access is granted)
           </li>
           <li>
-            Sync fitness and activity data from Apple Health and Strava to
-            display alongside your nutrition data
+            Sync fitness and activity data from Apple Health, Health Connect and
+            Strava to display alongside your nutrition data
           </li>
           <li>Send notifications related to social interactions (likes, comments, follows)</li>
           <li>Communicate with you regarding your account and services</li>
@@ -218,10 +219,15 @@ function PrivacyPolicy() {
         </p>
         <ul className="ml-4 list-inside list-disc space-y-2">
           <li>
-            <strong>Apple Health:</strong> With your permission, we read and
-            write health and fitness data (such as calories burned, workouts, and
-            nutrition data) to Apple Health. This data stays on your device and
-            is governed by Apple&apos;s privacy policies.
+            <strong>Apple Health:</strong> With your permission, we read
+            workouts, heart rate, calories burned, distance, elevation, steps
+            and resting heart rate from Apple Health. InstaCal only reads; it
+            never writes to Apple Health. Workouts you import, with their summary
+            numbers and charts, are stored with your InstaCal account, the same
+            way as Health Connect below. Steps and resting heart rate are read on
+            your device and are not stored on our servers. You can withdraw
+            access at any time in your iPhone&apos;s Settings, under Health, then
+            Data Access &amp; Devices.
           </li>
           <li>
             <strong>Strava:</strong> With your permission, we read workout and
@@ -229,6 +235,65 @@ function PrivacyPolicy() {
             alongside your nutrition tracking.
           </li>
         </ul>
+        <h3 className="mb-2 mt-6 text-lg font-semibold">Health Connect (Android)</h3>
+        <p className="mb-4">
+          On Android, InstaCal can read data from Health Connect, Google&apos;s
+          health data platform, but only after you choose to connect it and
+          grant permission on Health Connect&apos;s own permission screen. You
+          decide which data types to allow. InstaCal only reads; it never writes
+          to Health Connect.
+        </p>
+        <p className="mb-2">
+          <strong>What we read</strong>, for the last 30 days when you connect
+          and new activity after that:
+        </p>
+        <ul className="ml-4 list-inside list-disc space-y-2">
+          <li>Exercise sessions (the workout type, start and end time)</li>
+          <li>Heart rate</li>
+          <li>Active calories burned and total calories burned</li>
+          <li>Distance</li>
+          <li>Elevation gained</li>
+          <li>Steps</li>
+          <li>Resting heart rate</li>
+        </ul>
+        <p className="mb-2 mt-4">
+          <strong>How we use it:</strong> to show your workouts in the App (your
+          Progress page, your workout cards and their charts, such as pace,
+          splits and heart rate), to count your activity toward goals and
+          challenges you join, to add calories burned to your daily totals when
+          you turn that on, and to show your steps and resting heart rate in the
+          boxes you add to your Progress page.
+        </p>
+        <p className="mb-2">
+          <strong>Where it goes:</strong> workouts you import, with their summary
+          numbers and charts, are stored with your InstaCal account so they
+          appear on your other devices and, if you choose, on your profile and
+          feed under your privacy settings. Steps and resting heart rate are read
+          on your device and are not stored on our servers. When you use the AI
+          coach, a summary of a workout (such as its type, time, distance and
+          calories) may be sent to OpenAI to write the coach&apos;s reply, and
+          nothing more.
+        </p>
+        <p className="mb-2">
+          <strong>What we never do:</strong> we do not sell Health Connect data,
+          use it for advertising, share it with data brokers, or use it for any
+          purpose other than the features described above. We do not use it to
+          decide credit, insurance or employment.
+        </p>
+        <p className="mb-4">
+          <strong>Your controls:</strong> you can withdraw InstaCal&apos;s access
+          at any time in Health Connect&apos;s settings (InstaCal links there
+          from Settings, then Connected apps), and InstaCal stops reading new
+          data at once. You can delete any imported workout in the App, or
+          delete your account to remove all of it (see &quot;Data Retention &amp;
+          Deletion&quot;).
+        </p>
+        <p className="mb-4">
+          InstaCal&apos;s use of information received from Health Connect
+          adheres to the Health Connect Permissions policy, including the
+          Limited Use requirements.
+        </p>
+
         <p className="mt-4">
           These integrations are optional and require your explicit permission.
           You can disconnect them at any time through the App or your device
@@ -260,7 +325,12 @@ function PrivacyPolicy() {
             OpenAI.
           </li>
           <li>
-            <strong>Apple Health:</strong> Fitness and health data sync (on-device only)
+            <strong>Apple Health:</strong> Fitness and health data sync, read
+            only, with your permission (see section 5)
+          </li>
+          <li>
+            <strong>Health Connect (Android):</strong> Fitness and health data
+            sync, read only, with your permission (see section 5)
           </li>
           <li>
             <strong>Strava:</strong> Workout and activity data sync

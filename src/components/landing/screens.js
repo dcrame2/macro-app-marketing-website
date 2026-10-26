@@ -15,10 +15,20 @@ import darkFitness from '@/images/screenshots/current/dark/tracking-fitness.webp
 import darkFood from '@/images/screenshots/current/dark/tracking-food.webp'
 import lightWorkouts from '@/images/screenshots/current/light/workouts-grid.webp'
 import darkWorkouts from '@/images/screenshots/current/dark/workouts-grid.webp'
+import flyerProfile from '@/images/screenshots/gym-flyers/profile-light.webp'
+import flyerFeed from '@/images/screenshots/gym-flyers/social-feed-dark.webp'
 
 // Verified October 12 captures. The source's light/tracking-food file shows
 // Fitness, so it is deliberately excluded instead of mislabeled as Food.
 export const screens = {
+  heroProfile: {
+    light: flyerProfile,
+    alt: 'Dylan’s InstaCal profile with All selected and a grid of meals, rides, and strength workouts',
+  },
+  heroFeed: {
+    dark: flyerFeed,
+    alt: 'InstaCal Following feed showing Dylan’s eggs Benedict meal with calories, macros, likes, and comments',
+  },
   feed: {
     light: lightFeed,
     dark: darkFeed,

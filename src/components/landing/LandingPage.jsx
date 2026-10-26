@@ -215,15 +215,15 @@ function Hero() {
         </div>
         <div className="ic-hero-visual">
           <ProductPhone
-            screen="workouts"
+            screen="heroFeed"
             theme="dark"
             className="ic-hero-back"
             priority
             sizes="(max-width: 699px) 210px, 260px"
           />
           <ProductPhone
-            screen="feed"
-            theme="dark"
+            screen="heroProfile"
+            theme="light"
             className="ic-hero-front"
             priority
             sizes="(max-width: 699px) 245px, 285px"

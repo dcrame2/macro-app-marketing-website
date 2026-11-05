@@ -25,7 +25,7 @@ export function Footer() {
           </nav>
           <nav aria-label="More from InstaCal">
             <span>INSTACAL</span>
-            <Link href="/blog">Journal</Link>
+            <Link href="/blog">Blog</Link>
             <Link href="/partners">
               Become a partner <Icon name="diagonal" />
             </Link>

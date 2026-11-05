@@ -9,7 +9,7 @@ const links = [
   ['The social side', '/#social'],
   ['Food & fitness', '/#features'],
   ['Pricing', '/#pricing'],
-  ['Journal', '/blog'],
+  ['Blog', '/blog'],
 ]
 
 export function Header() {

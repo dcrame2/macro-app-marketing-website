@@ -18,26 +18,26 @@ import darkWorkouts from '@/images/screenshots/current/dark/workouts-grid.webp'
 import flyerProfile from '@/images/screenshots/gym-flyers/profile-light.webp'
 import flyerFeed from '@/images/screenshots/gym-flyers/social-feed-dark.webp'
 
-// Verified October 12 captures. The source's light/tracking-food file shows
-// Fitness, so it is deliberately excluded instead of mislabeled as Food.
+// November 5 captures of @dylan on the 3.5x app (iPhone 16 Pro Max). The
+// light/tracking-food file is older and shows Fitness, so it stays unused.
 export const screens = {
   heroProfile: {
     light: flyerProfile,
-    alt: 'Dylan’s InstaCal profile with All selected and a grid of meals, rides, and strength workouts',
+    alt: 'Dylan’s InstaCal profile with story highlights and a grid of a lifting session’s muscle map, plated meals, and a 13-mile run route',
   },
   heroFeed: {
     dark: flyerFeed,
-    alt: 'InstaCal Following feed showing Dylan’s eggs Benedict meal with calories, macros, likes, and comments',
+    alt: 'InstaCal Home with today’s calories and protein left, the day’s run, meals, and lift on a timeline, and a salad from the For you feed',
   },
   feed: {
     light: lightFeed,
     dark: darkFeed,
-    alt: 'InstaCal Following feed with a shared eggs Benedict meal, macros, likes, and comments',
+    alt: 'InstaCal Home with today’s calories left, a timeline of the day’s run, meals, and lift, a 268-day streak, and the For you feed',
   },
   profile: {
     light: lightProfile,
     dark: darkProfile,
-    alt: 'InstaCal profile with story highlights and a grid of meals, runs, and strength workouts',
+    alt: 'InstaCal profile with story highlights and a grid of plated meals, a run route, and a muscle map for a lifting session',
   },
   map: {
     light: lightMap,
@@ -47,17 +47,17 @@ export const screens = {
   discover: {
     light: lightExplore,
     dark: darkExplore,
-    alt: 'InstaCal Search with meals that fit your macros, trending recipes, and real community plates',
+    alt: 'InstaCal Explore with lunches people loved right now, browse doors for high protein, under 500 calories, recipes, breakfast, routes, and lifts',
   },
   meal: {
     light: lightMeal,
     dark: darkMeal,
-    alt: 'Eggs Benedict in InstaCal with calories, protein, carbs, fat, and how the meal fits the day',
+    alt: 'Eggs Benedict with bacon in InstaCal with calories, macros, likes, and how the meal fits the day and a build-muscle goal',
   },
   run: {
     light: lightRun,
     dark: darkRun,
-    alt: 'A morning run in InstaCal with a Chicago route, distance, time, calories burned, and heart rate',
+    alt: 'A 13.4-mile run in InstaCal with its Chicago lakefront route, moving time, pace, calories burned, and heart rate',
   },
   fitness: {
     light: lightFitness,
@@ -66,7 +66,7 @@ export const screens = {
   },
   food: {
     dark: darkFood,
-    alt: 'InstaCal Food progress with calorie and macro summaries, days on target, streak, Coach, and awards',
+    alt: 'InstaCal Food progress with calories left, macro bars, days on target this week, a 268-day streak, awards, and a live challenge',
   },
   workouts: {
     light: lightWorkouts,

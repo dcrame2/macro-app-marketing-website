@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { Oswald } from 'next/font/google'
 import logo from '@/images/logos/InstaCal_logo.png'
 import { proLength } from '@/lib/proLength'
-import { num, sized, withCode } from '@/lib/sharePage'
+import { num, platePath, sized, withCode } from '@/lib/sharePage'
 import { GetApp, OpenInApp } from './GetApp'
 
 // The app's numeral face: every big number on these pages is the app's own.
@@ -163,7 +163,7 @@ export function PlateTiles({ plates, code }) {
   return (
     <div className="grid grid-cols-2 gap-x-3 gap-y-3.5 px-4">
       {plates.map((plate) => (
-        <a key={plate.id} href={withCode(`/meal/${plate.id}`, code)} className="flex min-w-0 flex-col gap-1.5">
+        <a key={plate.id} href={withCode(platePath(plate), code)} className="flex min-w-0 flex-col gap-1.5">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={sized(plate.image_url, 440, 480)}

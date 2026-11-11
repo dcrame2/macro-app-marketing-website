@@ -19,15 +19,44 @@ const usePlatform = () => {
 }
 
 /** The store for this phone. Android's link carries the code and the target through the install. */
-const storeUrl = (platform, type, id, code) => {
+const storeUrl = (platform, type, id, code, target) => {
   if (platform !== 'android') return APP_STORE_URL
-  const referrer = [code ? `referral_code=${code}` : null, `share_target=${type}:${id}`]
+  const referrer = [code ? `referral_code=${code}` : null, target ? `share_target=${target}` : type && id ? `share_target=${type}:${id}` : null]
     .filter(Boolean)
     .join('&')
   return `https://play.google.com/store/apps/details?id=${ANDROID_PACKAGE}&referrer=${encodeURIComponent(referrer)}`
 }
 
-const appUrl = (type, id, code) => `instacal://${type}/${id}${code ? `?r=${code}` : ''}`
+const appUrl = (type, id, code) =>
+  type && id ? `instacal://${type}/${id}${code ? `?r=${code}` : ''}` : `instacal://${code ? `r/${code}` : ''}`
+
+/** Keeps something for the app to pick up after an install (see ShareBeacon). */
+export const storeForApp = ({ code, target }) => {
+  try {
+    fetch(DEFERRED_LINK_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      // Survives the tap that leaves for the store.
+      keepalive: true,
+      body: JSON.stringify({
+        action: 'store',
+        code: code ?? '',
+        target,
+        fingerprint: {
+          ua: navigator.userAgent,
+          sw: screen.width,
+          sh: screen.height,
+          dpr: window.devicePixelRatio,
+          lang: navigator.language,
+          tz: Intl.DateTimeFormat().resolvedOptions().timeZone,
+          platform: navigator.platform,
+        },
+      }),
+    }).catch(() => {})
+  } catch {
+    // Never in the way of the button.
+  }
+}
 
 /**
  * Remembers this visit so the app can pick it up after a fresh install: the
@@ -43,7 +72,7 @@ export function ShareBeacon({ type, id, code }) {
       body: JSON.stringify({
         action: 'store',
         code: code ?? '',
-        target: { type, id: String(id) },
+        target: type && id ? { type, id: String(id) } : undefined,
         fingerprint: {
           ua: navigator.userAgent,
           sw: screen.width,
@@ -72,12 +101,13 @@ export function OpenInApp({ type, id, code }) {
 }
 
 /** The page's two buttons: get the app from this phone's store, or open it. */
-export function GetApp({ type, id, code, label = 'Get InstaCal' }) {
+export function GetApp({ type, id, code, label = 'Get InstaCal', target = null, onGo }) {
   const platform = usePlatform()
   return (
     <div className="flex flex-col gap-3">
       <a
-        href={storeUrl(platform, type, id, code)}
+        href={storeUrl(platform, type, id, code, target)}
+        onClick={onGo}
         className="flex h-[52px] items-center justify-center rounded-full bg-[#0077cc] text-base font-bold text-white hover:bg-[#0068b3]"
       >
         {label}
@@ -97,5 +127,18 @@ export function GetApp({ type, id, code, label = 'Get InstaCal' }) {
         </p>
       ) : null}
     </div>
+  )
+}
+
+/** The store for this phone, as a small pill (a sticky bar's one button). */
+export function StoreLink({ type, id, code, label = 'Get the app' }) {
+  const platform = usePlatform()
+  return (
+    <a
+      href={storeUrl(platform, type, id, code)}
+      className="flex h-11 flex-none items-center rounded-full bg-[#0077cc] px-4 text-sm font-bold text-white hover:bg-[#0068b3]"
+    >
+      {label}
+    </a>
   )
 }

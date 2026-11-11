@@ -13,6 +13,8 @@ export default async function sitemap() {
       '',
       '/blog',
       '/blog/editorial',
+      '/recipes',
+      '/calculator',
       '/partners',
       '/privacy',
       '/community-guidelines',

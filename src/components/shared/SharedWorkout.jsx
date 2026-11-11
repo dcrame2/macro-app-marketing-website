@@ -1,9 +1,10 @@
-import { dayOf, num, sized } from '@/lib/sharePage'
+import { dayOf, num, setsLine, sized } from '@/lib/sharePage'
 import { durationOf, milesOf } from '@/lib/sharePreview'
 import { ShareBeacon } from './GetApp'
 import {
   AuthorRow,
   CallToAction,
+  Card,
   Eyebrow,
   Footer,
   InviteStrip,
@@ -22,11 +23,20 @@ const paceOf = (meters, seconds) => {
   return `${Math.floor(perMile / 60)}:${String(perMile % 60).padStart(2, '0')} /mi`
 }
 
+const MUSCLE = {
+  chest: 'Chest', shoulders: 'Shoulders', lats: 'Lats', traps: 'Traps', biceps: 'Biceps', triceps: 'Triceps',
+  forearms: 'Forearms', abs: 'Abs', obliques: 'Obliques', lowerback: 'Lower back', glutes: 'Glutes',
+  quads: 'Quads', hamstrings: 'Hamstrings', calves: 'Calves',
+}
+const muscleWord = (key) => MUSCLE[key] ?? String(key).replace(/_/g, ' ').replace(/^./, (c) => c.toUpperCase())
+
 /** A shared session: its one big number, the rest of its numbers, who did it. Never a route. */
 export function SharedWorkout({ workout, inviter, code }) {
   const distance = milesOf(workout.distance_meters)
   const time = durationOf(workout.duration_seconds)
   const pace = paceOf(workout.distance_meters, workout.duration_seconds)
+  const exercises = workout.exercises ?? []
+  const muscles = workout.muscle_groups ?? []
   const lead = distance ?? time
   const handle = workout.author.username ? `@${workout.author.username}` : workout.author.name
   const stats = [
@@ -72,12 +82,55 @@ export function SharedWorkout({ workout, inviter, code }) {
           ) : null}
         </div>
 
+        {exercises.length > 0 ? (
+          <section className="flex flex-col gap-2.5">
+            <Eyebrow>{`The workout · ${exercises.length} ${exercises.length === 1 ? 'exercise' : 'exercises'}`}</Eyebrow>
+            {muscles.length > 0 ? (
+              <div className="flex flex-wrap gap-1.5 px-4">
+                {muscles.map((key) => (
+                  <span key={key} className="rounded-full bg-[#E3F0FA] px-2.5 py-1 text-xs font-bold text-[#0A5C9E]">
+                    {muscleWord(key)}
+                  </span>
+                ))}
+              </div>
+            ) : null}
+            <Card className="!py-1.5">
+              {exercises.map((exercise, index) => {
+                const line = setsLine(exercise.sets)
+                return (
+                  <div
+                    key={`${exercise.name}-${index}`}
+                    className={`flex items-center gap-3 py-3 ${index < exercises.length - 1 ? 'border-b border-[#DDE3EA]' : ''}`}
+                  >
+                    <span
+                      aria-hidden="true"
+                      className={`${numeral} flex h-[30px] w-[30px] flex-none items-center justify-center rounded-full bg-[#E3F0FA] text-base text-[#0A5C9E]`}
+                    >
+                      {index + 1}
+                    </span>
+                    <span className="flex min-w-0 flex-col">
+                      <span className="text-[15px] font-semibold leading-5 text-[#10151C]">{exercise.name}</span>
+                      <span className="text-[13px] leading-[18px] text-[#566170]">
+                        {line ?? exercise.muscles.map(muscleWord).join(' · ')}
+                      </span>
+                    </span>
+                  </div>
+                )
+              })}
+            </Card>
+          </section>
+        ) : null}
+
         <CallToAction
           type="workout"
           id={workout.id}
           code={code}
-          head="Train with your friends"
-          sub="InstaCal brings in your runs, rides and lifts from Apple Health and Strava, next to what you eat. Free to start."
+          head={exercises.length > 0 ? 'Do this workout in the app' : 'Train with your friends'}
+          sub={
+            exercises.length > 0
+              ? 'Save it, then tick the sets off one at a time with a rest timer. InstaCal remembers your numbers for next time. Free to start.'
+              : 'InstaCal brings in your runs, rides and lifts from Apple Health and Strava, next to what you eat. Free to start.'
+          }
         />
 
         {workout.more.length >= 2 ? (

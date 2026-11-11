@@ -3,7 +3,7 @@ import { Oswald } from 'next/font/google'
 import logo from '@/images/logos/InstaCal_logo.png'
 import { proLength } from '@/lib/proLength'
 import { num, platePath, sized, withCode } from '@/lib/sharePage'
-import { GetApp, OpenInApp } from './GetApp'
+import { GetApp, StoreLink } from './GetApp'
 
 // The app's numeral face: every big number on these pages is the app's own.
 const oswald = Oswald({ subsets: ['latin'], weight: '600', display: 'swap' })
@@ -17,11 +17,34 @@ const PILL = {
 }
 
 /** The page: the app's light ground, one phone-width column on any screen. */
-export function Page({ children }) {
+export function Page({ children, bar = null }) {
   return (
     <div className="min-h-screen bg-[#EEF1F5] text-[#10151C]">
-      <div className="mx-auto flex min-h-screen w-full max-w-[480px] flex-col bg-[#EEF1F5] sm:border-x sm:border-[#DDE3EA]">
+      <div className={`mx-auto flex min-h-screen w-full max-w-[480px] flex-col bg-[#EEF1F5] sm:border-x sm:border-[#DDE3EA] ${bar ? 'pb-[76px]' : ''}`}>
         {children}
+      </div>
+      {bar}
+    </div>
+  )
+}
+
+/**
+ * The way in, pinned to the foot of every shared page (2026-11-10). A web
+ * page cannot tell whether the app is installed, so nothing here says "Open":
+ * the button names what the app does with THIS thing ("Save this recipe",
+ * "Follow Dylan") and goes to the store, which itself offers Open to someone
+ * who has it. After an install the app opens on the same thing.
+ */
+export function StickyBar({ title, sub, action, type, id, code, target, lead = null }) {
+  return (
+    <div className="fixed inset-x-0 bottom-0 z-10 flex justify-center border-t border-[#DDE3EA] bg-white/95 backdrop-blur">
+      <div className="flex w-full max-w-[480px] items-center gap-3 px-4 pb-[max(12px,env(safe-area-inset-bottom))] pt-3">
+        {lead ?? <Image src={logo} alt="" width={36} height={36} className="flex-none" />}
+        <span className="flex min-w-0 flex-1 flex-col">
+          <span className="truncate text-sm font-bold leading-[18px] text-[#10151C]">{title}</span>
+          <span className="truncate text-xs text-[#566170]">{sub}</span>
+        </span>
+        <StoreLink type={type} id={id} code={code} target={target} label={action} />
       </div>
     </div>
   )
@@ -34,7 +57,8 @@ export function TopBar({ type, id, code }) {
         <Image src={logo} alt="" width={30} height={30} priority />
         <span className="text-[17px] font-bold text-[#10151C]">InstaCal</span>
       </a>
-      <OpenInApp type={type} id={id} code={code} />
+      {/* The store, not a custom-scheme link: that is an error page for anyone without the app. */}
+      <StoreLink type={type} id={id} code={code} label="Get the app" />
     </header>
   )
 }

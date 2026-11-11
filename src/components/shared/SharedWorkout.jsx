@@ -11,6 +11,7 @@ import {
   Page,
   PlateTiles,
   Stat,
+  StickyBar,
   TopBar,
   numeral,
 } from './parts'
@@ -47,7 +48,18 @@ export function SharedWorkout({ workout, inviter, code }) {
   ].filter(Boolean)
 
   return (
-    <Page>
+    <Page
+      bar={
+        <StickyBar
+          type="workout"
+          id={workout.id}
+          code={code}
+          title={exercises.length > 0 ? 'Do this workout' : `Train with ${handle}`}
+          sub="Free on InstaCal"
+          action={exercises.length > 0 ? 'Save workout' : 'Get the app'}
+        />
+      }
+    >
       <ShareBeacon type="workout" id={workout.id} code={code} />
       <TopBar type="workout" id={workout.id} code={code} />
       <InviteStrip inviter={inviter} line="shared this with you" />

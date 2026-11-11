@@ -2,7 +2,7 @@ import { getReferralInviter } from '@/lib/referralInviter'
 import { cleanCode, getSharePage } from '@/lib/sharePage'
 import { ShareBeacon } from '@/components/shared/GetApp'
 import { PlateGrid } from '@/components/shared/PlateList'
-import { CallToAction, Footer, InviteStrip, Page, TopBar } from '@/components/shared/parts'
+import { CallToAction, Footer, InviteStrip, Page, StickyBar, TopBar } from '@/components/shared/parts'
 
 const SITE = 'https://theinstacal.app'
 const TITLE = 'Recipes with the macros done'
@@ -44,7 +44,7 @@ export default async function RecipesPage({ searchParams }) {
     return text ? `/recipes?${text}` : '/recipes'
   }
   return (
-    <Page>
+    <Page bar={<StickyBar code={known} title="Save the ones you like" sub="Free on InstaCal" action="Get the app" />}>
       {known ? <ShareBeacon code={known} /> : null}
       <TopBar code={known} />
       <InviteStrip inviter={inviter} line="sent you these recipes" />

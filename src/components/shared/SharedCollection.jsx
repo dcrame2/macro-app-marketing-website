@@ -1,7 +1,7 @@
 import { num, sized } from '@/lib/sharePage'
 import { ShareBeacon } from './GetApp'
 import { PlateGrid } from './PlateList'
-import { AuthorRow, CallToAction, Eyebrow, Footer, InviteStrip, Page, Stat, TopBar } from './parts'
+import { AuthorRow, CallToAction, Eyebrow, Footer, InviteStrip, Page, Stat, StickyBar, TopBar } from './parts'
 
 /**
  * A collection someone shared (2026-11-10): one link to a set of plates -
@@ -18,7 +18,18 @@ export function SharedCollection({ collection, inviter, code }) {
   const name = collection.author.name ?? collection.author.username
 
   return (
-    <Page>
+    <Page
+      bar={
+        <StickyBar
+          type="user"
+          id={collection.author.id}
+          code={code}
+          title={`Keep all ${n} in your pocket`}
+          sub="Save them to your own cookbook, free"
+          action="Save these"
+        />
+      }
+    >
       <ShareBeacon type="user" id={collection.author.id} code={code} />
       <TopBar type="user" id={collection.author.id} code={code} />
       <InviteStrip inviter={inviter} line="sent you this collection" />

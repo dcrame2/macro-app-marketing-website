@@ -1,8 +1,8 @@
 import { proLength } from '@/lib/proLength'
 import { dayOf, num, platePath, sized, withCode, workoutPath } from '@/lib/sharePage'
 import { durationOf, milesOf } from '@/lib/sharePreview'
-import { GetApp, ShareBeacon, StoreLink } from './GetApp'
-import { Avatar, Eyebrow, Footer, Page, TopBar, numeral } from './parts'
+import { GetApp, ShareBeacon } from './GetApp'
+import { Avatar, Eyebrow, Footer, Page, StickyBar, TopBar, numeral } from './parts'
 
 function Count({ value, label }) {
   return (
@@ -45,11 +45,23 @@ export function SharedProfile({ profile, inviter, code }) {
   const site = profile.link ? hostOf(profile.link) : null
   const sessions = profile.sessions ?? []
   return (
-    <Page>
+    <Page
+      bar={
+        <StickyBar
+          type="user"
+          id={profile.id}
+          code={code}
+          lead={<Avatar url={profile.avatar_url} name={name} size={36} />}
+          title={`Follow @${profile.username}`}
+          sub="See every plate and workout in the app"
+          action="Follow"
+        />
+      }
+    >
       <ShareBeacon type="user" id={profile.id} code={code} />
       <TopBar type="user" id={profile.id} code={code} />
 
-      <main className="flex flex-col gap-4 pb-24 pt-5">
+      <main className="flex flex-col gap-4 pt-5">
         <div className="flex items-center gap-5 px-4">
           <Avatar url={profile.avatar_url} name={name} size={88} />
           {profile.is_public ? (
@@ -175,17 +187,6 @@ export function SharedProfile({ profile, inviter, code }) {
       </main>
       <Footer />
 
-      {/* The way in stays on screen while the grid scrolls. */}
-      <div className="fixed inset-x-0 bottom-0 z-10 flex justify-center border-t border-[#DDE3EA] bg-white/95 backdrop-blur">
-        <div className="flex w-full max-w-[480px] items-center gap-3 px-4 pb-[max(12px,env(safe-area-inset-bottom))] pt-3">
-          <Avatar url={profile.avatar_url} name={name} size={36} />
-          <span className="flex min-w-0 flex-1 flex-col">
-            <span className="truncate text-sm font-bold leading-[18px] text-[#10151C]">Follow @{profile.username}</span>
-            <span className="truncate text-xs text-[#566170]">See every plate and workout in the app</span>
-          </span>
-          <StoreLink type="user" id={profile.id} code={code} />
-        </div>
-      </div>
     </Page>
   )
 }

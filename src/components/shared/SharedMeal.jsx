@@ -11,6 +11,7 @@ import {
   Page,
   PlateTiles,
   Stat,
+  StickyBar,
   TopBar,
   numeral,
 } from './parts'
@@ -39,7 +40,18 @@ export function SharedMeal({ meal, inviter, code }) {
   const handle = meal.author.username ? `@${meal.author.username}` : meal.author.name
 
   return (
-    <Page>
+    <Page
+      bar={
+        <StickyBar
+          type="meal"
+          id={meal.id}
+          code={code}
+          title={recipe ? 'Keep this recipe' : 'Log this in one tap'}
+          sub="Free on InstaCal"
+          action={recipe ? 'Save recipe' : 'Get the app'}
+        />
+      }
+    >
       <ShareBeacon type="meal" id={meal.id} code={code} />
       <TopBar type="meal" id={meal.id} code={code} />
       <InviteStrip inviter={inviter} line={recipe ? 'sent you this recipe' : 'shared this with you'} />

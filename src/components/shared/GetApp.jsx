@@ -131,11 +131,11 @@ export function GetApp({ type, id, code, label = 'Get InstaCal', target = null, 
 }
 
 /** The store for this phone, as a small pill (a sticky bar's one button). */
-export function StoreLink({ type, id, code, label = 'Get the app' }) {
+export function StoreLink({ type, id, code, target = null, label = 'Get the app' }) {
   const platform = usePlatform()
   return (
     <a
-      href={storeUrl(platform, type, id, code)}
+      href={storeUrl(platform, type, id, code, target)}
       className="flex h-11 flex-none items-center rounded-full bg-[#0077cc] px-4 text-sm font-bold text-white hover:bg-[#0068b3]"
     >
       {label}

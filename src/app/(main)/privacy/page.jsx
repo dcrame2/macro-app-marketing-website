@@ -51,8 +51,8 @@ function PrivacyPolicy() {
           <li>Nutrition goals and progress</li>
           <li>
             Fitness data synced from connected services (Apple Health, Health
-            Connect on Android, Strava), including workouts, calories burned,
-            distance, heart rate, steps and elevation
+            Connect on Android, Strava, Garmin Connect), including workouts,
+            calories burned, distance, heart rate, steps and elevation
           </li>
         </ul>
 
@@ -120,8 +120,8 @@ function PrivacyPolicy() {
             location access is granted)
           </li>
           <li>
-            Sync fitness and activity data from Apple Health, Health Connect and
-            Strava to display alongside your nutrition data
+            Sync fitness and activity data from Apple Health, Health Connect,
+            Strava and Garmin Connect to display alongside your nutrition data
           </li>
           <li>Send notifications related to social interactions (likes, comments, follows)</li>
           <li>Communicate with you regarding your account and services</li>
@@ -235,6 +235,56 @@ function PrivacyPolicy() {
             alongside your nutrition tracking.
           </li>
         </ul>
+        <h3 className="mb-2 mt-6 text-lg font-semibold">Garmin Connect</h3>
+        <p className="mb-4">
+          InstaCal can receive data from your Garmin Connect account, but only
+          after you choose to connect it and approve the sharing on
+          Garmin&apos;s own page, where you pick what to share. Once connected,
+          Garmin sends us the activities your Garmin device records after that
+          point (the sport, time, distance, calories, heart rate, pace, climb,
+          the route, the exercises, sets and weights of a strength session, and
+          the name of the device that recorded it) and, if you
+          allow it, daily health summaries such as steps, resting heart rate,
+          sleep, stress, heart rate variability, Body Battery, weigh-ins from a
+          Garmin scale and water you log on the watch. We do not receive activities from before you connected.
+          We show this data in your InstaCal account, labeled as coming from
+          your Garmin device. A route follows the same visibility settings as
+          any other workout route in InstaCal. If you choose to send a workout
+          you planned in InstaCal to your watch, we send that workout (its
+          name, exercises, sets and the day you picked) to your Garmin Connect
+          account, and you can take it back from InstaCal.
+        </p>
+        <p className="mb-4">
+          You can disconnect at any time in InstaCal under Settings, then
+          Connected apps, or in the Garmin Connect app under Connected Apps.
+          When you disconnect in InstaCal we also tell Garmin to stop sending
+          your data, and you choose whether what Garmin already sent (your imported
+          workouts, daily health summaries and Garmin scale weigh-ins) stays
+          in your InstaCal account or is removed. Deleting your InstaCal
+          account removes it and ends the connection.
+        </p>
+        <h3 className="mb-2 mt-6 text-lg font-semibold">Garmin data and AI</h3>
+        <p className="mb-4">
+          InstaCal has features that use artificial intelligence: the Coach
+          (which answers your questions and writes notes on your meals and
+          workouts), Say it (logging by voice or text) and AI-written workouts.
+          These features send text to OpenAI, our AI provider, to produce an
+          answer. <strong>Data from your Garmin account is not processed by
+          any AI feature unless you turn on &quot;Let the Coach read my Garmin
+          data.&quot;</strong> The setting is off by default. You can turn it on
+          when you connect Garmin or later, and turn it off again at any time
+          under Settings, then Connected apps. While it is off, your Garmin
+          workouts and health data are left out of everything InstaCal sends
+          to an AI model. While it is on, the AI features may read your Garmin
+          workouts and health summaries (for example a workout&apos;s sport,
+          time, distance, calories and heart rate) to answer you and to write
+          notes; anything produced this way is marked in the app as derived in
+          part from Garmin data. Your Garmin data is not used to train AI
+          models by us, and OpenAI does not use data sent through its API to
+          train its models. Turning the setting off stops any further AI
+          processing of your Garmin data; notes already written remain in your
+          account until you delete them or your account.
+        </p>
         <h3 className="mb-2 mt-6 text-lg font-semibold">Health Connect (Android)</h3>
         <p className="mb-4">
           On Android, InstaCal can read data from Health Connect, Google&apos;s
@@ -334,6 +384,12 @@ function PrivacyPolicy() {
           </li>
           <li>
             <strong>Strava:</strong> Workout and activity data sync
+          </li>
+          <li>
+            <strong>Garmin Connect:</strong> Workout and health data sent to us
+            by Garmin after you connect your account (see section 5). Garmin
+            data reaches OpenAI only if you turn on the AI setting described
+            there.
           </li>
           <li>
             <strong>Resend:</strong> Email delivery. Your email address, name and

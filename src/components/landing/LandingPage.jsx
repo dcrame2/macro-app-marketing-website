@@ -209,9 +209,9 @@ function Hero() {
             <span className="ic-proof-divider" />
             <span>Free on iOS & Android</span>
           </div>
-          <a href="#social" className="ic-text-link">
-            Explore InstaCal <Icon name="arrow" />
-          </a>
+          <Link href="/explore" className="ic-text-link">
+            See what people are eating today <Icon name="arrow" />
+          </Link>
         </div>
         <div className="ic-hero-visual">
           <ProductPhone
@@ -701,13 +701,15 @@ function Download() {
   )
 }
 
-export function LandingPage() {
+export function LandingPage({ afterHero = null, afterSocial = null }) {
   const [screenshot, setScreenshot] = useState(null)
   return (
     <ScreenshotContext.Provider value={setScreenshot}>
       <div className="ic-site">
         <Hero />
+        {afterHero}
         <SocialExplorer />
+        {afterSocial}
         <Activity />
         <Pricing />
         <FAQ />

@@ -8,10 +8,10 @@ import { numeral } from './parts'
  */
 export function PlateGrid({ plates, code, by = false }) {
   return (
-    <div className="grid grid-cols-2 gap-x-3 gap-y-4 px-4">
+    <div className="grid grid-cols-2 gap-x-3 gap-y-4 px-4 lg:gap-x-5 lg:gap-y-7 lg:[grid-template-columns:var(--plate-cols,repeat(2,minmax(0,1fr)))]">
       {plates.map((plate, index) => (
         <a key={plate.id} href={withCode(platePath(plate), code)} className="flex min-w-0 flex-col gap-1.5">
-          <span className="relative block aspect-[11/12] w-full overflow-hidden rounded-[14px] bg-[#DDE3EA]">
+          <span className="relative block aspect-[11/12] w-full overflow-hidden rounded-[14px] bg-[#111A2B]">
             {plate.image_url ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img
@@ -21,9 +21,9 @@ export function PlateGrid({ plates, code, by = false }) {
                 className="h-full w-full object-cover"
               />
             ) : (
-              <span className="flex h-full w-full flex-col items-center justify-center gap-0.5 bg-gradient-to-b from-[#E3F0FA] to-[#DDE3EA]">
-                <span className={`${numeral} text-[34px] leading-[38px] text-[#0A5C9E]`}>{num(plate.calories)}</span>
-                <span className="text-xs font-semibold text-[#566170]">calories</span>
+              <span className="flex h-full w-full flex-col items-center justify-center gap-0.5 bg-gradient-to-b from-[#12233B] to-[#0B1220]">
+                <span className={`${numeral} text-[34px] leading-[38px] text-[#6CC4FF]`}>{num(plate.calories)}</span>
+                <span className="text-xs font-semibold text-[#9CA8BB]">calories</span>
               </span>
             )}
             {plate.recipe_steps > 0 ? (
@@ -32,12 +32,12 @@ export function PlateGrid({ plates, code, by = false }) {
               </span>
             ) : null}
           </span>
-          <span className="line-clamp-2 text-sm font-bold leading-[18px] text-[#10151C]">{plate.title}</span>
-          <span className="text-[13px] text-[#566170]">
+          <span className="line-clamp-2 text-sm font-bold leading-[18px] text-[#F8FAFC]">{plate.title}</span>
+          <span className="text-[13px] text-[#9CA8BB]">
             {num(plate.calories)} cal · {num(plate.protein)}g protein
           </span>
           {by && plate.author?.username ? (
-            <span className="text-xs text-[#566170]">by @{plate.author.username}</span>
+            <span className="text-xs text-[#9CA8BB]">by @{plate.author.username}</span>
           ) : null}
         </a>
       ))}

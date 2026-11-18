@@ -9,6 +9,7 @@ import {
   InviteStrip,
   MacroPills,
   Page,
+  Split,
   PlateTiles,
   Stat,
   StickyBar,
@@ -41,6 +42,7 @@ export function SharedMeal({ meal, inviter, code }) {
 
   return (
     <Page
+      wide
       bar={
         <StickyBar
           type="meal"
@@ -55,32 +57,35 @@ export function SharedMeal({ meal, inviter, code }) {
       <ShareBeacon type="meal" id={meal.id} code={code} />
       <TopBar type="meal" id={meal.id} code={code} />
       <InviteStrip inviter={inviter} line={recipe ? 'sent you this recipe' : 'shared this with you'} />
-      {meal.image_url ? (
+      <Split
+        hero={
+          meal.image_url ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
           src={sized(meal.image_url, 960, 1080)}
           alt={meal.title}
-          className="aspect-[8/9] w-full bg-[#DDE3EA] object-cover"
+          className="aspect-[8/9] w-full bg-[#111A2B] object-cover"
         />
-      ) : null}
-
+      ) : null
+        }
+      >
       <main className="flex flex-col gap-[22px] pb-2 pt-3.5">
         <AuthorRow author={meal.author} sub={sub} likes={meal.likes} code={code} />
 
         <div className="flex flex-col gap-2.5 px-4">
           {recipe ? (
-            <span className="text-xs font-bold uppercase tracking-[0.1em] text-[#566170]">Recipe</span>
+            <span className="text-xs font-bold uppercase tracking-[0.1em] text-[#9CA8BB]">Recipe</span>
           ) : null}
-          <h1 className="text-2xl font-extrabold leading-[30px] text-[#10151C]">{meal.title}</h1>
+          <h1 className="text-2xl font-extrabold leading-[30px] text-[#F8FAFC]">{meal.title}</h1>
           {meal.caption ? (
-            <p className="whitespace-pre-line text-[15px] leading-[21px] text-[#566170]">{meal.caption}</p>
+            <p className="whitespace-pre-line text-[15px] leading-[21px] text-[#9CA8BB]">{meal.caption}</p>
           ) : recipe?.intro ? (
-            <p className="whitespace-pre-line text-[15px] leading-[21px] text-[#566170]">{recipe.intro}</p>
+            <p className="whitespace-pre-line text-[15px] leading-[21px] text-[#9CA8BB]">{recipe.intro}</p>
           ) : null}
-          {meal.place ? <p className="text-[13px] font-semibold text-[#566170]">At {meal.place}</p> : null}
+          {meal.place ? <p className="text-[13px] font-semibold text-[#9CA8BB]">At {meal.place}</p> : null}
 
           {recipe ? (
-            <div className="flex justify-between rounded-2xl border border-[#DDE3EA] bg-white px-4 py-3.5">
+            <div className="flex justify-between rounded-2xl border border-white/10 bg-[#0B1220] px-4 py-3.5">
               <Stat value={num(meal.calories)} label="calories" />
               <Stat value={`${num(meal.protein)}g`} label="protein" />
               {minutes > 0 ? <Stat value={num(minutes)} label="minutes" /> : null}
@@ -92,7 +97,7 @@ export function SharedMeal({ meal, inviter, code }) {
             <>
               <p className="flex items-baseline gap-2">
                 <span className={`${numeral} text-[44px] leading-[50px]`}>{num(meal.calories)}</span>
-                <span className="text-[15px] font-semibold text-[#566170]">calories</span>
+                <span className="text-[15px] font-semibold text-[#9CA8BB]">calories</span>
               </p>
               <MacroPills protein={meal.protein} carbs={meal.carbs} fat={meal.fat} />
             </>
@@ -108,14 +113,14 @@ export function SharedMeal({ meal, inviter, code }) {
                 return (
                   <div
                     key={`${row.name}-${index}`}
-                    className={`flex items-center justify-between gap-3 py-2.5 ${index < meal.ingredients.length - 1 ? 'border-b border-[#DDE3EA]' : ''}`}
+                    className={`flex items-center justify-between gap-3 py-2.5 ${index < meal.ingredients.length - 1 ? 'border-b border-white/10' : ''}`}
                   >
                     <span className="flex min-w-0 flex-col">
-                      <span className="text-[15px] font-semibold leading-5 text-[#10151C]">{name}</span>
-                      {serving ? <span className="text-[13px] leading-[18px] text-[#566170]">{serving}</span> : null}
+                      <span className="text-[15px] font-semibold leading-5 text-[#F8FAFC]">{name}</span>
+                      {serving ? <span className="text-[13px] leading-[18px] text-[#9CA8BB]">{serving}</span> : null}
                     </span>
                     {row.calories > 0 ? (
-                      <span className={`${numeral} flex-none text-lg text-[#10151C]`}>{num(row.calories)}</span>
+                      <span className={`${numeral} flex-none text-lg text-[#F8FAFC]`}>{num(row.calories)}</span>
                     ) : null}
                   </div>
                 )
@@ -133,11 +138,11 @@ export function SharedMeal({ meal, inviter, code }) {
                   <li key={index} className="flex items-start gap-3">
                     <span
                       aria-hidden="true"
-                      className={`${numeral} flex h-[30px] w-[30px] flex-none items-center justify-center rounded-full bg-[#E3F0FA] text-base text-[#0A5C9E]`}
+                      className={`${numeral} flex h-[30px] w-[30px] flex-none items-center justify-center rounded-full bg-[#0077cc]/20 text-base text-[#6CC4FF]`}
                     >
                       {index + 1}
                     </span>
-                    <span className="pt-1 text-[15px] leading-[22px] text-[#10151C]">{step}</span>
+                    <span className="pt-1 text-[15px] leading-[22px] text-[#F8FAFC]">{step}</span>
                   </li>
                 ))}
               </ol>
@@ -164,6 +169,7 @@ export function SharedMeal({ meal, inviter, code }) {
           </section>
         ) : null}
       </main>
+      </Split>
       <Footer />
     </Page>
   )

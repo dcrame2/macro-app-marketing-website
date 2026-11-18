@@ -114,14 +114,14 @@ export function GetApp({ type, id, code, label = 'Get InstaCal', target = null, 
       </a>
       <a
         href={appUrl(type, id, code)}
-        className="flex h-12 items-center justify-center rounded-full border border-[#DDE3EA] text-[15px] font-semibold text-[#10151C] hover:bg-[#F6F8FA]"
+        className="flex h-12 items-center justify-center rounded-full border border-white/10 text-[15px] font-semibold text-[#F8FAFC] hover:bg-white/5"
       >
         I already have it
       </a>
       {platform === 'other' ? (
-        <p className="text-center text-[13px] text-[#566170]">
+        <p className="text-center text-[13px] text-[#9CA8BB]">
           On iPhone and Android.{' '}
-          <a className="font-semibold text-[#0068b3]" href={storeUrl('android', type, id, code)}>
+          <a className="font-semibold text-[#44BAFF]" href={storeUrl('android', type, id, code)}>
             Google Play
           </a>
         </p>

@@ -1,8 +1,10 @@
 import { getReferralInviter } from '@/lib/referralInviter'
 import { cleanCode, getSharePage } from '@/lib/sharePage'
 import { ShareBeacon } from '@/components/shared/GetApp'
-import { PlateGrid } from '@/components/shared/PlateList'
-import { CallToAction, Footer, InviteStrip, Page, StickyBar, TopBar } from '@/components/shared/parts'
+import Link from 'next/link'
+import { Eyebrow, StoreLinks } from '@/components/landing/LandingUI'
+import { PlateCard } from '@/components/explore/PlateCard'
+import { InviteStrip, StickyBar } from '@/components/shared/parts'
 
 const SITE = 'https://theinstacal.app'
 const TITLE = 'Recipes with the macros done'
@@ -44,46 +46,57 @@ export default async function RecipesPage({ searchParams }) {
     return text ? `/recipes?${text}` : '/recipes'
   }
   return (
-    <Page bar={<StickyBar code={known} title="Save the ones you like" sub="Free on InstaCal" action="Get the app" />}>
+    <div className="ic-site ic-explore-page">
       {known ? <ShareBeacon code={known} /> : null}
-      <TopBar code={known} />
-      <InviteStrip inviter={inviter} line="sent you these recipes" />
-      <main className="flex flex-col gap-[18px] pb-2 pt-5">
-        <div className="flex flex-col gap-2 px-4">
-          <span className="text-xs font-bold uppercase tracking-[0.1em] text-[#566170]">Recipes</span>
-          <h1 className="text-[28px] font-extrabold leading-[34px] text-[#10151C]">{TITLE}</h1>
-          <p className="text-[15px] leading-[21px] text-[#566170]">
-            Cooked and posted by real people. Every one has its ingredients, its method, and the calories and protein already worked out.
-          </p>
+      {inviter ? (
+        <div className="ic-wrap ic-invite-strip">
+          <InviteStrip inviter={inviter} line="sent you these recipes" />
         </div>
-        <nav aria-label="Filter recipes" className="flex gap-2 overflow-x-auto px-4 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-          {FILTERS.map((f) => (
-            <a
-              key={f.key}
-              href={href(f.key)}
-              aria-current={f.key === active.key ? 'page' : undefined}
-              className={`flex h-11 flex-none items-center rounded-full border px-4 text-sm font-bold ${
-                f.key === active.key ? 'border-[#10151C] bg-[#10151C] text-white' : 'border-[#DDE3EA] bg-white text-[#10151C]'
-              }`}
-            >
+      ) : null}
+      <section className="ic-wrap ic-explore-head">
+        <Eyebrow>RECIPES</Eyebrow>
+        <h1>
+          Recipes with the
+          <br />
+          <em>macros done.</em>
+        </h1>
+        <p>
+          Cooked and posted by real people. Every one has its ingredients, its method, and the calories and protein already worked out.
+        </p>
+        <nav aria-label="Filter recipes" className="ic-chips">
+          {FILTERS.filter((f) => f.key === 'all' || (page?.plates ?? []).some(f.test)).map((f) => (
+            <Link key={f.key} href={href(f.key)} aria-current={f.key === active.key ? 'page' : undefined} className="ic-chip">
               {f.label}
-            </a>
+            </Link>
           ))}
         </nav>
+      </section>
+      <section className="ic-wrap ic-explore-block" aria-labelledby="ic-recipes-all">
+        <h2 id="ic-recipes-all" className="ic-explore-label">
+          {active.key === 'all' ? 'Best looking first' : active.label}
+        </h2>
         {plates.length > 0 ? (
-          <PlateGrid plates={plates} code={known} by />
+          <div className="ic-plates">
+            {plates.map((plate, i) => (
+              <PlateCard key={plate.id} plate={plate} code={known} eager={i < 8} />
+            ))}
+          </div>
         ) : (
-          <p className="px-4 py-10 text-center text-[15px] text-[#566170]">
+          <p className="ic-explore-empty">
             {page ? 'Nothing under that filter right now.' : 'The recipes could not be loaded. Try again in a minute.'}
           </p>
         )}
-        <CallToAction
-          code={known}
-          head="Save the ones you would make"
-          sub="In the app a recipe scales to the servings you are cooking and logs in one tap when you eat it. Free to start."
-        />
-      </main>
-      <Footer />
-    </Page>
+      </section>
+      <section className="ic-wrap ic-explore-cta">
+        <h2>
+          Save the ones
+          <br />
+          <em>you would make.</em>
+        </h2>
+        <p>In the app a recipe scales to the servings you are cooking and logs in one tap when you eat it. Free to start.</p>
+        <StoreLinks light />
+      </section>
+      {known ? <StickyBar code={known} title="Save the ones you like" sub="Free on InstaCal" action="Get the app" /> : null}
+    </div>
   )
 }

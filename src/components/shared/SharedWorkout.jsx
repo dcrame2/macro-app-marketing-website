@@ -9,12 +9,14 @@ import {
   Footer,
   InviteStrip,
   Page,
+  Split,
   PlateTiles,
   Stat,
   StickyBar,
   TopBar,
   numeral,
 } from './parts'
+import { FigureDefs, SessionArt } from './SessionArt'
 
 /** "9:02 /mi" from metres and seconds; null without both. */
 const paceOf = (meters, seconds) => {
@@ -31,7 +33,7 @@ const MUSCLE = {
 }
 const muscleWord = (key) => MUSCLE[key] ?? String(key).replace(/_/g, ' ').replace(/^./, (c) => c.toUpperCase())
 
-/** A shared session: its one big number, the rest of its numbers, who did it. Never a route. */
+/** A shared session: its one big number, the rest of its numbers, who did it. Without a photo, its route as a line (a shape, never a map) or a marked lift's figures. */
 export function SharedWorkout({ workout, inviter, code }) {
   const distance = milesOf(workout.distance_meters)
   const time = durationOf(workout.duration_seconds)
@@ -49,6 +51,7 @@ export function SharedWorkout({ workout, inviter, code }) {
 
   return (
     <Page
+      wide
       bar={
         <StickyBar
           type="workout"
@@ -63,15 +66,23 @@ export function SharedWorkout({ workout, inviter, code }) {
       <ShareBeacon type="workout" id={workout.id} code={code} />
       <TopBar type="workout" id={workout.id} code={code} />
       <InviteStrip inviter={inviter} line="shared this with you" />
-      {workout.image_url ? (
+      <Split
+        hero={
+          workout.image_url ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
           src={sized(workout.image_url, 960, 1080)}
           alt={workout.title}
-          className="aspect-[8/9] w-full bg-[#DDE3EA] object-cover"
+          className="aspect-[8/9] w-full bg-[#111A2B] object-cover"
         />
-      ) : null}
-
+      ) : workout.shape?.length >= 4 || muscles.length > 0 ? (
+        <div className="aspect-[4/3] w-full overflow-hidden">
+          {workout.shape?.length >= 4 ? null : <FigureDefs />}
+          <SessionArt shape={workout.shape} muscles={muscles} fit="wide" />
+        </div>
+      ) : null
+        }
+      >
       <main className="flex flex-col gap-[22px] pb-2 pt-3.5">
         <AuthorRow
           author={workout.author}
@@ -80,13 +91,13 @@ export function SharedWorkout({ workout, inviter, code }) {
           code={code}
         />
         <div className="flex flex-col gap-2.5 px-4">
-          <h1 className="text-2xl font-extrabold leading-[30px] text-[#10151C]">{workout.title}</h1>
+          <h1 className="text-2xl font-extrabold leading-[30px] text-[#F8FAFC]">{workout.title}</h1>
           {workout.caption ? (
-            <p className="whitespace-pre-line text-[15px] leading-[21px] text-[#566170]">{workout.caption}</p>
+            <p className="whitespace-pre-line text-[15px] leading-[21px] text-[#9CA8BB]">{workout.caption}</p>
           ) : null}
-          {lead ? <p className={`${numeral} text-[52px] leading-[58px] text-[#10151C]`}>{lead}</p> : null}
+          {lead ? <p className={`${numeral} text-[52px] leading-[58px] text-[#F8FAFC]`}>{lead}</p> : null}
           {stats.length > 0 ? (
-            <div className={`grid gap-x-6 gap-y-3 rounded-2xl border border-[#DDE3EA] bg-white px-4 py-3.5 ${stats.length === 3 ? 'grid-cols-3' : 'grid-cols-2'}`}>
+            <div className={`grid gap-x-6 gap-y-3 rounded-2xl border border-white/10 bg-[#0B1220] px-4 py-3.5 ${stats.length === 3 ? 'grid-cols-3' : 'grid-cols-2'}`}>
               {stats.map(([value, label]) => (
                 <Stat key={label} value={value} label={label} />
               ))}
@@ -100,7 +111,7 @@ export function SharedWorkout({ workout, inviter, code }) {
             {muscles.length > 0 ? (
               <div className="flex flex-wrap gap-1.5 px-4">
                 {muscles.map((key) => (
-                  <span key={key} className="rounded-full bg-[#E3F0FA] px-2.5 py-1 text-xs font-bold text-[#0A5C9E]">
+                  <span key={key} className="rounded-full bg-[#0077cc]/20 px-2.5 py-1 text-xs font-bold text-[#6CC4FF]">
                     {muscleWord(key)}
                   </span>
                 ))}
@@ -112,17 +123,17 @@ export function SharedWorkout({ workout, inviter, code }) {
                 return (
                   <div
                     key={`${exercise.name}-${index}`}
-                    className={`flex items-center gap-3 py-3 ${index < exercises.length - 1 ? 'border-b border-[#DDE3EA]' : ''}`}
+                    className={`flex items-center gap-3 py-3 ${index < exercises.length - 1 ? 'border-b border-white/10' : ''}`}
                   >
                     <span
                       aria-hidden="true"
-                      className={`${numeral} flex h-[30px] w-[30px] flex-none items-center justify-center rounded-full bg-[#E3F0FA] text-base text-[#0A5C9E]`}
+                      className={`${numeral} flex h-[30px] w-[30px] flex-none items-center justify-center rounded-full bg-[#0077cc]/20 text-base text-[#6CC4FF]`}
                     >
                       {index + 1}
                     </span>
                     <span className="flex min-w-0 flex-col">
-                      <span className="text-[15px] font-semibold leading-5 text-[#10151C]">{exercise.name}</span>
-                      <span className="text-[13px] leading-[18px] text-[#566170]">
+                      <span className="text-[15px] font-semibold leading-5 text-[#F8FAFC]">{exercise.name}</span>
+                      <span className="text-[13px] leading-[18px] text-[#9CA8BB]">
                         {line ?? exercise.muscles.map(muscleWord).join(' · ')}
                       </span>
                     </span>
@@ -152,6 +163,7 @@ export function SharedWorkout({ workout, inviter, code }) {
           </section>
         ) : null}
       </main>
+      </Split>
       <Footer />
     </Page>
   )

@@ -2,7 +2,8 @@ import { getReferralInviter } from '@/lib/referralInviter'
 import { cleanCode, getSharePage } from '@/lib/sharePage'
 import { ShareBeacon } from '@/components/shared/GetApp'
 import { MacroCalculator } from '@/components/shared/MacroCalculator'
-import { Footer, InviteStrip, Page, TopBar, numeral } from '@/components/shared/parts'
+import { Eyebrow } from '@/components/landing/LandingUI'
+import { InviteStrip, numeral } from '@/components/shared/parts'
 
 const SITE = 'https://theinstacal.app'
 const TITLE = 'Macro calculator: your calories and protein'
@@ -23,24 +24,28 @@ export default async function CalculatorPage({ searchParams }) {
   const [recipes, inviter] = await Promise.all([getSharePage('recipes'), code ? getReferralInviter(code) : null])
   const known = inviter ? code : null
   return (
-    <Page>
+    <div className="ic-site ic-explore-page">
       {known ? <ShareBeacon code={known} /> : null}
-      <TopBar code={known} />
-      <InviteStrip inviter={inviter} line="sent you this" />
-      <main className="flex flex-col gap-[18px] pb-2 pt-5">
-        <div className="flex flex-col gap-2 px-4">
-          <span className="text-xs font-bold uppercase tracking-[0.1em] text-[#566170]">Macro calculator</span>
-          <h1 className="text-[28px] font-extrabold leading-[34px] text-[#10151C]">What should you eat in a day?</h1>
-          <p className="text-[15px] leading-[21px] text-[#566170]">
-            Six answers. Your numbers update as you type. No email.
-          </p>
+      {inviter ? (
+        <div className="ic-wrap ic-invite-strip">
+          <InviteStrip inviter={inviter} line="sent you this" />
         </div>
+      ) : null}
+      <section className="ic-wrap ic-explore-head">
+        <Eyebrow>MACRO CALCULATOR</Eyebrow>
+        <h1>
+          What should you
+          <br />
+          <em>eat in a day?</em>
+        </h1>
+        <p>Six answers. Your numbers update as you type. No email.</p>
+      </section>
+      <section className="ic-wrap ic-explore-block">
         <MacroCalculator numeral={numeral} plates={recipes?.plates ?? []} code={known} />
-        <p className="px-4 text-[13px] leading-[18px] text-[#566170]">
+        <p className="ic-calc-note">
           Mifflin-St Jeor for what you burn at rest, times how active you are, then 20% under to lose fat or 10% over to build. A starting point, not medical advice.
         </p>
-      </main>
-      <Footer />
-    </Page>
+      </section>
+    </div>
   )
 }

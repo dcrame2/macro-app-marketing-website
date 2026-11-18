@@ -4,7 +4,7 @@ const FUNCTIONS =
   (process.env.NEXT_PUBLIC_SUPABASE_URL ||
     'https://rrcwrqstlvauzdsjfriq.supabase.co') + '/functions/v1'
 
-const KIND = { meal: 'meal', workout: 'workout', user: 'user', collection: 'collection', recipes: 'recipes' }
+const KIND = { meal: 'meal', workout: 'workout', user: 'user', collection: 'collection', recipes: 'recipes', explore: 'explore' }
 
 /**
  * Everything a shared link's page shows: the plate with its rows and recipe,
@@ -17,12 +17,13 @@ const KIND = { meal: 'meal', workout: 'workout', user: 'user', collection: 'coll
  */
 export const getSharePage = cache(async (type, id) => {
   const kind = KIND[type]
-  if (!kind || (!id && kind !== 'recipes')) return null
+  if (!kind || (!id && kind !== 'recipes' && kind !== 'explore')) return null
   try {
     const res = await fetch(`${FUNCTIONS}/deferred-link`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ action: 'page', type: kind, id: String(id ?? '') }),
+      // SHARE_PAGE_NOW (local only): pretend a date, for a database whose plates end before today.
+      body: JSON.stringify({ action: 'page', type: kind, id: String(id ?? ''), now: process.env.SHARE_PAGE_NOW || undefined }),
       next: { revalidate: 300 },
     })
     if (!res.ok) return null

@@ -34,14 +34,14 @@ export function SharedCollection({ collection, inviter, code }) {
       <TopBar type="user" id={collection.author.id} code={code} />
       <InviteStrip inviter={inviter} line="sent you this collection" />
       {covers.length > 0 ? (
-        <div className={`grid aspect-[4/3] w-full gap-px bg-[#EEF1F5] ${covers.length === 1 ? 'grid-cols-1' : 'grid-cols-2'}`}>
+        <div className={`grid aspect-[4/3] w-full gap-px bg-[#030712] ${covers.length === 1 ? 'grid-cols-1' : 'grid-cols-2'}`}>
           {covers.map((plate, index) => (
             // eslint-disable-next-line @next/next/no-img-element
             <img
               key={plate.id}
               src={sized(plate.image_url, 480, covers.length > 2 ? 360 : 720)}
               alt=""
-              className={`h-full w-full bg-[#DDE3EA] object-cover ${covers.length === 3 && index === 0 ? 'row-span-2' : ''}`}
+              className={`h-full w-full bg-[#111A2B] object-cover ${covers.length === 3 && index === 0 ? 'row-span-2' : ''}`}
             />
           ))}
         </div>
@@ -50,15 +50,15 @@ export function SharedCollection({ collection, inviter, code }) {
       <main className="flex flex-col gap-[22px] pb-2 pt-3.5">
         <AuthorRow author={collection.author} sub="shared a collection" likes={0} code={code} />
         <div className="flex flex-col gap-2.5 px-4">
-          <span className="text-xs font-bold uppercase tracking-[0.1em] text-[#566170]">
+          <span className="text-xs font-bold uppercase tracking-[0.1em] text-[#9CA8BB]">
             {`Collection · ${n} ${n === 1 ? 'plate' : 'plates'}`}
           </span>
-          <h1 className="text-[28px] font-extrabold leading-[34px] text-[#10151C]">{collection.title}</h1>
+          <h1 className="text-[28px] font-extrabold leading-[34px] text-[#F8FAFC]">{collection.title}</h1>
           {collection.description ? (
-            <p className="whitespace-pre-line text-[15px] leading-[21px] text-[#566170]">{collection.description}</p>
+            <p className="whitespace-pre-line text-[15px] leading-[21px] text-[#9CA8BB]">{collection.description}</p>
           ) : null}
           {n > 0 ? (
-            <div className="flex justify-between rounded-2xl border border-[#DDE3EA] bg-white px-4 py-3.5">
+            <div className="flex justify-between rounded-2xl border border-white/10 bg-[#0B1220] px-4 py-3.5">
               <Stat value={num(avg('calories'))} label="avg calories" />
               <Stat value={`${num(avg('protein'))}g`} label="avg protein" />
               {recipes > 0 ? <Stat value={num(recipes)} label={recipes === 1 ? 'recipe' : 'recipes'} /> : null}
@@ -72,7 +72,7 @@ export function SharedCollection({ collection, inviter, code }) {
             <PlateGrid plates={plates} code={code} by />
           </section>
         ) : (
-          <p className="px-4 py-8 text-center text-[15px] text-[#566170]">Nothing in this collection is public right now.</p>
+          <p className="px-4 py-8 text-center text-[15px] text-[#9CA8BB]">Nothing in this collection is public right now.</p>
         )}
 
         <CallToAction

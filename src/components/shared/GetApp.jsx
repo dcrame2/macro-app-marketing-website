@@ -116,7 +116,7 @@ export function GetApp({ type, id, code, label = 'Get InstaCal', target = null, 
         href={appUrl(type, id, code)}
         className="flex h-12 items-center justify-center rounded-full border border-white/10 text-[15px] font-semibold text-[#F8FAFC] hover:bg-white/5"
       >
-        I already have it
+        I already have InstaCal
       </a>
       {platform === 'other' ? (
         <p className="text-center text-[13px] text-[#9CA8BB]">

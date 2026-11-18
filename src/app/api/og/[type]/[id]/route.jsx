@@ -25,8 +25,11 @@ const MAX_PHOTO_BYTES = 6 * 1024 * 1024
  */
 async function photoData(url, width, height) {
   if (!url || !/^https?:\/\//.test(url)) return null
+  // Without its own query: an avatar's address ends in `?t=<stamp>`, and a
+  // second `?` made the transform ignore the width, so a tall photo came back
+  // uncropped and the card drew only its middle (a face as a zoomed-in bib).
   const sized = url.includes('/storage/v1/object/public/')
-    ? `${url.replace('/storage/v1/object/public/', '/storage/v1/render/image/public/')}?width=${width}&height=${height}&resize=cover&quality=80`
+    ? `${url.split('?')[0].replace('/storage/v1/object/public/', '/storage/v1/render/image/public/')}?width=${width}&height=${height}&resize=cover&quality=80`
     : null
   for (const candidate of [sized, url]) {
     if (!candidate) continue

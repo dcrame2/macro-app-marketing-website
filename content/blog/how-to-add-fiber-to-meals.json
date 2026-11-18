@@ -1,0 +1,218 @@
+{
+  "slug": "how-to-add-fiber-to-meals",
+  "week_start": "2026-09-28",
+  "publication_kind": "weekly",
+  "title": "How to add fiber to meals you already love",
+  "description": "Add fiber without rebuilding your whole diet: five everyday meal ideas, a clear guide to food labels and a practical plan for making gradual changes.",
+  "category": "Nutrition",
+  "primary_keyword": "how to add fiber to meals",
+  "secondary_keywords": [
+    "easy high fiber meal ideas",
+    "fiber on nutrition labels",
+    "how to increase fiber gradually",
+    "whole grain meal ideas"
+  ],
+  "cover_meal_id": 19197,
+  "cover_image": "https://rrcwrqstlvauzdsjfriq.supabase.co/storage/v1/object/public/images/28ab2149-4cfc-4822-a1e6-abd56cede6ed/28ab2149-4cfc-4822-a1e6-abd56cede6ed-d6a96158-136a-41c2-8d44-b804748f34a2",
+  "cover_alt": "A plate of fried eggs with hash browns, peppers, onions and sliced avocado.",
+  "cover_caption": "A real meal shared publicly on InstaCal. The vegetables offer meal inspiration; we have not measured this plate’s fiber or reconstructed its portions.",
+  "content": {
+    "lead": "You have breakfast sorted, a lunch you can assemble half-asleep, and three dinners you actually enjoy. Then someone says you should eat more fiber. Does that mean starting over? Usually, the useful first question is smaller: where could a fruit, vegetable, bean or whole-grain food fit into something you already eat? Start there, keep the flavors you like, and give the change time to feel familiar.",
+    "takeaways": [
+      "Choose one familiar meal and one fiber-containing addition or substitution you would enjoy repeating.",
+      "On U.S. labels, check the serving size alongside dietary fiber in grams and percent Daily Value.",
+      "Increase fiber gradually and pay attention to fluids and comfort; follow individual dietary advice when you have it."
+    ],
+    "sections": [
+      {
+        "id": "start-with-one-meal",
+        "heading": "Start with one meal, not a whole new menu",
+        "paragraphs": [
+          "Fiber is a type of carbohydrate that is not easily digested in the small intestine. It occurs naturally in foods including beans, fruits, vegetables, nuts, seeds and whole grains. You do not need a special product to begin looking for it.",
+          "Write down a meal you make often. Keep its basic identity: your sandwich can stay a sandwich, and pasta night can still be pasta night. Pick one part that is easy to adjust without adding another shopping trip or a cooking technique you do not want to learn.",
+          "For example, ask whether a lunch needs a convenient side, a breakfast could use a different bread, or a sauce has room for another ingredient. The best place to start is often the meal you can picture making tomorrow. An elaborate plan is less useful if none of its ingredients are in your kitchen."
+        ],
+        "source_ids": [
+          "fda-fiber"
+        ]
+      },
+      {
+        "id": "five-everyday-options",
+        "heading": "Five ways to work fiber into familiar food",
+        "paragraphs": [
+          "NHS guidance recommends a variety of fiber sources, including whole grains, pulses, vegetables and fruit. The combinations below are our editorial suggestions based on those food groups. They are not tested recipes, equivalent substitutions or calculated nutrition totals."
+        ],
+        "table": {
+          "headers": [
+            "Your usual meal",
+            "An option to try",
+            "Make it work for you"
+          ],
+          "rows": [
+            [
+              "Eggs and toast",
+              "Try whole-wheat toast and a piece of fruit",
+              "Keep the eggs and seasoning you already enjoy."
+            ],
+            [
+              "A rice bowl",
+              "Add beans or lentils alongside the other toppings",
+              "Start with an amount that suits your appetite and tolerance."
+            ],
+            [
+              "Pasta with sauce",
+              "Stir lentils or vegetables into the sauce",
+              "Use a familiar sauce so the flavor still feels like your meal."
+            ],
+            [
+              "A baked potato",
+              "Keep the edible skin and add a vegetable side",
+              "Choose toppings you like; this is a starting idea, not a prescribed plate."
+            ],
+            [
+              "A snack or dessert",
+              "Choose whole fruit, or pair it with suitable nuts",
+              "Make the option easy to pack or reach when you want it."
+            ]
+          ]
+        },
+        "source_ids": [
+          "nhs"
+        ]
+      },
+      {
+        "id": "read-the-fiber-line",
+        "heading": "Make the label answer one clear question",
+        "paragraphs": [
+          "For packaged food in the United States, look at the serving size, dietary fiber grams and percent Daily Value (%DV) together. The FDA’s fiber Daily Value is 28 g. That is a labeling reference, not a personalized prescription.",
+          "The FDA’s general guide calls 5% DV or less per serving low and 20% DV or more high. The illustrative calculations below use fiber grams divided by 28, multiplied by 100, and rounded to a whole percent. They are arithmetic examples, not measurements of any product or pictured meal."
+        ],
+        "table": {
+          "headers": [
+            "Fiber in one serving",
+            "Approximate share of the 28 g Daily Value"
+          ],
+          "rows": [
+            [
+              "2 g",
+              "7%"
+            ],
+            [
+              "4 g",
+              "14%"
+            ],
+            [
+              "6 g",
+              "21%"
+            ]
+          ]
+        },
+        "source_ids": [
+          "fda-label"
+        ]
+      },
+      {
+        "id": "compare-what-you-would-eat",
+        "heading": "Compare portions you would actually eat",
+        "paragraphs": [
+          "Imagine two products with different serving sizes. Reading only the front-of-pack claim leaves out a useful detail: how much of each would go into your meal? Put the packages side by side and check the stated amounts before deciding which works better for your routine.",
+          "A practical shopping note could say, “Check the serving size and fiber line on the breads I already buy.” That is more useful than “buy the healthiest bread,” which gives you no clear decision to make. Price, taste, allergies and convenience still matter.",
+          "You can also take a label photo for your own reference. When you are standing in the aisle next time, you will have the exact product information instead of trying to remember a number. Read the current package again if the recipe or serving size has changed."
+        ],
+        "source_ids": [
+          "fda-label"
+        ]
+      },
+      {
+        "id": "whole-grains-without-the-overhaul",
+        "heading": "Keep the grain decision small",
+        "paragraphs": [
+          "FDA guidance explains that refining grain removes the bran and germ and also removes fiber. Whole-grain options include oats, brown rice and foods made with whole-grain ingredients. Check the ingredient list as well as the fiber line when comparing packaged choices.",
+          "You might try a different bread in the sandwich you already make or serve a familiar topping over a grain you want to try. Buy a manageable amount first. If you dislike the texture, choose another option rather than turning every meal into something you have to endure.",
+          "Think through preparation, too. Does the product need a longer cooking step than your current one? Can you fit that step into an evening you already cook? Read its directions before making it the centerpiece of a rushed lunch."
+        ],
+        "source_ids": [
+          "fda-fiber"
+        ]
+      },
+      {
+        "id": "give-your-routine-time",
+        "heading": "Build gradually and notice how you feel",
+        "paragraphs": [
+          "NIDDK advises adding fiber a little at a time so your body can adjust, and drinking liquids to help it work. Appropriate fluid intake depends on individual factors. If you have a prescribed fluid limit or have been told to modify fiber, follow that care plan.",
+          "There is no need to introduce beans at lunch, a new cereal at breakfast and several new snacks all on the same day. A simple experiment is easier to evaluate: choose one addition, try it with a familiar meal, and consider your comfort before adding another.",
+          "If digestive symptoms persist, get individual advice rather than assuming that continually adding more fiber is the answer. A dietitian or other qualified clinician can help you choose an approach that fits your needs."
+        ],
+        "source_ids": [
+          "niddk"
+        ]
+      },
+      {
+        "id": "make-the-idea-repeatable",
+        "heading": "Turn a good idea into something you repeat",
+        "paragraphs": [
+          "InstaCal’s meal photos can help you notice combinations you want to try. Save an idea, then adapt it to your own ingredients and schedule. A community plate is inspiration, not a nutrient analysis or evidence of a health outcome.",
+          "When you log your version, check the foods and portions you actually used. A useful personal note might be, “Liked lentils in this sauce; make this version again.” That is a hypothetical example of remembering a preference, not a result observed in community data.",
+          "Keep the follow-through small. Add the ingredient to your next grocery list, decide which meal it belongs in, and put the idea somewhere you will find it before you start cooking. You do not need to keep inventing a different meal to make the change worthwhile.",
+          "Your next step: pick one row from the meal table and one meal in the coming week. Decide what to buy and what you will keep the same. Once the choice fits your taste and routine, you have something useful to repeat."
+        ],
+        "source_ids": []
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is 28 g the exact amount of fiber everyone needs?",
+        "answer": "No. It is the FDA Daily Value used as a reference on U.S. food labels. Individual needs can differ; use personal guidance when you have it rather than treating the label benchmark as a custom target.",
+        "source_ids": [
+          "fda-fiber"
+        ]
+      },
+      {
+        "question": "Do all whole-grain products have the same fiber content?",
+        "answer": "No. Check the actual product’s fiber line and serving size. Whole-grain ingredients help you understand what the food contains, while the Nutrition Facts panel tells you the listed amount for that serving.",
+        "source_ids": [
+          "fda-fiber"
+        ]
+      },
+      {
+        "question": "Should I make all five meal changes this week?",
+        "answer": "You do not have to. NIDDK recommends increasing fiber gradually. Start with a manageable change, consider how you feel, and follow any dietary instructions you have been given.",
+        "source_ids": [
+          "niddk"
+        ]
+      },
+      {
+        "question": "Can I copy the fiber total from a meal photo?",
+        "answer": "A photo does not establish exact ingredients, products or portions. Use the information for your own ingredients and quantities if you want an estimate; the cover photo is not a measured fiber example.",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "fda-fiber",
+        "label": "FDA: Dietary fiber, whole grains and the 28 g label reference",
+        "url": "https://www.accessdata.fda.gov/scripts/InteractiveNutritionFactsLabel/assets/InteractiveNFL_DietaryFiber_October2021.pdf",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "id": "fda-label",
+        "label": "FDA: Understanding Daily Value and percent Daily Value",
+        "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "id": "nhs",
+        "label": "NHS: Practical ways to include more fiber-containing foods",
+        "url": "https://www.nhs.uk/live-well/eat-well/digestive-health/how-to-get-more-fibre-into-your-diet/",
+        "accessed_at": "2026-09-28"
+      },
+      {
+        "id": "niddk",
+        "label": "NIDDK: Adding fiber gradually and considering fluid needs",
+        "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/constipation/eating-diet-nutrition",
+        "accessed_at": "2026-09-28"
+      }
+    ],
+    "methodology": "Research-led education for adults, based on the institutional sources opened and reviewed September 28, 2026. The meal combinations and shopping prompts are original editorial examples, not tested recipes or individualized dietary advice. Label percentages are illustrative calculations using the FDA’s 28 g Daily Value, rounded to the nearest whole percent; they do not describe actual products. The privacy-safe community snapshot reviewed for this run summarizes meal logs and protein estimates, not fiber, so no community fiber statistic or health outcome is claimed. No private health records were queried. The cover is an eligible original community photograph; its portions and fiber content were not measured."
+  }
+}

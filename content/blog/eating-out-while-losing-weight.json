@@ -1,0 +1,131 @@
+{
+  "slug": "eating-out-while-losing-weight",
+  "week_start": "2026-11-02",
+  "publication_kind": "weekly",
+  "title": "Eating out while losing weight: a practical ordering guide",
+  "description": "Make restaurant meals work for your weight-loss plan with useful menu questions, flexible portion choices, and a clear guide to calorie ranges.",
+  "category": "Weight loss",
+  "primary_keyword": "eating out while losing weight",
+  "secondary_keywords": ["healthy restaurant choices", "restaurant portion sizes", "how to read menu calories", "ordering takeout for weight loss"],
+  "cover_meal_id": 21889,
+  "cover_image": "https://rrcwrqstlvauzdsjfriq.supabase.co/storage/v1/object/public/images/542f932e-bdd1-48d6-a2ef-c62f5acd4403/542f932e-bdd1-48d6-a2ef-c62f5acd4403-be703101-ad6c-4581-9615-328ac894881c",
+  "cover_alt": "A pizza slice topped with pepperoni, white cheese and basil on a white paper plate.",
+  "cover_caption": "A real public InstaCal community pizza photo. It illustrates an everyday food choice; its calories, preparation details and any weight outcomes have not been verified.",
+  "content": {
+    "lead": "The group has picked the restaurant. You are looking forward to dinner, but the menu suddenly feels like a test: order what sounds good, or choose something you do not really want because it looks like the “weight-loss option.” Give yourself a more useful task. Choose a dish you want, understand what comes with it, and decide what portion works for you. Here is a practical way to do that at a restaurant, a takeout counter, or on a delivery menu.",
+    "takeaways": [
+      "Start with two dishes you would enjoy, then compare the whole order: main, sides, sauces and drink.",
+      "A menu calorie range represents different options. Check which combination you are actually ordering.",
+      "A restaurant portion is not an instruction to finish the plate. Sharing or ordering a smaller option can be useful choices.",
+      "Use restaurant nutrition information when available; record an estimate honestly when it is not."
+    ],
+    "sections": [
+      {
+        "id": "start-with-the-whole-order",
+        "heading": "Start with the whole order",
+        "paragraphs": [
+          "Weight management involves your broader eating and activity pattern. NIDDK explains that consuming fewer calories than you use may lead to weight loss, while individual energy needs vary. A restaurant dish is one part of that pattern. This guide offers planning ideas for adults who already have an appropriate weight-loss goal; it does not set a personal calorie allowance.",
+          "Before comparing meals, decide what you came for. If it is the pizza, make pizza the starting point. If it is a particular sandwich, look at that sandwich. You can then consider its size, accompaniments and preparation without replacing the entire meal with a dish you are indifferent to.",
+          "Our editorial suggestion is to shortlist two appealing orders. Read each one all the way through, including the small print about sides and extras. A headline price or a photo can make two meals look comparable when one includes a drink and fries and the other includes only the main dish.",
+          "Keep your practical constraints in view, too: your budget, allergies, time, and whether you will be eating at a table or taking food back to work. A useful choice has to work in that setting."
+        ],
+        "source_ids": ["niddk-health"]
+      },
+      {
+        "id": "read-menu-calories",
+        "heading": "Read the menu number in context",
+        "paragraphs": [
+          "FDA guidance explains how calorie information appears on covered U.S. menus. A slash can separate two options; a range can represent three or more. Its examples below demonstrate the format, not actual foods or recommended meal sizes."
+        ],
+        "table": {
+          "headers": ["Menu format", "FDA example", "Question to ask"],
+          "rows": [
+            ["Two choices", "250/350 calories", "Which number matches my chosen option?"],
+            ["Three or more choices", "150–300 calories", "Which combination produces the number for my order?"]
+          ]
+        },
+        "bullets": [
+          "Check whether the listed amount includes your selected sides and extras.",
+          "The 2,000-calorie daily reference is general context; individual needs differ.",
+          "Covered establishments also provide written nutrition information on request, including sodium, saturated fat and fiber."
+        ],
+        "source_ids": ["fda-menu"]
+      },
+      {
+        "id": "choose-a-useful-change",
+        "heading": "Make one useful change to a meal you like",
+        "paragraphs": [
+          "CDC guidance emphasizes substitution: replacing some calorie-dense ingredients with vegetables or fruit can lower a meal's energy content. Simply adding a side salad does not subtract anything from the rest of the order. Preparation and dressing still matter.",
+          "Use that principle where it appeals to you. If a side is just a default you rarely enjoy, it is a reasonable place to experiment. If the fries are what you came for, you might prefer to keep them and consider the size or another part of the order. Avoid assigning a moral score to either choice.",
+          "The comparisons below are original ordering examples. They do not promise a specific calorie reduction: restaurant recipes and portions differ, and an available nutrition listing is more useful than guessing from the dish name."
+        ],
+        "table": {
+          "headers": ["Meal you want", "An option to compare", "Detail worth checking"],
+          "rows": [
+            ["Sandwich and side", "The same sandwich with fruit or vegetables instead of the default side", "Is the side included in the listed nutrition information?"],
+            ["Rice or grain bowl", "Keep the protein food you enjoy; replace some of the base with vegetables", "Which ingredients and sauces are included in the standard build?"],
+            ["Pizza", "Order by the slice if available, rather than choosing a whole pizza by default", "How big is a slice, and what does one listed portion mean here?"],
+            ["Salad", "Choose the toppings you want and request dressing separately", "Does the listed total include the full dressing portion?"]
+          ]
+        },
+        "source_ids": ["cdc-produce", "niddk-portions"]
+      },
+      {
+        "id": "ask-before-ordering",
+        "heading": "Ask a question the menu can actually answer",
+        "paragraphs": [
+          "You do not need a complicated custom order. One clear question can resolve the detail that matters most. Try “Does that include the side?” or “Is this portion intended for sharing?” If the answer changes your choice, ask before ordering rather than trying to reconstruct it from the plate later.",
+          "For a delivery menu, compare the item description with the restaurant's own nutrition information when available. Match the actual size and version. A similarly named bowl at another restaurant is a different recipe, and a generic entry should be treated as an estimate.",
+          "NIDDK suggests sharing a meal, choosing smaller options, and stopping when full as ways to manage portions away from home. It also cautions that skipping or delaying meals may lead to eating more later. There is no need to turn dinner into an all-day exercise in saving up hunger.",
+          "If you want to share, agree on the order with your companion first. If you want your own plate, ask about smaller sizes. Both are ordinary restaurant choices. You can use a portion strategy without having to explain your weight goal to everyone at the table."
+        ],
+        "source_ids": ["niddk-portions"]
+      },
+      {
+        "id": "when-there-is-no-number",
+        "heading": "When there is no nutrition listing, keep the uncertainty visible",
+        "paragraphs": [
+          "A neighborhood restaurant may not publish nutrition information. You can still ask about the main ingredients, preparation and portion size. Those answers help describe the meal, but they do not reveal exact amounts of oil, sauce or every ingredient in a mixed dish.",
+          "Our logging suggestion is to choose the closest reasonable description and adjust it for what you actually ate. Treat the result as approximate. Do not turn an uncertain restaurant meal into a claim of precision by adding several guessed ingredients to several guessed quantities.",
+          "In InstaCal, log your meal and share a food idea you enjoyed. If you use published restaurant information, check that it matches your order. If you use an estimate, keep that limitation in mind when reviewing your day. A useful record helps you remember the meal and your choices; it cannot verify a restaurant's recipe from a photograph.",
+          "The same care applies to community photos. Our pizza cover is real food shared publicly on InstaCal. It is inspiration for the topic, not evidence of the meal's nutrition or the contributor's weight-loss progress."
+        ],
+        "source_ids": []
+      },
+      {
+        "id": "your-next-meal-out",
+        "heading": "Make your next meal out easier to choose",
+        "paragraphs": [
+          "For your next restaurant visit, pick one decision to make more deliberately. That might be checking which side comes with the meal, asking about a smaller portion, or comparing two versions of a dish. You do not have to change every part of the order at once.",
+          "Afterward, review the practical result: did you enjoy it, did the amount suit you, and would you order it again? Those questions give you something useful to carry into the next visit. Keep the details of an order you liked so you can spend less time decoding the same menu next time.",
+          "A repeatable ordering habit can sit alongside your wider eating plan. If you need help deciding whether weight loss is appropriate or what an individual plan should look like, speak with your healthcare professional. Restaurant choices are one small part of that conversation."
+        ],
+        "source_ids": ["niddk-health"]
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Do I have to order the lowest-calorie item?",
+        "answer": "No single menu number defines the right meal for you. Compare the full order with your individual plan, preferences and appetite. Calories are useful information, and nutrition quality and a portion you find satisfying also deserve consideration.",
+        "source_ids": ["niddk-health"]
+      },
+      {
+        "question": "Does a range mean I should log its midpoint?",
+        "answer": "Not automatically. The range may cover different combinations. Find the value for the version you ordered when possible; the midpoint is not necessarily the value for any particular choice.",
+        "source_ids": ["fda-menu"]
+      },
+      {
+        "question": "What if my friends choose the restaurant?",
+        "answer": "Use the menu you have. Find a dish you would enjoy, check its accompaniments, and ask one useful question if needed. Decide privately which portion or variation fits your needs; the whole group does not need to follow the same plan.",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {"id": "niddk-health", "label": "NIDDK: Health Tips for Adults", "url": "https://www.niddk.nih.gov/health-information/weight-management/healthy-eating-physical-activity-for-life/health-tips-for-adults", "accessed_at": "2026-11-02"},
+      {"id": "fda-menu", "label": "FDA: Calories on the Menu", "url": "https://www.fda.gov/food/nutrition-education-resources-materials/calories-menu", "accessed_at": "2026-11-02"},
+      {"id": "cdc-produce", "label": "CDC: Tips for Increasing Vegetables and Fruits in Your Diet", "url": "https://www.cdc.gov/healthy-weight-growth/healthy-eating/fruits-vegetables.html", "accessed_at": "2026-11-02"},
+      {"id": "niddk-portions", "label": "NIDDK: Food Portions — Choosing Just Enough for You", "url": "https://www.niddk.nih.gov/health-information/weight-management/just-enough-food-portions", "accessed_at": "2026-11-02"}
+    ],
+    "methodology": "Research-led adult education using NIDDK, FDA and CDC guidance opened November 2, 2026. Menu-format numbers are illustrative examples from the FDA, not measured restaurant meals, personal targets or estimated calorie savings. Ordering comparisons and logging suggestions are original editorial examples. The current privacy-safe community snapshot covers public meal logging and protein estimates; it does not measure restaurant habits, total intake or weight outcomes, so no community nutrition statistics are presented here. The real cover photo was visually reviewed and its public eligibility verified. No private health records were accessed. The primary keyword is an editorial search-intent hypothesis, not measured keyword demand."
+  }
+}

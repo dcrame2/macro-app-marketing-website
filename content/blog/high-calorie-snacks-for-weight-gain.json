@@ -1,0 +1,202 @@
+{
+  "slug": "high-calorie-snacks-for-weight-gain",
+  "week_start": "2026-10-26",
+  "publication_kind": "weekly",
+  "title": "5 high-calorie snacks for weight gain, built for real life",
+  "description": "Five flexible snack ideas for weight gain, a simple calorie-label calculation, and practical tips for packing food you will actually want to eat.",
+  "category": "Weight gain",
+  "primary_keyword": "high calorie snacks for weight gain",
+  "secondary_keywords": [
+    "easy weight gain snacks",
+    "high calorie snack ideas",
+    "snacks for a small appetite",
+    "how to calculate calories from a food label"
+  ],
+  "cover_meal_id": 21154,
+  "cover_image": "https://rrcwrqstlvauzdsjfriq.supabase.co/storage/v1/object/public/images/db985d4a-8bbb-4707-b184-5c9b1fdfa458/db985d4a-8bbb-4707-b184-5c9b1fdfa458-8bd20d7b-e790-4581-80ec-f268a61e5d11",
+  "cover_alt": "Two toasted bagel halves with strawberry cream cheese on a paper towel.",
+  "cover_caption": "A real public InstaCal community photo of a bagel with strawberry cream cheese. Snack inspiration only; the photographed portion's calories and any weight outcomes have not been measured.",
+  "content": {
+    "lead": "You open the cupboard between lunch and dinner, want something more substantial than a handful of crackers, and draw a blank. A useful weight-gain snack starts with a combination you would happily eat again: a bagel with a spread, yogurt with crunchy toppings, or a savory snack plate. Here are five flexible options, plus a label-reading shortcut that turns “high calorie” from a vague promise into a portion you can understand.",
+    "takeaways": [
+      "Start with a snack you enjoy and a place it fits in your day; an elaborate recipe is optional.",
+      "The calories depend on the ingredients and amounts. Use the labels for your actual foods instead of assigning a number to a photo.",
+      "A label's serving size describes a reference amount, not the amount you must eat.",
+      "Choose a fridge-friendly option or foods labeled for room-temperature storage to match where you will be."
+    ],
+    "sections": [
+      {
+        "id": "what-a-snack-can-do",
+        "heading": "What can a snack add to a weight-gain plan?",
+        "paragraphs": [
+          "The NHS includes smaller meals with snacks between them among its suggestions for gradual weight gain. It also recommends keeping the overall diet varied. A snack is one possible addition to that bigger pattern; no individual food guarantees a particular change on the scale.",
+          "If you are losing weight unexpectedly or without changing your diet or activity, speak with a healthcare professional rather than trying to solve it with snacks alone. If you already have a nutrition plan, use that to guide your choices and portions.",
+          "For everyday planning, ask a practical question: which option would I actually want at the time I am going to eat it? A warm bagel may suit an afternoon at home. A dry snack mix may be easier during a day away from the kitchen. Give the food a realistic job."
+        ],
+        "source_ids": [
+          "nhs"
+        ]
+      },
+      {
+        "id": "five-snacks",
+        "heading": "Five snack combinations worth keeping on rotation",
+        "paragraphs": [
+          "These are original assembly ideas, with flexible portions. They are not tested recipes or calculated nutrition plans. Choose ingredients that fit your allergies and preferences, then check your own labels if you want an energy estimate."
+        ],
+        "table": {
+          "headers": [
+            "Snack",
+            "Build it with",
+            "Make it work for your day"
+          ],
+          "rows": [
+            [
+              "Bagel with a spread",
+              "A bagel and cream cheese, or a nut or seed butter you enjoy",
+              "Toast at home; pack the spread separately if that keeps the texture you prefer."
+            ],
+            [
+              "Yogurt crunch bowl",
+              "Yogurt, granola, and chopped nuts or seeds; add fruit or jam for flavor",
+              "Keep the crunchy ingredients in a separate container until you eat."
+            ],
+            [
+              "Savory cracker plate",
+              "Crackers, cheese, and a dip such as hummus",
+              "Use a divided container so the crackers stay crisp."
+            ],
+            [
+              "Fruit-and-nut snack mix",
+              "Dried fruit, nuts, and cereal or pretzels",
+              "Combine the textures you like and store according to the ingredient labels."
+            ],
+            [
+              "Banana-and-oat smoothie",
+              "Milk or a suitable alternative, banana, oats, and a nut or seed butter",
+              "Adjust the liquid for your preferred thickness; keep the finished drink cold."
+            ]
+          ]
+        },
+        "source_ids": []
+      },
+      {
+        "id": "make-the-ideas-yours",
+        "heading": "Use flavor and texture to make them your own",
+        "paragraphs": [
+          "For the bagel, think about the contrast you enjoy: warm bread with a cool spread, a chewy center with toasted edges, or something savory alongside a sweet topping. The community cover is one person's bagel, not a formula you need to reproduce. Your own version can be simpler.",
+          "For the yogurt bowl, decide whether you want a smooth bowl with a little crunch or a more substantial mix. Start with ingredients you already buy. For the cracker plate, choose a dip you look forward to and a cheese that works with it; a snack does not need to resemble breakfast or dessert.",
+          "A homemade mix is easy to change when one ingredient gets boring. Try a different dried fruit or swap the crunchy component. With a smoothie, blend a small amount first so you can adjust the texture before making a larger drink. A thinner smoothie and a thick spoonable bowl are different experiences even when the ingredient list is similar.",
+          "These choices are about making the snack appealing. They do not establish its calorie content. A spoonful, scoop, bagel, or tub can vary substantially in size, so move to the label when you need a number."
+        ],
+        "source_ids": []
+      },
+      {
+        "id": "calculate-your-portion",
+        "heading": "The useful number is the one for your portion",
+        "paragraphs": [
+          "The FDA explains that calories and nutrients on a Nutrition Facts label usually refer to one serving, though some labels also show the whole package. Check the heading first. Serving size reflects amounts people typically consume; it is not a recommendation for how much you should eat.",
+          "For a label stated per serving in grams, calculate: calories per serving × grams eaten ÷ grams per serving. The example below uses an invented label of 200 calories per 40 grams. It illustrates the arithmetic only; it is not a measured value for any snack in this article."
+        ],
+        "table": {
+          "headers": [
+            "Hypothetical amount",
+            "Calculation",
+            "Estimated calories"
+          ],
+          "rows": [
+            [
+              "40 g",
+              "200 × 40 ÷ 40",
+              "200"
+            ],
+            [
+              "60 g",
+              "200 × 60 ÷ 40",
+              "300"
+            ],
+            [
+              "80 g",
+              "200 × 80 ÷ 40",
+              "400"
+            ]
+          ]
+        },
+        "bullets": [
+          "Check each component separately, then add the estimates. The yogurt label does not include the granola you add.",
+          "Keep units consistent: compare grams with grams, and do not mistake a whole-package value for a per-serving value.",
+          "Treat the result as a label-based estimate for planning."
+        ],
+        "source_ids": [
+          "fda-label"
+        ]
+      },
+      {
+        "id": "pack-it-safely",
+        "heading": "Match the snack to the storage you have",
+        "paragraphs": [
+          "Before choosing a portable snack, check its storage instructions. Yogurt and milk-based smoothies need refrigeration. The FDA recommends a refrigerator temperature of 40°F (4°C) or below and a maximum of two hours at room temperature for foods requiring refrigeration, reduced to one hour above 90°F (32°C).",
+          "If you cannot keep food cold, choose products whose labels permit room-temperature storage and follow any instructions that change after opening. Do not assume every spread, dip, cheese, or milk alternative can sit in a bag all afternoon. An intact shelf-stable package and the same food after opening may have different requirements.",
+          "Make the storage decision before assembling the snack. That avoids preparing a yogurt bowl for a day when you have nowhere to refrigerate it."
+        ],
+        "source_ids": [
+          "fda-storage"
+        ]
+      },
+      {
+        "id": "choose-two",
+        "heading": "Choose one favorite and one backup",
+        "paragraphs": [
+          "Make a two-item shortlist: the snack you most want to eat, and an easier backup for the day you do not prepare it. Write the ingredients on your shopping list and decide where each will live. Keep the plan small enough to use this week.",
+          "In InstaCal, log what you actually ate and share a combination you would recommend to a friend. When using a nutrition estimate, check that the portions match your food. A useful meal record can help you remember an idea; a beautiful photo cannot tell you the calories by itself.",
+          "After trying the snack, ask whether you enjoyed it, whether it was convenient, and whether the portion suited the moment. Adjust the food or timing from there. The goal of this exercise is a usable snack routine, with your wider eating plan providing the context."
+        ],
+        "source_ids": []
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many calories should a weight-gain snack have?",
+        "answer": "There is no single snack target that fits every adult or eating plan. Use your individual plan to decide what you need, and the label calculation above to understand what your chosen portion provides. The example numbers are arithmetic, not a recommended snack size.",
+        "source_ids": [
+          "fda-label"
+        ]
+      },
+      {
+        "question": "Can a smoothie be my snack?",
+        "answer": "Yes, if it fits your preferences and plan. The NHS includes higher-calorie drinks between meals as an option and advises against filling up on drinks before eating. Choose the timing that leaves room for your meals, and refrigerate a perishable smoothie.",
+        "source_ids": [
+          "nhs",
+          "fda-storage"
+        ]
+      },
+      {
+        "question": "Do I have to eat the label's serving size?",
+        "answer": "No. It is a reference amount for reading the nutrition information. Your portion may differ; adjust the calculation to the amount you eat, and check whether the label reports values per serving or per package.",
+        "source_ids": [
+          "fda-label"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "nhs",
+        "label": "NHS: Healthy ways to gain weight",
+        "url": "https://www.nhs.uk/live-well/healthy-weight/managing-your-weight/healthy-ways-to-gain-weight/",
+        "accessed_at": "2026-10-26"
+      },
+      {
+        "id": "fda-label",
+        "label": "FDA: Serving Size on the Nutrition Facts Label",
+        "url": "https://www.fda.gov/food/nutrition-facts-label/serving-size-nutrition-facts-label",
+        "accessed_at": "2026-10-26"
+      },
+      {
+        "id": "fda-storage",
+        "label": "FDA: Are You Storing Food Safely?",
+        "url": "https://www.fda.gov/consumers/consumer-updates/are-you-storing-food-safely",
+        "accessed_at": "2026-10-26"
+      }
+    ],
+    "methodology": "Research-led adult education using NHS and FDA guidance accessed October 26, 2026. Snack combinations are original editorial suggestions, not tested recipes. The calorie table uses an explicitly hypothetical label to demonstrate portion arithmetic; no snack totals were calculated. The current public-community aggregate snapshot describes logging and protein estimates, not calorie intake or weight changes, so this article makes no community nutrition or outcome claims. The eligible real community photograph provides visual inspiration only. No private health records were accessed. The primary keyword is an editorial search-intent hypothesis, not a claim of measured search volume."
+  }
+}

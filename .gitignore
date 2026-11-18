@@ -6,3 +6,6 @@ node_modules
 .env
 .env.local
 .env*.local
+# Working folders kept on this machine: design exports and the launch film (too big for the repo).
+/artifacts/
+/public/film/

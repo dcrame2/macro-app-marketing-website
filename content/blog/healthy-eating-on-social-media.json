@@ -1,0 +1,220 @@
+{
+  "slug": "healthy-eating-on-social-media",
+  "week_start": "2026-11-09",
+  "publication_kind": "weekly",
+  "title": "Healthy eating on social media: find meal ideas worth trying",
+  "description": "Turn food posts into useful meal ideas. Learn to check nutrition claims, recognize sponsorship, and read a comparison of public InstaCal meal logs.",
+  "category": "Community",
+  "primary_keyword": "healthy eating on social media",
+  "secondary_keywords": [
+    "nutrition advice on social media",
+    "how to evaluate food trends",
+    "meal inspiration",
+    "nutrition misinformation"
+  ],
+  "cover_meal_id": 23121,
+  "cover_image": "https://rrcwrqstlvauzdsjfriq.supabase.co/storage/v1/object/public/images/db985d4a-8bbb-4707-b184-5c9b1fdfa458/db985d4a-8bbb-4707-b184-5c9b1fdfa458-ec5e2390-1b38-4ca8-a106-093f491880b9",
+  "cover_alt": "A gray bowl with red fruit, cereal and a tan topping, with a spoon on a pale countertop.",
+  "cover_caption": "A real public InstaCal yogurt-bowl photo. Use the combination as inspiration; its ingredients, portions and nutrition totals have not been verified.",
+  "content": {
+    "lead": "A crunchy breakfast bowl catches your eye. You want to make it tomorrow. Then the caption promises better digestion, faster fat loss, or the perfect amount of protein for everyone. You can enjoy the food idea while giving those claims a closer look. Healthy eating on social media starts with a useful distinction: what would you like to cook, and what are you being asked to believe? Here is how to keep the inspiration and make an informed next choice.",
+    "takeaways": [
+      "A recipe idea, a nutrition estimate and a health claim need different kinds of support.",
+      "Check who made the claim, where its evidence comes from, and whether the post is selling something.",
+      "Our latest sample contains 1,186 eligible meal logs from 55 contributors; it describes logging, not complete diets or health outcomes.",
+      "Turn one appealing post into a practical plan with ingredients, portions and a place in your week."
+    ],
+    "sections": [
+      {
+        "id": "name-the-claim",
+        "heading": "First, name what the post is claiming",
+        "paragraphs": [
+          "A friend saying a bowl tastes great is sharing a preference. A caption listing its protein is making a nutrition estimate. A claim that the same bowl causes weight loss is a different proposition again. Before deciding whether a post is useful, put its main claim into a plain sentence.",
+          "NCCIH, part of the National Institutes of Health, advises looking for research that supports health claims and distinguishing evidence from personal stories or opinions. An enthusiastic testimonial can describe someone's experience without establishing what caused it or what will happen for you.",
+          "Use the comparison below as an editorial sorting tool. It helps you decide what information to look for next without treating every meal photo as a research paper."
+        ],
+        "table": {
+          "headers": [
+            "What the post offers",
+            "A useful check",
+            "What you can take away"
+          ],
+          "rows": [
+            [
+              "A food combination",
+              "Are the ingredients and preparation clear enough to follow?",
+              "An idea to adapt to your taste and kitchen."
+            ],
+            [
+              "Calories or protein per portion",
+              "Are ingredient amounts, nutrition sources and the number of portions stated?",
+              "An estimate to check against your own version."
+            ],
+            [
+              "A health or body-change promise",
+              "Does the linked evidence actually support that specific claim?",
+              "A question to investigate before changing your routine."
+            ]
+          ]
+        },
+        "source_ids": [
+          "nih-evidence"
+        ]
+      },
+      {
+        "id": "follow-the-source",
+        "heading": "Follow the claim beyond the caption",
+        "paragraphs": [
+          "NCCIH's social-media checklist asks readers to examine the creator, the promise, the date, the underlying research and the purpose of the site or app. Those questions work for a food post, too. A polished graphic is a starting point for checking, not a substitute for a source.",
+          "Open the link that is supposed to support the claim. Does it discuss the same food, amount and outcome? Does the caption describe the result accurately? If a post promises something for everyone but the source concerns a narrow group, the missing qualification matters.",
+          "If you cannot find a source, keep the uncertainty attached to the claim. You can still decide that the meal looks delicious. You do not have to turn a promising lunch idea into a new rule about what you should always eat.",
+          "Before sharing a claim with a friend, try explaining it without the headline. If all you can say is that someone online seemed confident, you have a reason to keep looking. For a medical concern or a major dietary change, seek advice from an appropriately qualified health professional."
+        ],
+        "source_ids": [
+          "nih-questions"
+        ]
+      },
+      {
+        "id": "notice-the-sales-pitch",
+        "heading": "Notice when the food idea includes a sales pitch",
+        "paragraphs": [
+          "The FTC explains that a creator's connection to a brand can include payment, free products or other relationships, and that clear disclosures help viewers weigh an endorsement. Look for an understandable explanation near the recommendation, such as an ad or sponsorship label.",
+          "Our practical question is simple: what part of the idea still works if you do not buy the featured product? A breakfast bowl might be appealing because of its contrasting textures, fruit topping or convenient assembly. Those details may be useful even when you choose ingredients you already own.",
+          "A disclosed partnership does not settle whether a nutrition claim is correct. It supplies context about the recommendation. Check the evidence separately, and decide whether the product's price, ingredients and convenience make sense for you."
+        ],
+        "source_ids": [
+          "ftc"
+        ]
+      },
+      {
+        "id": "what-our-numbers-show",
+        "heading": "A real example: a rising average is not a health result",
+        "paragraphs": [
+          "The same standard applies to InstaCal. Our November 9 snapshot includes 1,186 eligible public meal logs from 55 contributors created October 12–November 8, 2026, in UTC. The preceding September 14–October 11 window contains 1,045 logs from 48 contributors. These are selected public logging samples, not all members or everything those contributors ate.",
+          "Mean logged protein was 34.2 g per record in the later window and 31.5 g in the earlier one, a difference of 2.7 g. The chart faithfully shows that difference. It does not show that people gained muscle, improved their diets or should copy the later average.",
+          "The contributor groups can change between windows, and people who create more logs contribute more observations. Estimates, omitted foods and the kinds of meals people choose to share can also affect the summary. We have not isolated the cause of the difference or tested its statistical significance.",
+          "So the supported statement is modest: the average protein estimate in this defined set of records was higher. A claim about a successful diet would require different evidence. Apply that distinction when any food post turns a number into a promise."
+        ],
+        "chart": {
+          "title": "Mean logged protein in two public meal samples",
+          "unit": "g per log",
+          "data": [
+            {
+              "label": "Sep 14–Oct 11, 2026",
+              "value": 31.5,
+              "period": "previous",
+              "metric": "mean_protein_g"
+            },
+            {
+              "label": "Oct 12–Nov 8, 2026",
+              "value": 34.2,
+              "period": "current",
+              "metric": "mean_protein_g"
+            }
+          ],
+          "note": "Earlier: 1,045 eligible logs from 48 contributors. Later: 1,186 logs from 55 contributors. UTC creation windows; meal-weighted estimates, not person-weighted intake. Groups may overlap and differ. Protein estimates are restricted to 0–250 g per log. These are logging patterns, not recommended portions or measured outcomes."
+        },
+        "source_ids": [
+          "community"
+        ]
+      },
+      {
+        "id": "turn-inspiration-into-lunch",
+        "heading": "Turn the useful part into an actual meal",
+        "paragraphs": [
+          "Once you have separated the idea from the claim, make it concrete. Our planning suggestion is to write a short version you could follow in your own kitchen. Start with what attracted you: the flavor, the crunchy topping, the use of leftovers, or the fact that it travels well.",
+          "Imagine a yogurt bowl with fruit and something crisp. You might choose yogurt you already enjoy, fruit that is available, and a topping from your cupboard. That is an original adaptation, not a reconstruction of the photographed bowl. Your ingredients and amounts determine your version's nutrition.",
+          "Now give the meal a place in your day. Will you assemble it at home or take it with you? Do you have a suitable container and storage? Is the ingredient list affordable? These ordinary questions are often what separate an attractive saved post from something you will actually eat.",
+          "If the recipe includes nutrition totals, check the stated serving yield and your substitutions before using them. Changing the amount of a topping or choosing a different product changes the calculation. Keep the visual inspiration; build your log from the food you actually used."
+        ],
+        "source_ids": []
+      },
+      {
+        "id": "share-something-useful",
+        "heading": "Make your next food post useful to someone else",
+        "paragraphs": [
+          "In InstaCal, share the meal you made and log your own portion. Add the detail that would have helped you before trying it: what the combination was, a substitution you liked, or which ingredient you would change next time. Practical information gives a friend something they can use.",
+          "Keep personal experience in its proper frame. Saying you enjoyed a meal or found it convenient communicates something real. It does not need a claim that the meal will produce the same body or health result for everyone who copies it.",
+          "For your next scroll, pick one appealing food idea and finish with one decision: try an adapted version, investigate a claim, or move on. A useful food feed should leave you with more workable options for your own life."
+        ],
+        "source_ids": []
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I try a recipe without trusting every claim in its caption?",
+        "answer": "Yes. You can evaluate the ingredients and preparation as a meal idea while separately checking claims about health or body changes. A personal testimonial is not the same as research supporting a particular outcome.",
+        "source_ids": [
+          "nih-evidence"
+        ]
+      },
+      {
+        "question": "Is 34.2 g of protein the amount I should put in a meal?",
+        "answer": "No. It is the mean estimate in this public-log sample. It does not describe your needs, a contributor's complete daily intake or an ideal portion. The archived dataset explains exactly what the number includes.",
+        "source_ids": [
+          "community"
+        ]
+      },
+      {
+        "question": "Does an ad label mean a food recommendation is wrong?",
+        "answer": "No. A disclosure helps you understand a creator's relationship with a brand. Evaluate the factual claim and whether the product suits your needs separately from that relationship.",
+        "source_ids": [
+          "ftc"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "nih-evidence",
+        "label": "NCCIH: How Do You Know the Information Is Accurate?",
+        "url": "https://www.nccih.nih.gov/health/know-science/finding-and-evaluating-online-resources/finding-health-information-online/how-do-you-know-the-information-is-accurate",
+        "accessed_at": "2026-11-09"
+      },
+      {
+        "id": "nih-questions",
+        "label": "NCCIH: Five Quick Questions About Social Media Health Information",
+        "url": "https://www.nccih.nih.gov/health/know-science/finding-and-evaluating-online-resources/finding-health-information-on-social-media/five-quick-questions-to-ask-when-checking-out-social-media-for-health-information",
+        "accessed_at": "2026-11-09"
+      },
+      {
+        "id": "ftc",
+        "label": "FTC: Disclosures 101 for Social Media Influencers",
+        "url": "https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers",
+        "accessed_at": "2026-11-09"
+      },
+      {
+        "id": "community",
+        "label": "InstaCal: Archived public meal-log snapshot and methodology",
+        "url": "https://www.theinstacal.app/blog/healthy-eating-on-social-media/data",
+        "accessed_at": "2026-11-09"
+      }
+    ],
+    "methodology": "Snapshot obtained November 9, 2026. Current window: October 12 00:00 UTC to November 9 00:00 UTC, exclusive; previous: September 14 00:00 UTC to October 12 00:00 UTC, exclusive. Counts: current 1,186 meals / 55 contributors / 1,186 valid protein observations; previous 1,045 meals / 48 contributors / 1,045 valid observations. Only public, discoverable profiles and non-hidden, feed-visible meals are included; team and coach accounts are excluded. Protein estimates are restricted to 0–250 g per record. Statistics are meal-weighted, not person-weighted. Groups can overlap and differ between windows. Cohorts below 20 contributors or 100 records are suppressed. Missing logs, automated estimates and self-selection limit interpretation; no dietary or health outcome is measured. No private health records were accessed. Photo eligibility was checked separately. Meal adaptations and review prompts are editorial suggestions, not tested recipes. Primary guidance was opened November 9; the keyword is a search-intent hypothesis, not measured demand.",
+    "data_snapshot": {
+      "window_start": "2026-10-12T00:00:00+00:00",
+      "window_end_exclusive": "2026-11-09T00:00:00+00:00",
+      "previous_window_start": "2026-09-14T00:00:00+00:00",
+      "minimum_contributors": 20,
+      "minimum_records": 100,
+      "periods": [
+        {
+          "period": "current",
+          "meals": 1186,
+          "contributors": 55,
+          "valid_protein_meals": 1186,
+          "mean_protein_g": 34.2,
+          "median_protein_g": 33
+        },
+        {
+          "period": "previous",
+          "meals": 1045,
+          "contributors": 48,
+          "valid_protein_meals": 1045,
+          "mean_protein_g": 31.5,
+          "median_protein_g": 30
+        }
+      ],
+      "methodology": "Public, discoverable, feed-visible, non-hidden meal records; team and coach accounts excluded. UTC creation windows. Protein estimates restricted to 0–250 g per log. Meal-weighted, not person-weighted. Missing logs and automated estimates limit interpretation. Source labels are AI/user-entered and not validated. Small cohorts are omitted, so groups may not sum to totals. These are observational logging patterns, not measured diets or outcomes."
+    }
+  }
+}

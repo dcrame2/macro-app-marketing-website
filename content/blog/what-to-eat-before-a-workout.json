@@ -1,0 +1,197 @@
+{
+  "slug": "what-to-eat-before-a-workout",
+  "week_start": "2026-09-21",
+  "publication_kind": "weekly",
+  "title": "What to eat before a workout: a simple timing guide",
+  "description": "Decide what to eat before a workout with a practical meal-and-snack timing guide, easy food ideas and tips for finding what feels good during training.",
+  "category": "Workouts",
+  "primary_keyword": "what to eat before a workout",
+  "secondary_keywords": [
+    "pre workout snack ideas",
+    "how long after eating can I exercise",
+    "food before a morning workout",
+    "pre workout meal timing"
+  ],
+  "cover_meal_id": 18498,
+  "cover_image": "https://rrcwrqstlvauzdsjfriq.supabase.co/storage/v1/object/public/images/4549ce19-5736-4133-b98d-74fe26a9f545/4549ce19-5736-4133-b98d-74fe26a9f545-1945a627-dc74-41b4-bfed-1ef5999ac0f2",
+  "cover_alt": "A spotted banana beside a blender cup and a bag of shake mix on a kitchen counter.",
+  "cover_caption": "A real InstaCal community photo of a banana and shake ingredients. Used as food inspiration, not a product recommendation or evidence that this meal was eaten before a workout.",
+  "content": {
+    "lead": "It is 5:15, your workout starts at six, and lunch feels a long way away. Do you make dinner, grab a banana or wait until afterward? Start with three things: how soon you will move, what the session involves and what your stomach usually tolerates. Those details make choosing food much easier than searching for one perfect pre-workout meal.",
+    "takeaways": [
+      "Leave more time after a larger meal; closer to training, a smaller familiar option may feel more comfortable.",
+      "Carbohydrate foods can help fuel exercise. Protein also belongs in your overall eating routine, but a giant shake is not a prerequisite for starting.",
+      "Use ordinary training days to learn which foods and timing suit you, then keep a reliable option available."
+    ],
+    "sections": [
+      {
+        "id": "start-with-the-clock",
+        "heading": "Start with the clock, then choose the food",
+        "paragraphs": [
+          "Mayo Clinic offers a useful starting guide: allow about 3–4 hours after a large meal and about 1–3 hours after a small meal or snack. These are flexible ranges, not a timer that makes a meal suddenly suitable. Size, activity and your own experience matter.",
+          "The table translates that guidance into everyday choices. The combinations are editorial examples rather than tested recipes, and the amounts should fit your needs. If you have a condition or medication that affects blood sugar, digestion or exercise nutrition, follow your individual care plan."
+        ],
+        "table": {
+          "headers": [
+            "Time before exercise",
+            "A practical starting point",
+            "Food ideas to adapt"
+          ],
+          "rows": [
+            [
+              "About 3–4 hours",
+              "A familiar meal, with time to digest",
+              "A rice bowl with tofu or chicken; a sandwich and fruit."
+            ],
+            [
+              "About 1–3 hours",
+              "A smaller meal or snack",
+              "Yogurt with fruit; toast with a topping you tolerate."
+            ],
+            [
+              "Less than an hour",
+              "Keep any snack small and familiar, especially before harder exercise",
+              "A banana, applesauce or a little toast; choose what sits comfortably."
+            ]
+          ]
+        },
+        "source_ids": [
+          "mayo",
+          "usada"
+        ]
+      },
+      {
+        "id": "carbohydrates-have-a-job",
+        "heading": "Give carbohydrate a place on the plate",
+        "paragraphs": [
+          "The Academy of Nutrition and Dietetics describes carbohydrates as fuel for working muscles and protein as supporting building and repair. That is why a pre-workout choice does not have to revolve around maximizing protein. Think about the meal's job in the context of the session and the rest of your day.",
+          "Bread, fruit, cereal and rice are ordinary places to start. Pick a food you already buy and know how to prepare. The point is to have a workable option when training approaches, without needing a special shopping trip.",
+          "Try planning backward from your workout appointment. If lunch falls several hours before it, decide whether a later snack would help bridge the gap. Put that option where you will remember it. A snack left at home cannot solve the hungry commute to the gym."
+        ],
+        "source_ids": [
+          "academy"
+        ]
+      },
+      {
+        "id": "comfort-counts",
+        "heading": "Match the choice to your stomach",
+        "paragraphs": [
+          "A large salad, a rich meal and a small piece of toast can feel very different during a hard session. USADA's pre-training guidance highlights lower-fiber carbohydrate options close to high-intensity exercise and cautions that large amounts of fat, protein or fiber can be harder to tolerate.",
+          "That is a timing consideration, not a reason to remove nutritious foods from your whole diet. You can move a food to a different eating occasion if it repeatedly feels uncomfortable before training. Keep the question specific: does this food, in this amount, work before this session?",
+          "Use an ordinary training day to try an adjustment, rather than an important event. If you repeatedly have pain, nausea or other digestive symptoms, seek qualified advice instead of continually narrowing your food choices on your own."
+        ],
+        "source_ids": [
+          "usada"
+        ]
+      },
+      {
+        "id": "three-real-life-schedules",
+        "heading": "Build a plan for the schedule you actually have",
+        "paragraphs": [
+          "Here are three planning examples. They show how to organize the decision, not how many calories you should eat or a guarantee of better performance. Adapt them to your usual meals, food preferences and training demands."
+        ],
+        "bullets": [
+          "Early morning: if you are leaving soon after waking, set out a familiar small snack option the evening before. Decide when your fuller breakfast will happen afterward, so the morning does not become a series of rushed decisions.",
+          "After work: check the gap between lunch and the session. If you commonly arrive hungry, pack a snack you can eat earlier in the afternoon. Plan an accessible dinner too; finishing a workout is an inconvenient time to discover an empty fridge.",
+          "Weekend session: use the later start to schedule a familiar meal with time before exercise. For a long ride, run or event, also plan what you will have during the session and how you will carry it."
+        ],
+        "source_ids": []
+      },
+      {
+        "id": "longer-session-different-plan",
+        "heading": "A longer session needs a wider plan",
+        "paragraphs": [
+          "The Australian Institute of Sport distinguishes brief exercise from longer endurance activity in its carbohydrate guidance. For endurance exercise lasting about 1–2.5 hours, it lists 30–60 g of carbohydrate per hour during exercise. That is an activity-specific guideline, not a snack target for every short gym visit.",
+          "The practical lesson is to consider the whole session. Before a long outing, decide where food and fluids will come from, whether you can carry them and what you have already tolerated in training. A pre-workout meal cannot answer those logistical questions by itself.",
+          "Bring fluids and plan access to more when needed. A sports dietitian can help tailor fuel and hydration to your sport, conditions and individual needs, particularly for long or demanding sessions."
+        ],
+        "source_ids": [
+          "ais"
+        ]
+      },
+      {
+        "id": "keep-products-in-perspective",
+        "heading": "You can begin with ordinary food",
+        "paragraphs": [
+          "A product labeled “pre-workout” is a different decision from choosing a meal or snack. NIH guidance says performance supplements cannot replace an adequate diet; benefits and risks vary by ingredient and situation. Some supplements can also interact with medicines.",
+          "Before buying something, name the problem you want it to solve. Is food unavailable at the right time? Is a usual meal difficult to carry? Are you looking for a flavor you enjoy? A practical food choice may address the first two without adding a supplement routine.",
+          "The cover photo includes a packaged shake mix because it is a real community photograph. We have not evaluated that product, calculated the pictured meal's nutrition or established when the member ate it. Choose your own foods on their merits rather than treating the image as a recommended shopping list."
+        ],
+        "source_ids": [
+          "nih"
+        ]
+      },
+      {
+        "id": "save-what-works",
+        "heading": "Keep a short record, then repeat what works",
+        "paragraphs": [
+          "Use your meal and workout records in InstaCal as reminders, and keep a brief note of the timing and how the session felt. For example: “Toast before the evening class; comfortable, no hunger.” That is a hypothetical observation, not a result from the community dataset.",
+          "Choose one change for the next comparable session: a different food, a smaller amount or more time between eating and moving. Keep the other practical details as similar as you reasonably can. You are looking for a repeatable routine, not trying to prove a scientific cause from one workout.",
+          "Once you find an option you enjoy, make it easy to repeat. Put it on the grocery list, save the meal idea and keep a backup available. For your next workout, the useful assignment is simple: decide what you could eat, when it fits and how you will have it ready."
+        ],
+        "source_ids": []
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What if I only have 30 minutes before a workout?",
+        "answer": "If you want a snack, choose a small, familiar option that you already tolerate rather than a large meal. A banana or a little toast may be practical. Adjust to the session and your comfort; there is no single snack everyone must eat.",
+        "source_ids": [
+          "mayo"
+        ]
+      },
+      {
+        "question": "Do I need a protein shake before every workout?",
+        "answer": "No. Ordinary meals and snacks can fit around training, and supplements do not replace an adequate diet. Consider your overall nutrition and the actual problem a product would solve. Get professional advice when health conditions or medicines affect that choice.",
+        "source_ids": [
+          "nih"
+        ]
+      },
+      {
+        "question": "Should I try a new snack on race day?",
+        "answer": "Practice your food choices on training days first. The Academy of Nutrition and Dietetics recommends using training to learn what your body tolerates, rather than introducing unfamiliar food on competition day.",
+        "source_ids": [
+          "academy"
+        ]
+      },
+      {
+        "question": "Can a public meal photo tell me what fuel works best?",
+        "answer": "It can offer an idea, but it cannot establish the portion, workout timing or effect on performance. Use community posts for inspiration and your own experience to refine the practical details. Persistent symptoms need individual guidance.",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "mayo",
+        "label": "Mayo Clinic: Eating and exercise—meal and snack timing",
+        "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/exercise/art-20045506",
+        "accessed_at": "2026-09-21"
+      },
+      {
+        "id": "academy",
+        "label": "Academy of Nutrition and Dietetics: Pre- and post-workout nutrition",
+        "url": "https://www.eatright.org/fitness/physical-activity/exercise-nutrition/timing-your-pre-and-post-workout-nutrition",
+        "accessed_at": "2026-09-21"
+      },
+      {
+        "id": "usada",
+        "label": "USADA: Food choices before training",
+        "url": "https://www.usada.org/spirit-of-sport/eat-avoid-before-training/",
+        "accessed_at": "2026-09-21"
+      },
+      {
+        "id": "ais",
+        "label": "Australian Institute of Sport: Carbohydrate needs during exercise",
+        "url": "https://www.ausport.gov.au/ais/nutrition/supplements/group_a/sports-foods2/sports-drink/how-and-when-do-i-use-it",
+        "accessed_at": "2026-09-21"
+      },
+      {
+        "id": "nih",
+        "label": "NIH: Dietary supplements for exercise and athletic performance",
+        "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-Consumer/",
+        "accessed_at": "2026-09-21"
+      }
+    ],
+    "methodology": "Research-led education for generally healthy adults, using institutional guidance opened and reviewed September 21, 2026. Timing ranges and the endurance carbohydrate guideline are attributed to their sources; meal combinations and scheduling examples are editorial suggestions, not tested recipes or an individualized sports-nutrition plan. We reviewed the privacy-safe public meal-log snapshot for this run, but it does not establish pre-workout eating or performance effects, so no community statistic is used to support the advice. No private health records were queried. The cover is an eligible, publicly shared original member photograph; the product, portions and relationship to exercise were not evaluated."
+  }
+}

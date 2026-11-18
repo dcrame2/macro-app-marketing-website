@@ -1,0 +1,126 @@
+{
+  "slug": "chicken-and-rice-bowl-ideas",
+  "week_start": "2026-10-05",
+  "publication_kind": "weekly",
+  "title": "Chicken and rice bowl ideas: one base, four great dinners",
+  "description": "Give chicken and rice four fresh directions with a flexible base recipe, sauce-and-vegetable pairings, and clear guidance for cooling, freezing and reheating.",
+  "category": "Recipes",
+  "primary_keyword": "chicken and rice bowl ideas",
+  "secondary_keywords": ["chicken rice bowl sauces", "easy chicken rice bowls", "how to freeze cooked rice", "chicken bowl recipe ideas"],
+  "cover_meal_id": 19629,
+  "cover_image": "https://rrcwrqstlvauzdsjfriq.supabase.co/storage/v1/object/public/images/db985d4a-8bbb-4707-b184-5c9b1fdfa458/db985d4a-8bbb-4707-b184-5c9b1fdfa458-f3482797-2256-4732-b389-c8163923c179",
+  "cover_alt": "Chicken in an orange sauce over white rice on a gray plate.",
+  "cover_caption": "A real chicken-and-rice meal shared publicly on InstaCal. It inspired this story; the recipe and flavor ideas below are our own, not a reconstruction of this dish.",
+  "content": {
+    "lead": "Chicken and rice has range. It can be smoky with lime and salsa, cool with lemon yogurt and cucumber, or covered in a tomato curry sauce you want to scoop up with every bite. The useful trick is to keep a simple base and give the finishing ingredients a job. These chicken and rice bowl ideas start with one four-serving base, then take it in four different directions. Choose the version you want tonight and freeze extra portions for another dinner.",
+    "takeaways": [
+      "Choose a sauce and vegetable pairing before you shop; one good combination is enough to start.",
+      "The base makes four suggested servings. Adjust your portion to your appetite; nutrition totals are not calculated.",
+      "Use a thermometer for the chicken, and plan how you will cool and store the rice before cooking."
+    ],
+    "sections": [
+      {
+        "id": "the-four-serving-base",
+        "heading": "The base: chicken, rice and room for flavor",
+        "paragraphs": [
+          "This is an original editorial recipe framework that has not been kitchen-tested. It gives you quantities and a cooking method without claiming an exact preparation time or a measured macro total. Read the full method and storage section first, especially if you are cooking for fewer than four people.",
+          "Keep the chicken seasoning simple so you can choose a different sauce for each portion. White or brown rice can work here; follow your rice package for the water ratio and cooking method. Measure the cooked amount for assembly."
+        ],
+        "bullets": [
+          "600 g boneless, skinless chicken breast, cut into roughly 1-inch pieces.",
+          "1 tablespoon olive oil, 1 teaspoon garlic powder, 1/2 teaspoon salt and 1/4 teaspoon black pepper for the chicken.",
+          "3 cups cooked rice, prepared according to its package directions.",
+          "About 4 cups prepared vegetables in total; choose a combination from the flavor table.",
+          "Sauce and finishing ingredients for your chosen row below. The table amounts are for one bowl; multiply by four if everyone wants the same version."
+        ],
+        "source_ids": []
+      },
+      {
+        "id": "cook-and-assemble",
+        "heading": "Cook the base and assemble your first bowl",
+        "paragraphs": [
+          "Set out a food thermometer, a large skillet, clean serving utensils and containers for extra portions. Prepare your vegetables before handling raw chicken. CDC guidance recommends keeping raw poultry and its juices separate from ready-to-eat food; washing raw chicken is unnecessary."
+        ],
+        "steps": [
+          "Prepare the rice according to its package. Wash and chop fresh vegetables, or cook frozen vegetables according to their instructions. Keep cold toppings separate from the food you plan to heat.",
+          "On a separate board, cut the chicken and season it with the garlic powder, salt and pepper. Wash your hands and clean the board, knife and work area after handling it.",
+          "Heat the oil in the skillet over medium-high heat. Add the chicken in a single layer, working in batches if needed. Turn the pieces as they cook and reduce the heat if the outside is browning too quickly. Use a thermometer to check that the centers of the thickest pieces reach 165°F (74°C); color alone is not your safety check.",
+          "Using clean utensils, divide the cooked chicken into four portions. For each bowl, start with 3/4 cup cooked rice, one portion of chicken and about 1 cup prepared vegetables. Add your chosen sauce and finish from the table.",
+          "Serve the portion you are eating now. Promptly cool and store the extra components using the guidance below. Pack crunchy vegetables and cold sauces separately so you can add them after reheating."
+        ],
+        "source_ids": ["cdc-chicken", "safe-temperatures"]
+      },
+      {
+        "id": "four-flavor-directions",
+        "heading": "Four chicken and rice bowl ideas to choose from",
+        "paragraphs": [
+          "Use these as starting combinations, then taste and adjust. Each row describes one bowl made with a portion of the base. For the vegetables, aim for about a cup combined; the exact split is up to you. These are flavor suggestions, not nutritionally equivalent swaps.",
+          "Check packaged sauces for allergens and preparation instructions. Yogurt contains milk; soy sauce may contain wheat; sesame oil contains sesame. Choose products that fit your needs, and follow their storage directions after opening."
+        ],
+        "table": {
+          "headers": ["Direction", "Sauce for one bowl", "Vegetables and finish"],
+          "rows": [
+            ["Smoky lime", "2 tablespoons salsa with a pinch of smoked paprika", "Shredded cabbage and cooked corn; finish with a squeeze of lime and chopped cilantro."],
+            ["Creamy lemon", "2 tablespoons plain yogurt mixed with 1 teaspoon lemon juice and a pinch of dried dill", "Chopped cucumber and tomato; add the cool sauce just before eating."],
+            ["Ginger sesame", "1 teaspoon each soy sauce, rice vinegar and sesame oil, plus 1/4 teaspoon grated ginger", "Cooked broccoli and shredded carrot; loosen the sauce with a little water if you prefer."],
+            ["Tomato curry", "1/4 cup ready-to-use tomato-based curry sauce, heated according to its label", "Cooked cauliflower and spinach; spoon the warm sauce over the chicken and rice."]
+          ]
+        },
+        "source_ids": []
+      },
+      {
+        "id": "make-the-bowl-yours",
+        "heading": "Fix the bite you have, one change at a time",
+        "paragraphs": [
+          "Before adding more of everything, try a bite that includes chicken, rice, vegetables and sauce. Is it missing moisture, brightness or texture? A small spoonful of sauce, a squeeze of citrus or a handful of crisp vegetables gives you a specific adjustment to try.",
+          "For a gentler flavor, choose mild salsa or curry sauce and serve extra heat at the table. If you love a creamy bowl, begin with the lemon-yogurt version. If you want crunch, keep the cabbage or cucumber out of the warm components until serving.",
+          "The suggested serving is a recipe division, not a calorie target. You can serve a larger or smaller amount, add a side, or save part for later. If you track nutrition, use the actual products and quantities you use, including oil and sauce. Match raw ingredient weights with raw entries and cooked weights with cooked entries; switching between them can change the estimate."
+        ],
+        "source_ids": []
+      },
+      {
+        "id": "cool-freeze-and-reheat",
+        "heading": "Give the extra portions a plan",
+        "paragraphs": [
+          "For this rice-based dish, we use the UK Food Standards Agency’s rice-specific guidance: cool quickly in small portions, ideally within one hour, and refrigerate for no more than 24 hours. Avoid leaving rice in its cooking pot to cool. Freeze portions you will eat later, cooling and getting the rice into the freezer within an hour of cooking.",
+          "Defrost rice in the refrigerator. Reheat it only once, until steaming throughout, and eat immediately. FoodSafety.gov lists 165°F (74°C) for reheating leftovers; check the hot chicken-and-rice components with a thermometer. Add your separately stored cold toppings afterward.",
+          "An easy plan for two people: serve two portions tonight and promptly freeze the other two. Label them with the cooking date and sauce idea. Keep the fresh toppings on your shopping list for the day you serve them."
+        ],
+        "source_ids": ["fsa-rice", "safe-temperatures"]
+      },
+      {
+        "id": "make-your-next-favorite",
+        "heading": "Make it, share it, remember the good part",
+        "paragraphs": [
+          "The community meal pictured above is the kind of inspiration InstaCal is built around: an everyday dinner that makes you think, “I could go for that.” A photograph gives you an idea to explore; your ingredients and portions make it your version.",
+          "Share your finished bowl on InstaCal and include the sauce combination you used. When logging, review the ingredient and portion estimates rather than treating the photo as an exact nutrient measurement. A helpful caption could be, “Lemon yogurt, extra cucumber, and enough sauce to mix through the rice.” That tells a friend something they can actually try.",
+          "For tonight, choose one row. Add its ingredients to your list, set out your storage containers, and cook the base. When a combination earns a repeat, you have another dinner you know how to make."
+        ],
+        "source_ids": []
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I use already-cooked chicken?",
+        "answer": "Yes, choose a safely stored cooked product and follow its label instructions. Skip the raw-chicken cooking step. If reheating it as a leftover, use a thermometer to check for 165°F (74°C).",
+        "source_ids": ["safe-temperatures"]
+      },
+      {
+        "question": "Can I keep all four bowls in the fridge for the week?",
+        "answer": "This recipe follows FSA rice guidance: refrigerate cooled rice for up to 24 hours. Promptly freeze portions intended for later, following the cooling and freezing instructions above.",
+        "source_ids": ["fsa-rice"]
+      },
+      {
+        "question": "How much protein is in a bowl?",
+        "answer": "We have not calculated a nutrition total. It depends on your chicken, serving size, rice, vegetables and sauce. Use the quantities and product information for your own version instead of borrowing a number from the cover photo.",
+        "source_ids": []
+      }
+    ],
+    "sources": [
+      {"id": "cdc-chicken", "label": "CDC: Preparing chicken and preventing cross-contamination", "url": "https://www.cdc.gov/food-safety/foods/chicken.html", "accessed_at": "2026-10-05"},
+      {"id": "safe-temperatures", "label": "FoodSafety.gov: Safe internal temperatures for poultry and leftovers", "url": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures", "accessed_at": "2026-10-05"},
+      {"id": "fsa-rice", "label": "Food Standards Agency: Cooling, storing, freezing and reheating rice", "url": "https://www.gov.uk/government/publications/home-food-fact-checker/home-food-fact-checker#rice", "accessed_at": "2026-10-05"}
+    ],
+    "methodology": "Original editorial meal ideas, with food-safety guidance checked against the three primary institutional sources opened October 5, 2026. The base recipe and flavor combinations have not been kitchen-tested; no preparation-time, nutrient-total or health-outcome claim is made. Four servings describes the intended recipe division, not a prescribed intake. We use FSA rice-specific storage guidance and U.S. government temperature guidance, identifying each in the text. The eligible original community photograph was visually reviewed; the recipe does not recreate its ingredients or quantities. The privacy-safe community snapshot reviewed for this run describes meal logs and protein estimates, not this recipe or complete diets, so no community statistic is presented. No private health records were accessed."
+  }
+}

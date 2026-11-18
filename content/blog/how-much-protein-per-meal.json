@@ -1,0 +1,218 @@
+{
+  "slug": "how-much-protein-per-meal",
+  "week_start": "2026-10-12",
+  "publication_kind": "weekly",
+  "title": "How much protein per meal? Make the daily target work",
+  "description": "Understand protein per meal for muscle building, compare practical daily splits, and see what 1,060 public InstaCal meal logs can—and cannot—tell us.",
+  "category": "Muscle",
+  "primary_keyword": "how much protein per meal to build muscle",
+  "secondary_keywords": [
+    "protein distribution across meals",
+    "is 30 grams of protein enough",
+    "daily protein target",
+    "protein per meal for muscle gain"
+  ],
+  "cover_meal_id": 20748,
+  "cover_image": "https://rrcwrqstlvauzdsjfriq.supabase.co/storage/v1/object/public/images/bdac583e-507e-4361-853c-a27884cc6730/bdac583e-507e-4361-853c-a27884cc6730-e9a61dd4-7119-41a1-ab95-ba455784aca2",
+  "cover_alt": "A bowl of lentil soup beside sliced bread on a wooden table.",
+  "cover_caption": "Lentil soup and bread shared publicly on InstaCal. An everyday meal idea, with no independently measured protein total or training outcome attached to the photo.",
+  "content": {
+    "lead": "You have a daily protein goal. Now you are staring at breakfast, trying to decide what that number means on a plate. Should every meal have the same amount? Does a bigger dinner count? And is the number on someone else’s food log a useful target? Start with the whole day, divide it into meals you can actually manage, and use your log to check the plan. Here is how to make the arithmetic useful without making every bite an exam.",
+    "takeaways": [
+      "Use a per-meal guide in the context of your daily needs, schedule and training.",
+      "A hypothetical 120 g day could be divided into three 40 g meals or four 30 g eating occasions; that arithmetic does not prove either pattern is optimal.",
+      "Community meal logs offer context and inspiration. They do not establish anyone’s complete diet, protein requirement or muscle gain."
+    ],
+    "sections": [
+      {
+        "id": "the-short-answer",
+        "heading": "The short answer: a guide, not one perfect number",
+        "paragraphs": [
+          "The International Society of Sports Nutrition’s 2017 position stand gives 20–40 g of high-quality protein per serving as a general guide for stimulating muscle protein synthesis—the process of making muscle proteins. It also says recommendations depend on factors such as age and recent resistance exercise. This is guidance for healthy exercising people, not an exact requirement for every adult or every meal.",
+          "Treat a meal-sized number as a planning tool. It still has to fit the rest of your day. If you have a medical condition or an existing prescribed protein limit, use your clinician’s or dietitian’s advice when setting a target."
+        ],
+        "source_ids": [
+          "issn"
+        ]
+      },
+      {
+        "id": "start-with-the-daily-total",
+        "heading": "Do the daily arithmetic first",
+        "paragraphs": [
+          "The NIH Office of Dietary Supplements gives athletes a daily range of about 0.5–0.9 g per pound of body weight, or about 75–135 g for someone weighing 150 pounds. This is broad sports-nutrition guidance, not an instruction that every reader should adopt that example.",
+          "To show the next step, suppose a person has selected a suitable daily target of 120 g. The table simply divides that hypothetical total. It is not a tested menu or a comparison of muscle-growth outcomes."
+        ],
+        "table": {
+          "headers": [
+            "Illustrative schedule",
+            "Protein allocation",
+            "Daily total"
+          ],
+          "rows": [
+            [
+              "Three meals",
+              "40 g + 40 g + 40 g",
+              "120 g"
+            ],
+            [
+              "Three meals and a snack",
+              "30 g + 30 g + 30 g + 30 g",
+              "120 g"
+            ],
+            [
+              "An uneven but planned day",
+              "25 g breakfast + 35 g lunch + 35 g dinner + 25 g snack",
+              "120 g"
+            ]
+          ]
+        },
+        "source_ids": [
+          "nih"
+        ]
+      },
+      {
+        "id": "read-the-community-numbers",
+        "heading": "What 1,060 public meal logs actually show",
+        "paragraphs": [
+          "Our privacy-safe snapshot includes 1,060 eligible public meal logs from 49 contributors, created from September 14 through October 11, 2026, in UTC. Their recorded protein estimates averaged 31.4 g per log; the median was 30 g. The mean is the arithmetic average. The median is the midpoint of the ordered estimates.",
+          "These two summaries describe the same set of records. They do not tell us that 30 g is the right amount for you, or that most meals fell within a narrow range. A log can be a snack or a meal, and it may not include everything a person ate.",
+          "The figures are weighted by logs, so frequent posters contribute more records. They include automated or user-entered estimates, not laboratory measurements. We did not measure muscle gain, identify training goals or assess whether contributors met their daily needs. Use the chart to understand the data’s limits before borrowing a number from it."
+        ],
+        "chart": {
+          "title": "Two summaries of the same public meal logs",
+          "unit": "g per log",
+          "note": "September 14–October 12 exclusive, 2026 (UTC): 1,060 logs, 49 contributors. Recorded protein estimates, weighted by meal logs. The average and median are not intake recommendations or evidence of muscle gain.",
+          "data": [
+            {
+              "label": "Mean recorded protein",
+              "value": 31.4,
+              "metric": "mean_protein_g",
+              "period": "current"
+            },
+            {
+              "label": "Median recorded protein",
+              "value": 30,
+              "metric": "median_protein_g",
+              "period": "current"
+            }
+          ]
+        },
+        "source_ids": [
+          "community"
+        ]
+      },
+      {
+        "id": "a-guide-is-not-a-ceiling",
+        "heading": "More than 30 g is not automatically wasted",
+        "paragraphs": [
+          "A 2023 randomized study by Trommelen and colleagues compared protein drinks after resistance exercise in healthy young men. A 100 g milk-protein dose produced a greater and longer-lasting muscle protein synthesis response than 25 g during a 12-hour assessment. That challenges a simple claim that the body stops using protein above a small fixed serving.",
+          "It does not establish that 100 g meals are the best everyday plan. This was an acute experiment, not a long-term comparison of equal daily protein split across different meal schedules. Its participants and test conditions also limit how broadly the result applies.",
+          "The useful distinction is between a convenient planning amount and a biological ceiling. You do not need to treat an ordinary larger dinner as a mistake, or turn one laboratory finding into a rule to make every meal enormous."
+        ],
+        "source_ids": [
+          "trommelen"
+        ]
+      },
+      {
+        "id": "turn-a-number-into-food",
+        "heading": "Build meals you would want to repeat",
+        "paragraphs": [
+          "NIH guidance notes that athletes can often meet protein needs through food, with supplements useful when needed. It also explains that a variety of plant foods can provide essential amino acids—the building blocks the body needs from food. A shake is an option to consider, not an automatic next purchase.",
+          "Start with the meal that is hardest to organize. Write down what you already like eating and one ingredient you could plan around. Here are editorial meal directions, without calculated protein totals: lentil soup with bread and a suitable side; a tofu bowl with rice and vegetables; eggs with toast; or yogurt with fruit and oats.",
+          "Then check the actual ingredients. Products differ, portions differ, and the rest of the meal counts too. A soup’s name cannot tell you how much lentil it contains. A photo cannot tell you the weight of a portion. Use the package information or an appropriate food entry for the version you made.",
+          "Keep taste and logistics in the decision. If lunch needs to travel, choose something you can pack. If breakfast has to be simple, choose ingredients you already buy. A meal that fits your day gives you a realistic starting point for checking the numbers."
+        ],
+        "source_ids": [
+          "nih"
+        ]
+      },
+      {
+        "id": "use-your-log-to-adjust",
+        "heading": "Use your log to find one useful adjustment",
+        "paragraphs": [
+          "In InstaCal, review the meals and quantities you actually recorded. Check the food match and serving amount before reacting to a protein total. If you only logged dinner, treat it as a record of dinner; it cannot answer a question about the whole day.",
+          "For a day you recorded more completely, ask whether the meals fit your plan. Perhaps breakfast was difficult to assemble, or lunch was smaller than expected. Choose one practical adjustment, such as buying the ingredient you meant to include or packing a snack that fits the schedule.",
+          "A hypothetical note might read, “The yogurt breakfast was easy; keep that on the shopping list.” That is a planning example, not a community result. Share a meal you enjoyed to give someone else an idea, while keeping your own needs separate from theirs.",
+          "Your next step: choose one familiar meal, check its actual ingredients and portions, and see how it fits an appropriate daily plan. You do not need every meal to look identical to make the day easier to organize."
+        ],
+        "source_ids": []
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is 30 g of protein per meal enough to build muscle?",
+        "answer": "It can fit within a practical plan, but the number alone cannot answer that question. It sits within the ISSN’s general serving guide; your daily intake, age, training and other individual factors still matter.",
+        "source_ids": [
+          "issn"
+        ]
+      },
+      {
+        "question": "Do all my meals need the same protein total?",
+        "answer": "The position stand suggests spreading protein across the day. That does not mean every meal must be identical. The schedules above are arithmetic examples to help you plan, not evidence that one exact split is best for everyone.",
+        "source_ids": [
+          "issn"
+        ]
+      },
+      {
+        "question": "Can I use the community average as my target?",
+        "answer": "No. It summarizes logged estimates from a selected public sample. It does not measure complete daily intake, personal requirements or training outcomes, so it cannot set your target.",
+        "source_ids": [
+          "community"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "issn",
+        "label": "ISSN: Protein and exercise position stand (2017)",
+        "url": "https://link.springer.com/article/10.1186/s12970-017-0177-8",
+        "accessed_at": "2026-10-12"
+      },
+      {
+        "id": "nih",
+        "label": "NIH: Protein guidance for exercise and athletic performance",
+        "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-Consumer/",
+        "accessed_at": "2026-10-12"
+      },
+      {
+        "id": "trommelen",
+        "label": "Trommelen et al. (2023): Post-exercise protein-dose trial, published paper (PDF)",
+        "url": "https://cris.vub.be/ws/files/112138409/107579539.pdf",
+        "accessed_at": "2026-10-12"
+      },
+      {
+        "id": "community",
+        "label": "InstaCal: Privacy-safe aggregate snapshot and methodology",
+        "url": "https://www.theinstacal.app/blog/how-much-protein-per-meal/data",
+        "accessed_at": "2026-10-12"
+      }
+    ],
+    "methodology": "General education for healthy adults, based on the institutional guidance and original randomized study opened and reviewed October 12, 2026. Research dates are stated; older guidance is not presented as new research. Daily splits and meal ideas are original illustrative examples, not prescribed intakes, tested recipes or calculated food macros. The chart reproduces the current period of editorial.blog_snapshot at 2026-10-12 00:00 UTC: 1,060 logs from 49 contributors, all 1,060 with recorded protein estimates in the function’s 0–250 g validity range. Only public, discoverable, feed-visible, non-hidden records are eligible; team and coach accounts are excluded. Minimum public cohort thresholds are 20 contributors and 100 records. Statistics are weighted by logs, not people, and missing records and estimation errors limit interpretation. The linked summary also retains the preceding 28-day aggregate for transparency; contributor pools can differ and are not a longitudinal cohort. No private health records or individual outcomes were queried. The original community cover was visually inspected; its nutrient content was not independently measured.",
+    "data_snapshot": {
+      "periods": [
+        {
+          "meals": 1060,
+          "period": "current",
+          "contributors": 49,
+          "mean_protein_g": 31.4,
+          "median_protein_g": 30,
+          "valid_protein_meals": 1060
+        },
+        {
+          "meals": 914,
+          "period": "previous",
+          "contributors": 48,
+          "mean_protein_g": 29.4,
+          "median_protein_g": 26,
+          "valid_protein_meals": 914
+        }
+      ],
+      "methodology": "Public, discoverable, feed-visible, non-hidden meal records; team and coach accounts excluded. UTC creation windows. Protein estimates restricted to 0–250 g per log. Meal-weighted, not person-weighted. Missing logs and automated estimates limit interpretation. Source labels are AI/user-entered and not validated. Small cohorts are omitted, so groups may not sum to totals. These are observational logging patterns, not measured diets or outcomes.",
+      "window_start": "2026-09-14T00:00:00+00:00",
+      "minimum_records": 100,
+      "minimum_contributors": 20,
+      "window_end_exclusive": "2026-10-12T00:00:00+00:00",
+      "previous_window_start": "2026-08-17T00:00:00+00:00"
+    }
+  }
+}

@@ -4,7 +4,7 @@ const FUNCTIONS =
   (process.env.NEXT_PUBLIC_SUPABASE_URL ||
     'https://rrcwrqstlvauzdsjfriq.supabase.co') + '/functions/v1'
 
-const KIND = { meal: 'meal', workout: 'workout', user: 'user', collection: 'collection', recipes: 'recipes', explore: 'explore' }
+const KIND = { meal: 'meal', workout: 'workout', user: 'user', collection: 'collection', recipes: 'recipes', explore: 'explore', challenge: 'challenge' }
 
 /**
  * Everything a shared link's page shows: the plate with its rows and recipe,
@@ -24,7 +24,7 @@ export const getSharePage = cache(async (type, id) => {
       headers: { 'Content-Type': 'application/json' },
       // SHARE_PAGE_NOW (local only): pretend a date, for a database whose plates end before today.
       body: JSON.stringify({ action: 'page', type: kind, id: String(id ?? ''), now: process.env.SHARE_PAGE_NOW || undefined }),
-      next: { revalidate: 300 },
+      next: { revalidate: kind === 'challenge' ? 60 : 300 },
     })
     if (!res.ok) return null
     const data = await res.json()

@@ -1,5 +1,8 @@
 import { DeepLinkLanding } from '@/components/DeepLinkLanding'
 import { getSharePreview, previewText } from '@/lib/sharePreview'
+import { cleanCode, getSharePage } from '@/lib/sharePage'
+import { getReferralInviter } from '@/lib/referralInviter'
+import { SharedPrizeRace, prizeRaceDescription, prizeRaceTitle } from '@/components/shared/SharedPrizeRace'
 
 /**
  * The landing page for a shared challenge link.
@@ -21,6 +24,17 @@ import { getSharePreview, previewText } from '@/lib/sharePreview'
 
 export async function generateMetadata({ params }) {
   const { id } = await params
+  // A prize race says the money and where it stands.
+  const race = await getSharePage('challenge', id)
+  if (race?.type === 'prize_race') {
+    const title = prizeRaceTitle(race)
+    const description = prizeRaceDescription(race)
+    return {
+      title,
+      description,
+      openGraph: { title, description, url: `https://www.theinstacal.app/challenges/${id}`, images: ['/opengraph-image'] },
+    }
+  }
   // A public challenge is named in its preview; anything else keeps the line.
   const { title, description } = previewText(await getSharePreview('challenges', id)) ?? {
     title: 'Join this challenge on InstaCal',
@@ -42,7 +56,16 @@ export async function generateMetadata({ params }) {
   }
 }
 
-export default async function ChallengePage({ params }) {
+export default async function ChallengePage({ params, searchParams }) {
   const { id } = await params
+  // A prize race draws itself for a visitor with no account: the money, the
+  // count, the clock, the board and the winner. Any other challenge keeps the
+  // plain landing.
+  const race = await getSharePage('challenge', id)
+  if (race?.type === 'prize_race') {
+    const code = cleanCode((await searchParams)?.r)
+    const inviter = code ? await getReferralInviter(code) : null
+    return <SharedPrizeRace race={race} inviter={inviter} code={inviter ? code : null} />
+  }
   return <DeepLinkLanding type="challenges" id={id} />
 }

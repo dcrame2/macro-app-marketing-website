@@ -3,6 +3,8 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import logo from '@/images/logos/InstaCal_logo.png'
+import { ShareBeacon } from '@/components/shared/GetApp'
+import { proLength } from '@/lib/proLength'
 
 const APP_STORE_URL =
   'https://apps.apple.com/us/app/instacal/id6743951306'
@@ -37,12 +39,22 @@ const TYPE_CONFIG = {
   },
 }
 
-export function DeepLinkLanding({ type, id }) {
-  const [showContent, setShowContent] = useState(false)
+/**
+ * The fallback for a shared link the site cannot draw (a regular challenge,
+ * something private or gone). It keeps the sharer's invite code (2026-11-23):
+ * the "invited by" line, the code on the app link and the Play link, and the
+ * beacon that hands it to the app after an App Store install. It no longer
+ * jumps to the app on load: with no app, Safari showed an error for that.
+ */
+export function DeepLinkLanding({ type, id, code = null, inviter = null }) {
   const [platform, setPlatform] = useState('other')
 
   const config = TYPE_CONFIG[type]
-  const deepLink = `instacal://${type}/${id}`
+  const deepLink = `instacal://${type}/${id}${code ? `?r=${code}` : ''}`
+  const target = type === 'meal' || type === 'workout' || type === 'user' ? `${type}:${id}` : null
+  const referrer = [code ? `referral_code=${code}` : null, target ? `share_target=${target}` : null].filter(Boolean).join('&')
+  const playUrl = referrer ? `${PLAY_STORE_URL}&referrer=${encodeURIComponent(referrer)}` : PLAY_STORE_URL
+  const length = inviter?.name ? proLength(inviter.trial_days) : null
 
   useEffect(() => {
     const ua = navigator.userAgent
@@ -51,33 +63,10 @@ export function DeepLinkLanding({ type, id }) {
     } else if (/Android/.test(ua)) {
       setPlatform('android')
     }
-
-    window.location.href = deepLink
-
-    const timer = setTimeout(() => setShowContent(true), 1500)
-    return () => clearTimeout(timer)
-  }, [deepLink])
+  }, [])
 
   function handleOpenApp() {
     window.location.href = deepLink
-  }
-
-  if (!showContent) {
-    return (
-      <div className="flex min-h-screen items-center justify-center bg-gray-50">
-        <div className="text-center">
-          <Image
-            src={logo}
-            alt="InstaCal"
-            width={64}
-            height={64}
-            className="mx-auto rounded-xl"
-            priority
-          />
-          <p className="mt-4 text-sm text-gray-500">Opening InstaCal...</p>
-        </div>
-      </div>
-    )
   }
 
   return (
@@ -92,6 +81,12 @@ export function DeepLinkLanding({ type, id }) {
           priority
         />
 
+        {code ? <ShareBeacon type={target ? type : undefined} id={target ? id : undefined} code={code} /> : null}
+        {inviter?.name ? (
+          <p className="mt-6 rounded-lg bg-blue-50 px-4 py-3 text-sm font-semibold text-blue-900">
+            {inviter.name} invited you. Join with this link and get {length ?? 'free days'} of Pro, free.
+          </p>
+        ) : null}
         <h1 className="mt-6 text-2xl font-bold tracking-tight text-gray-900">
           {config.heading}
         </h1>
@@ -130,7 +125,7 @@ export function DeepLinkLanding({ type, id }) {
             )}
             {(platform === 'android' || platform === 'other') && (
               <a
-                href={PLAY_STORE_URL}
+                href={playUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-lg bg-gray-900 px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-gray-800"

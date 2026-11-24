@@ -128,6 +128,126 @@ function Card({ photo, logo, children }) {
   )
 }
 
+
+// ------------------------------------------------------------------ the prize race card
+const GOLD = '#F5B93A'
+const raceMoney = (cents) => (cents % 100 === 0 ? `$${(cents / 100).toLocaleString('en-US')}` : `$${(cents / 100).toFixed(2)}`)
+const raceMiles = (meters) => {
+  const v = (Number(meters) || 0) / 1609.344
+  return Math.abs(v - Math.round(v)) < 0.05 ? String(Math.round(v)) : v.toFixed(1)
+}
+const raceClock = (seconds) => {
+  const t = Math.max(0, Math.round(Number(seconds) || 0))
+  const h = Math.floor(t / 3600)
+  const m = Math.floor((t % 3600) / 60)
+  const sec = t % 60
+  return h > 0 ? `${h}:${String(m).padStart(2, '0')}:${String(sec).padStart(2, '0')}` : `${m}:${String(sec).padStart(2, '0')}`
+}
+/** The faces on the card: the winner first once there is one, then whoever is in; five at most. */
+const winnerFirst = (race) => {
+  const list = [...(race.winner ? [race.winner] : []), ...(race.faces ?? [])]
+  return list.filter((f, i) => list.findIndex((g) => g.name === f.name && g.avatar_url === f.avatar_url) === i).slice(0, 5)
+}
+const RACE_PEOPLE = { Run: 'runners', Ride: 'riders', Walk: 'walkers' }
+
+/**
+ * A prize race as a link preview (2026-11-23, the user: "update the og image
+ * sent via iMessage so it looks better and pops"): the money huge in gold,
+ * what it is for, where the race stands with a gold bar, the faces already in.
+ * Dark in every theme, like the race page. The race's own photo, when the
+ * team gave it one, sits behind it under a heavy shade.
+ */
+function RaceCard({ race, photo, faces, logo }) {
+  const people = RACE_PEOPLE[race.sport] ?? 'runners'
+  const prize = raceMoney(race.prize_cents)
+  const pct = Math.max(3, Math.min(100, (race.runners / Math.max(1, race.min_runners)) * 100))
+  const winner = race.state === 'final' && race.winner
+  const status =
+    race.state === 'gathering'
+      ? { big: `${n(race.runners)} of ${n(race.min_runners)} ${people} in`, small: `Starts when it fills · ${race.window_days} days to race` }
+      : race.state === 'set'
+        ? { big: `${n(race.runners)} ${people} in · the gun is set`, small: 'Everyone starts at the same instant' }
+        : race.state === 'live'
+          ? { big: `LIVE · ${n(race.runners)} ${people} racing`, small: 'Free to enter on InstaCal' }
+          : race.state === 'review'
+            ? { big: "It's over · checking the top runs", small: 'The winner is named soon' }
+            : winner
+              ? { big: `${race.winner.name} won in ${raceClock(race.winner.seconds)}`, small: `${n(race.finished ?? race.runners)} finished` }
+              : { big: 'The winner is in', small: 'See the board on InstaCal' }
+  const big = prize.length <= 4 ? 260 : prize.length <= 6 ? 210 : 170
+  return (
+    <div style={{ width: '100%', height: '100%', display: 'flex', fontFamily: 'Inter', position: 'relative', background: '#070B10' }}>
+      {photo ? <img src={photo} width={1200} height={630} style={{ position: 'absolute', left: 0, top: 0, objectFit: 'cover' }} /> : null}
+      <div
+        style={{
+          position: 'absolute',
+          left: 0,
+          top: 0,
+          width: 1200,
+          height: 630,
+          display: 'flex',
+          background: photo
+            ? 'linear-gradient(90deg, rgba(7,11,16,0.96) 0%, rgba(7,11,16,0.86) 55%, rgba(7,11,16,0.55) 100%)'
+            : 'radial-gradient(90% 120% at 92% 0%, #4A3306 0%, #1A1407 38%, #070B10 78%)',
+        }}
+      />
+      <div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%', padding: '50px 64px 46px', position: 'relative' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          <div style={{ display: 'flex', fontSize: 26, fontWeight: 900, color: GOLD, letterSpacing: '4px' }}>
+            {`PRIZE RACE · ${String(race.title || '').toUpperCase()}`}
+          </div>
+          <div style={{ display: 'flex', padding: '10px 22px', borderRadius: 999, border: `2px solid ${GOLD}`, color: GOLD, fontSize: 24, fontWeight: 900, letterSpacing: '2px' }}>
+            {race.state === 'final' || race.state === 'review' ? 'FINISHED' : 'FREE TO ENTER'}
+          </div>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'flex-end', gap: 34, marginTop: 6 }}>
+          <div style={{ display: 'flex', fontSize: big, fontWeight: 900, color: GOLD, letterSpacing: '-10px', lineHeight: 1 }}>{prize}</div>
+          <div style={{ display: 'flex', flexDirection: 'column', paddingBottom: 30 }}>
+            <div style={{ display: 'flex', fontSize: 44, fontWeight: 900, color: DIM, letterSpacing: '1px', lineHeight: 1.1 }}>
+              {race.win_rule === 'first' ? 'TO THE FIRST TO' : 'TO THE FASTEST'}
+            </div>
+            <div style={{ display: 'flex', fontSize: 92, fontWeight: 900, color: INK, letterSpacing: '-3px', lineHeight: 1 }}>
+              {`${raceMiles(race.distance_meters)} MILES`}
+            </div>
+          </div>
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 14, marginTop: 'auto' }}>
+          {race.state === 'gathering' ? (
+            <div style={{ display: 'flex', width: '100%', height: 16, borderRadius: 8, background: 'rgba(255,255,255,0.14)' }}>
+              <div style={{ display: 'flex', width: `${pct}%`, height: 16, borderRadius: 8, background: GOLD }} />
+            </div>
+          ) : null}
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
+              {faces.length ? (
+                <div style={{ display: 'flex' }}>
+                  {faces.map((f, i) =>
+                    f.src ? (
+                      <img key={i} src={f.src} width={62} height={62} style={{ borderRadius: 31, border: '4px solid #0B0D10', marginLeft: i ? -16 : 0, objectFit: 'cover' }} />
+                    ) : (
+                      <div
+                        key={i}
+                        style={{ display: 'flex', width: 62, height: 62, borderRadius: 31, border: '4px solid #0B0D10', marginLeft: i ? -16 : 0, background: '#2A2F38', alignItems: 'center', justifyContent: 'center', color: INK, fontSize: 26, fontWeight: 900 }}
+                      >
+                        {(f.name || '?').slice(0, 1).toUpperCase()}
+                      </div>
+                    ),
+                  )}
+                </div>
+              ) : null}
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+                <div style={{ display: 'flex', fontSize: 36, fontWeight: 900, color: race.state === 'live' ? '#4ADE80' : INK, letterSpacing: '-0.5px' }}>{status.big}</div>
+                <div style={{ display: 'flex', fontSize: 26, fontWeight: 600, color: DIM }}>{status.small}</div>
+              </div>
+            </div>
+            <Signature logo={logo} />
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 /** The cards for pages with no one thing behind them: /api/og/site/<key>. */
 const SITE_CARDS = {
   calculator: { eyebrow: 'MACRO CALCULATOR', title: 'What should you eat in a day?', line: 'Your calories, protein, carbs and fat in six answers. Free.' },
@@ -217,6 +337,19 @@ export async function GET(_request, { params }) {
   )
   const photosOf = async (plates, count) =>
     (await Promise.all(plates.filter((p) => p.image_url).slice(0, count).map((p) => photoData(p.image_url, 600, 630)))).filter(Boolean)
+
+  // A prize race: the money, gold, and where it stands.
+  if (type === 'race') {
+    const race = await getSharePage('challenge', id)
+    if (!race || race.type !== 'prize_race') return fallback()
+    const people = winnerFirst(race)
+    const [photo, ...faceSrcs] = await Promise.all([
+      photoData(race.image_url, 1200, 630),
+      ...people.map((f) => photoData(f.avatar_url, 124, 124)),
+    ])
+    const faces = people.map((f, i) => ({ name: f.name, src: faceSrcs[i] }))
+    return respond(<RaceCard race={race} photo={photo} faces={faces} logo={logo} />, fonts)
+  }
 
   // A page with no one thing behind it.
   if (type === 'site') {

@@ -14,7 +14,7 @@ export default async function Page({ params, searchParams }) {
   const { id } = await params
   const code = cleanCode((await searchParams)?.r)
   const [page, inviter] = await Promise.all([getProfilePage(id), code ? getReferralInviter(code) : null])
-  if (!page) return <DeepLinkLanding type="user" id={id} />
+  if (!page) return <DeepLinkLanding type="user" id={id} code={inviter ? code : null} inviter={inviter} />
   const jsonLd = profileJsonLd(page)
   return (
     <>

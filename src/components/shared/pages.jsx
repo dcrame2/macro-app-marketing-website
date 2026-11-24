@@ -47,7 +47,7 @@ export async function sharedMetadata(type, id) {
 export async function SharedBody({ type, id, searchParams }) {
   const code = cleanCode((await searchParams)?.r)
   const [page, inviter] = await Promise.all([getSharePage(type, id), code ? getReferralInviter(code) : null])
-  if (!page) return <DeepLinkLanding type={type} id={id} />
+  if (!page) return <DeepLinkLanding type={type} id={id} code={inviter ? code : null} inviter={inviter} />
   if (type === 'workout') return <SharedWorkout workout={page} inviter={inviter} code={inviter ? code : null} />
   const jsonLd = recipeJsonLd(page)
   return (

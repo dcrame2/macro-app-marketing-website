@@ -1,6 +1,7 @@
 import { sized } from '@/lib/sharePage'
 import { Avatar, CallToAction, Card, Eyebrow, Footer, InviteStrip, Page, StickyBar, numeral } from './parts'
 import { RaceCountdown, RaceInstant } from './RaceClock'
+import { ShareBeacon } from './GetApp'
 
 const GOLD = '#F5B93A'
 
@@ -82,6 +83,9 @@ export function SharedPrizeRace({ race, inviter, code }) {
       }
     >
       <InviteStrip inviter={inviter} line="wants you in this race" />
+      {/* The invite code, kept for the app after an App Store install (iPhone has no store referrer; Android's
+          store link carries it). Code only: the install link has no challenge target yet. */}
+      {code ? <ShareBeacon code={code} /> : null}
 
       <header
         className="relative flex min-h-[300px] flex-col justify-end overflow-hidden px-5 pb-7 pt-16 lg:mt-6 lg:rounded-[28px]"
@@ -106,10 +110,11 @@ export function SharedPrizeRace({ race, inviter, code }) {
               to the {race.win_rule === 'first' ? 'first to' : 'fastest'} {dist}
             </span>
           </h1>
-          <div className="mt-3 flex flex-wrap gap-1.5 text-xs font-bold text-white">
-            <span className="rounded-full bg-white/15 px-3 py-1.5">{VERB[race.sport]}s only</span>
-            {race.tracked_only ? <span className="rounded-full bg-white/15 px-3 py-1.5">Tracked by watch or phone</span> : null}
-            <span className="rounded-full bg-white/15 px-3 py-1.5">{race.window_days} days</span>
+          {/* One row on a phone: short words, no wrapping. */}
+          <div className="mt-3 flex flex-nowrap gap-1.5 whitespace-nowrap text-xs font-bold text-white">
+            <span className="rounded-full bg-white/15 px-2.5 py-1.5">{VERB[race.sport]}s only</span>
+            {race.tracked_only ? <span className="rounded-full bg-white/15 px-2.5 py-1.5">GPS tracked</span> : null}
+            <span className="rounded-full bg-white/15 px-2.5 py-1.5">{race.window_days} days</span>
           </div>
         </div>
       </header>
@@ -179,8 +184,7 @@ export function SharedPrizeRace({ race, inviter, code }) {
                   <div className="h-full rounded-full" style={{ width: `${pct}%`, background: GOLD }} />
                 </div>
                 <p className="text-[14px] leading-5 text-[#9CA8BB]">
-                  {toGo.toLocaleString('en-US')} more and the gun is set. The race starts {race.notice_hours} hours after {people.slice(0, -1)} #
-                  {race.min_runners.toLocaleString('en-US')} joins, so everyone gets the same notice.
+                  {toGo.toLocaleString('en-US')} more and it starts. Everyone in gets a push the moment it fills, and the race starts {race.notice_hours} hours later.
                 </p>
               </>
             ) : race.state === 'live' ? (

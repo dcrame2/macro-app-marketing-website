@@ -3,6 +3,7 @@ import { getSharePreview, previewText } from '@/lib/sharePreview'
 import { cleanCode, getSharePage } from '@/lib/sharePage'
 import { getReferralInviter } from '@/lib/referralInviter'
 import { SharedPrizeRace, prizeRaceDescription, prizeRaceTitle } from '@/components/shared/SharedPrizeRace'
+import { SharedChallenge, challengeDescription, challengeTitle } from '@/components/shared/SharedChallenge'
 
 /**
  * A shared challenge, served at two addresses:
@@ -37,6 +38,17 @@ export async function challengeMetadata(id) {
       other: { 'apple-itunes-app': `app-id=6743951306, app-argument=instacal://challenges/${id}` },
     }
   }
+  // Any other public challenge (a drop, an open bet) has a page of its own (2026-11-24).
+  if (race?.type === 'challenge') {
+    const title = challengeTitle(race)
+    const description = challengeDescription(race)
+    return {
+      title,
+      description,
+      openGraph: { title, description, url: `${SITE}/challenges/${id}`, images: ['/opengraph-image'] },
+      other: { 'apple-itunes-app': `app-id=6743951306, app-argument=instacal://challenges/${id}` },
+    }
+  }
   // A public challenge is named in its preview; anything else keeps the line.
   const { title, description } = previewText(await getSharePreview('challenges', id)) ?? {
     title: 'Join this challenge on InstaCal',
@@ -62,5 +74,6 @@ export async function ChallengeBody({ id, searchParams }) {
   const code = cleanCode((await searchParams)?.r)
   const [race, inviter] = await Promise.all([getSharePage('challenge', id), code ? getReferralInviter(code) : null])
   if (race?.type === 'prize_race') return <SharedPrizeRace race={race} inviter={inviter} code={inviter ? code : null} />
+  if (race?.type === 'challenge') return <SharedChallenge challenge={race} inviter={inviter} code={inviter ? code : null} />
   return <DeepLinkLanding type="challenges" id={id} code={inviter ? code : null} inviter={inviter} />
 }

@@ -3,7 +3,7 @@ import { Container } from '@/components/Container'
 
 export const metadata = {
   title: 'Prize Race Official Rules',
-  description: 'The official rules for InstaCal prize races: who can enter, how a race starts, how the winner is decided and how the prize is paid.',
+  description: 'The official rules for InstaCal prize races: who can enter, how a race starts, how the winner is decided or judged, and how the prize is paid.',
 }
 
 const H2 = ({ children }) => <h2 className="mb-4 mt-8 text-2xl font-semibold">{children}</h2>
@@ -12,8 +12,13 @@ const UL = ({ children }) => <ul className="mb-4 ml-4 list-outside list-disc spa
 
 /**
  * The official rules every prize race links to (`challenge_prizes.rules_url`).
- * One page for all races: the prize, distance, sport, number of entrants and
- * dates of a given race are the ones shown on that race's own page.
+ * One page for all races: the prize, kind, distance, sport, number of entrants and
+ * dates of a given race are the ones shown on that race's own page. Updated
+ * 2026-11-24 for the kinds the app gained that day (most distance, most days,
+ * the climb, best plate, best week), second and third prizes, when joining
+ * closes, disqualification and a corrected result. KEEP IN STEP with the
+ * scoring in the app's migration 20261125000001 (ties, the 30-minute day, the
+ * shortlist of twenty).
  * Not claimed by the app (not in the AASA file or the Android intent filters),
  * so the link always opens in a browser.
  */
@@ -23,7 +28,7 @@ function PrizeRaceRules() {
       <div className="my-10 rounded-2xl bg-white p-6 text-gray-900 sm:p-10">
         <h1 className="mb-6 text-center text-4xl font-bold">InstaCal Prize Race Official Rules</h1>
         <p className="mb-4 text-lg font-semibold">
-          <strong>Last Updated: November 23, 2026</strong>
+          <strong>Last Updated: November 24, 2026</strong>
         </p>
         <P>
           <strong>No purchase or payment of any kind is necessary to enter or win.</strong> A purchase or an InstaCal Pro subscription does not improve your chances. Void
@@ -31,7 +36,7 @@ function PrizeRaceRules() {
         </P>
         <P>
           These rules apply to every prize race run in the InstaCal app (each one a &quot;Race&quot;). A Race is a contest of skill: the winner is decided by athletic
-          performance, not by chance. The details of a given Race (its prize, sport, distance, the number of entrants it needs to start, how long it lasts and how the winner
+          performance, or, in a judged Race, by judges applying the criteria in section 6. No winner is decided by chance. The details of a given Race (its prize or prizes, what kind of Race it is, its sport and distance where it has them, the number of entrants it needs to start, when joining closes, how long it lasts and how the winner
           is decided) are shown on that Race&apos;s page in the app and at theinstacal.app, and are part of these rules. If a Race&apos;s page and these rules disagree, these
           rules control.
         </P>
@@ -59,9 +64,11 @@ function PrizeRaceRules() {
 
         <H2>3. How to enter</H2>
         <P>
-          Open the Race in the InstaCal app, connect a fitness service that records your activities (Apple Health, Health Connect or Strava) if you have not already, tap the button to join, and confirm that you meet the eligibility requirements. You cannot join without a connected service. Entry is free. You can leave a Race at any time
-          before it ends from the Race&apos;s page. You can join after a Race has started: your qualifying activities from inside the Race window count, including
-          ones from before you joined, but the Race window does not get longer for late entrants.
+          Open the Race in the InstaCal app, tap the button to join, and confirm that you meet the eligibility requirements. Entry is free. For a Race scored from activities, you must first connect a fitness service that records them (Apple Health, Health Connect or Strava); you cannot join one without a connected service. A judged Race (best plate, best week of plates) needs no connected service. You can leave a Race at any time
+          before it ends from the Race&apos;s page.
+        </P>
+        <P>
+          A Race&apos;s page says when joining closes: when the start time is set, when the Race starts, or when it ends. Where a Race can still be joined after it has started, only what you do after you join counts, and the Race window does not get longer for late entrants. A Race&apos;s page may state a limit on the number of entrants; when it is reached, nobody else can join unless a place opens.
         </P>
 
         <H2>4. When a Race starts and ends</H2>
@@ -77,19 +84,22 @@ function PrizeRaceRules() {
           </li>
           <li>
             <strong>The end.</strong> A Race lasts the number of days shown on its page, measured from the start time (the &quot;Race window&quot;). A Race whose page says
-            the first to finish wins ends when the first eligible entrant completes the distance.
+            the first to finish wins ends when the first eligible entrant completes the distance. In a judged Race, the Race window is when plates can be photographed and entered.
           </li>
         </UL>
 
         <H2>5. What counts</H2>
         <UL>
-          <li>Only activities of the Race&apos;s sport (for example, runs for a running Race) that start inside the Race window count.</li>
+          <li>Only activities that start inside the Race window, and after you joined, count. A Race with a sport (for example, a running Race) counts only activities of that sport. A &quot;most days moved&quot; Race counts an activity of any sport, including strength training, that lasts 30 minutes or more. A &quot;climb&quot; Race counts the elevation gained in any activity, as recorded by your device.</li>
           <li>
             Where a Race&apos;s page says activities must be tracked, only activities recorded by a watch, phone or fitness device and brought into InstaCal through a
             connected service (such as Strava, Apple Health, Garmin Connect or Health Connect) count. Activities typed in by hand do not count, whether typed into InstaCal or into the connected service (for example a manual activity added in Strava or a workout added by hand in Apple Health).
           </li>
-          <li>Activities must be completed by you, on foot or on a human-powered bicycle as the sport requires, under your own power. No motorized or assisted travel, no treadmill or indoor distances unless they are recorded by a device, and no one else carrying your device.</li>
+          <li>Activities must be completed by you, under your own power, on foot or on a human-powered bicycle where the sport requires it. No motorized or assisted travel, no treadmill or indoor distances unless they are recorded by a device, and no one else carrying your device.</li>
           <li>An activity must have reached InstaCal before the Sponsor confirms the result to count. We are not responsible for a device or a connected service that syncs late or not at all.</li>
+          <li>
+            <strong>Judged Races.</strong> A plate counts only if it was photographed with the camera inside the InstaCal app (photos chosen from your photo library cannot enter), inside the Race window and after you joined, and logged as a meal on your account. The photo must be your own, of real food that you prepared or were served, and must not be generated or materially altered by software. In a &quot;best plate&quot; Race you enter one plate, and may replace it with another until the Race ends. In a &quot;best week of plates&quot; Race every qualifying plate you log in the Race window counts, and you do not choose an entry.
+          </li>
         </UL>
 
         <H2>6. How the winner is decided</H2>
@@ -104,9 +114,24 @@ function PrizeRaceRules() {
             the Race distance at the earliest moment after the start.
           </li>
           <li>
-            <strong>Ties.</strong> If two or more eligible entrants have the same result to the second, the one who reached the Race distance earlier wins.
+            <strong>Most distance.</strong> The eligible entrant whose qualifying activities add up to the greatest distance inside the Race window wins.
           </li>
-          <li>If no eligible entrant completes the Race distance inside the Race window, no prize is awarded.</li>
+          <li>
+            <strong>Most days moved.</strong> A day counts when you complete at least one qualifying activity of 30 minutes or more on that calendar day, in the time zone set on your InstaCal account. The eligible entrant with the most days wins. If entrants have the same number of days, the one with the greater total moving time across those activities wins.
+          </li>
+          <li>
+            <strong>The climb.</strong> The eligible entrant whose qualifying activities add up to the greatest elevation gain inside the Race window wins.
+          </li>
+          <li>
+            <strong>Best plate (judged).</strong> After the Race window closes, the entries are ranked by InstaCal&apos;s automated photo score, which rates how appealing a plate looks, and the twenty highest-ranked entries (one per entrant) go to the judges. The judges are members of the Sponsor&apos;s team. They pick the winner, and any further prize winners, from those twenty on these criteria: how appetizing the plate looks (40%), how well it is composed and presented (30%), and the quality of the photograph itself (30%). Nutrition values do not affect the result.
+          </li>
+          <li>
+            <strong>Best week of plates (judged).</strong> Entrants are ranked first by the number of days in the Race window on which they logged two or more qualifying plates, then by the average automated photo score of their qualifying plates. The twenty highest-ranked entrants go to the judges, who pick the winner, and any further prize winners, on the same criteria, applied to the entrant&apos;s plates across the week.
+          </li>
+          <li>
+            <strong>Ties.</strong> In a timed Race, if two or more eligible entrants have the same result to the second, the one who reached the Race distance earlier wins. In a most-distance, most-days or climb Race, if entrants are still level after the rule above, the one whose last counted activity started earlier wins. In a judged Race the judges break any tie.
+          </li>
+          <li>If no eligible entrant completes the Race distance inside the Race window (or, in any other Race, no eligible entrant has a qualifying activity or plate), no prize is awarded.</li>
           <li>The leaderboard shown during a Race is provisional. Only the Sponsor&apos;s confirmed result is final.</li>
         </UL>
 
@@ -119,13 +144,17 @@ function PrizeRaceRules() {
           <li>an activity was not done by the entrant, not done on foot or by bicycle as required, or was edited, fabricated or duplicated;</li>
           <li>an activity has no GPS route or other device data that supports its distance and time, or shows a pace or speed that is not plausible for the sport;</li>
           <li>the entrant used more than one account, entered on behalf of someone else, or does not meet the eligibility requirements;</li>
+          <li>in a judged Race, a photo is not the entrant&apos;s own, was not taken with the InstaCal camera, was taken from the internet or another person, was generated or materially altered by software, or does not show real food;</li>
           <li>the entrant tampered with the app or the Race, harassed other members, or broke InstaCal&apos;s terms.</li>
         </UL>
-        <P>The Sponsor&apos;s decisions on eligibility, what counts and the result are final and binding.</P>
+        <P>
+          A request for more information is sent as a message from Team InstaCal in the app. If you do not answer within 48 hours, we may exclude the activity or entry in question. An entrant who is disqualified is told privately by a message in the app and may reply within 48 hours if they believe it is a mistake.
+        </P>
+        <P>The Sponsor&apos;s decisions on eligibility, what counts and the result, and the judges&apos; decisions in a judged Race, are final and binding.</P>
 
         <H2>8. The prize</H2>
         <UL>
-          <li>Each Race has one prize, in the amount in U.S. dollars shown on its page, unless the page states more than one prize.</li>
+          <li>Each Race has one prize, in the amount in U.S. dollars shown on its page, unless the page states a second or third prize, in which case those go to the eligible entrants with the next best results (or, in a judged Race, the judges&apos; second and third picks). One prize per person per Race.</li>
           <li>The prize is paid by the Sponsor outside the app, by the payment method stated on the Race&apos;s page (for example Venmo or PayPal) or another method we agree with the winner. The winner must have, or open, an account that can receive it.</li>
           <li>Prizes cannot be transferred or exchanged. The winner is responsible for any taxes on the prize. If the total value of prizes you receive from the Sponsor in a calendar year reaches the amount at which U.S. tax reporting is required, we will ask you for a completed IRS Form W-9 before paying.</li>
         </UL>
@@ -134,19 +163,22 @@ function PrizeRaceRules() {
         <P>
           The winner is told by a message from Team InstaCal in the app once the result is confirmed, normally within 72 hours of the end of the Race. The winner must reply
           within 7 days with the details we need to pay the prize and, if asked, confirm their eligibility. If the winner does not reply in time, cannot be verified, or is
-          found ineligible, the prize goes to the eligible entrant with the next best result. Prizes are normally paid within 14 days of the winner providing what we need.
+          found ineligible, the prize goes to the eligible entrant with the next best result (in a judged Race, the judges&apos; next pick). Prizes are normally paid within 14 days of the winner providing what we need.
         </P>
-        <P>Every entrant is told the result in the app. The winner&apos;s first name, profile photo and result may be shown on the Race&apos;s page in the app and on theinstacal.app.</P>
+        <P>
+          A result can be corrected after it has been announced, until the prize has been paid: if we learn that a named winner was not eligible or that their result should not have counted, we may name a different winner under these rules. Every entrant is told of the correction in the app, and the entrant whose result was removed is told privately. Once a prize has been paid, the result stands.
+        </P>
+        <P>Every entrant is told the result in the app. The first name, profile photo and result of the winner and of other leading entrants, and in a judged Race the winning plates, may be shown on the Race&apos;s page in the app and on theinstacal.app.</P>
 
         <H2>10. Your safety</H2>
         <P>
-          Running, walking and cycling carry real risk of injury. Take part only if you are fit and healthy enough to do so, check with a doctor if you are unsure, obey
-          traffic laws and stay aware of your surroundings. Do not push past what is safe for you to win a Race. You take part entirely at your own risk.
+          Running, walking, cycling, strength training and any other exercise carry real risk of injury. Take part only if you are fit and healthy enough to do so, check with a doctor if you are unsure, obey
+          traffic laws and stay aware of your surroundings. Do not push past what is safe for you to win a Race, and do not change what or how much you eat in a way that is unsafe for you in order to enter a judged Race. You take part entirely at your own risk.
         </P>
 
         <H2>11. Publicity</H2>
         <P>
-          Except where prohibited by law, by accepting a prize the winner agrees that the Sponsor may use their first name, InstaCal username, profile photo and Race result
+          Except where prohibited by law, by accepting a prize the winner agrees that the Sponsor may use their first name, InstaCal username, profile photo, Race result and, in a judged Race, the photo of the winning plate
           to announce the result and to promote InstaCal and future Races, without further payment.
         </P>
 

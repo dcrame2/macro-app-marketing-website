@@ -18,14 +18,27 @@ const socialTabs = [
     id: 'feed',
     icon: 'heart',
     title: 'Your feed. Your people.',
-    short: 'The feed',
-    copy: 'Find tomorrow’s meal idea in a friend’s lunch. Cheer on their latest workout. Keep up with your circle in Following, or discover new people in For You.',
+    short: 'Home',
+    copy: 'Open the app to what you have left today and who has logged. Under that, one feed of the best-looking plates and workouts, yours to like, save, and steal ideas from.',
     tags: [
-      'For You & Following',
+      'Your day and your friends at the top',
       'Likes, comments & saves',
       'Meals and workouts in one place',
     ],
     screen: 'feed',
+  },
+  {
+    id: 'day',
+    icon: 'circle',
+    title: 'Tap a friend. See their day.',
+    short: 'Friends’ days',
+    copy: 'Every friend who logged gets a circle. Tap one and flip through their whole day: breakfast, the run, the lift, dinner. No posting required. Logging is the post.',
+    tags: [
+      'Plates, runs and lifts, in order',
+      'Like, comment or save from any page',
+      'See who looked at your day',
+    ],
+    screen: 'day',
   },
   {
     id: 'people',
@@ -105,17 +118,38 @@ const activityTabs = [
     ),
     copy: 'Runs, rides, lifts, and everything in between. Bring your workouts into the same feed as your food, and let your people see the work.',
     features: [
-      'Connect Strava or log a workout manually',
-      'Routes, pace, distance & workout details',
-      'Apple Health integration on iPhone',
+      'Connect Strava, or log a workout by hand',
+      'Routes, pace, splits & the muscles you hit',
+      'Apple Health on iPhone, Health Connect on Android',
     ],
     note: 'Available workout details depend on the activity and connected source.',
+  },
+  {
+    id: 'sayit',
+    icon: 'mic',
+    label: 'Say it',
+    screen: 'sayIt',
+    eyebrow: 'JUST SAY IT.',
+    title: (
+      <>
+        One sentence.
+        <br />
+        Your whole <em>day.</em>
+      </>
+    ),
+    copy: 'Tell InstaCal what you ate and what you did, the way you’d tell a friend. It builds the meal, scores the workout, and shows you everything before anything is logged.',
+    features: [
+      'Meals, workouts and weigh-ins in one breath',
+      'Finds your saved meals and past plates by name',
+      'Change it by talking: “actually, just one”',
+    ],
+    note: 'Three free tries a month. Unlimited with Pro. AI nutrition values are estimates.',
   },
   {
     id: 'tracking',
     icon: 'flame',
     label: 'Progress',
-    screen: 'food',
+    screen: 'progress',
     eyebrow: 'KEEP YOUR MOMENTUM.',
     title: (
       <>
@@ -124,11 +158,11 @@ const activityTabs = [
         In <em>perspective.</em>
       </>
     ),
-    copy: 'See your food and fitness together. Keep your streak going, unlock achievements, and get context from Coach as your routine takes shape.',
+    copy: 'Food and training on one page. Calories and macros up top, then the boxes that fit how you train: weekly goals, what you burned, your miles, the muscles you hit. Hold one to make the page yours.',
     features: [
-      'Food & fitness progress at a glance',
-      'Coach notes, daily & weekly recaps',
-      'Streaks, achievements & iPhone widgets',
+      'Food & fitness progress on one page',
+      'Weekly training goals, streaks & achievements',
+      'Add, remove and reorder the boxes',
     ],
     note: 'Pro adds deeper charts, unlimited Coach chat, monthly recaps, and more.',
   },
@@ -141,7 +175,7 @@ const faqs = [
   ],
   [
     'What can I use for free?',
-    'Photo logging, food search, building meals, the social feed, stories, messages, saving meals, challenges, and everyday progress tracking are included. Pro adds features such as barcode scanning, one-tap saved-meal logging, unlimited Coach chat, deeper insights, and the full Wrapped story.',
+    'Photo logging, food search, building meals, the social feed, stories, messages, saving meals, challenges, and everyday progress tracking are included. Pro adds features such as barcode scanning, unlimited Say it, unlimited Coach chat, deeper insights, and the full Wrapped story.',
   ],
   [
     'How does the AI photo scan work?',
@@ -149,7 +183,7 @@ const faqs = [
   ],
   [
     'Can I bring my workouts into InstaCal?',
-    'Yes. Connect Strava, connect Apple Health on iPhone, or log a workout manually. Runs, rides, and lifts can sit alongside your meals, with routes and workout details when they are available from your activity.',
+    'Yes. Connect Strava, Apple Health on iPhone or Health Connect on Android, or log a workout by hand. Runs, rides, and lifts can sit alongside your meals, with routes and workout details when they are available from your activity.',
   ],
   [
     'Can I choose who sees my posts?',
@@ -157,7 +191,7 @@ const faqs = [
   ],
   [
     'What if my friends aren’t on InstaCal yet?',
-    'Start with For You and Discover to find meals, workouts, and people who share your interests. Follow the accounts you like to build your feed. Send your friends the download link when you’re ready to bring your circle over.',
+    'Start with Home and Explore to find meals, workouts, and people who share your interests. Follow the accounts you like and their days show up at the top of your Home. Send your friends the download link when you’re ready to bring your circle over.',
   ],
 ]
 
@@ -442,7 +476,7 @@ function Activity() {
           <div
             className="ic-activity-tabs"
             role="tablist"
-            aria-label="Explore food, fitness, and progress"
+            aria-label="Explore food, fitness, Say it, and progress"
             onKeyDown={(event) =>
               moveTabFocus(
                 event,
@@ -534,7 +568,7 @@ function Pricing() {
                 'Social feed, stories & messages',
                 'Photo logging, food search & meal building',
                 'Saved meals, progress & challenges',
-                'Coach notes, daily & weekly recaps',
+                'Friends’ days, weekly recaps & widgets',
               ].map((x) => (
                 <li key={x}>
                   <Icon name="check" />
@@ -560,7 +594,7 @@ function Pricing() {
               {[
                 'Everything in free',
                 'Unlimited Coach chat & deeper charts',
-                'Barcode scanning & one-tap saved meals',
+                'Barcode scanning & unlimited Say it',
                 'Full Wrapped story & monthly recaps',
               ].map((x) => (
                 <li key={x}>

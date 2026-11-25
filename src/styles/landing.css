@@ -1968,12 +1968,18 @@ html {
     justify-content: space-between;
     padding: 5px;
   }
+  .ic-activity-tabs {
+    gap: 2px;
+  }
+  /* Four tabs since Say it joined: tighter, and nothing may wrap or overflow. */
   .ic-activity-tabs button {
-    padding: 11px 14px;
+    padding: 11px 6px;
     justify-content: center;
-    flex: 1;
+    flex: 1 1 0;
+    min-width: 0;
     font-size: 12px;
-    gap: 7px;
+    gap: 5px;
+    white-space: nowrap;
   }
   .ic-activity-grid {
     display: flex;

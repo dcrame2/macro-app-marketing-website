@@ -36,6 +36,8 @@ const paths = {
   lock: 'M6 10h12v11H6V10Zm2 0V6a4 4 0 0 1 8 0v4',
   plate: 'M4 2v7a3 3 0 0 0 6 0V2M7 2v20M19 2c-3 3-4 6-4 10h4m0-10v20',
   search: 'm21 21-5-5M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z',
+  mic: 'M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Zm7 8v2a7 7 0 0 1-14 0v-2m7 9v3',
+  circle: 'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm0 5a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z',
 }
 
 export function Icon({ name, className = '', filled = false, ...props }) {

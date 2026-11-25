@@ -220,9 +220,9 @@ function Hero() {
         <div className="ic-hero-copy">
           <Eyebrow>FOOD. FITNESS. FRIENDS.</Eyebrow>
           <h1 id="ic-hero-title">
-            Social media for
+            Track food & workouts
             <br />
-            <em>food & fitness.</em>
+            <em>with friends.</em>
           </h1>
           <p className="ic-hero-description">
             Share your meals. Post your workouts. Find your people.
@@ -655,7 +655,7 @@ function Download() {
     if (typeof navigator.share === 'function') {
       try {
         await navigator.share({
-          title: 'InstaCal — Social media for food & fitness',
+          title: 'InstaCal — Track food & workouts with friends',
           text: 'Share meals, post workouts, and keep each other moving. Check out InstaCal.',
           url: shareUrl,
         })

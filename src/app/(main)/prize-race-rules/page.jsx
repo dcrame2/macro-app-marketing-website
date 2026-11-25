@@ -50,7 +50,7 @@ function PrizeRaceRules() {
           .
         </P>
         <P>
-          <strong>Apple and Google are not sponsors of any Race and are not involved in any way.</strong> X Corp. and any other social network where a Race is announced do not sponsor, endorse or administer it. Strava, Garmin and any other fitness service whose data may be used
+          <strong>Apple and Google are not sponsors of any Race and are not involved in any way.</strong> Meta, TikTok, X and any other social network where a Race is announced do not sponsor, endorse or administer it. Strava and any other fitness service whose data may be used
           to record activities are not sponsors and do not endorse or administer any Race.
         </P>
 
@@ -93,7 +93,7 @@ function PrizeRaceRules() {
           <li>Only activities that start inside the Race window, and after you joined, count. A Race with a sport (for example, a running Race) counts only activities of that sport. A &quot;most days moved&quot; Race counts an activity of any sport, including strength training, that lasts 30 minutes or more. A &quot;climb&quot; Race counts the elevation gained in any activity, as recorded by your device.</li>
           <li>
             Where a Race&apos;s page says activities must be tracked, only activities recorded by a watch, phone or fitness device and brought into InstaCal through a
-            connected service (such as Strava, Apple Health, Garmin Connect or Health Connect) count. Activities typed in by hand do not count, whether typed into InstaCal or into the connected service (for example a manual activity added in Strava or a workout added by hand in Apple Health).
+            connected service (such as Strava, Apple Health or Health Connect) count. Activities typed in by hand do not count, whether typed into InstaCal or into the connected service (for example a manual activity added in Strava or a workout added by hand in Apple Health).
           </li>
           <li>Activities must be completed by you, under your own power, on foot or on a human-powered bicycle where the sport requires it. No motorized or assisted travel, no treadmill or indoor distances unless they are recorded by a device, and no one else carrying your device.</li>
           <li>An activity must have reached InstaCal before the Sponsor confirms the result to count. We are not responsible for a device or a connected service that syncs late or not at all.</li>
